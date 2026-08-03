@@ -138,7 +138,10 @@ const WordMode = (() => {
         const written = w.kanji || w.kana;
         const kanaOnly = !w.kanji || w.kanji === w.kana;
 
-        el["word-speak"].hidden = !Speech.available();
+        // Whether a voice exists is handled by the .no-speech body class, which
+        // updates when iOS finally fires voiceschanged; here we only decide
+        // whether this particular stage should offer audio at all.
+        el["word-speak"].hidden = false;
 
         if (stage === "produce") {
             el["word-stage-label"].textContent = "Recall";

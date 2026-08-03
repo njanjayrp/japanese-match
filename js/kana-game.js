@@ -106,7 +106,9 @@ const KanaGame = (() => {
         locked = false;
         el["kana-progress"].textContent = `${idx + 1} / ${round.length}`;
         el["kana-score"].textContent = `${correctCount} correct`;
-        el["kana-speak"].hidden = !Speech.available() || dir !== "toRomaji";
+        // Only offer audio when the kana itself is on screen; the .no-speech
+        // body class handles the "no Japanese voice installed" case.
+        el["kana-speak"].hidden = dir !== "toRomaji";
 
         const promptText = dir === "toRomaji" ? k.char : k.romaji;
         el["kana-prompt"].textContent = promptText;

@@ -68,11 +68,13 @@ const StrokeMode = (() => {
             btn.addEventListener("click", () => select(k, btn));
             box.appendChild(btn);
         }
+        // Preselect the first sign but stay silent — nobody wants the page
+        // reading a kana at them the moment it loads.
         const first = list[0];
-        if (first) select(first, box.firstElementChild);
+        if (first) select(first, box.firstElementChild, { silent: true });
     }
 
-    function select(k, btn) {
+    function select(k, btn, { silent = false } = {}) {
         current = k;
         for (const b of el["write-picker"].children) b.classList.remove("active");
         if (btn) btn.classList.add("active");
@@ -81,7 +83,7 @@ const StrokeMode = (() => {
         const n = (strokes[k.char] || []).length;
         el["write-count"].textContent = n === 1 ? "1 stroke" : `${n} strokes`;
         play(k);
-        Speech.say(k.char);
+        if (!silent) Speech.say(k.char);
     }
 
     function play(k) {
