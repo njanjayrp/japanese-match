@@ -1,0 +1,4 @@
+.DS_Store
+
+# qlmanage intermediate when regenerating icons from icon.svg
+icons/icon.svg.png

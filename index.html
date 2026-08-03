@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Japanese">
+    <meta name="theme-color" content="#f6f7f9" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#14161c" media="(prefers-color-scheme: dark)">
+    <title>Japanese Match</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="icons/icon-192.png?v=1">
+    <link rel="apple-touch-icon" href="icons/icon-192.png?v=1">
+    <link rel="stylesheet" href="css/app.css?v=1">
+</head>
+<body>
+
+<header class="topbar">
+    <nav class="tabs" id="tabs">
+        <button class="tab active" data-mode="words">Words</button>
+        <button class="tab" data-mode="kana">Kana</button>
+        <button class="tab" data-mode="write">Write</button>
+        <button class="tab" data-mode="browse">Browse</button>
+    </nav>
+    <div class="streak" id="streak-badge" title="Correct answers in a row"></div>
+</header>
+
+<main>
+
+<!-- ── Words: two-stage reveal ──────────────────────────────────────────── -->
+<section id="words-view" class="view active">
+    <div class="controls">
+        <select id="word-group" aria-label="Word group"><option value="__all__">All groups</option></select>
+        <div class="seg" id="word-dir" role="group" aria-label="Direction">
+            <button class="seg-btn active" data-dir="recognise" title="Japanese to English">JP&nbsp;&rarr;&nbsp;EN</button>
+            <button class="seg-btn" data-dir="produce" title="English to Japanese">EN&nbsp;&rarr;&nbsp;JP</button>
+        </div>
+        <button class="ghost" id="romaji-toggle" title="Show or hide romaji">romaji</button>
+    </div>
+
+    <div class="card" id="word-card">
+        <div class="progress-row">
+            <span id="word-progress">1 / 10</span>
+            <span id="word-stage-label">Reading</span>
+        </div>
+
+        <div class="prompt" id="word-prompt"></div>
+        <div class="prompt-sub" id="word-prompt-sub"></div>
+        <button class="speak" id="word-speak" title="Listen" aria-label="Listen">&#9835;</button>
+
+        <div class="question" id="word-question">What&rsquo;s the reading?</div>
+        <div class="options" id="word-options"></div>
+
+        <div class="reveal" id="word-reveal" hidden>
+            <div class="reveal-word" id="reveal-word"></div>
+            <div class="reveal-romaji" id="reveal-romaji"></div>
+            <div class="reveal-english" id="reveal-english"></div>
+            <div class="reveal-note" id="reveal-note"></div>
+            <button class="primary" id="word-next">Next</button>
+        </div>
+    </div>
+
+    <p class="empty-note" id="words-empty" hidden>
+        No words yet. Add some to <code>data/words.json</code> and reload.
+    </p>
+</section>
+
+<!-- ── Kana match game ──────────────────────────────────────────────────── -->
+<section id="kana-view" class="view">
+    <div class="controls">
+        <select id="kana-script" aria-label="Script">
+            <option value="both">Both scripts</option>
+            <option value="hiragana">Hiragana</option>
+            <option value="katakana">Katakana</option>
+        </select>
+        <select id="kana-set" aria-label="Character set">
+            <option value="base">Basic 46</option>
+            <option value="dakuten">+ Dakuten</option>
+            <option value="yoon">+ Y&#333;on</option>
+            <option value="all">Everything</option>
+        </select>
+        <div class="seg" id="kana-dir" role="group" aria-label="Direction">
+            <button class="seg-btn active" data-dir="toRomaji" title="Kana to romaji">&#12354;&nbsp;&rarr;&nbsp;a</button>
+            <button class="seg-btn" data-dir="toKana" title="Romaji to kana">a&nbsp;&rarr;&nbsp;&#12354;</button>
+        </div>
+    </div>
+
+    <div class="card" id="kana-card">
+        <div class="progress-row">
+            <span id="kana-progress">1 / 12</span>
+            <span id="kana-score"></span>
+        </div>
+        <div class="prompt kana-prompt" id="kana-prompt"></div>
+        <button class="speak" id="kana-speak" title="Listen" aria-label="Listen">&#9835;</button>
+        <div class="options options-grid" id="kana-options"></div>
+    </div>
+
+    <div class="round-end" id="kana-round-end" hidden>
+        <div class="round-score" id="kana-round-score"></div>
+        <div class="round-misses" id="kana-round-misses"></div>
+        <button class="primary" id="kana-again">New round</button>
+    </div>
+</section>
+
+<!-- ── Stroke order ─────────────────────────────────────────────────────── -->
+<section id="write-view" class="view">
+    <div class="controls">
+        <select id="write-script" aria-label="Script">
+            <option value="hiragana">Hiragana</option>
+            <option value="katakana">Katakana</option>
+        </select>
+        <select id="write-set" aria-label="Character set">
+            <option value="base">Basic 46</option>
+            <option value="all">Everything</option>
+        </select>
+    </div>
+
+    <div class="write-stage">
+        <svg id="stroke-svg" viewBox="0 0 109 109" aria-label="Stroke order">
+            <g class="grid">
+                <line x1="54.5" y1="0" x2="54.5" y2="109"/>
+                <line x1="0" y1="54.5" x2="109" y2="54.5"/>
+            </g>
+            <g id="stroke-paths"></g>
+        </svg>
+        <div class="write-meta">
+            <div class="write-char" id="write-char"></div>
+            <div class="write-romaji" id="write-romaji"></div>
+            <div class="write-count" id="write-count"></div>
+            <div class="write-actions">
+                <button class="ghost" id="write-replay">Replay</button>
+                <button class="ghost" id="write-speak">&#9835;</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="kana-picker" id="write-picker"></div>
+</section>
+
+<!-- ── Browse ───────────────────────────────────────────────────────────── -->
+<section id="browse-view" class="view">
+    <div class="controls">
+        <select id="browse-group" aria-label="Word group"><option value="__all__">All groups</option></select>
+        <input type="search" id="browse-search" placeholder="Search" autocomplete="off"
+               autocapitalize="none" autocorrect="off" spellcheck="false">
+    </div>
+    <div class="browse-count" id="browse-count"></div>
+    <ul class="word-list" id="browse-list"></ul>
+</section>
+
+</main>
+
+<script src="js/romaji.js?v=1"></script>
+<script src="js/store.js?v=1"></script>
+<script src="js/audio.js?v=1"></script>
+<script src="js/furigana.js?v=1"></script>
+<script src="js/words.js?v=1"></script>
+<script src="js/kana-game.js?v=1"></script>
+<script src="js/strokes.js?v=1"></script>
+<script src="js/browse.js?v=1"></script>
+<script src="js/app.js?v=1"></script>
+</body>
+</html>
