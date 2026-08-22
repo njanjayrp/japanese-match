@@ -201,7 +201,7 @@
     { "kanji": "地下鉄", "kana": "ちかてつ", "english": "subway", "group": "Transport", "marked": true },
     { "kanji": "新幹線", "kana": "しんかんせん", "english": "bullet train", "group": "Transport", "marked": true },
     { "kanji": "", "kana": "バス", "english": "bus", "group": "Transport", "note": "loanword — katakana", "marked": false },
-    { "kanji": "", "kana": "タクシー", "english": "taxi", "group": "Transport", "note": "loanword — katakana", "marked": true },
+    { "kanji": "", "kana": "タクシー", "english": "taxi", "group": "Transport", "note": "loanword — katakana", "marked": false },
     { "kanji": "自転車", "kana": "じてんしゃ", "english": "bicycle", "group": "Transport", "marked": true },
     { "kanji": "飛行機", "kana": "ひこうき", "english": "airplane", "group": "Transport", "marked": true },
     { "kanji": "船", "kana": "ふね", "english": "ship / boat", "group": "Transport", "marked": true },
