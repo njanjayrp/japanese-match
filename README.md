@@ -19,10 +19,10 @@ Serve the folder from your Mac (as above), open the address in Safari on the
 phone, then **Share → Add to Home Screen**. The service worker caches everything
 on first load, so it keeps working with no signal. Bump `CACHE_NAME` in
 [`sw.js`](sw.js) whenever you change code or data, or the phone will keep serving
-the old version — `data/words.json` is the exception and is always fetched fresh
-when online.
+the old version — `data/words.json` and `data/sheets.json` are the exceptions and
+are always fetched fresh when online.
 
-## The four modes
+## The five modes
 
 **Words** — two-stage reveal. You get the written form, recall the *reading*,
 and only then the *meaning*. A Japanese word is three linked facts (form,
@@ -44,9 +44,15 @@ time. Writing kana by hand is the fastest way to stop confusing them.
 adding words, check here that the furigana lines up and the derived romaji looks
 right. Tapping a row speaks it.
 
-Every mode shares one spaced-repetition store: wrong answers come back soon and
-often, right answers fade, and five correct in a row retires an item until the
-pool runs thin.
+**Cheat** — reference tables, not a quiz. Some vocabulary isn't a list of words
+but a shape: relative time expressions are six prefixes crossed with four scales,
+and drilling them one flashcard at a time hides the very pattern that makes them
+cheap to learn. So this mode lays the grid out whole, stripes the cells that
+break the pattern, and states the rules underneath. Tapping a cell speaks it.
+
+Every quiz mode shares one spaced-repetition store: wrong answers come back soon
+and often, right answers fade, and five correct in a row retires an item until
+the pool runs thin.
 
 ## Adding words
 
@@ -54,14 +60,17 @@ Edit [`data/words.json`](data/words.json). One object per word:
 
 ```json
 {
-    "kanji":   "食べる",
-    "kana":    "たべる",
+    "kanji":   "食べます",
+    "kana":    "たべます",
     "english": "to eat",
     "group":   "Verbs",
-    "note":    "ichidan (る-verb)",
+    "note":    "ichidan (る-verb) — dictionary form 食べる (たべる)",
     "marked":  false
 }
 ```
+
+Verbs are stored in the polite ます form, because that's the form they're taught
+and heard in; the dictionary form lives in the `note`.
 
 | field | required | notes |
 |---|---|---|
@@ -95,7 +104,42 @@ deno run --allow-read tools/check.js
 ```
 
 It verifies romaji derivation, furigana alignment, duplicate meanings, thin
-groups and stroke coverage.
+groups, stroke coverage and cheat-sheet cells.
+
+## Adding a cheat sheet
+
+Edit [`data/sheets.json`](data/sheets.json). A sheet is a title, an optional
+legend, one or more grids, and the rules that explain them:
+
+```json
+{
+    "id": "weekdays",
+    "title": "Days of the week",
+    "blurb": "One suffix and seven prefixes.",
+    "legend": [{ "term": "-youbi", "gloss": "day of the week" }],
+    "grids": [{
+        "title": "the seven days",
+        "columns": ["weekday", "what the prefix means"],
+        "rows": [{ "label": "Mon", "cells": [
+            { "kana": "げつようび", "en": "Monday" },
+            { "term": "月", "en": "moon → Monday, lundi" }
+        ] }]
+    }],
+    "rules": [{ "title": "One suffix does all the work", "body": "…" }]
+}
+```
+
+A cell with `kana` is a word: it derives its own romaji, and tapping it speaks
+it. Add `"odd": true` and it gets the accent stripe — use it for the cells the
+rules *don't* cover, since the whole point of a sheet is separating the pattern
+from the handful of things you have to memorise flat. A cell with `term`/`en`
+instead is a plain gloss, for the column that explains why the word is what it
+is. Cells left out or written as `{}` render blank.
+
+`romaji` is available here as an override too, but on a sheet it's almost always
+about spacing: あしたのあさ derives as `ashitanoasa`, which is correct and
+unreadable, so it's spelled `ashita no asa` by hand. `check.js` flags an override
+that changes anything beyond the spaces.
 
 ## Regenerating the datasets
 

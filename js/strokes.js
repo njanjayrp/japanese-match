@@ -9,6 +9,8 @@ const StrokeMode = (() => {
     const SPEED = 0.011;    // seconds per SVG unit of path length
     const MIN_MS = 260;
     const GAP_MS = 130;
+    const LOOPS  = 5;       // times the whole sign is written before it rests
+    const LOOP_GAP_MS = 700;// pause on the finished sign between repeats
 
     let strokes = {};       // char → [path d, ...]
     let kana = [];
@@ -86,10 +88,23 @@ const StrokeMode = (() => {
         if (!silent) Speech.say(k.char);
     }
 
+    // Writing it once is easy to miss. Play the whole sign LOOPS times, pausing
+    // on the finished character in between, then leave it up.
     function play(k) {
         for (const t of timers) clearTimeout(t);
         timers = [];
+        pass(k, 0);
+    }
 
+    function pass(k, n) {
+        const total = draw(k);
+        if (n + 1 < LOOPS) {
+            timers.push(setTimeout(() => pass(k, n + 1), total + LOOP_GAP_MS));
+        }
+    }
+
+    /** Draws the sign once. Returns how long the sequence takes, in ms. */
+    function draw(k) {
         const g = el["stroke-paths"];
         g.innerHTML = "";
         const data = strokes[k.char] || [];
@@ -119,6 +134,8 @@ const StrokeMode = (() => {
 
             delay += dur + GAP_MS;
         });
+
+        return delay;
     }
 
     function onShow() {

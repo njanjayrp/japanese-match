@@ -281,6 +281,17 @@ rt {
 }
 .option:active:not(:disabled) { transform: scale(0.985); }
 .options-jp .option { font-family: var(--jp); font-size: 22px; }
+
+/* Japanese on top, romaji gloss beneath it. */
+.option-main { display: block; }
+.option-sub {
+    display: block;
+    margin-top: 3px;
+    font-family: inherit;
+    font-size: 13px;
+    letter-spacing: 0.02em;
+    opacity: 0.6;
+}
 .options-grid .option { font-size: 30px; font-family: var(--jp); padding: 14px 6px; }
 .options-grid:not(.options-jp) .option { font-size: 18px; font-family: inherit; }
 
@@ -441,6 +452,135 @@ rt {
 .row-en { font-size: 14px; }
 .row-note { font-size: 12px; color: var(--muted); font-style: italic; margin-top: 3px; }
 
+/* ── Cheat sheets ────────────────────────────────────────────────────────── */
+
+.sheet-title { font-size: 19px; font-weight: 700; margin-bottom: 4px; }
+.sheet-blurb { font-size: 13px; color: var(--muted); line-height: 1.55; margin-bottom: 12px; }
+
+.sheet-legend { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+.legend-chip {
+    font-size: 12px;
+    color: var(--muted);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 4px 10px;
+}
+.legend-chip b {
+    color: var(--accent);
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    margin-right: 6px;
+}
+
+.sheet-grid { margin-bottom: 14px; }
+.sheet-grid-title {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 6px;
+}
+
+/* The radius and the sideways scroll both live on the wrapper — a <table> with
+   overflow:hidden doesn't clip its own corners reliably in Safari. */
+.grid-scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+}
+
+.tt {
+    width: 100%;
+    min-width: 316px;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+.tt th, .tt td {
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    text-align: left;
+}
+.tt tr > *:last-child { border-right: 0; }
+.tt tbody tr:last-child > * { border-bottom: 0; }
+
+.tt thead th {
+    background: var(--bg);
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--muted);
+    padding: 7px 6px;
+}
+/* Wide enough for a word, not just a number: row labels run from "−2" to
+   "asking", and table-layout:fixed clips rather than growing. */
+.tt-corner, .tt-label { width: 50px; }
+.tt-label {
+    background: var(--bg);
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--muted);
+    text-align: center;
+    padding: 4px 5px;
+    overflow-wrap: anywhere;
+}
+
+.tt-cell, .tt-gloss { padding: 7px 6px; vertical-align: top; }
+.tt-cell { cursor: pointer; }
+.tt-cell span, .tt-gloss span { display: block; }
+.tt-term { font-family: var(--jp); font-size: 15px; line-height: 1.35; color: var(--muted); }
+.tt-kana { font-family: var(--jp); font-size: 15px; line-height: 1.35; }
+.tt-romaji { font-size: 11px; font-weight: 600; color: var(--accent); }
+.tt-en { font-size: 10px; color: var(--muted); line-height: 1.3; margin-top: 2px; }
+
+/* Irregulars carry the accent stripe, so the eye can skip straight to the
+   handful of cells the rules underneath don't cover. */
+.tt-cell.odd { background: var(--bad-bg); box-shadow: inset 2px 0 0 var(--accent); }
+
+.sheet-key {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    color: var(--muted);
+    margin-bottom: 16px;
+}
+.odd-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 3px;
+    background: var(--bad-bg);
+    border: 1px solid var(--border);
+    box-shadow: inset 2px 0 0 var(--accent);
+}
+
+.sheet-rules { display: flex; flex-direction: column; gap: 8px; }
+.rule {
+    display: flex;
+    gap: 10px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 11px 13px;
+}
+.rule-n {
+    flex: 0 0 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: var(--accent);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rule-title { font-size: 14px; font-weight: 600; margin-bottom: 2px; }
+.rule-body { font-size: 13px; color: var(--muted); line-height: 1.5; }
+
 /* ── Misc ────────────────────────────────────────────────────────────────── */
 
 .empty-note {
@@ -468,9 +608,17 @@ rt {
     text-align: center;
 }
 
+/* Five tabs is one more than the bar was drawn for; on the narrowest phones
+   they need the extra room more than they need the type size. */
+@media (max-width: 400px) {
+    .tab { font-size: 12px; padding: 7px 2px; }
+}
+
 @media (min-width: 520px) {
     .options-grid { grid-template-columns: repeat(6, 1fr); }
     .prompt-jp { font-size: 46px; }
+    .tt-kana { font-size: 17px; }
+    .tt-en { font-size: 11px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

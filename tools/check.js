@@ -16,6 +16,7 @@ const { Furigana } = load(read("js/furigana.js"))();
 const kana = JSON.parse(read("data/kana.json"));
 const words = JSON.parse(read("data/words.json"));
 const strokes = JSON.parse(read("data/strokes.json"));
+const sheets = JSON.parse(read("data/sheets.json"));
 Romaji.init(kana.kana);
 
 let failures = 0;
@@ -130,6 +131,41 @@ for (const e of kana.kana) {
     if (!strokes.strokes[e.char]) { missing++; console.log(`  ! no strokes for ${e.char}`); }
 }
 console.log(`  ${Object.keys(strokes.strokes).length} signs with stroke data, ${missing} missing`);
+
+// ── 7. Cheat sheets ─────────────────────────────────────────────────────────
+// Sheets carry kana only and derive their romaji at render time, so the one
+// thing that can break them is a cell that isn't kana — it would silently pass
+// through the converter unchanged and print Japanese where romaji belongs.
+console.log("cheat sheets");
+let cells = 0;
+for (const sheet of sheets) {
+    if (!sheet.id) fail("a sheet has no id");
+    if (!sheet.title) fail(`sheet ${sheet.id}: missing title`);
+    for (const grid of sheet.grids || []) {
+        for (const row of grid.rows || []) {
+            if (row.cells.length !== grid.columns.length) {
+                fail(`${sheet.id} / ${grid.title} / row ${row.label}: ` +
+                     `${row.cells.length} cells for ${grid.columns.length} columns`);
+            }
+            for (const c of row.cells) {
+                if (!c || !c.kana) continue;   // a blank cell is allowed
+                cells++;
+                if (!c.en) fail(`${sheet.id}: ${c.kana} has no meaning`);
+                if (![...c.kana].every(ch => Romaji.isKana(ch))) {
+                    fail(`${sheet.id}: "${c.kana}" is not pure kana — romaji can't be derived`);
+                }
+                // Overrides here are nearly always about word spacing. Anything
+                // else is legal (a particle that reads differently) but worth a
+                // second look, because it's also what a typo looks like.
+                if (c.romaji && c.romaji.replace(/ /g, "") !== Romaji.toRomaji(c.kana)) {
+                    console.log(`  ! ${sheet.id}: "${c.kana}" override "${c.romaji}" ` +
+                                `isn't just spacing on "${Romaji.toRomaji(c.kana)}"`);
+                }
+            }
+        }
+    }
+}
+console.log(`  ${sheets.length} sheet(s), ${cells} cells checked`);
 
 console.log(failures ? `\nFAILED — ${failures} problem(s)` : "\nAll checks passed");
 Deno.exit(failures ? 1 : 0);

@@ -115,7 +115,13 @@ const WordMode = (() => {
                 : 'No words yet. Add some to <code>data/words.json</code> and reload.';
             return;
         }
-        round = Store.pickRound("words", p, Math.min(ROUND, p.length), idOf);
+        // ★ Marked is the exam sheet: draw it flat. No weighting, no mastery
+        // retirement — every marked word keeps its full chance every round, so
+        // nothing quietly drops out after five right answers.
+        const n = Math.min(ROUND, p.length);
+        round = group === "__marked__"
+            ? Store.shuffle(p.slice()).slice(0, n)
+            : Store.pickRound("words", p, n, idOf);
         idx = 0;
         show();
     }
@@ -150,7 +156,8 @@ const WordMode = (() => {
             el["word-prompt-sub"].textContent = w.group || "";
             el["word-question"].textContent = "Which word is it?";
             el["word-speak"].hidden = true;
-            renderOptions(produceOptions(w), o => o.label, o => o.word === w);
+            renderOptions(produceOptions(w), o => o.label, o => o.word === w,
+                          o => Romaji.romajiOf(o.word));
             return;
         }
 
@@ -163,9 +170,11 @@ const WordMode = (() => {
             el["word-question"].textContent = kanaOnly
                 ? "How do you read this?"
                 : "What’s the reading?";
+            // When the label is already romaji there's nothing to gloss.
             renderOptions(readingOptions(w, kanaOnly),
                           o => o.label,
-                          o => o.word === w);
+                          o => o.word === w,
+                          kanaOnly ? null : o => Romaji.romajiOf(o.word));
             return;
         }
 
@@ -254,14 +263,24 @@ const WordMode = (() => {
 
     // ── Answering ───────────────────────────────────────────────────────────
 
-    function renderOptions(options, labelOf, isCorrect) {
+    // subOf is the romaji crutch under a Japanese option. Without it, anyone who
+    // can't yet read kana is guessing between four shapes they can't pronounce —
+    // the romaji button turns it off once the kana start to stick.
+    function renderOptions(options, labelOf, isCorrect, subOf) {
         const box = el["word-options"];
         box.innerHTML = "";
         box.classList.toggle("options-jp", stage !== "meaning");
         for (const opt of options) {
             const btn = document.createElement("button");
             btn.className = "option";
-            btn.textContent = labelOf(opt);
+            const sub = showRomaji && subOf ? subOf(opt) : "";
+            if (sub) {
+                btn.innerHTML =
+                    `<span class="option-main">${Furigana.esc(labelOf(opt))}</span>` +
+                    `<span class="option-sub">${Furigana.esc(sub)}</span>`;
+            } else {
+                btn.textContent = labelOf(opt);
+            }
             btn.addEventListener("click", () => answer(btn, box, isCorrect(opt)));
             box.appendChild(btn);
         }
@@ -300,7 +319,9 @@ const WordMode = (() => {
     // comparing against the word rather than storing extra state on the node.
     function isCorrectButton(b) {
         const w = round[idx];
-        const text = b.textContent;
+        // With romaji showing, the button also holds a gloss — match on the
+        // Japanese line alone, not the whole button.
+        const text = (b.querySelector(".option-main") || b).textContent;
         if (stage === "meaning") return text === w.english;
         if (stage === "produce") return text === (w.kanji || w.kana);
         const kanaOnly = !w.kanji || w.kanji === w.kana;

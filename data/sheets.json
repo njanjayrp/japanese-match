@@ -1,0 +1,277 @@
+[
+    {
+        "id": "time",
+        "title": "When things happen",
+        "blurb": "Relative time words. Most of this grid is built from six prefixes — the marked cells are the ones that break the pattern and have to be memorised on their own.",
+        "legend": [
+            { "term": "sensen-", "gloss": "before last" },
+            { "term": "sen-",    "gloss": "last" },
+            { "term": "kon-",    "gloss": "this" },
+            { "term": "rai-",    "gloss": "next" },
+            { "term": "sarai-",  "gloss": "after next" },
+            { "term": "mai-",    "gloss": "every" }
+        ],
+        "grids": [
+            {
+                "title": "day · morning · night",
+                "columns": ["day", "morning", "night"],
+                "rows": [
+                    { "label": "−2", "cells": [
+                        { "kana": "おととい", "en": "day before yesterday" },
+                        { "kana": "おとといのあさ", "romaji": "ototoi no asa", "en": "morning before last" },
+                        { "kana": "おとといのばん", "romaji": "ototoi no ban", "en": "night before last" }
+                    ] },
+                    { "label": "−1", "cells": [
+                        { "kana": "きのう", "en": "yesterday" },
+                        { "kana": "きのうのあさ", "romaji": "kinou no asa", "en": "yesterday morning" },
+                        { "kana": "きのうのばん", "romaji": "kinou no ban", "en": "last night" }
+                    ] },
+                    { "label": "now", "cells": [
+                        { "kana": "きょう", "en": "today" },
+                        { "kana": "けさ", "en": "this morning", "odd": true },
+                        { "kana": "こんばん", "en": "tonight", "odd": true }
+                    ] },
+                    { "label": "+1", "cells": [
+                        { "kana": "あした", "en": "tomorrow" },
+                        { "kana": "あしたのあさ", "romaji": "ashita no asa", "en": "tomorrow morning" },
+                        { "kana": "あしたのばん", "romaji": "ashita no ban", "en": "tomorrow night" }
+                    ] },
+                    { "label": "+2", "cells": [
+                        { "kana": "あさって", "en": "day after tomorrow" },
+                        { "kana": "あさってのあさ", "romaji": "asatte no asa", "en": "morning after next" },
+                        { "kana": "あさってのばん", "romaji": "asatte no ban", "en": "night after next" }
+                    ] },
+                    { "label": "each", "cells": [
+                        { "kana": "まいにち", "en": "every day" },
+                        { "kana": "まいあさ", "en": "every morning" },
+                        { "kana": "まいばん", "en": "every night" }
+                    ] }
+                ]
+            },
+            {
+                "title": "week · month · year",
+                "columns": ["week", "month", "year"],
+                "rows": [
+                    { "label": "−2", "cells": [
+                        { "kana": "せんせんしゅう", "en": "week before last" },
+                        { "kana": "せんせんげつ", "en": "month before last" },
+                        { "kana": "おととし", "en": "year before last", "odd": true }
+                    ] },
+                    { "label": "−1", "cells": [
+                        { "kana": "せんしゅう", "en": "last week" },
+                        { "kana": "せんげつ", "en": "last month" },
+                        { "kana": "きょねん", "en": "last year", "odd": true }
+                    ] },
+                    { "label": "now", "cells": [
+                        { "kana": "こんしゅう", "en": "this week" },
+                        { "kana": "こんげつ", "en": "this month" },
+                        { "kana": "ことし", "en": "this year", "odd": true }
+                    ] },
+                    { "label": "+1", "cells": [
+                        { "kana": "らいしゅう", "en": "next week" },
+                        { "kana": "らいげつ", "en": "next month" },
+                        { "kana": "らいねん", "en": "next year" }
+                    ] },
+                    { "label": "+2", "cells": [
+                        { "kana": "さらいしゅう", "en": "week after next" },
+                        { "kana": "さらいげつ", "en": "month after next" },
+                        { "kana": "さらいねん", "en": "year after next" }
+                    ] },
+                    { "label": "each", "cells": [
+                        { "kana": "まいしゅう", "en": "every week" },
+                        { "kana": "まいつき", "en": "every month", "odd": true },
+                        { "kana": "まいとし", "en": "every year", "odd": true }
+                    ] }
+                ]
+            }
+        ],
+        "rules": [
+            {
+                "title": "Six prefixes, twelve words",
+                "body": "Stick the prefixes onto shuu (week) or getsu (month) and both of those columns fall out with no exceptions: senshuu, konshuu, raishuu, saraishuu. Same for sengetsu, kongetsu, raigetsu, saraigetsu."
+            },
+            {
+                "title": "Year only listens to half of them",
+                "body": "rainen and sarainen behave. The other four are their own words and have to be learnt flat: ototoshi, kyonen, kotoshi, maitoshi (also heard as mainen)."
+            },
+            {
+                "title": "Morning and night are just glue",
+                "body": "day + no + asa/ban, every time: kinou no asa, ashita no ban, asatte no asa. Only kesa (this morning) and konban (tonight) refuse to play. The mai- row drops the no: maiasa, maiban."
+            },
+            {
+                "title": "The exceptions cluster around now",
+                "body": "kyou, kesa, konban, kotoshi. The words you say most often are the ones that wore down — that is where to expect irregularity, in any language."
+            },
+            {
+                "title": "Two freebies",
+                "body": "oto- means 'before last' on both scales: ototoi, ototoshi. And the future starts with a: ashita (+1), asatte (+2). mai- is the one prefix that works in every single column."
+            }
+        ]
+    },
+    {
+        "id": "weekdays",
+        "title": "Days of the week",
+        "blurb": "One suffix and seven prefixes. The prefixes are the classical planets — the same week the Romans named, so the order is one you already know.",
+        "legend": [
+            { "term": "-youbi", "gloss": "day of the week" }
+        ],
+        "grids": [
+            {
+                "title": "the seven days",
+                "columns": ["weekday", "what the prefix means"],
+                "rows": [
+                    { "label": "Mon", "cells": [
+                        { "kana": "げつようび", "en": "Monday" },
+                        { "term": "月", "en": "moon → Monday, lundi" }
+                    ] },
+                    { "label": "Tue", "cells": [
+                        { "kana": "かようび", "en": "Tuesday" },
+                        { "term": "火", "en": "fire → Mars, mardi" }
+                    ] },
+                    { "label": "Wed", "cells": [
+                        { "kana": "すいようび", "en": "Wednesday" },
+                        { "term": "水", "en": "water → Mercury, mercredi" }
+                    ] },
+                    { "label": "Thu", "cells": [
+                        { "kana": "もくようび", "en": "Thursday" },
+                        { "term": "木", "en": "wood → Jupiter, jeudi" }
+                    ] },
+                    { "label": "Fri", "cells": [
+                        { "kana": "きんようび", "en": "Friday" },
+                        { "term": "金", "en": "gold → Venus, vendredi" }
+                    ] },
+                    { "label": "Sat", "cells": [
+                        { "kana": "どようび", "en": "Saturday" },
+                        { "term": "土", "en": "earth → Saturn, Saturday" }
+                    ] },
+                    { "label": "Sun", "cells": [
+                        { "kana": "にちようび", "en": "Sunday" },
+                        { "term": "日", "en": "sun → the Sun, Sunday" }
+                    ] },
+                    { "label": "?", "cells": [
+                        { "kana": "なんようび", "en": "what day of the week?" },
+                        { "term": "何", "en": "'what' drops into the same slot" }
+                    ] }
+                ]
+            }
+        ],
+        "rules": [
+            {
+                "title": "One suffix does all the work",
+                "body": "Every weekday is prefix + youbi. Learn seven syllables — getsu, ka, sui, moku, kin, do, nichi — and the whole week falls out. Nothing here is irregular."
+            },
+            {
+                "title": "It is our week, borrowed twice",
+                "body": "Moon, Mars, Mercury, Jupiter, Venus, Saturn, Sun. Japanese took the same planetary week from the same ancient source, which is why kayoubi (fire → Mars) lines up with mardi and mokuyoubi (wood → Jupiter) with jeudi. If you know the French or English names you already know the order."
+            },
+            {
+                "title": "The apostrophe is a real sound",
+                "body": "kin'youbi and nan'youbi, not kinyoubi. The n stands on its own and the y starts the next syllable — say kin, then youbi."
+            },
+            {
+                "title": "Asking uses the same shape",
+                "body": "nan'youbi desu ka — what day is it? Also worth knowing: Japanese calendars usually start the week on Sunday, not Monday."
+            }
+        ]
+    },
+    {
+        "id": "clock",
+        "title": "Reading the clock",
+        "blurb": "Two suffixes and numbers you already know. Hour then minute, no word for 'past' or 'to' — but three hours lie about their own number, and the minute suffix flips between fun and pun.",
+        "legend": [
+            { "term": "ji",        "gloss": "o'clock" },
+            { "term": "fun / pun", "gloss": "minutes" },
+            { "term": "han",       "gloss": "half past" },
+            { "term": "gozen",     "gloss": "a.m." },
+            { "term": "gogo",      "gloss": "p.m." }
+        ],
+        "grids": [
+            {
+                "title": "hours — ji",
+                "columns": ["o'clock", "the trap"],
+                "rows": [
+                    { "label": "1", "cells": [{ "kana": "いちじ", "en": "1:00" }, {}] },
+                    { "label": "2", "cells": [{ "kana": "にじ", "en": "2:00" }, {}] },
+                    { "label": "3", "cells": [{ "kana": "さんじ", "en": "3:00" }, {}] },
+                    { "label": "4", "cells": [
+                        { "kana": "よじ", "en": "4:00", "odd": true },
+                        { "term": "四", "en": "yo, never yonji or shiji" }
+                    ] },
+                    { "label": "5", "cells": [{ "kana": "ごじ", "en": "5:00" }, {}] },
+                    { "label": "6", "cells": [{ "kana": "ろくじ", "en": "6:00" }, {}] },
+                    { "label": "7", "cells": [
+                        { "kana": "しちじ", "en": "7:00", "odd": true },
+                        { "term": "七", "en": "shichi, not nanaji" }
+                    ] },
+                    { "label": "8", "cells": [{ "kana": "はちじ", "en": "8:00" }, {}] },
+                    { "label": "9", "cells": [
+                        { "kana": "くじ", "en": "9:00", "odd": true },
+                        { "term": "九", "en": "ku, not kyuuji" }
+                    ] },
+                    { "label": "10", "cells": [{ "kana": "じゅうじ", "en": "10:00" }, {}] },
+                    { "label": "11", "cells": [{ "kana": "じゅういちじ", "en": "11:00" }, {}] },
+                    { "label": "12", "cells": [{ "kana": "じゅうにじ", "en": "12:00" }, {}] },
+                    { "label": "?", "cells": [
+                        { "kana": "なんじ", "en": "what time?" },
+                        { "term": "何", "en": "nanji desu ka" }
+                    ] }
+                ]
+            },
+            {
+                "title": "minutes — fun / pun",
+                "columns": ["minutes", "suffix"],
+                "rows": [
+                    { "label": "1",  "cells": [{ "kana": "いっぷん", "en": "1 minute" }, { "term": "ぷん", "en": "small tsu" }] },
+                    { "label": "2",  "cells": [{ "kana": "にふん", "en": "2 minutes" }, { "term": "ふん", "en": "plain" }] },
+                    { "label": "3",  "cells": [{ "kana": "さんぷん", "en": "3 minutes" }, { "term": "ぷん", "en": "after n" }] },
+                    { "label": "4",  "cells": [{ "kana": "よんぷん", "en": "4 minutes" }, { "term": "ぷん", "en": "after n" }] },
+                    { "label": "5",  "cells": [{ "kana": "ごふん", "en": "5 minutes" }, { "term": "ふん", "en": "plain" }] },
+                    { "label": "6",  "cells": [{ "kana": "ろっぷん", "en": "6 minutes" }, { "term": "ぷん", "en": "small tsu" }] },
+                    { "label": "7",  "cells": [{ "kana": "ななふん", "en": "7 minutes" }, { "term": "ふん", "en": "plain" }] },
+                    { "label": "8",  "cells": [{ "kana": "はっぷん", "en": "8 minutes" }, { "term": "ぷん", "en": "small tsu" }] },
+                    { "label": "9",  "cells": [{ "kana": "きゅうふん", "en": "9 minutes" }, { "term": "ふん", "en": "plain" }] },
+                    { "label": "10", "cells": [{ "kana": "じゅっぷん", "en": "10 minutes" }, { "term": "ぷん", "en": "small tsu" }] },
+                    { "label": "15", "cells": [{ "kana": "じゅうごふん", "en": "15 minutes" }, { "term": "ふん", "en": "ends in 5" }] },
+                    { "label": "30", "cells": [{ "kana": "さんじゅっぷん", "en": "30 minutes" }, { "term": "はん", "en": "or just han" }] },
+                    { "label": "?",  "cells": [{ "kana": "なんぷん", "en": "how many minutes?" }, { "term": "ぷん", "en": "after n" }] }
+                ]
+            },
+            {
+                "title": "putting it together",
+                "columns": ["said out loud"],
+                "rows": [
+                    { "label": "a.m.",   "cells": [{ "kana": "ごぜんくじ", "romaji": "gozen kuji", "en": "9 a.m. — gozen goes first, unlike English" }] },
+                    { "label": "p.m.",   "cells": [{ "kana": "ごごさんじ", "romaji": "gogo sanji", "en": "3 p.m." }] },
+                    { "label": "half",   "cells": [{ "kana": "さんじはん", "romaji": "sanji han", "en": "half past three" }] },
+                    { "label": ":15",    "cells": [{ "kana": "しちじじゅうごふん", "romaji": "shichiji juugofun", "en": "7:15" }] },
+                    { "label": ":45",    "cells": [{ "kana": "よじよんじゅうごふん", "romaji": "yoji yonjuugofun", "en": "4:45" }] },
+                    { "label": "to",     "cells": [{ "kana": "はちじごふんまえ", "romaji": "hachiji gofun mae", "en": "five to eight — mae means before" }] },
+                    { "label": "span",   "cells": [{ "kana": "くじからごじまで", "romaji": "kuji kara goji made", "en": "from nine to five" }] },
+                    { "label": "asking", "cells": [{ "kana": "いまなんじですか", "romaji": "ima nanji desu ka", "en": "what time is it now?" }] }
+                ]
+            }
+        ],
+        "rules": [
+            {
+                "title": "Hour then minute, nothing in between",
+                "body": "sanji juugofun is 3:15. Japanese has no word doing the work of 'past' or 'to' — you say the hour, then the minutes, and stop."
+            },
+            {
+                "title": "Three hours lie about their number",
+                "body": "4 is yoji, not yonji. 7 is shichiji, not nanaji. 9 is kuji, not kyuuji. The other nine hours are just the number plus ji, so these three are the whole memorisation cost."
+            },
+            {
+                "title": "pun after a stopped sound",
+                "body": "1, 3, 4, 6, 8 and 10 end in an n or a small tsu, and the f hardens to p: ippun, sanpun, yonpun, roppun, happun, juppun. 2, 5, 7 and 9 stay soft: nifun, gofun, nanafun, kyuufun. Same rule for compounds — 15 is juugofun, 30 is sanjuppun."
+            },
+            {
+                "title": "4, 7 and 9 switch sides",
+                "body": "The traps invert between the columns: yoji but yonpun, shichiji but nanafun, kuji but kyuufun. If you learn one column and guess the other, these three are where you'll be wrong."
+            },
+            {
+                "title": "han saves you a mouthful",
+                "body": "sanji han — half past three. Nobody counts out sanji sanjuppun when talking. And gozen / gogo go in front of the hour, not after it: gozen kuji, gogo sanji."
+            }
+        ]
+    }
+]

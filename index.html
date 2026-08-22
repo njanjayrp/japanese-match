@@ -22,6 +22,7 @@
         <button class="tab" data-mode="kana">Kana</button>
         <button class="tab" data-mode="write">Write</button>
         <button class="tab" data-mode="browse">Browse</button>
+        <button class="tab" data-mode="cheat">Cheat</button>
     </nav>
     <div class="streak" id="streak-badge" title="Correct answers in a row"></div>
 </header>
@@ -149,6 +150,17 @@
     <ul class="word-list" id="browse-list"></ul>
 </section>
 
+<!-- ── Cheat sheets ─────────────────────────────────────────────────────── -->
+<section id="cheat-view" class="view">
+    <div class="controls">
+        <select id="cheat-sheet" aria-label="Cheat sheet"></select>
+    </div>
+    <div id="cheat-body"></div>
+    <p class="empty-note" id="cheat-empty" hidden>
+        No sheets yet. Add some to <code>data/sheets.json</code> and reload.
+    </p>
+</section>
+
 </main>
 
 <script src="js/romaji.js?v=1"></script>
@@ -159,6 +171,7 @@
 <script src="js/kana-game.js?v=1"></script>
 <script src="js/strokes.js?v=1"></script>
 <script src="js/browse.js?v=1"></script>
+<script src="js/cheat.js?v=1"></script>
 <script src="js/app.js?v=1"></script>
 </body>
 </html>

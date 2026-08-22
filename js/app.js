@@ -8,15 +8,17 @@ const App = (() => {
         kana:   () => KanaGame,
         write:  () => StrokeMode,
         browse: () => BrowseMode,
+        cheat:  () => CheatMode,
     };
 
     let mode = "words";
 
     async function boot() {
-        const [kanaData, words, strokeData] = await Promise.all([
+        const [kanaData, words, strokeData, sheets] = await Promise.all([
             loadJSON("data/kana.json"),
             loadJSON("data/words.json").catch(() => []),
             loadJSON("data/strokes.json").catch(() => ({ strokes: {} })),
+            loadJSON("data/sheets.json").catch(() => []),
         ]);
 
         Romaji.init(kanaData.kana);
@@ -26,6 +28,7 @@ const App = (() => {
         KanaGame.init(kanaData);
         StrokeMode.init(kanaData, strokeData);
         BrowseMode.init(words);
+        CheatMode.init(sheets);
 
         document.getElementById("tabs").addEventListener("click", e => {
             const tab = e.target.closest(".tab");

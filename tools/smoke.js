@@ -57,15 +57,16 @@ globalThis.App = { onAnswer() {} };
 // ── Load the app modules into one shared scope ──────────────────────────────
 
 const SOURCES = ["js/romaji.js", "js/store.js", "js/audio.js", "js/furigana.js",
-                 "js/words.js", "js/kana-game.js", "js/browse.js"];
+                 "js/words.js", "js/kana-game.js", "js/browse.js", "js/cheat.js"];
 const bundle = SOURCES.map(read).join("\n;\n");
 const exported = new Function(
-    bundle + "\n;return { Romaji, Store, Speech, Furigana, WordMode, KanaGame, BrowseMode };"
+    bundle + "\n;return { Romaji, Store, Speech, Furigana, WordMode, KanaGame, BrowseMode, CheatMode };"
 )();
-const { Romaji, Store, Speech, WordMode, KanaGame, BrowseMode } = exported;
+const { Romaji, Store, Speech, WordMode, KanaGame, BrowseMode, CheatMode } = exported;
 
 const kanaData = JSON.parse(read("data/kana.json"));
 const words = JSON.parse(read("data/words.json"));
+const sheets = JSON.parse(read("data/sheets.json"));
 
 localStorage.clear();
 Romaji.init(kanaData.kana);
@@ -208,6 +209,35 @@ if (list.children.length !== words.length) {
     fail(`browse shows ${list.children.length} rows, expected ${words.length}`);
 }
 ok(`${list.children.length} rows, e.g. ${list.children[0].textContent.trim().replace(/\s+/g, " ")}`);
+
+// ── Cheat sheets ────────────────────────────────────────────────────────────
+
+console.log("cheat sheets");
+CheatMode.init(sheets);
+CheatMode.onShow();
+const cheatBody = doc.getElementById("cheat-body");
+const cheatHtml = cheatBody.innerHTML;
+const expectedCells = sheets[0].grids
+    .flatMap(g => g.rows).flatMap(r => r.cells).filter(c => c.kana).length;
+const renderedCells = cheatHtml.split("data-kana=").length - 1;
+if (renderedCells !== expectedCells) {
+    fail(`first sheet rendered ${renderedCells} word cells, expected ${expectedCells}`);
+}
+if (!cheatHtml.includes("ototoi")) fail("derived romaji missing from the sheet");
+if (!cheatHtml.includes("rule-body")) fail("rules did not render");
+if (doc.getElementById("cheat-sheet").closest(".controls").hidden) {
+    fail("two sheets loaded but the picker is hidden");
+}
+ok(`sheet "${sheets[0].title}" rendered ${renderedCells} cells and ${sheets[0].rules.length} rules`);
+
+// Switching sheets must rebuild the body, not append to it.
+const picker = doc.getElementById("cheat-sheet");
+picker.value = "1";
+fire(picker, "change");
+if (!cheatBody.innerHTML.includes(sheets[1].title)) fail("switching sheets did not re-render");
+if (cheatBody.innerHTML.includes(sheets[0].blurb)) fail("old sheet left behind after switching");
+if (!cheatBody.innerHTML.includes("kin'youbi")) fail("weekday romaji missing the ん apostrophe");
+ok(`switched to "${sheets[1].title}"`);
 
 // ── SRS actually adapts ─────────────────────────────────────────────────────
 
