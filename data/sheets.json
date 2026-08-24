@@ -105,6 +105,10 @@
             {
                 "title": "Two freebies",
                 "body": "oto- means 'before last' on both scales: ototoi, ototoshi. And the future starts with a: ashita (+1), asatte (+2). mai- is the one prefix that works in every single column."
+            },
+            {
+                "title": "None of these take ni",
+                "body": "Relative time words hook onto the sentence bare: kyou ikimasu, senshuu ikimashita, mainichi benkyou shimasu. ni is for time that carries a number or a calendar slot — kuji ni, shichigatsu ni, tanjoubi ni. Saying senshuu ni is the usual slip."
             }
         ]
     },
@@ -271,6 +275,120 @@
             {
                 "title": "han saves you a mouthful",
                 "body": "sanji han — half past three. Nobody counts out sanji sanjuppun when talking. And gozen / gogo go in front of the hour, not after it: gozen kuji, gogo sanji."
+            }
+        ]
+    },
+    {
+        "id": "going",
+        "title": "Going somewhere",
+        "blurb": "One shape carries most travel sentences: when + how + where + verb. The slots are easy; the particles are what goes wrong, so this sheet is mostly them.",
+        "legend": [
+            { "term": "de", "gloss": "by / using" },
+            { "term": "ni", "gloss": "to / at" },
+            { "term": "e",  "gloss": "toward — written he" },
+            { "term": "to", "gloss": "together with" }
+        ],
+        "grids": [
+            {
+                "title": "the sentence, slot by slot",
+                "columns": ["example", "particle", "watch out"],
+                "rows": [
+                    { "label": "when", "cells": [
+                        { "kana": "せんしゅう", "en": "last week" },
+                        { "term": "—", "en": "relative time takes none" },
+                        { "term": "ni", "en": "only with a number: kuji ni" }
+                    ] },
+                    { "label": "how", "cells": [
+                        { "kana": "でんしゃで", "romaji": "densha de", "en": "by train" },
+                        { "term": "de", "en": "the means" },
+                        { "term": "aruite", "en": "on foot takes no de" }
+                    ] },
+                    { "label": "who with", "cells": [
+                        { "kana": "ともだちと", "romaji": "tomodachi to", "en": "with a friend" },
+                        { "term": "to", "en": "a companion" },
+                        { "term": "hitori de", "en": "alone uses de, not to" }
+                    ] },
+                    { "label": "where", "cells": [
+                        { "kana": "びょういんに", "romaji": "byouin ni", "en": "to the hospital" },
+                        { "term": "ni / e", "en": "the destination" },
+                        { "term": "e", "en": "written he, said e" }
+                    ] },
+                    { "label": "verb", "cells": [
+                        { "kana": "いきます", "en": "go" },
+                        { "term": "—", "en": "kimasu come, kaerimasu go home" },
+                        { "term": "last", "en": "the verb always ends the sentence" }
+                    ] }
+                ]
+            },
+            {
+                "title": "the ones that trip you up",
+                "columns": ["phrase", "why it is like that"],
+                "rows": [
+                    { "label": "by train", "cells": [
+                        { "kana": "でんしゃで", "romaji": "densha de", "en": "by train" },
+                        { "term": "de", "en": "every vehicle: basu de, jitensha de, hikouki de, fune de" }
+                    ] },
+                    { "label": "on foot", "cells": [
+                        { "kana": "あるいて", "en": "on foot", "odd": true },
+                        { "term": "—", "en": "already a te-form verb, so no de — aruite ikimasu" }
+                    ] },
+                    { "label": "alone", "cells": [
+                        { "kana": "ひとりで", "romaji": "hitori de", "en": "alone" },
+                        { "term": "de", "en": "a state you are in, so it keeps de" }
+                    ] },
+                    { "label": "with a friend", "cells": [
+                        { "kana": "ともだちと", "romaji": "tomodachi to", "en": "with a friend", "odd": true },
+                        { "term": "to", "en": "a companion never takes de" }
+                    ] },
+                    { "label": "to the station", "cells": [
+                        { "kana": "えきに", "romaji": "eki ni", "en": "to the station" },
+                        { "term": "ni / e", "en": "e is written he — same trick as konnichiwa" }
+                    ] }
+                ]
+            },
+            {
+                "title": "the four endings",
+                "columns": ["said out loud", "form"],
+                "rows": [
+                    { "label": "now", "cells": [
+                        { "kana": "いきます", "en": "go / will go" },
+                        { "term": "-masu", "en": "present or future, both" }
+                    ] },
+                    { "label": "past", "cells": [
+                        { "kana": "いきました", "en": "went" },
+                        { "term": "-mashita", "en": "" }
+                    ] },
+                    { "label": "not", "cells": [
+                        { "kana": "いきません", "en": "do not go" },
+                        { "term": "-masen", "en": "" }
+                    ] },
+                    { "label": "not, past", "cells": [
+                        { "kana": "いきませんでした", "en": "did not go" },
+                        { "term": "-masen deshita", "en": "two words — the past sits on deshita" }
+                    ] }
+                ]
+            }
+        ],
+        "rules": [
+            {
+                "title": "The shape",
+                "body": "when + how + where + verb, and the topic is usually dropped: senshuu, densha de toukyou e ikimashita. watashi wa only goes in when you are switching who the sentence is about."
+            },
+            {
+                "title": "e is spelled he",
+                "body": "The destination particle is written he and said e — the same trick as konnichiwa. ni does the same job and is the commoner pick: byouin ni ikimasu. e leans on the direction, ni on the arrival."
+            },
+            {
+                "title": "de is the means, to is the company",
+                "body": "Anything you travel by takes de: densha de, jitensha de, takushii de. A person you go with takes to: tomodachi to ikimashita. hitori de looks like an exception and is not — alone is a state, not a companion."
+            },
+            {
+                "title": "aruite takes nothing",
+                "body": "aruite ikimasu — I go on foot. It is already a te-form verb, so nothing follows it. aruite de is always wrong."
+            },
+            {
+                "title": "Time words: ni or nothing",
+                "body": "kyou, ashita, senshuu, raigetsu, mainichi attach bare. Time with a number or a calendar slot takes ni: kuji ni, shichigatsu ni, tanjoubi ni. Weekdays go either way — getsuyoubi ni ikimasu or getsuyoubi, ikimasu."
             }
         ]
     }
