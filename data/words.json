@@ -109,9 +109,9 @@
     { "kanji": "", "kana": "パン", "english": "bread", "group": "Food & drink", "note": "from Portuguese pão", "marked": false },
     { "kanji": "", "kana": "ビール", "english": "beer", "group": "Food & drink", "note": "loanword — katakana", "marked": false },
     { "kanji": "箸", "kana": "はし", "english": "chopsticks", "group": "Food & drink", "note": "お箸 in polite use", "marked": true },
-    { "kanji": "", "kana": "スプーン", "english": "spoon", "group": "Food & drink", "note": "loanword — katakana", "marked": true },
-    { "kanji": "", "kana": "ナイフ", "english": "knife", "group": "Food & drink", "note": "loanword — katakana", "marked": true },
-    { "kanji": "", "kana": "フォーク", "english": "fork", "group": "Food & drink", "note": "loanword — katakana", "marked": true },
+    { "kanji": "", "kana": "スプーン", "english": "spoon", "group": "Food & drink", "note": "loanword — katakana", "marked": false },
+    { "kanji": "", "kana": "ナイフ", "english": "knife", "group": "Food & drink", "note": "loanword — katakana", "marked": false },
+    { "kanji": "", "kana": "フォーク", "english": "fork", "group": "Food & drink", "note": "loanword — katakana", "marked": false },
 
     { "kanji": "食べます", "kana": "たべます", "english": "to eat", "group": "Verbs", "note": "ichidan (る-verb) — dictionary form 食べる (たべる)", "marked": false },
     { "kanji": "飲みます", "kana": "のみます", "english": "to drink", "group": "Verbs", "note": "godan (う-verb) — dictionary form 飲む (のむ)", "marked": false },
