@@ -108,7 +108,7 @@
             },
             {
                 "title": "None of these take ni",
-                "body": "Relative time words hook onto the sentence bare: kyou ikimasu, senshuu ikimashita, mainichi benkyou shimasu. ni is for time that carries a number or a calendar slot — kuji ni, shichigatsu ni, tanjoubi ni. Saying senshuu ni is the usual slip."
+                "body": "Relative time words hook onto the sentence bare: kyou ikimasu, senshuu ikimashita, mainichi benkyou shimasu. ni is for time that carries a number or a calendar slot — kuji ni, shichigatsu ni, tanjoubi ni. Saying senshuu ni is the usual slip. itsu never takes it either — itsu ikimasu ka. Parts of the day and shuumatsu sit in between: asa ni hon o yomimasu and asa hon o yomimasu are both fine."
             }
         ]
     },
@@ -389,6 +389,161 @@
             {
                 "title": "Time words: ni or nothing",
                 "body": "kyou, ashita, senshuu, raigetsu, mainichi attach bare. Time with a number or a calendar slot takes ni: kuji ni, shichigatsu ni, tanjoubi ni. Weekdays go either way — getsuyoubi ni ikimasu or getsuyoubi, ikimasu."
+            }
+        ]
+    },
+    {
+        "id": "calendar",
+        "title": "Months and dates",
+        "blurb": "Months are the number plus gatsu and never break that shape — only three numbers change their reading. Dates are the opposite: the first ten are words of their own, and three more survive above ten.",
+        "legend": [
+            { "term": "-gatsu", "gloss": "month of the year" },
+            { "term": "-nichi",  "gloss": "day of the month" },
+            { "term": "-ka",     "gloss": "the older day counter" },
+            { "term": "ni",      "gloss": "on / in — both take it" }
+        ],
+        "grids": [
+            {
+                "title": "months — gatsu",
+                "columns": ["month", "the trap"],
+                "rows": [
+                    { "label": "1", "cells": [
+                        { "kana": "いちがつ", "en": "January" },
+                        { }
+                    ] },
+                    { "label": "2", "cells": [
+                        { "kana": "にがつ", "en": "February" },
+                        { }
+                    ] },
+                    { "label": "3", "cells": [
+                        { "kana": "さんがつ", "en": "March" },
+                        { }
+                    ] },
+                    { "label": "4", "cells": [
+                        { "kana": "しがつ", "en": "April", "odd": true },
+                        { "term": "shi", "en": "never yon or yo" }
+                    ] },
+                    { "label": "5", "cells": [
+                        { "kana": "ごがつ", "en": "May" },
+                        { }
+                    ] },
+                    { "label": "6", "cells": [
+                        { "kana": "ろくがつ", "en": "June" },
+                        { }
+                    ] },
+                    { "label": "7", "cells": [
+                        { "kana": "しちがつ", "en": "July", "odd": true },
+                        { "term": "shichi", "en": "never nana" }
+                    ] },
+                    { "label": "8", "cells": [
+                        { "kana": "はちがつ", "en": "August" },
+                        { }
+                    ] },
+                    { "label": "9", "cells": [
+                        { "kana": "くがつ", "en": "September", "odd": true },
+                        { "term": "ku", "en": "never kyuu" }
+                    ] },
+                    { "label": "10", "cells": [
+                        { "kana": "じゅうがつ", "en": "October" },
+                        { }
+                    ] },
+                    { "label": "11", "cells": [
+                        { "kana": "じゅういちがつ", "en": "November" },
+                        { }
+                    ] },
+                    { "label": "12", "cells": [
+                        { "kana": "じゅうにがつ", "en": "December" },
+                        { }
+                    ] }
+                ]
+            },
+            {
+                "title": "dates — read down the ones digit",
+                "columns": ["1–10", "11–20", "21–30", "31"],
+                "rows": [
+                    { "label": "1", "cells": [
+                        { "kana": "ついたち", "en": "1st", "odd": true },
+                        { "kana": "じゅういちにち", "en": "11th" },
+                        { "kana": "にじゅういちにち", "en": "21st" },
+                        { "kana": "さんじゅういちにち", "en": "31st" }
+                    ] },
+                    { "label": "2", "cells": [
+                        { "kana": "ふつか", "en": "2nd", "odd": true },
+                        { "kana": "じゅうににち", "en": "12th" },
+                        { "kana": "にじゅうににち", "en": "22nd" },
+                        { }
+                    ] },
+                    { "label": "3", "cells": [
+                        { "kana": "みっか", "en": "3rd", "odd": true },
+                        { "kana": "じゅうさんにち", "en": "13th" },
+                        { "kana": "にじゅうさんにち", "en": "23rd" },
+                        { }
+                    ] },
+                    { "label": "4", "cells": [
+                        { "kana": "よっか", "en": "4th", "odd": true },
+                        { "kana": "じゅうよっか", "en": "14th", "odd": true },
+                        { "kana": "にじゅうよっか", "en": "24th", "odd": true },
+                        { }
+                    ] },
+                    { "label": "5", "cells": [
+                        { "kana": "いつか", "en": "5th", "odd": true },
+                        { "kana": "じゅうごにち", "en": "15th" },
+                        { "kana": "にじゅうごにち", "en": "25th" },
+                        { }
+                    ] },
+                    { "label": "6", "cells": [
+                        { "kana": "むいか", "en": "6th", "odd": true },
+                        { "kana": "じゅうろくにち", "en": "16th" },
+                        { "kana": "にじゅうろくにち", "en": "26th" },
+                        { }
+                    ] },
+                    { "label": "7", "cells": [
+                        { "kana": "なのか", "en": "7th", "odd": true },
+                        { "kana": "じゅうしちにち", "en": "17th" },
+                        { "kana": "にじゅうしちにち", "en": "27th" },
+                        { }
+                    ] },
+                    { "label": "8", "cells": [
+                        { "kana": "ようか", "en": "8th", "odd": true },
+                        { "kana": "じゅうはちにち", "en": "18th" },
+                        { "kana": "にじゅうはちにち", "en": "28th" },
+                        { }
+                    ] },
+                    { "label": "9", "cells": [
+                        { "kana": "ここのか", "en": "9th", "odd": true },
+                        { "kana": "じゅうくにち", "en": "19th" },
+                        { "kana": "にじゅうくにち", "en": "29th" },
+                        { }
+                    ] },
+                    { "label": "10", "cells": [
+                        { "kana": "とおか", "en": "10th", "odd": true },
+                        { "kana": "はつか", "en": "20th", "odd": true },
+                        { "kana": "さんじゅうにち", "en": "30th" },
+                        { }
+                    ] }
+                ]
+            }
+        ],
+        "rules": [
+            {
+                "title": "Number + gatsu, always",
+                "body": "The shape never bends: ichigatsu, nigatsu, sangatsu, gogatsu. Only the number bends its reading — shigatsu, shichigatsu, kugatsu. There is no yongatsu, nanagatsu or kyuugatsu."
+            },
+            {
+                "title": "4, 7 and 9 again — but not the same way",
+                "body": "The clock trips on the same three numbers, and only two of them agree: shichiji / shichigatsu and kuji / kugatsu match, but the hour is yoji while the month is shigatsu. 4 is the one to watch."
+            },
+            {
+                "title": "The first ten are their own words",
+                "body": "tsuitachi, futsuka, mikka, yokka, itsuka, muika, nanoka, youka, kokonoka, tooka. Note tsuitachi only means the 1st — one day is ichinichi."
+            },
+            {
+                "title": "Three survivors above ten",
+                "body": "juuyokka (14), hatsuka (20) and nijuuyokka (24) keep the old reading. Everything else from 11 to 31 is just the number + nichi: juuichinichi, nijuurokunichi, sanjuuichinichi."
+            },
+            {
+                "title": "Both take ni",
+                "body": "A date or a month is a calendar slot, so it takes ni: shigatsu ni ikimasu, hatsuka ni kaerimasu. Compare kyou, ashita and senshuu, which take nothing at all."
             }
         ]
     }
