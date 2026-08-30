@@ -133,6 +133,45 @@ const Store = (() => {
         return shuffle(picked);
     }
 
+    /**
+     * Deal a round off a shuffled deck.
+     *
+     * Drawing at random every round is what makes the same words keep turning
+     * up: ten cards drawn from sixty-odd, put straight back in the box. So the
+     * marked set is dealt instead — the deck is shuffled once, rounds come off
+     * the top, and it only reshuffles when it runs out. Every word comes up
+     * once before any word comes up twice.
+     *
+     * @param {string} deck  storage key for this deck's remaining cards
+     * @param {Array}  pool  every item currently in the set
+     * @param {number} count how many to deal
+     * @param {(item:any)=>string} idOf
+     */
+    function dealRound(deck, pool, count, idOf) {
+        if (pool.length <= count) return shuffle(pool.slice());
+
+        const key   = "deck_" + deck;
+        const byId  = new Map(pool.map(x => [idOf(x), x]));
+        // Words dropped from the set since the last deal are no longer cards.
+        let queue   = read(key, []).filter(id => byId.has(id));
+        const picked = [];
+
+        while (picked.length < count) {
+            if (!queue.length) {
+                // Reshuffling mid-round would let a word repeat inside the same
+                // round, so anything already dealt goes to the bottom.
+                const dealt = new Set(picked.map(idOf));
+                const fresh = shuffle([...byId.keys()]);
+                queue = [...fresh.filter(id => !dealt.has(id)),
+                         ...fresh.filter(id => dealt.has(id))];
+            }
+            picked.push(byId.get(queue.shift()));
+        }
+
+        write(key, queue);
+        return shuffle(picked);
+    }
+
     function shuffle(arr) {
         for (let i = arr.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
@@ -165,6 +204,6 @@ const Store = (() => {
         };
     }
 
-    return { pref, setPref, grade, isMastered, pickRound, shuffle,
+    return { pref, setPref, grade, isMastered, pickRound, dealRound, shuffle,
              bumpStreak, streak, stats, stateOf, MASTERED_AT };
 })();

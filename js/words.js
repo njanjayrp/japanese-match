@@ -115,12 +115,12 @@ const WordMode = (() => {
                 : 'No words yet. Add some to <code>data/words.json</code> and reload.';
             return;
         }
-        // ★ Marked is the exam sheet: draw it flat. No weighting, no mastery
-        // retirement — every marked word keeps its full chance every round, so
-        // nothing quietly drops out after five right answers.
+        // ★ Marked is the exam sheet: no weighting, no mastery retirement, and
+        // dealt off a shuffled deck rather than drawn fresh each round — the
+        // whole set goes past you before anything comes back.
         const n = Math.min(ROUND, p.length);
         round = group === "__marked__"
-            ? Store.shuffle(p.slice()).slice(0, n)
+            ? Store.dealRound("words_marked", p, n, idOf)
             : Store.pickRound("words", p, n, idOf);
         idx = 0;
         show();
