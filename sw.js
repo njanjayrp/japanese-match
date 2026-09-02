@@ -1,7 +1,7 @@
 // Offline cache. Bump CACHE_NAME whenever you ship changed code or data —
 // the old cache is dropped on activate, so the next load picks everything up.
 
-const CACHE_NAME = 'japanese-match-v17';
+const CACHE_NAME = 'japanese-match-v18';
 
 const ASSETS = [
     './',

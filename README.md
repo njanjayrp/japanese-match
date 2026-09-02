@@ -50,9 +50,15 @@ and drilling them one flashcard at a time hides the very pattern that makes them
 cheap to learn. So this mode lays the grid out whole, stripes the cells that
 break the pattern, and states the rules underneath. Tapping a cell speaks it.
 
-Every quiz mode shares one spaced-repetition store: wrong answers come back soon
-and often, right answers fade, and five correct in a row retires an item until
-the pool runs thin.
+Words are dealt off a shuffled deck, one group at a time: the whole group goes
+past you before any word comes back. A card leaves the deck as it appears, not a
+round at a time, so quitting three words in doesn't cost you the seven you never
+saw.
+
+Kana uses the spaced-repetition store instead — wrong answers come back soon and
+often, right answers fade, and five correct in a row retires a sign until the
+pool runs thin. Both modes record every answer either way, so the stats and the
+answer streak work the same in each.
 
 ## Adding words
 

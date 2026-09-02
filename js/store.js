@@ -134,42 +134,44 @@ const Store = (() => {
     }
 
     /**
-     * Deal a round off a shuffled deck.
+     * Deal the next card off a shuffled deck.
      *
      * Drawing at random every round is what makes the same words keep turning
-     * up: ten cards drawn from sixty-odd, put straight back in the box. So the
-     * marked set is dealt instead — the deck is shuffled once, rounds come off
-     * the top, and it only reshuffles when it runs out. Every word comes up
-     * once before any word comes up twice.
+     * up: ten cards drawn from sixty-odd, put straight back in the box. So
+     * words are dealt instead — the deck is shuffled once, cards come off the
+     * top, and it only reshuffles when it runs out.
      *
-     * @param {string} deck  storage key for this deck's remaining cards
-     * @param {Array}  pool  every item currently in the set
-     * @param {number} count how many to deal
+     * One card at a time, not a round at a time: a round reserved ten cards up
+     * front and lost the ones you never reached, so quitting after three words
+     * burned the other seven for that whole pass through the deck. A card
+     * leaves the deck at the moment it goes on screen, so every card that's
+     * gone is one you actually saw.
+     *
+     * @param {string} deck    storage key for this deck's remaining cards
+     * @param {Array}  pool    every item currently in the set
      * @param {(item:any)=>string} idOf
+     * @param {string[]} hold  ids already dealt into the round on screen; they
+     *                         go to the bottom of a fresh shuffle so a pass
+     *                         boundary can't repeat one straight away
      */
-    function dealRound(deck, pool, count, idOf) {
-        if (pool.length <= count) return shuffle(pool.slice());
+    function dealCard(deck, pool, idOf, hold = []) {
+        if (!pool.length) return null;
 
-        const key   = "deck_" + deck;
-        const byId  = new Map(pool.map(x => [idOf(x), x]));
+        const key  = "deck_" + deck;
+        const byId = new Map(pool.map(x => [idOf(x), x]));
         // Words dropped from the set since the last deal are no longer cards.
-        let queue   = read(key, []).filter(id => byId.has(id));
-        const picked = [];
+        let queue  = read(key, []).filter(id => byId.has(id));
 
-        while (picked.length < count) {
-            if (!queue.length) {
-                // Reshuffling mid-round would let a word repeat inside the same
-                // round, so anything already dealt goes to the bottom.
-                const dealt = new Set(picked.map(idOf));
-                const fresh = shuffle([...byId.keys()]);
-                queue = [...fresh.filter(id => !dealt.has(id)),
-                         ...fresh.filter(id => dealt.has(id))];
-            }
-            picked.push(byId.get(queue.shift()));
+        if (!queue.length) {
+            const held  = new Set(hold);
+            const fresh = shuffle([...byId.keys()]);
+            queue = [...fresh.filter(id => !held.has(id)),
+                     ...fresh.filter(id => held.has(id))];
         }
 
+        const card = byId.get(queue.shift());
         write(key, queue);
-        return shuffle(picked);
+        return card;
     }
 
     function shuffle(arr) {
@@ -204,6 +206,6 @@ const Store = (() => {
         };
     }
 
-    return { pref, setPref, grade, isMastered, pickRound, dealRound, shuffle,
+    return { pref, setPref, grade, isMastered, pickRound, dealCard, shuffle,
              bumpStreak, streak, stats, stateOf, MASTERED_AT };
 })();

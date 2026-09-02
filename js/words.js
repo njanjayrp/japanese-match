@@ -115,15 +115,35 @@ const WordMode = (() => {
                 : 'No words yet. Add some to <code>data/words.json</code> and reload.';
             return;
         }
-        // ★ Marked is the exam sheet: no weighting, no mastery retirement, and
-        // dealt off a shuffled deck rather than drawn fresh each round — the
-        // whole set goes past you before anything comes back.
-        const n = Math.min(ROUND, p.length);
-        round = group === "__marked__"
-            ? Store.dealRound("words_marked", p, n, idOf)
-            : Store.pickRound("words", p, n, idOf);
+        // Every group is dealt off a shuffled deck rather than drawn fresh each
+        // round: no weighting, no mastery retirement, the whole group goes past
+        // you before anything comes back. Each group keeps its own deck, so
+        // switching groups and back resumes where you left off. Cards are drawn
+        // as they're shown, never a round ahead — a round dealt up front loses
+        // the cards you never reach, and starting a round is exactly what every
+        // app launch and every toggle does.
+        round = [];
         idx = 0;
+        deal();
         show();
+    }
+
+    // The deck for the group in view. A round is just the progress counter:
+    // ten cards, or the whole group if it's smaller.
+    function deckKey() {
+        return "words_" + group;
+    }
+
+    function roundSize() {
+        return Math.min(ROUND, pool().length);
+    }
+
+    function deal() {
+        while (round.length <= idx) {
+            const card = Store.dealCard(deckKey(), pool(), idOf, round.map(idOf));
+            if (!card) return;
+            round.push(card);
+        }
     }
 
     function show() {
@@ -133,7 +153,7 @@ const WordMode = (() => {
         el["word-reveal"].hidden = true;
         el["word-options"].hidden = false;
         el["word-question"].hidden = false;
-        el["word-progress"].textContent = `${idx + 1} / ${round.length}`;
+        el["word-progress"].textContent = `${idx + 1} / ${roundSize()}`;
         renderStage();
     }
 
@@ -346,7 +366,7 @@ const WordMode = (() => {
         el["reveal-english"].textContent = w.english;
         el["reveal-note"].textContent = w.note || "";
         el["reveal-note"].hidden = !w.note;
-        el["word-next"].textContent = idx === round.length - 1 ? "Finish round" : "Next";
+        el["word-next"].textContent = idx === roundSize() - 1 ? "Finish round" : "Next";
 
         Speech.say(reading);
         el["word-next"].focus({ preventScroll: true });
@@ -354,8 +374,9 @@ const WordMode = (() => {
 
     function next() {
         idx += 1;
-        if (idx >= round.length) start();
-        else show();
+        if (idx >= roundSize()) { start(); return; }
+        deal();
+        show();
     }
 
     function onShow() {
