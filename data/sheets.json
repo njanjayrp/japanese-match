@@ -706,7 +706,7 @@
             { "term": "i-adj",       "gloss": "ends in hiragana い" },
             { "term": "na-adj",      "gloss": "everything else" },
             { "term": "-kunai",      "gloss": "the i negative" },
-            { "term": "ja arimasen", "gloss": "the na negative" }
+            { "term": "ja nai desu", "gloss": "the na negative" }
         ],
         "grids": [
             {
@@ -774,16 +774,16 @@
                         { "term": "Adj + です" }
                     ] },
                     { "label": "not now", "cells": [
-                        { "kana": "しずかじゃありません", "romaji": "shizuka ja arimasen", "en": "it isn't quiet" },
-                        { "term": "Adj + じゃありません" }
+                        { "kana": "しずかじゃないです", "romaji": "shizuka ja nai desu", "en": "it isn't quiet" },
+                        { "term": "Adj + じゃないです" }
                     ] },
                     { "label": "was", "cells": [
                         { "kana": "しずかでした", "romaji": "shizuka deshita", "en": "it was quiet" },
                         { "term": "Adj + でした" }
                     ] },
                     { "label": "wasn't", "cells": [
-                        { "kana": "しずかじゃありませんでした", "romaji": "shizuka ja arimasen deshita", "en": "it wasn't quiet" },
-                        { "term": "Adj + じゃありませんでした" }
+                        { "kana": "しずかじゃなかったです", "romaji": "shizuka ja nakatta desu", "en": "it wasn't quiet" },
+                        { "term": "Adj + じゃなかったです" }
                     ] }
                 ]
             },
@@ -839,7 +839,7 @@
             },
             {
                 "title": "i-adjectives conjugate, na-adjectives don't",
-                "body": "The い ending carries tense and negation itself. A na-adjective never changes shape: desu, deshita and ja arimasen do all the work, exactly as they would after a noun. That is the real split between the two families — everything else follows from it."
+                "body": "The い ending carries tense and negation itself. A na-adjective never changes shape: desu, deshita and ja nai desu do all the work, exactly as they would after a noun. That is the real split between the two families — everything else follows from it."
             },
             {
                 "title": "na only appears in front of a noun",
@@ -847,15 +847,15 @@
             },
             {
                 "title": "The negative is itself an i-adjective",
-                "body": "ookiku nai ends in い and behaves like any other i-adjective, which is why the past negative is ookiku nakatta desu rather than something new. Learn the negative and the past negative falls out of it — the same goes for na-adjectives, where ja arimasen simply takes deshita."
+                "body": "nai ends in い and conjugates like any other i-adjective. That is why ookiku nai becomes ookiku nakatta desu — and why shizuka ja nai becomes shizuka ja nakatta desu. Both families end up running the same negative, which is the reason ja nai desu is worth preferring: learn nai once and every negative in this sheet falls out of it."
             },
             {
                 "title": "ii is the exception worth drilling",
                 "body": "ii desu, but yoku nai desu, yokatta desu, yoku nakatta desu. Every form except the plain present is built from yoi, and ii is common enough that the wrong form is noticeable."
             },
             {
-                "title": "ja arimasen is spoken, de wa arimasen is written",
-                "body": "Both negate a na-adjective and mean the same thing. ja is the contraction of de wa, so use ja arimasen when talking and keep de wa arimasen for anything formal."
+                "title": "Your textbook will say ja arimasen",
+                "body": "shizuka ja arimasen and shizuka ja arimasen deshita mean exactly the same as the forms above and are what Minna no Nihongo drills, so recognise them. ja nai desu is the everyday spoken version and keeps the negative identical to the i-adjectives, which is one pattern to hold instead of two. de wa arimasen is the same thing again, formal and mostly written — ja is just the contraction of de wa."
             }
         ]
     }
