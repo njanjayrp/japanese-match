@@ -546,5 +546,317 @@
                 "body": "A date or a month is a calendar slot, so it takes ni: shigatsu ni ikimasu, hatsuka ni kaerimasu. Compare kyou, ashita and senshuu, which take nothing at all."
             }
         ]
+    },
+    {
+        "id": "money",
+        "title": "Big numbers and money",
+        "blurb": "English groups digits in threes and Japanese groups them in fours, so the whole difficulty of big numbers is where you put the break. Once 10,000 is one word — man — a price reads straight off the page.",
+        "legend": [
+            { "term": "-en",   "gloss": "yen — the counter for money" },
+            { "term": "man",   "gloss": "10,000" },
+            { "term": "oku",   "gloss": "100,000,000" },
+            { "term": "ikura", "gloss": "how much" }
+        ],
+        "grids": [
+            {
+                "title": "the scales",
+                "columns": ["reading", "the catch"],
+                "rows": [
+                    { "label": "10", "cells": [
+                        { "kana": "じゅう", "en": "ten" },
+                        {}
+                    ] },
+                    { "label": "100", "cells": [
+                        { "kana": "ひゃく", "en": "a hundred" },
+                        { "term": "hyaku", "en": "never ichihyaku" }
+                    ] },
+                    { "label": "1,000", "cells": [
+                        { "kana": "せん", "en": "a thousand" },
+                        { "term": "sen", "en": "never issen" }
+                    ] },
+                    { "label": "10,000", "cells": [
+                        { "kana": "いちまん", "en": "ten thousand", "odd": true },
+                        { "term": "ichiman", "en": "here the ichi comes back, always" }
+                    ] },
+                    { "label": "100,000", "cells": [
+                        { "kana": "じゅうまん", "en": "a hundred thousand" },
+                        { "term": "10 man", "en": "you count man, not thousands" }
+                    ] },
+                    { "label": "1,000,000", "cells": [
+                        { "kana": "ひゃくまん", "en": "a million" },
+                        { "term": "100 man" }
+                    ] },
+                    { "label": "10,000,000", "cells": [
+                        { "kana": "せんまん", "en": "ten million" },
+                        { "term": "1,000 man" }
+                    ] },
+                    { "label": "100,000,000", "cells": [
+                        { "kana": "いちおく", "en": "a hundred million", "odd": true },
+                        { "term": "oku", "en": "the next scale up — 10,000 man" }
+                    ] }
+                ]
+            },
+            {
+                "title": "the sounds that move",
+                "columns": ["reading", "what changed"],
+                "rows": [
+                    { "label": "300", "cells": [
+                        { "kana": "さんびゃく", "en": "three hundred" },
+                        { "term": "h → b" }
+                    ] },
+                    { "label": "600", "cells": [
+                        { "kana": "ろっぴゃく", "en": "six hundred", "odd": true },
+                        { "term": "roku → rop, h → p" }
+                    ] },
+                    { "label": "800", "cells": [
+                        { "kana": "はっぴゃく", "en": "eight hundred", "odd": true },
+                        { "term": "hachi → hap, h → p" }
+                    ] },
+                    { "label": "3,000", "cells": [
+                        { "kana": "さんぜん", "en": "three thousand" },
+                        { "term": "s → z" }
+                    ] },
+                    { "label": "8,000", "cells": [
+                        { "kana": "はっせん", "en": "eight thousand", "odd": true },
+                        { "term": "hachi → has" }
+                    ] }
+                ]
+            },
+            {
+                "title": "prices",
+                "columns": ["how you say it", "how it is built"],
+                "rows": [
+                    { "label": "¥100", "cells": [
+                        { "kana": "ひゃくえん", "romaji": "hyaku en", "en": "a hundred yen" },
+                        {}
+                    ] },
+                    { "label": "¥500", "cells": [
+                        { "kana": "ごひゃくえん", "romaji": "gohyaku en", "en": "five hundred yen" },
+                        {}
+                    ] },
+                    { "label": "¥1,000", "cells": [
+                        { "kana": "せんえん", "en": "a thousand yen" },
+                        { "term": "sen + en" }
+                    ] },
+                    { "label": "¥1,200", "cells": [
+                        { "kana": "せんにひゃくえん", "romaji": "sen nihyaku en", "en": "1,200 yen" },
+                        { "term": "sen + nihyaku" }
+                    ] },
+                    { "label": "¥3,000", "cells": [
+                        { "kana": "さんぜんえん", "en": "3,000 yen" },
+                        { "term": "sanzen", "en": "not sansen" }
+                    ] },
+                    { "label": "¥10,000", "cells": [
+                        { "kana": "いちまんえん", "en": "10,000 yen", "odd": true },
+                        { "term": "ichiman", "en": "there is no juusen" }
+                    ] },
+                    { "label": "¥25,000", "cells": [
+                        { "kana": "にまんごせんえん", "romaji": "niman gosen'en", "en": "25,000 yen" },
+                        { "term": "2 man, then 5 sen", "en": "the man block is read first" }
+                    ] }
+                ]
+            },
+            {
+                "title": "at the till",
+                "columns": ["what you say", "when"],
+                "rows": [
+                    { "label": "asking", "cells": [
+                        { "kana": "いくらですか", "romaji": "ikura desu ka", "en": "how much is it?" },
+                        { "term": "kore wa ikura desu ka", "en": "when you are pointing at it" }
+                    ] },
+                    { "label": "answering", "cells": [
+                        { "kana": "さんぜんえんです", "romaji": "sanzen'en desu", "en": "it is 3,000 yen" },
+                        {}
+                    ] },
+                    { "label": "reacting", "cells": [
+                        { "kana": "たかいですね", "romaji": "takai desu ne", "en": "that is pricey, isn't it" },
+                        { "term": "yasui desu ne", "en": "the other way round" }
+                    ] }
+                ]
+            }
+        ],
+        "rules": [
+            {
+                "title": "Break the digits into fours, not threes",
+                "body": "The comma English writes every three digits is the wrong cut here. Split 250,000 as 25|0000 and it reads off directly: nijuugo man. Reading it the English way — two hundred and fifty thousand — forces a conversion every single time, and that is the whole reason big numbers feel hard."
+            },
+            {
+                "title": "hyaku and sen drop the ichi, man never does",
+                "body": "A hundred is hyaku and a thousand is sen, with nothing in front. Ten thousand is always ichiman — never juusen, and never bare man."
+            },
+            {
+                "title": "Three numbers move the sound: 3, 6, 8",
+                "body": "sanbyaku, roppyaku, happyaku; sanzen, hassen. These are much easier to hear than to work out, so say them out loud rather than deriving them mid-sentence."
+            },
+            {
+                "title": "Big numbers use yon, nana and kyuu",
+                "body": "yonhyaku, nanasen, kyuuman. The shi, shichi and ku readings belong to the clock and the calendar — yoji, shichigatsu, kugatsu — and stay out of counting."
+            },
+            {
+                "title": "en is a counter like any other",
+                "body": "The number then en, with no particle between them: gohyaku en, ichiman'en. Ask with ikura desu ka, or kore wa ikura desu ka when you are pointing."
+            }
+        ]
+    },
+    {
+        "id": "adjectives",
+        "title": "i and na adjectives",
+        "blurb": "Two families, and only one of them conjugates. An i-adjective carries tense and negation in its own ending; a na-adjective never changes shape at all — desu does the work, exactly as it does after a noun.",
+        "legend": [
+            { "term": "i-adj",       "gloss": "ends in hiragana い" },
+            { "term": "na-adj",      "gloss": "everything else" },
+            { "term": "-kunai",      "gloss": "the i negative" },
+            { "term": "ja arimasen", "gloss": "the na negative" }
+        ],
+        "grids": [
+            {
+                "title": "which family?",
+                "columns": ["adjective", "why"],
+                "rows": [
+                    { "label": "i", "cells": [
+                        { "kana": "おおきい", "en": "big" },
+                        { "term": "i-adjective", "en": "ends in い, and that い is hiragana" }
+                    ] },
+                    { "label": "i", "cells": [
+                        { "kana": "いそがしい", "en": "busy" },
+                        { "term": "i-adjective" }
+                    ] },
+                    { "label": "na", "cells": [
+                        { "kana": "しずか", "en": "quiet" },
+                        { "term": "na-adjective", "en": "doesn't end in い at all" }
+                    ] },
+                    { "label": "na", "cells": [
+                        { "kana": "ハンサム", "en": "handsome" },
+                        { "term": "na-adjective", "en": "loanwords all land here" }
+                    ] },
+                    { "label": "na", "cells": [
+                        { "kana": "きれい", "en": "beautiful / clean", "odd": true },
+                        { "term": "na-adjective", "en": "ends in い but takes な — an exception" }
+                    ] },
+                    { "label": "na", "cells": [
+                        { "kana": "ゆうめい", "en": "famous", "odd": true },
+                        { "term": "na-adjective", "en": "the い is inside 有名, not an ending" }
+                    ] },
+                    { "label": "i", "cells": [
+                        { "kana": "いい", "en": "good", "odd": true },
+                        { "term": "i-adjective", "en": "irregular — conjugates from よい" }
+                    ] }
+                ]
+            },
+            {
+                "title": "i-adjective — ookii",
+                "columns": ["the form", "the pattern"],
+                "rows": [
+                    { "label": "now", "cells": [
+                        { "kana": "おおきいです", "romaji": "ookii desu", "en": "it is big" },
+                        { "term": "Adj + です" }
+                    ] },
+                    { "label": "not now", "cells": [
+                        { "kana": "おおきくないです", "romaji": "ookiku nai desu", "en": "it isn't big" },
+                        { "term": "Adj − い + くないです" }
+                    ] },
+                    { "label": "was", "cells": [
+                        { "kana": "おおきかったです", "romaji": "ookikatta desu", "en": "it was big" },
+                        { "term": "Adj − い + かったです" }
+                    ] },
+                    { "label": "wasn't", "cells": [
+                        { "kana": "おおきくなかったです", "romaji": "ookiku nakatta desu", "en": "it wasn't big" },
+                        { "term": "Adj − い + くなかったです" }
+                    ] }
+                ]
+            },
+            {
+                "title": "na-adjective — shizuka",
+                "columns": ["the form", "the pattern"],
+                "rows": [
+                    { "label": "now", "cells": [
+                        { "kana": "しずかです", "romaji": "shizuka desu", "en": "it is quiet" },
+                        { "term": "Adj + です" }
+                    ] },
+                    { "label": "not now", "cells": [
+                        { "kana": "しずかじゃありません", "romaji": "shizuka ja arimasen", "en": "it isn't quiet" },
+                        { "term": "Adj + じゃありません" }
+                    ] },
+                    { "label": "was", "cells": [
+                        { "kana": "しずかでした", "romaji": "shizuka deshita", "en": "it was quiet" },
+                        { "term": "Adj + でした" }
+                    ] },
+                    { "label": "wasn't", "cells": [
+                        { "kana": "しずかじゃありませんでした", "romaji": "shizuka ja arimasen deshita", "en": "it wasn't quiet" },
+                        { "term": "Adj + じゃありませんでした" }
+                    ] }
+                ]
+            },
+            {
+                "title": "ii — the one irregular",
+                "columns": ["the form", "the pattern"],
+                "rows": [
+                    { "label": "now", "cells": [
+                        { "kana": "いいです", "romaji": "ii desu", "en": "it is good" },
+                        { "term": "the only form that keeps いい" }
+                    ] },
+                    { "label": "not now", "cells": [
+                        { "kana": "よくないです", "romaji": "yoku nai desu", "en": "it isn't good", "odd": true },
+                        { "term": "よ- from here on" }
+                    ] },
+                    { "label": "was", "cells": [
+                        { "kana": "よかったです", "romaji": "yokatta desu", "en": "it was good", "odd": true },
+                        { "term": "built on よい" }
+                    ] },
+                    { "label": "wasn't", "cells": [
+                        { "kana": "よくなかったです", "romaji": "yoku nakatta desu", "en": "it wasn't good", "odd": true },
+                        {}
+                    ] }
+                ]
+            },
+            {
+                "title": "in front of a noun",
+                "columns": ["the phrase", "what happens"],
+                "rows": [
+                    { "label": "i", "cells": [
+                        { "kana": "おおきいくるま", "romaji": "ookii kuruma", "en": "a big car" },
+                        { "term": "nothing is added" }
+                    ] },
+                    { "label": "i", "cells": [
+                        { "kana": "たのしいしごと", "romaji": "tanoshii shigoto", "en": "fun work" },
+                        { "term": "nothing is added" }
+                    ] },
+                    { "label": "na", "cells": [
+                        { "kana": "しずかなへや", "romaji": "shizuka na heya", "en": "a quiet room" },
+                        { "term": "な appears" }
+                    ] },
+                    { "label": "na", "cells": [
+                        { "kana": "きれいなひと", "romaji": "kirei na hito", "en": "a beautiful person" },
+                        { "term": "な appears" }
+                    ] }
+                ]
+            }
+        ],
+        "rules": [
+            {
+                "title": "Check the last kana, then check underneath it",
+                "body": "An adjective that ends in い written in hiragana is an i-adjective. kirei and yuumei end in the same sound, but there the い is part of the kanji reading — 綺麗, 有名 — so they take na. There are only a handful of those; learn them as exceptions rather than looking for a rule."
+            },
+            {
+                "title": "i-adjectives conjugate, na-adjectives don't",
+                "body": "The い ending carries tense and negation itself. A na-adjective never changes shape: desu, deshita and ja arimasen do all the work, exactly as they would after a noun. That is the real split between the two families — everything else follows from it."
+            },
+            {
+                "title": "na only appears in front of a noun",
+                "body": "shizuka desu has no na. shizuka na heya does. The family is named after that one position, which is also the only place you have to remember it."
+            },
+            {
+                "title": "The negative is itself an i-adjective",
+                "body": "ookiku nai ends in い and behaves like any other i-adjective, which is why the past negative is ookiku nakatta desu rather than something new. Learn the negative and the past negative falls out of it — the same goes for na-adjectives, where ja arimasen simply takes deshita."
+            },
+            {
+                "title": "ii is the exception worth drilling",
+                "body": "ii desu, but yoku nai desu, yokatta desu, yoku nakatta desu. Every form except the plain present is built from yoi, and ii is common enough that the wrong form is noticeable."
+            },
+            {
+                "title": "ja arimasen is spoken, de wa arimasen is written",
+                "body": "Both negate a na-adjective and mean the same thing. ja is the contraction of de wa, so use ja arimasen when talking and keep de wa arimasen for anything formal."
+            }
+        ]
     }
 ]
