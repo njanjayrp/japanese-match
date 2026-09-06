@@ -21,7 +21,6 @@ const AdjGame = (() => {
     let idx = 0;
     let locked = false;
     let family = "__all__";
-    let showRomaji = true;
 
     const el = {};
 
@@ -31,12 +30,11 @@ const AdjGame = (() => {
                           "adj-prompt", "adj-prompt-sub", "adj-question", "adj-options",
                           "adj-reveal", "adj-reveal-word", "adj-reveal-family",
                           "adj-forms", "adj-note", "adj-next", "adj-speak",
-                          "adj-romaji-toggle", "adj-empty"]) {
+                          "adj-empty"]) {
             el[id] = document.getElementById(id);
         }
 
-        family     = Store.pref("adjFamily", "__all__");
-        showRomaji = Store.pref("showRomaji", true);
+        family = Store.pref("adjFamily", "__all__");
 
         el["adj-family"].value = family;
         el["adj-family"].addEventListener("change", e => {
@@ -44,14 +42,6 @@ const AdjGame = (() => {
             Store.setPref("adjFamily", family);
             start();
         });
-
-        el["adj-romaji-toggle"].addEventListener("click", () => {
-            showRomaji = !showRomaji;
-            Store.setPref("showRomaji", showRomaji);
-            syncRomajiButton();
-            show();
-        });
-        syncRomajiButton();
 
         el["adj-next"].addEventListener("click", next);
         // Deliberately the plain adjective, not the form being asked for —
@@ -134,9 +124,9 @@ const AdjGame = (() => {
 
         el["adj-slot-label"].textContent = slot.label;
         el["adj-prompt"].innerHTML = Furigana.render(written, reading, true);
-        el["adj-prompt-sub"].textContent = showRomaji
-            ? `${Romaji.romajiOf(q.word)} — ${q.word.english}`
-            : q.word.english;
+        // Meaning only, no romaji: the reading is in the furigana above it, and
+        // an adjective's romaji spells out the ending the question is about.
+        el["adj-prompt-sub"].textContent = q.word.english;
         // The family is the answer to half the question, so it stays hidden
         // until the reveal.
         el["adj-question"].textContent = `Which one is \u201c${slot.gloss.replace("—", shortMeaning(q.word))}\u201d?`;
@@ -155,16 +145,16 @@ const AdjGame = (() => {
         const box = el["adj-options"];
         box.innerHTML = "";
         box.classList.add("options-jp");
+        // No romaji on the options, whatever the toggle says. The endings are
+        // the entire question here, and shiroku nai desu written underneath
+        // hands over the answer to anyone who can't yet read the kana — which
+        // is not the case in Words mode, where the romaji is a reading crutch
+        // rather than the thing being tested. The prompt and the reveal still
+        // gloss, so nothing is left unreadable.
         for (const form of Store.shuffle(options.slice())) {
             const btn = document.createElement("button");
             btn.className = "option";
-            if (showRomaji) {
-                btn.innerHTML =
-                    `<span class="option-main">${Furigana.esc(form)}</span>` +
-                    `<span class="option-sub">${Furigana.esc(AdjForms.spacedRomaji(form))}</span>`;
-            } else {
-                btn.textContent = form;
-            }
+            btn.textContent = form;
             btn.addEventListener("click", () => answered(btn, box, form === answer, answer));
             box.appendChild(btn);
         }
@@ -234,10 +224,6 @@ const AdjGame = (() => {
         if (idx >= roundSize()) { start(); return; }
         deal();
         show();
-    }
-
-    function syncRomajiButton() {
-        el["adj-romaji-toggle"].classList.toggle("off", !showRomaji);
     }
 
     function onShow() {

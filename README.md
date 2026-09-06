@@ -17,10 +17,10 @@ a backend. All progress lives in `localStorage` on the device.
 
 Serve the folder from your Mac (as above), open the address in Safari on the
 phone, then **Share → Add to Home Screen**. The service worker caches everything
-on first load, so it keeps working with no signal. Bump `CACHE_NAME` in
-[`sw.js`](sw.js) whenever you change code or data, or the phone will keep serving
-the old version — `data/words.json` and `data/sheets.json` are the exceptions and
-are always fetched fresh when online.
+on first load, so it keeps working with no signal. The page, the JS, the CSS and
+the two hand-edited data files are network-first, so a reload picks up changes
+without touching `CACHE_NAME` — bump it in [`sw.js`](sw.js) only when
+`kana.json`, `strokes.json` or the icons change, since those are cache-first.
 
 ## The six modes
 

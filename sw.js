@@ -1,7 +1,14 @@
-// Offline cache. Bump CACHE_NAME whenever you ship changed code or data —
-// the old cache is dropped on activate, so the next load picks everything up.
+// Offline cache.
+//
+// Code is network-first: index.html, the JS and the CSS are fetched fresh
+// whenever the network answers, and the cache is only the offline fallback.
+// Cache-first was making every change need a CACHE_NAME bump plus two reloads,
+// and forgetting either one served a stale app that looked like a bug in the
+// app rather than in the cache. The generated datasets and the icons never
+// change by hand, so those stay cache-first — that's where offline speed
+// actually comes from.
 
-const CACHE_NAME = 'japanese-match-v19';
+const CACHE_NAME = 'japanese-match-v20';
 
 const ASSETS = [
     './',
@@ -50,14 +57,17 @@ const MATCH = { ignoreSearch: true };
 self.addEventListener('fetch', e => {
     if (e.request.method !== 'GET') return;
 
-    // words.json and sheets.json are the files you edit by hand, so always try
-    // the network first and fall back to cache when offline. The rest, including
-    // the generated datasets, is cache-first.
+    // Everything you edit by hand — the page, the code, the two data files you
+    // type words into — comes off the network when there is one.
     const path = new URL(e.request.url).pathname;
-    const isHandEdited = path.endsWith('/data/words.json') ||
-                         path.endsWith('/data/sheets.json');
+    const isLive = path.endsWith('/') ||
+                   path.endsWith('.html') ||
+                   path.endsWith('.js') ||
+                   path.endsWith('.css') ||
+                   path.endsWith('/data/words.json') ||
+                   path.endsWith('/data/sheets.json');
 
-    if (isHandEdited) {
+    if (isLive) {
         e.respondWith(
             fetch(e.request)
                 .then(res => {
