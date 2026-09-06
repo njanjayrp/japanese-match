@@ -57,12 +57,13 @@ globalThis.App = { onAnswer() {} };
 // ── Load the app modules into one shared scope ──────────────────────────────
 
 const SOURCES = ["js/romaji.js", "js/store.js", "js/audio.js", "js/furigana.js",
-                 "js/words.js", "js/kana-game.js", "js/browse.js", "js/cheat.js"];
+                 "js/words.js", "js/adjective-forms.js", "js/adj-game.js",
+                 "js/kana-game.js", "js/browse.js", "js/cheat.js"];
 const bundle = SOURCES.map(read).join("\n;\n");
 const exported = new Function(
-    bundle + "\n;return { Romaji, Store, Speech, Furigana, WordMode, KanaGame, BrowseMode, CheatMode };"
+    bundle + "\n;return { Romaji, Store, Speech, Furigana, WordMode, AdjForms, AdjGame, KanaGame, BrowseMode, CheatMode };"
 )();
-const { Romaji, Store, Speech, WordMode, KanaGame, BrowseMode, CheatMode } = exported;
+const { Romaji, Store, Speech, WordMode, AdjForms, AdjGame, KanaGame, BrowseMode, CheatMode } = exported;
 
 const kanaData = JSON.parse(read("data/kana.json"));
 const words = JSON.parse(read("data/words.json"));
@@ -144,6 +145,97 @@ flush();
 if (stageLabel.textContent !== "Recall") fail(`expected Recall stage, got "${stageLabel.textContent}"`);
 if (optionsBox.children.length !== 4) fail(`expected 4 options, got ${optionsBox.children.length}`);
 ok(`prompt "${prompt.textContent}" → ${JSON.stringify(optionTexts())}`);
+
+// ── Adjective forms ─────────────────────────────────────────────────────────
+
+console.log("adjective forms");
+AdjGame.init(words);
+
+const adjOptions = doc.getElementById("adj-options");
+const adjReveal  = doc.getElementById("adj-reveal");
+const adjSlot    = doc.getElementById("adj-slot-label");
+
+if (doc.getElementById("adj-card").hidden) fail("adjective card hidden with adjectives loaded");
+
+// Play a full round, answering right and wrong on alternate questions so both
+// branches are exercised on purpose rather than by luck. The card says which
+// word and which slot it wants, so the expected form is computable — and that
+// is the assertion worth making: the button the app treats as correct has to
+// be the form the conjugator produces.
+let adjRight = 0, adjWrong = 0;
+const slotsSeen = new Set();
+for (let i = 0; i < 12; i++) {
+    const opts = [...adjOptions.children];
+    if (opts.length !== 4) { fail(`question ${i}: ${opts.length} options`); break; }
+    const texts = opts.map(b => (b.querySelector(".option-main") || b).textContent);
+    if (new Set(texts).size !== texts.length) fail(`question ${i}: duplicate options ${texts}`);
+    if (!doc.getElementById("adj-question").textContent.trim()) fail(`question ${i}: no question text`);
+    slotsSeen.add(adjSlot.textContent);
+
+    // "ookii — big" identifies the word; the slot label identifies the form.
+    const english = doc.getElementById("adj-prompt-sub").textContent.split(" — ").pop();
+    const asked = words.find(w => w.english === english && AdjForms.isAdjective(w));
+    const slot = AdjForms.SLOTS.find(s => s.label === adjSlot.textContent);
+    if (!asked || !slot) { fail(`question ${i}: can't identify "${english}" / "${adjSlot.textContent}"`); break; }
+    const want = AdjForms.formsOf(asked)[slot.id];
+    if (!texts.includes(want)) {
+        fail(`question ${i}: ${asked.kana} ${slot.id} — options ${texts} don't include ${want}`);
+        break;
+    }
+
+    // Right on even questions, wrong on odd ones.
+    const picked = i % 2 === 0
+        ? opts[texts.indexOf(want)]
+        : opts[texts.findIndex(t => t !== want)];
+    const expectCorrect = i % 2 === 0;
+    fire(picked, "click");
+    if (picked.classList.contains("correct") !== expectCorrect) {
+        fail(`question ${i}: ${asked.kana} ${slot.id} — clicking "${texts[opts.indexOf(picked)]}" ` +
+             `was graded ${picked.classList.contains("correct") ? "correct" : "wrong"}, ` +
+             `expected ${expectCorrect ? "correct" : "wrong"} against ${want}`);
+    }
+    if (picked.classList.contains("correct")) adjRight++;
+    else if (picked.classList.contains("wrong")) {
+        adjWrong++;
+        const flagged = opts.filter(b => b.classList.contains("correct"));
+        if (flagged.length !== 1) {
+            fail(`question ${i}: wrong answer flagged ${flagged.length} correct options, expected 1`);
+        }
+    } else fail(`question ${i}: click produced no verdict`);
+    flush();
+
+    if (adjReveal.hidden) { fail(`question ${i}: reveal did not appear`); break; }
+    const rows = [...doc.getElementById("adj-forms").children];
+    if (rows.length !== 4) fail(`question ${i}: reveal listed ${rows.length} forms, expected 4`);
+    const marked = rows.filter(r => r.classList.contains("asked"));
+    if (marked.length !== 1) fail(`question ${i}: ${marked.length} forms marked as the one asked`);
+    if (!doc.getElementById("adj-reveal-family").textContent) fail(`question ${i}: no family shown`);
+    fire(doc.getElementById("adj-next"), "click");
+    flush();
+}
+if (adjRight !== 6 || adjWrong !== 6) {
+    fail(`expected 6 right and 6 wrong by construction, got ${adjRight} / ${adjWrong}`);
+}
+ok(`12 questions played across slots [${[...slotsSeen].join(", ")}], ${adjRight} right / ${adjWrong} wrong`);
+
+// The exceptions are three words, so the round has to reuse them under
+// different slots rather than running out of cards.
+const familyPicker = doc.getElementById("adj-family");
+familyPicker.value = "odd";
+fire(familyPicker, "change");
+flush();
+if (doc.getElementById("adj-card").hidden) fail("exceptions filter emptied the card");
+const oddTexts = [...adjOptions.children].map(b => (b.querySelector(".option-main") || b).textContent);
+if (oddTexts.length !== 4) fail(`exceptions: ${oddTexts.length} options`);
+ok(`exceptions round builds: ${doc.getElementById("adj-prompt").textContent} → ${JSON.stringify(oddTexts)}`);
+
+// kirei's negative must offer the i-adjective mistake, or the trap isn't taught.
+const kirei = words.find(w => w.kana === "きれい");
+const kireiOpts = AdjForms.optionsFor(kirei, "notNow", 4).options;
+if (!kireiOpts.includes("きれくないです") && !kireiOpts.includes("きれいくないです")) {
+    fail(`kirei's negative offers no i-adjective distractor: ${kireiOpts.join(" / ")}`);
+}
+ok(`kirei drills against ${kireiOpts.filter(o => o !== "きれいじゃないです").join(" / ")}`);
 
 // ── Kana game ───────────────────────────────────────────────────────────────
 

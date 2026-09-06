@@ -22,7 +22,7 @@ on first load, so it keeps working with no signal. Bump `CACHE_NAME` in
 the old version — `data/words.json` and `data/sheets.json` are the exceptions and
 are always fetched fresh when online.
 
-## The five modes
+## The six modes
 
 **Words** — two-stage reveal. You get the written form, recall the *reading*,
 and only then the *meaning*. A Japanese word is three linked facts (form,
@@ -30,6 +30,15 @@ reading, meaning) and testing them as one lump lets you coast on vague
 recognition. Both stages have to be right for the word to count. The `EN → JP`
 toggle flips to production, which is the harder and more useful direction once a
 word is familiar.
+
+**Adj** — pick the right form. An adjective comes up with a slot — present,
+past, or either of them negated — and four candidate conjugations. The wrong
+ones aren't other words: they're *this* word run through the other family's
+rule, which is the only mistake worth drilling. kirei's negative is offered
+against kire-kunai desu and kirei-kunai desu, ii's against i-kunai desu. Answer
+and the reveal lays out all four forms at once, because seeing ja nakatta desu
+and ku nakatta desu side by side is what shows they're the same shape. The
+family filter narrows to い, to な, or to the three exceptions on their own.
 
 **Kana** — a sign appears, you pick its reading (or the reverse). Distractors
 come from a hand-built confusability map, not at random: シ/ツ/ソ/ン, ぬ/め/ね/れ/わ,
@@ -55,10 +64,14 @@ past you before any word comes back. A card leaves the deck as it appears, not a
 round at a time, so quitting three words in doesn't cost you the seven you never
 saw.
 
+Adjective forms are dealt the same way, and are derived from the kana rather
+than stored: only the family lives in the data, so a word tagged `"adj": "na"`
+conjugates itself.
+
 Kana uses the spaced-repetition store instead — wrong answers come back soon and
 often, right answers fade, and five correct in a row retires a sign until the
-pool runs thin. Both modes record every answer either way, so the stats and the
-answer streak work the same in each.
+pool runs thin. Every mode records every answer either way, so the stats and the
+answer streak work the same across all of them.
 
 ## Adding words
 
@@ -87,6 +100,7 @@ and heard in; the dictionary form lives in the `note`.
 | `romaji` | no | **override only.** Normally derived — see below |
 | `note` | no | shown on the reveal card. Verb class, particle quirks, that sort of thing |
 | `marked` | no | `true` puts it in the ★ Marked group for focused review |
+| `adj` | no | `"i"` or `"na"` — an adjective, and which family. Drives the Adj mode |
 
 **You don't write the romaji.** Kana → romaji is deterministic, so it's derived
 at runtime from the `kana` field and stays consistent for free. Only set

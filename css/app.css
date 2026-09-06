@@ -324,6 +324,53 @@ rt {
     margin-bottom: 12px;
 }
 
+/* ── Adjective forms ─────────────────────────────────────────────────────── */
+
+.adj-family-chip {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--muted);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 3px 10px;
+    margin-bottom: 12px;
+}
+.adj-family-chip.odd { border-color: var(--accent); color: var(--accent); }
+
+.form-table {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 12px;
+    text-align: left;
+}
+.form-row {
+    display: grid;
+    grid-template-columns: 96px 1fr;
+    grid-template-areas: "label jp" "label romaji";
+    align-items: baseline;
+    gap: 0 10px;
+    background: var(--surface);
+    padding: 7px 10px;
+}
+/* The form you were actually asked about, so the reveal answers the question
+   before it shows the pattern. */
+.form-row.asked { background: var(--bad-bg); box-shadow: inset 2px 0 0 var(--accent); }
+.form-label {
+    grid-area: label;
+    align-self: center;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--muted);
+}
+.form-jp { grid-area: jp; font-family: var(--jp); font-size: 17px; }
+.form-romaji { grid-area: romaji; font-size: 11px; font-weight: 600; color: var(--accent); }
+
 .primary {
     appearance: none;
     font: inherit;

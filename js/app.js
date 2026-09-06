@@ -6,6 +6,7 @@ const App = (() => {
     const MODES = {
         words:  () => WordMode,
         kana:   () => KanaGame,
+        adj:    () => AdjGame,
         write:  () => StrokeMode,
         browse: () => BrowseMode,
         cheat:  () => CheatMode,
@@ -26,6 +27,7 @@ const App = (() => {
 
         WordMode.init(words);
         KanaGame.init(kanaData);
+        AdjGame.init(words);
         StrokeMode.init(kanaData, strokeData);
         BrowseMode.init(words);
         CheatMode.init(sheets);

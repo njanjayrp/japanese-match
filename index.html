@@ -20,6 +20,7 @@
     <nav class="tabs" id="tabs">
         <button class="tab active" data-mode="words">Words</button>
         <button class="tab" data-mode="kana">Kana</button>
+        <button class="tab" data-mode="adj">Adj</button>
         <button class="tab" data-mode="write">Write</button>
         <button class="tab" data-mode="browse">Browse</button>
         <button class="tab" data-mode="cheat">Cheat</button>
@@ -104,6 +105,45 @@
     </div>
 </section>
 
+<!-- ── Adjective forms ──────────────────────────────────────────────────── -->
+<section id="adj-view" class="view">
+    <div class="controls">
+        <select id="adj-family" aria-label="Adjective family">
+            <option value="__all__">All adjectives</option>
+            <option value="i">&#12356;-adjectives</option>
+            <option value="na">&#12394;-adjectives</option>
+            <option value="odd">Exceptions</option>
+        </select>
+        <button class="ghost" id="adj-romaji-toggle" title="Show or hide romaji">romaji</button>
+    </div>
+
+    <div class="card" id="adj-card">
+        <div class="progress-row">
+            <span id="adj-progress">1 / 10</span>
+            <span id="adj-slot-label">present</span>
+        </div>
+
+        <div class="prompt prompt-jp" id="adj-prompt"></div>
+        <div class="prompt-sub" id="adj-prompt-sub"></div>
+        <button class="speak" id="adj-speak" title="Listen" aria-label="Listen">&#9835;</button>
+
+        <div class="question" id="adj-question"></div>
+        <div class="options" id="adj-options"></div>
+
+        <div class="reveal" id="adj-reveal" hidden>
+            <div class="reveal-word" id="adj-reveal-word"></div>
+            <div class="adj-family-chip" id="adj-reveal-family"></div>
+            <div class="form-table" id="adj-forms"></div>
+            <div class="reveal-note" id="adj-note"></div>
+            <button class="primary" id="adj-next">Next</button>
+        </div>
+    </div>
+
+    <p class="empty-note" id="adj-empty" hidden>
+        No adjectives yet.
+    </p>
+</section>
+
 <!-- ── Stroke order ─────────────────────────────────────────────────────── -->
 <section id="write-view" class="view">
     <div class="controls">
@@ -168,6 +208,8 @@
 <script src="js/audio.js?v=1"></script>
 <script src="js/furigana.js?v=1"></script>
 <script src="js/words.js?v=1"></script>
+<script src="js/adjective-forms.js?v=1"></script>
+<script src="js/adj-game.js?v=1"></script>
 <script src="js/kana-game.js?v=1"></script>
 <script src="js/strokes.js?v=1"></script>
 <script src="js/browse.js?v=1"></script>

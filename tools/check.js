@@ -12,6 +12,7 @@ const load = src => new Function(src + "\n;return {Romaji: typeof Romaji !== 'un
 const { Romaji } = load(read("js/romaji.js"))();
 globalThis.Romaji = Romaji;
 const { Furigana } = load(read("js/furigana.js"))();
+const AdjForms = new Function(read("js/adjective-forms.js") + "\n;return AdjForms;")();
 
 const kana = JSON.parse(read("data/kana.json"));
 const words = JSON.parse(read("data/words.json"));
@@ -166,6 +167,63 @@ for (const sheet of sheets) {
     }
 }
 console.log(`  ${sheets.length} sheet(s), ${cells} cells checked`);
+
+// ── 8. Adjective forms ──────────────────────────────────────────────────────
+console.log("adjective forms");
+const FORM_CASES = [
+    ["おおきい", "i",  ["おおきいです", "おおきくないです", "おおきかったです", "おおきくなかったです"]],
+    ["しずか",   "na", ["しずかです", "しずかじゃないです", "しずかでした", "しずかじゃなかったです"]],
+    ["きれい",   "na", ["きれいです", "きれいじゃないです", "きれいでした", "きれいじゃなかったです"]],
+    ["いい",     "i",  ["いいです", "よくないです", "よかったです", "よくなかったです"]],
+];
+for (const [kana, adj, want] of FORM_CASES) {
+    const got = Object.values(AdjForms.formsOf({ kana, adj }));
+    if (got.join(" ") !== want.join(" ")) {
+        fail(`${kana}: conjugated to ${got.join(" / ")}, expected ${want.join(" / ")}`);
+    }
+}
+
+// Every adjective has to build four distinct options for all four slots, or the
+// quiz shows a duplicate — and with the answer among the duplicates, two
+// buttons would both be right.
+const adjectives = words.filter(AdjForms.isAdjective);
+for (const w of adjectives) {
+    const written = w.kanji || w.kana;
+    const forms = AdjForms.formsOf(w);
+    if (new Set(Object.values(forms)).size !== 4) {
+        fail(`${written}: two of its four forms are identical — ${Object.values(forms).join(" / ")}`);
+    }
+    for (const slot of AdjForms.SLOTS) {
+        const { answer, options } = AdjForms.optionsFor(w, slot.id, 4);
+        if (options.length !== 4) {
+            fail(`${written} ${slot.id}: only ${options.length} options`);
+        }
+        if (new Set(options).size !== options.length) {
+            fail(`${written} ${slot.id}: duplicate options — ${options.join(" / ")}`);
+        }
+        if (options.filter(o => o === answer).length !== 1) {
+            fail(`${written} ${slot.id}: the answer appears ${options.filter(o => o === answer).length} times`);
+        }
+        for (const form of options) {
+            if (![...form].every(c => Romaji.isKana(c))) {
+                fail(`${written} ${slot.id}: option "${form}" isn't pure kana`);
+            }
+            // The gloss under an option may space the romaji out, nothing more.
+            const spaced = AdjForms.spacedRomaji(form);
+            if (spaced.replace(/ /g, "") !== Romaji.toRomaji(form)) {
+                fail(`${written}: spaced romaji "${spaced}" isn't just spacing on "${Romaji.toRomaji(form)}"`);
+            }
+        }
+    }
+}
+// A word tagged as an adjective but whose family can't be read is a silent
+// dropout: the mode just never shows it.
+for (const w of words) {
+    if (w.adj && !AdjForms.familyOf(w)) fail(`${w.kanji || w.kana}: adj is "${w.adj}", expected "i" or "na"`);
+    if (!w.adj && w.group === "Adjectives") fail(`${w.kanji || w.kana}: in Adjectives but has no adj field`);
+}
+const exceptions = adjectives.filter(AdjForms.isException).map(w => w.kana);
+console.log(`  ${adjectives.length} adjectives conjugated, ${exceptions.length} exceptions (${exceptions.join(", ")})`);
 
 console.log(failures ? `\nFAILED — ${failures} problem(s)` : "\nAll checks passed");
 Deno.exit(failures ? 1 : 0);
