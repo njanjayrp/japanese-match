@@ -18,6 +18,7 @@ const AdjGame = (() => {
 
     let words = [];
     let round = [];            // { word, slot }
+    let plan = [];             // the slot each question will ask about
     let idx = 0;
     let locked = false;
     let family = "__all__";
@@ -86,6 +87,7 @@ const AdjGame = (() => {
             return;
         }
         round = [];
+        plan = planSlots(roundSize());
         idx = 0;
         deal();
         show();
@@ -96,17 +98,45 @@ const AdjGame = (() => {
         while (round.length <= idx) {
             const word = Store.dealCard(deckKey(), pool(), idOf, round.map(q => idOf(q.word)));
             if (!word) return;
-            round.push({ word, slot: slotFor(word) });
+            round.push({ word, slot: slotFor(word, round.length) });
         }
     }
 
-    // A slot this word hasn't been asked about yet this round, so a small pool
-    // drills four different forms rather than the same one four times.
-    function slotFor(word) {
+    /**
+     * The slots for a whole round, decided up front: every other question is a
+     * negative one. Picking each slot at random independently was uniform over
+     * a long session but streaky inside any one round of ten — nine present
+     * forms in a row is a coin-flip artefact, and it wastes the round. Which
+     * polarity opens is random, and the tense alternates evenly inside each
+     * polarity, so what varies is the order and not the mix.
+     */
+    function planSlots(n) {
+        const ids = negative => AdjForms.SLOTS.filter(s => !!s.negative === negative).map(s => s.id);
+        const run = negative => {
+            const out = [];
+            while (out.length < n) out.push(...Store.shuffle(ids(negative)));
+            return out;
+        };
+        const affirmative = run(false), negatives = run(true);
+        const opensWith = Math.random() < 0.5 ? 0 : 1;
+        let a = 0, g = 0;
+        return Array.from({ length: n }, (_, i) =>
+            i % 2 === opensWith ? affirmative[a++] : negatives[g++]);
+    }
+
+    // Stick to the plan unless this word has already been asked that form this
+    // round — a three-word pool has to reuse words — in which case swap tense
+    // but keep the polarity, so the alternation holds.
+    function slotFor(word, at) {
+        const planned = plan[at] || AdjForms.SLOTS[0].id;
         const used = new Set(round.filter(q => idOf(q.word) === idOf(word)).map(q => q.slot));
-        const free = AdjForms.SLOTS.filter(s => !used.has(s.id));
-        const from = free.length ? free : AdjForms.SLOTS;
-        return from[Math.floor(Math.random() * from.length)].id;
+        if (!used.has(planned)) return planned;
+
+        const twin = AdjForms.SLOTS.find(s => s.id === planned).twin;
+        if (!used.has(twin)) return twin;
+
+        const free = AdjForms.SLOTS.map(s => s.id).filter(id => !used.has(id));
+        return free.length ? free[0] : planned;
     }
 
     function show() {

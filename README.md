@@ -32,7 +32,11 @@ toggle flips to production, which is the harder and more useful direction once a
 word is familiar.
 
 **Adj** — pick the right form. An adjective comes up with a slot — present,
-past, or either of them negated — and four candidate conjugations. The wrong
+past, or either of them negated — and four candidate conjugations. Every other
+question in a round is a negative one, and the tense alternates evenly inside
+each polarity: drawing the slot at random per question was uniform across a
+session but streaky within a round, and ten questions is too few to spend nine
+of them on the present. The wrong
 ones aren't other words: they're *this* word run through the other family's
 rule, which is the only mistake worth drilling. kirei's negative is offered
 against kire-kunai desu and kirei-kunai desu, ii's against i-kunai desu. Answer

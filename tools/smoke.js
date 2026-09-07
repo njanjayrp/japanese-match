@@ -164,6 +164,7 @@ if (doc.getElementById("adj-card").hidden) fail("adjective card hidden with adje
 // be the form the conjugator produces.
 let adjRight = 0, adjWrong = 0;
 const slotsSeen = new Set();
+const slotOrder = [];
 for (let i = 0; i < 12; i++) {
     const opts = [...adjOptions.children];
     if (opts.length !== 4) { fail(`question ${i}: ${opts.length} options`); break; }
@@ -171,6 +172,7 @@ for (let i = 0; i < 12; i++) {
     if (new Set(texts).size !== texts.length) fail(`question ${i}: duplicate options ${texts}`);
     if (!doc.getElementById("adj-question").textContent.trim()) fail(`question ${i}: no question text`);
     slotsSeen.add(adjSlot.textContent);
+    slotOrder.push(adjSlot.textContent);
 
     // "ookii — big" identifies the word; the slot label identifies the form.
     const english = doc.getElementById("adj-prompt-sub").textContent.split(" — ").pop();
@@ -216,7 +218,20 @@ for (let i = 0; i < 12; i++) {
 if (adjRight !== 6 || adjWrong !== 6) {
     fail(`expected 6 right and 6 wrong by construction, got ${adjRight} / ${adjWrong}`);
 }
-ok(`12 questions played across slots [${[...slotsSeen].join(", ")}], ${adjRight} right / ${adjWrong} wrong`);
+// Every other question is a negative one, by construction rather than by luck:
+// independent random slots were streaky enough inside a single round to spend
+// nine of ten questions on the same form.
+// Within a round: question 11 opens a fresh round, which picks its own
+// starting polarity, so the run of 10 is what has to alternate.
+const polarity = slotOrder.slice(0, 10).map(label => label.includes("negative"));
+for (let i = 1; i < polarity.length; i++) {
+    if (polarity[i] === polarity[i - 1]) {
+        fail(`slots don't alternate polarity at ${i}: ${slotOrder.slice(0, i + 1).join(" → ")}`);
+        break;
+    }
+}
+if (slotsSeen.size !== 4) fail(`12 questions covered only ${slotsSeen.size} of the 4 slots`);
+ok(`12 questions, round alternates polarity: ${slotOrder.map(s => s.includes("negative") ? "−" : "+").join("")}, ${adjRight} right / ${adjWrong} wrong`);
 
 // The exceptions are three words, so the round has to reuse them under
 // different slots rather than running out of cards.

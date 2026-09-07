@@ -12,11 +12,13 @@
 // kirei and yuumei invite. So they're generated here beside the real forms.
 
 const AdjForms = (() => {
+    // negative and twin are what let a round alternate polarity and still vary
+    // the tense: twin is the other slot of the same polarity.
     const SLOTS = [
-        { id: "now",    label: "present",          gloss: "it is —" },
-        { id: "notNow", label: "present negative", gloss: "it isn't —" },
-        { id: "was",    label: "past",             gloss: "it was —" },
-        { id: "wasnt",  label: "past negative",    gloss: "it wasn't —" },
+        { id: "now",    label: "present",          gloss: "it is —",     negative: false, twin: "was" },
+        { id: "notNow", label: "present negative", gloss: "it isn't —",  negative: true,  twin: "wasnt" },
+        { id: "was",    label: "past",             gloss: "it was —",    negative: false, twin: "now" },
+        { id: "wasnt",  label: "past negative",    gloss: "it wasn't —", negative: true,  twin: "notNow" },
     ];
 
     // いい is the one irregular: everything but the plain present is built on よい.
