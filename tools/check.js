@@ -158,7 +158,11 @@ for (const sheet of sheets) {
                 // Overrides here are nearly always about word spacing. Anything
                 // else is legal (a particle that reads differently) but worth a
                 // second look, because it's also what a typo looks like.
-                if (c.romaji && c.romaji.replace(/ /g, "") !== Romaji.toRomaji(c.kana)) {
+                // The ん apostrophe (takusan'arimasu) only marks a syllable
+                // boundary, and a space marks it just as well, so an override may
+                // trade one for the other.
+                const bare = r => r.replace(/[ ']/g, "");
+                if (c.romaji && bare(c.romaji) !== bare(Romaji.toRomaji(c.kana))) {
                     console.log(`  ! ${sheet.id}: "${c.kana}" override "${c.romaji}" ` +
                                 `isn't just spacing on "${Romaji.toRomaji(c.kana)}"`);
                 }

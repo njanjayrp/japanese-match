@@ -331,6 +331,8 @@ if (renderedCells !== expectedCells) {
     fail(`first sheet rendered ${renderedCells} word cells, expected ${expectedCells}`);
 }
 if (!cheatHtml.includes("ototoi")) fail("derived romaji missing from the sheet");
+// The calendar sheet carries the weekdays too, so the ん apostrophe lives here.
+if (!cheatHtml.includes("kin'youbi")) fail("weekday romaji missing the ん apostrophe");
 if (!cheatHtml.includes("rule-body")) fail("rules did not render");
 if (doc.getElementById("cheat-sheet").closest(".controls").hidden) {
     fail("two sheets loaded but the picker is hidden");
@@ -343,7 +345,6 @@ picker.value = "1";
 fire(picker, "change");
 if (!cheatBody.innerHTML.includes(sheets[1].title)) fail("switching sheets did not re-render");
 if (cheatBody.innerHTML.includes(sheets[0].blurb)) fail("old sheet left behind after switching");
-if (!cheatBody.innerHTML.includes("kin'youbi")) fail("weekday romaji missing the ん apostrophe");
 ok(`switched to "${sheets[1].title}"`);
 
 // ── SRS actually adapts ─────────────────────────────────────────────────────

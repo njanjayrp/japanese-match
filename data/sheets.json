@@ -1,15 +1,19 @@
 [
     {
-        "id": "time",
-        "title": "When things happen",
-        "blurb": "Relative time words. Most of this grid is built from six prefixes — the marked cells are the ones that break the pattern and have to be memorised on their own.",
+        "id": "calendar",
+        "title": "Days, dates and when",
+        "blurb": "Everything about when. Relative words — yesterday, next week — are built from six prefixes, weekdays from one suffix, months from the number plus gatsu; the marked cells are the handful that break their pattern. The one real split is ni: a calendar slot takes it, a relative word never does.",
         "legend": [
             { "term": "sensen-", "gloss": "before last" },
             { "term": "sen-",    "gloss": "last" },
             { "term": "kon-",    "gloss": "this" },
             { "term": "rai-",    "gloss": "next" },
             { "term": "sarai-",  "gloss": "after next" },
-            { "term": "mai-",    "gloss": "every" }
+            { "term": "mai-",    "gloss": "every" },
+            { "term": "-youbi",  "gloss": "day of the week" },
+            { "term": "-gatsu",  "gloss": "month of the year" },
+            { "term": "-nichi",  "gloss": "day of the month" },
+            { "term": "-ka",     "gloss": "the older day counter" }
         ],
         "grids": [
             {
@@ -83,43 +87,7 @@
                         { "kana": "まいとし", "en": "every year", "odd": true }
                     ] }
                 ]
-            }
-        ],
-        "rules": [
-            {
-                "title": "Six prefixes, twelve words",
-                "body": "Stick the prefixes onto shuu (week) or getsu (month) and both of those columns fall out with no exceptions: senshuu, konshuu, raishuu, saraishuu. Same for sengetsu, kongetsu, raigetsu, saraigetsu."
             },
-            {
-                "title": "Year only listens to half of them",
-                "body": "rainen and sarainen behave. The other four are their own words and have to be learnt flat: ototoshi, kyonen, kotoshi, maitoshi (also heard as mainen)."
-            },
-            {
-                "title": "Morning and night are just glue",
-                "body": "day + no + asa/ban, every time: kinou no asa, ashita no ban, asatte no asa. Only kesa (this morning) and konban (tonight) refuse to play. The mai- row drops the no: maiasa, maiban."
-            },
-            {
-                "title": "The exceptions cluster around now",
-                "body": "kyou, kesa, konban, kotoshi. The words you say most often are the ones that wore down — that is where to expect irregularity, in any language."
-            },
-            {
-                "title": "Two freebies",
-                "body": "oto- means 'before last' on both scales: ototoi, ototoshi. And the future starts with a: ashita (+1), asatte (+2). mai- is the one prefix that works in every single column."
-            },
-            {
-                "title": "None of these take ni",
-                "body": "Relative time words hook onto the sentence bare: kyou ikimasu, senshuu ikimashita, mainichi benkyou shimasu. ni is for time that carries a number or a calendar slot — kuji ni, shichigatsu ni, tanjoubi ni. Saying senshuu ni is the usual slip. itsu never takes it either — itsu ikimasu ka. Parts of the day and shuumatsu sit in between: asa ni hon o yomimasu and asa hon o yomimasu are both fine."
-            }
-        ]
-    },
-    {
-        "id": "weekdays",
-        "title": "Days of the week",
-        "blurb": "One suffix and seven prefixes. The prefixes are the classical planets — the same week the Romans named, so the order is one you already know.",
-        "legend": [
-            { "term": "-youbi", "gloss": "day of the week" }
-        ],
-        "grids": [
             {
                 "title": "the seven days",
                 "columns": ["weekday", "what the prefix means"],
@@ -157,24 +125,168 @@
                         { "term": "何", "en": "'what' drops into the same slot" }
                     ] }
                 ]
+            },
+            {
+                "title": "months — gatsu",
+                "columns": ["month", "the trap"],
+                "rows": [
+                    { "label": "1", "cells": [
+                        { "kana": "いちがつ", "en": "January" },
+                        { }
+                    ] },
+                    { "label": "2", "cells": [
+                        { "kana": "にがつ", "en": "February" },
+                        { }
+                    ] },
+                    { "label": "3", "cells": [
+                        { "kana": "さんがつ", "en": "March" },
+                        { }
+                    ] },
+                    { "label": "4", "cells": [
+                        { "kana": "しがつ", "en": "April", "odd": true },
+                        { "term": "shi", "en": "never yon or yo" }
+                    ] },
+                    { "label": "5", "cells": [
+                        { "kana": "ごがつ", "en": "May" },
+                        { }
+                    ] },
+                    { "label": "6", "cells": [
+                        { "kana": "ろくがつ", "en": "June" },
+                        { }
+                    ] },
+                    { "label": "7", "cells": [
+                        { "kana": "しちがつ", "en": "July", "odd": true },
+                        { "term": "shichi", "en": "never nana" }
+                    ] },
+                    { "label": "8", "cells": [
+                        { "kana": "はちがつ", "en": "August" },
+                        { }
+                    ] },
+                    { "label": "9", "cells": [
+                        { "kana": "くがつ", "en": "September", "odd": true },
+                        { "term": "ku", "en": "never kyuu" }
+                    ] },
+                    { "label": "10", "cells": [
+                        { "kana": "じゅうがつ", "en": "October" },
+                        { }
+                    ] },
+                    { "label": "11", "cells": [
+                        { "kana": "じゅういちがつ", "en": "November" },
+                        { }
+                    ] },
+                    { "label": "12", "cells": [
+                        { "kana": "じゅうにがつ", "en": "December" },
+                        { }
+                    ] }
+                ]
+            },
+            {
+                "title": "dates — read down the ones digit",
+                "columns": ["1–10", "11–20", "21–30", "31"],
+                "rows": [
+                    { "label": "1", "cells": [
+                        { "kana": "ついたち", "en": "1st", "odd": true },
+                        { "kana": "じゅういちにち", "en": "11th" },
+                        { "kana": "にじゅういちにち", "en": "21st" },
+                        { "kana": "さんじゅういちにち", "en": "31st" }
+                    ] },
+                    { "label": "2", "cells": [
+                        { "kana": "ふつか", "en": "2nd", "odd": true },
+                        { "kana": "じゅうににち", "en": "12th" },
+                        { "kana": "にじゅうににち", "en": "22nd" },
+                        { }
+                    ] },
+                    { "label": "3", "cells": [
+                        { "kana": "みっか", "en": "3rd", "odd": true },
+                        { "kana": "じゅうさんにち", "en": "13th" },
+                        { "kana": "にじゅうさんにち", "en": "23rd" },
+                        { }
+                    ] },
+                    { "label": "4", "cells": [
+                        { "kana": "よっか", "en": "4th", "odd": true },
+                        { "kana": "じゅうよっか", "en": "14th", "odd": true },
+                        { "kana": "にじゅうよっか", "en": "24th", "odd": true },
+                        { }
+                    ] },
+                    { "label": "5", "cells": [
+                        { "kana": "いつか", "en": "5th", "odd": true },
+                        { "kana": "じゅうごにち", "en": "15th" },
+                        { "kana": "にじゅうごにち", "en": "25th" },
+                        { }
+                    ] },
+                    { "label": "6", "cells": [
+                        { "kana": "むいか", "en": "6th", "odd": true },
+                        { "kana": "じゅうろくにち", "en": "16th" },
+                        { "kana": "にじゅうろくにち", "en": "26th" },
+                        { }
+                    ] },
+                    { "label": "7", "cells": [
+                        { "kana": "なのか", "en": "7th", "odd": true },
+                        { "kana": "じゅうしちにち", "en": "17th" },
+                        { "kana": "にじゅうしちにち", "en": "27th" },
+                        { }
+                    ] },
+                    { "label": "8", "cells": [
+                        { "kana": "ようか", "en": "8th", "odd": true },
+                        { "kana": "じゅうはちにち", "en": "18th" },
+                        { "kana": "にじゅうはちにち", "en": "28th" },
+                        { }
+                    ] },
+                    { "label": "9", "cells": [
+                        { "kana": "ここのか", "en": "9th", "odd": true },
+                        { "kana": "じゅうくにち", "en": "19th" },
+                        { "kana": "にじゅうくにち", "en": "29th" },
+                        { }
+                    ] },
+                    { "label": "10", "cells": [
+                        { "kana": "とおか", "en": "10th", "odd": true },
+                        { "kana": "はつか", "en": "20th", "odd": true },
+                        { "kana": "さんじゅうにち", "en": "30th" },
+                        { }
+                    ] }
+                ]
             }
         ],
         "rules": [
             {
-                "title": "One suffix does all the work",
-                "body": "Every weekday is prefix + youbi. Learn seven syllables — getsu, ka, sui, moku, kin, do, nichi — and the whole week falls out. Nothing here is irregular."
+                "title": "Six prefixes, twelve words",
+                "body": "Stick the prefixes onto shuu (week) or getsu (month) and both of those columns fall out with no exceptions: senshuu, konshuu, raishuu, saraishuu. Same for sengetsu, kongetsu, raigetsu, saraigetsu."
             },
             {
-                "title": "It is our week, borrowed twice",
-                "body": "Moon, Mars, Mercury, Jupiter, Venus, Saturn, Sun. Japanese took the same planetary week from the same ancient source, which is why kayoubi (fire → Mars) lines up with mardi and mokuyoubi (wood → Jupiter) with jeudi. If you know the French or English names you already know the order."
+                "title": "Year only listens to half of them",
+                "body": "rainen and sarainen behave. The other four are their own words and have to be learnt flat: ototoshi, kyonen, kotoshi, maitoshi (also heard as mainen)."
+            },
+            {
+                "title": "Morning and night are just glue",
+                "body": "day + no + asa/ban, every time: kinou no asa, ashita no ban, asatte no asa. Only kesa (this morning) and konban (tonight) refuse to play. The mai- row drops the no: maiasa, maiban."
+            },
+            {
+                "title": "The exceptions cluster around now",
+                "body": "kyou, kesa, konban, kotoshi — the words you say most often are the ones that wore down. Two freebies help: oto- means 'before last' on both scales (ototoi, ototoshi), and the future starts with a (ashita +1, asatte +2). mai- is the one prefix that works in every column."
+            },
+            {
+                "title": "Weekdays: one suffix, the planets' names",
+                "body": "Every weekday is prefix + youbi, and the seven prefixes are the classical planets — moon, fire (Mars), water (Mercury), wood (Jupiter), gold (Venus), earth (Saturn), sun. It is the same week French and English named, so kayoubi lines up with mardi and mokuyoubi with jeudi. Nothing here is irregular. Japanese calendars usually start the week on Sunday."
             },
             {
                 "title": "The apostrophe is a real sound",
-                "body": "kin'youbi and nan'youbi, not kinyoubi. The n stands on its own and the y starts the next syllable — say kin, then youbi."
+                "body": "kin'youbi and nan'youbi, not kinyoubi: the n stands on its own and the y starts the next syllable — say kin, then youbi. Asking uses the same shape: nan'youbi desu ka — what day is it?"
             },
             {
-                "title": "Asking uses the same shape",
-                "body": "nan'youbi desu ka — what day is it? Also worth knowing: Japanese calendars usually start the week on Sunday, not Monday."
+                "title": "Number + gatsu, always",
+                "body": "The shape never bends: ichigatsu, nigatsu, sangatsu, gogatsu. Only the number bends its reading — shigatsu, shichigatsu, kugatsu. There is no yongatsu, nanagatsu or kyuugatsu."
+            },
+            {
+                "title": "4, 7 and 9 again — but not the same way",
+                "body": "The clock trips on the same three numbers, and only two of them agree: shichiji / shichigatsu and kuji / kugatsu match, but the hour is yoji while the month is shigatsu. 4 is the one to watch."
+            },
+            {
+                "title": "Dates: ten words of their own, three survivors",
+                "body": "tsuitachi, futsuka, mikka, yokka, itsuka, muika, nanoka, youka, kokonoka, tooka are words of their own — and tsuitachi only means the 1st; one day is ichinichi. Above ten it is the number + nichi (juuichinichi, sanjuuichinichi), except juuyokka (14), hatsuka (20) and nijuuyokka (24), which keep the old reading."
+            },
+            {
+                "title": "ni: calendar slots yes, relative words no",
+                "body": "A date, a month, a weekday or a clock time takes ni: shigatsu ni, hatsuka ni, getsuyoubi ni, kuji ni. Relative words hook on bare: kyou ikimasu, senshuu ikimashita, mainichi benkyou shimasu — senshuu ni is the usual slip, and itsu never takes it either. Parts of the day sit in between: asa ni hon o yomimasu and asa hon o yomimasu are both fine."
             }
         ]
     },
@@ -389,161 +501,6 @@
             {
                 "title": "Time words: ni or nothing",
                 "body": "kyou, ashita, senshuu, raigetsu, mainichi attach bare. Time with a number or a calendar slot takes ni: kuji ni, shichigatsu ni, tanjoubi ni. Weekdays go either way — getsuyoubi ni ikimasu or getsuyoubi, ikimasu."
-            }
-        ]
-    },
-    {
-        "id": "calendar",
-        "title": "Months and dates",
-        "blurb": "Months are the number plus gatsu and never break that shape — only three numbers change their reading. Dates are the opposite: the first ten are words of their own, and three more survive above ten.",
-        "legend": [
-            { "term": "-gatsu", "gloss": "month of the year" },
-            { "term": "-nichi",  "gloss": "day of the month" },
-            { "term": "-ka",     "gloss": "the older day counter" },
-            { "term": "ni",      "gloss": "on / in — both take it" }
-        ],
-        "grids": [
-            {
-                "title": "months — gatsu",
-                "columns": ["month", "the trap"],
-                "rows": [
-                    { "label": "1", "cells": [
-                        { "kana": "いちがつ", "en": "January" },
-                        { }
-                    ] },
-                    { "label": "2", "cells": [
-                        { "kana": "にがつ", "en": "February" },
-                        { }
-                    ] },
-                    { "label": "3", "cells": [
-                        { "kana": "さんがつ", "en": "March" },
-                        { }
-                    ] },
-                    { "label": "4", "cells": [
-                        { "kana": "しがつ", "en": "April", "odd": true },
-                        { "term": "shi", "en": "never yon or yo" }
-                    ] },
-                    { "label": "5", "cells": [
-                        { "kana": "ごがつ", "en": "May" },
-                        { }
-                    ] },
-                    { "label": "6", "cells": [
-                        { "kana": "ろくがつ", "en": "June" },
-                        { }
-                    ] },
-                    { "label": "7", "cells": [
-                        { "kana": "しちがつ", "en": "July", "odd": true },
-                        { "term": "shichi", "en": "never nana" }
-                    ] },
-                    { "label": "8", "cells": [
-                        { "kana": "はちがつ", "en": "August" },
-                        { }
-                    ] },
-                    { "label": "9", "cells": [
-                        { "kana": "くがつ", "en": "September", "odd": true },
-                        { "term": "ku", "en": "never kyuu" }
-                    ] },
-                    { "label": "10", "cells": [
-                        { "kana": "じゅうがつ", "en": "October" },
-                        { }
-                    ] },
-                    { "label": "11", "cells": [
-                        { "kana": "じゅういちがつ", "en": "November" },
-                        { }
-                    ] },
-                    { "label": "12", "cells": [
-                        { "kana": "じゅうにがつ", "en": "December" },
-                        { }
-                    ] }
-                ]
-            },
-            {
-                "title": "dates — read down the ones digit",
-                "columns": ["1–10", "11–20", "21–30", "31"],
-                "rows": [
-                    { "label": "1", "cells": [
-                        { "kana": "ついたち", "en": "1st", "odd": true },
-                        { "kana": "じゅういちにち", "en": "11th" },
-                        { "kana": "にじゅういちにち", "en": "21st" },
-                        { "kana": "さんじゅういちにち", "en": "31st" }
-                    ] },
-                    { "label": "2", "cells": [
-                        { "kana": "ふつか", "en": "2nd", "odd": true },
-                        { "kana": "じゅうににち", "en": "12th" },
-                        { "kana": "にじゅうににち", "en": "22nd" },
-                        { }
-                    ] },
-                    { "label": "3", "cells": [
-                        { "kana": "みっか", "en": "3rd", "odd": true },
-                        { "kana": "じゅうさんにち", "en": "13th" },
-                        { "kana": "にじゅうさんにち", "en": "23rd" },
-                        { }
-                    ] },
-                    { "label": "4", "cells": [
-                        { "kana": "よっか", "en": "4th", "odd": true },
-                        { "kana": "じゅうよっか", "en": "14th", "odd": true },
-                        { "kana": "にじゅうよっか", "en": "24th", "odd": true },
-                        { }
-                    ] },
-                    { "label": "5", "cells": [
-                        { "kana": "いつか", "en": "5th", "odd": true },
-                        { "kana": "じゅうごにち", "en": "15th" },
-                        { "kana": "にじゅうごにち", "en": "25th" },
-                        { }
-                    ] },
-                    { "label": "6", "cells": [
-                        { "kana": "むいか", "en": "6th", "odd": true },
-                        { "kana": "じゅうろくにち", "en": "16th" },
-                        { "kana": "にじゅうろくにち", "en": "26th" },
-                        { }
-                    ] },
-                    { "label": "7", "cells": [
-                        { "kana": "なのか", "en": "7th", "odd": true },
-                        { "kana": "じゅうしちにち", "en": "17th" },
-                        { "kana": "にじゅうしちにち", "en": "27th" },
-                        { }
-                    ] },
-                    { "label": "8", "cells": [
-                        { "kana": "ようか", "en": "8th", "odd": true },
-                        { "kana": "じゅうはちにち", "en": "18th" },
-                        { "kana": "にじゅうはちにち", "en": "28th" },
-                        { }
-                    ] },
-                    { "label": "9", "cells": [
-                        { "kana": "ここのか", "en": "9th", "odd": true },
-                        { "kana": "じゅうくにち", "en": "19th" },
-                        { "kana": "にじゅうくにち", "en": "29th" },
-                        { }
-                    ] },
-                    { "label": "10", "cells": [
-                        { "kana": "とおか", "en": "10th", "odd": true },
-                        { "kana": "はつか", "en": "20th", "odd": true },
-                        { "kana": "さんじゅうにち", "en": "30th" },
-                        { }
-                    ] }
-                ]
-            }
-        ],
-        "rules": [
-            {
-                "title": "Number + gatsu, always",
-                "body": "The shape never bends: ichigatsu, nigatsu, sangatsu, gogatsu. Only the number bends its reading — shigatsu, shichigatsu, kugatsu. There is no yongatsu, nanagatsu or kyuugatsu."
-            },
-            {
-                "title": "4, 7 and 9 again — but not the same way",
-                "body": "The clock trips on the same three numbers, and only two of them agree: shichiji / shichigatsu and kuji / kugatsu match, but the hour is yoji while the month is shigatsu. 4 is the one to watch."
-            },
-            {
-                "title": "The first ten are their own words",
-                "body": "tsuitachi, futsuka, mikka, yokka, itsuka, muika, nanoka, youka, kokonoka, tooka. Note tsuitachi only means the 1st — one day is ichinichi."
-            },
-            {
-                "title": "Three survivors above ten",
-                "body": "juuyokka (14), hatsuka (20) and nijuuyokka (24) keep the old reading. Everything else from 11 to 31 is just the number + nichi: juuichinichi, nijuurokunichi, sanjuuichinichi."
-            },
-            {
-                "title": "Both take ni",
-                "body": "A date or a month is a calendar slot, so it takes ni: shigatsu ni ikimasu, hatsuka ni kaerimasu. Compare kyou, ashita and senshuu, which take nothing at all."
             }
         ]
     },
@@ -856,6 +813,220 @@
             {
                 "title": "Your textbook will say ja arimasen",
                 "body": "shizuka ja arimasen and shizuka ja arimasen deshita mean exactly the same as the forms above and are what Minna no Nihongo drills, so recognise them. ja nai desu is the everyday spoken version and keeps the negative identical to the i-adjectives, which is one pattern to hold instead of two. de wa arimasen is the same thing again, formal and mostly written — ja is just the contraction of de wa."
+            }
+        ]
+    },
+    {
+        "id": "ga",
+        "title": "Likes, skills, having, kara",
+        "blurb": "Liking, being good at something, understanding it and having it look like four topics, but they are one sentence: the person takes wa, the thing takes ga, and a state word closes it. kara then joins any of them to what follows — the reason first, the result after.",
+        "legend": [
+            { "term": "ga",           "gloss": "marks the thing — never wo here" },
+            { "term": "donna",        "gloss": "what kind of" },
+            { "term": "suki / kirai", "gloss": "like / dislike" },
+            { "term": "jouzu / heta", "gloss": "good at / bad at" },
+            { "term": "wakarimasu",   "gloss": "understand" },
+            { "term": "arimasu",      "gloss": "have (things)" },
+            { "term": "kara",         "gloss": "because — after the reason" }
+        ],
+        "grids": [
+            {
+                "title": "liking — suki, kirai",
+                "columns": ["the sentence", "what it says"],
+                "rows": [
+                    { "label": "ask", "cells": [
+                        { "kana": "どんなたべものがすきですか", "romaji": "donna tabemono ga suki desu ka", "en": "what kind of food do you like?" },
+                        { "term": "donna + noun", "en": "asks for a kind, not yes or no" }
+                    ] },
+                    { "label": "answer", "cells": [
+                        { "kana": "にほんのたべものがすきです", "romaji": "nihon no tabemono ga suki desu", "en": "I like Japanese food" },
+                        { "term": "the kind + ga suki desu" }
+                    ] },
+                    { "label": "ask", "cells": [
+                        { "kana": "どんなおんがくがすきですか", "romaji": "donna ongaku ga suki desu ka", "en": "what kind of music do you like?" },
+                        {}
+                    ] },
+                    { "label": "dislike", "cells": [
+                        { "kana": "やさいがきらいです", "romaji": "yasai ga kirai desu", "en": "I don't like vegetables" },
+                        { "term": "kirai", "en": "blunt — suki ja nai desu is softer" }
+                    ] },
+                    { "label": "not", "cells": [
+                        { "kana": "スポーツがすきじゃないです", "romaji": "supootsu ga suki ja nai desu", "en": "I don't really like sports" },
+                        { "term": "suki is a na-adjective", "en": "so it negates like shizuka" }
+                    ] }
+                ]
+            },
+            {
+                "title": "good at, bad at — jouzu, heta",
+                "columns": ["the sentence", "what it says"],
+                "rows": [
+                    { "label": "good", "cells": [
+                        { "kana": "ダンスがじょうずです", "romaji": "dansu ga jouzu desu", "en": "(she) is good at dancing" },
+                        { "term": "about someone else" }
+                    ] },
+                    { "label": "praise", "cells": [
+                        { "kana": "にほんごがじょうずですね", "romaji": "nihongo ga jouzu desu ne", "en": "your Japanese is good!" },
+                        { "term": "the compliment you'll hear" }
+                    ] },
+                    { "label": "bad", "cells": [
+                        { "kana": "りょうりがへたです", "romaji": "ryouri ga heta desu", "en": "I'm bad at cooking" },
+                        { "term": "fine about yourself" }
+                    ] },
+                    { "label": "bad", "cells": [
+                        { "kana": "うたがへたです", "romaji": "uta ga heta desu", "en": "I'm bad at singing" },
+                        {}
+                    ] }
+                ]
+            },
+            {
+                "title": "how well — wakarimasu",
+                "columns": ["the sentence", "how much"],
+                "rows": [
+                    { "label": "well", "cells": [
+                        { "kana": "ひらがながよくわかります", "romaji": "hiragana ga yoku wakarimasu", "en": "I know hiragana well" },
+                        { "term": "yoku", "en": "well" }
+                    ] },
+                    { "label": "mostly", "cells": [
+                        { "kana": "えいごがだいたいわかります", "romaji": "eigo ga daitai wakarimasu", "en": "I mostly understand English" },
+                        { "term": "daitai", "en": "mostly, roughly" }
+                    ] },
+                    { "label": "a little", "cells": [
+                        { "kana": "かんじがすこしわかります", "romaji": "kanji ga sukoshi wakarimasu", "en": "I know a little kanji" },
+                        { "term": "sukoshi", "en": "a little" }
+                    ] },
+                    { "label": "not much", "cells": [
+                        { "kana": "ちゅうごくごがあまりわかりません", "romaji": "chuugokugo ga amari wakarimasen", "en": "I don't know Chinese very well", "odd": true },
+                        { "term": "amari", "en": "only with a negative verb" }
+                    ] },
+                    { "label": "not at all", "cells": [
+                        { "kana": "かぶきがぜんぜんわかりません", "romaji": "kabuki ga zenzen wakarimasen", "en": "I don't get kabuki at all", "odd": true },
+                        { "term": "zenzen", "en": "only with a negative verb" }
+                    ] }
+                ]
+            },
+            {
+                "title": "having — arimasu",
+                "columns": ["the sentence", "how much"],
+                "rows": [
+                    { "label": "have", "cells": [
+                        { "kana": "くるまがあります", "romaji": "kuruma ga arimasu", "en": "I have a car" },
+                        { "term": "N ga arimasu" }
+                    ] },
+                    { "label": "have", "cells": [
+                        { "kana": "パソコンがあります", "romaji": "pasokon ga arimasu", "en": "I have a computer" },
+                        {}
+                    ] },
+                    { "label": "a lot", "cells": [
+                        { "kana": "おかねがたくさんあります", "romaji": "okane ga takusan arimasu", "en": "I have a lot of money" },
+                        { "term": "takusan", "en": "a lot" }
+                    ] },
+                    { "label": "a little", "cells": [
+                        { "kana": "じかんがすこしあります", "romaji": "jikan ga sukoshi arimasu", "en": "I have a little time" },
+                        { "term": "sukoshi", "en": "a little" }
+                    ] },
+                    { "label": "not many", "cells": [
+                        { "kana": "くつがあまりありません", "romaji": "kutsu ga amari arimasen", "en": "I don't have many shoes", "odd": true },
+                        { "term": "amari", "en": "only with arimasen" }
+                    ] },
+                    { "label": "none", "cells": [
+                        { "kana": "おかねがぜんぜんありません", "romaji": "okane ga zenzen arimasen", "en": "I have no money at all", "odd": true },
+                        { "term": "zenzen", "en": "only with arimasen" }
+                    ] }
+                ]
+            },
+            {
+                "title": "plans — jikan, youji, yakusoku",
+                "columns": ["the sentence", "what it says"],
+                "rows": [
+                    { "label": "ask", "cells": [
+                        { "kana": "あしたなにかありますか", "romaji": "ashita nanika arimasu ka", "en": "anything on tomorrow?" },
+                        { "term": "nanika", "en": "something, anything" }
+                    ] },
+                    { "label": "time", "cells": [
+                        { "kana": "じかんがありません", "romaji": "jikan ga arimasen", "en": "I don't have time" },
+                        {}
+                    ] },
+                    { "label": "errand", "cells": [
+                        { "kana": "ようじがあります", "romaji": "youji ga arimasu", "en": "I have something to do" },
+                        { "term": "youji", "en": "vague on purpose — a polite no" }
+                    ] },
+                    { "label": "meeting", "cells": [
+                        { "kana": "やくそくがあります", "romaji": "yakusoku ga arimasu", "en": "I have an appointment" },
+                        { "term": "yakusoku", "en": "a promise to meet someone" }
+                    ] }
+                ]
+            },
+            {
+                "title": "because — kara",
+                "columns": ["the reason + kara", "so…"],
+                "rows": [
+                    { "label": "1", "cells": [
+                        { "kana": "コーヒーがすきですから", "romaji": "koohii ga suki desu kara", "en": "because I like coffee" },
+                        { "kana": "まいにちのみます", "romaji": "mainichi nomimasu", "en": "I drink it every day" }
+                    ] },
+                    { "label": "2", "cells": [
+                        { "kana": "おいしいですから", "romaji": "oishii desu kara", "en": "because it's delicious" },
+                        { "kana": "たくさんたべます", "romaji": "takusan tabemasu", "en": "I eat a lot" }
+                    ] },
+                    { "label": "3", "cells": [
+                        { "kana": "しごとがありませんから", "romaji": "shigoto ga arimasen kara", "en": "because I have no work" },
+                        { "kana": "おそくおきます", "romaji": "osoku okimasu", "en": "I get up late" }
+                    ] },
+                    { "label": "4", "cells": [
+                        { "kana": "たばこがきらいですから", "romaji": "tabako ga kirai desu kara", "en": "because I hate cigarettes" },
+                        { "kana": "たばこをすいません", "romaji": "tabako wo suimasen", "en": "I don't smoke" }
+                    ] },
+                    { "label": "5", "cells": [
+                        { "kana": "あついですから", "romaji": "atsui desu kara", "en": "because it's hot" },
+                        { "kana": "みずをたくさんのみます", "romaji": "mizu wo takusan nomimasu", "en": "I drink lots of water" }
+                    ] },
+                    { "label": "6", "cells": [
+                        { "kana": "ようじがありますから", "romaji": "youji ga arimasu kara", "en": "because I have things to do" },
+                        { "kana": "ろくじにかえります", "romaji": "rokuji ni kaerimasu", "en": "I'm going home at six" }
+                    ] },
+                    { "label": "7", "cells": [
+                        { "kana": "さむいですから", "romaji": "samui desu kara", "en": "because it's cold" },
+                        { "kana": "あついコーヒーをのみます", "romaji": "atsui koohii wo nomimasu", "en": "I drink hot coffee" }
+                    ] }
+                ]
+            }
+        ],
+        "rules": [
+            {
+                "title": "The thing takes ga, never wo",
+                "body": "suki, kirai, jouzu, heta, wakarimasu and arimasu describe a state you are in, not something you do to an object, so what you like, understand or have is marked with ga. sushi ga suki desu — never sushi wo suki desu. It is the most common mistake with all six, and the same ga covers every one of them. Real verbs of doing still take wo: tabako wo suimasen, koohii wo nomimasu."
+            },
+            {
+                "title": "wa is the person, ga is the thing",
+                "body": "watashi wa nihongo ga sukoshi wakarimasu: wa sets who you are talking about, ga marks what they like, understand or have. When the person is obvious, drop the watashi wa entirely — okane ga arimasen is the normal way to say it."
+            },
+            {
+                "title": "donna asks for a kind",
+                "body": "donna tabemono ga suki desu ka asks what kind, so the answer names a kind: nihon no tabemono, amai mono, ramen. Answering hai to a donna question is the one reply that doesn't work."
+            },
+            {
+                "title": "amari and zenzen need a negative verb",
+                "body": "takusan, yoku, daitai and sukoshi go with the positive: takusan arimasu, sukoshi wakarimasu. amari and zenzen only ever go with the negative — amari arimasen, zenzen wakarimasen. amari arimasu is not a sentence; the verb has to agree with the adverb, which is why those rows are marked."
+            },
+            {
+                "title": "arimasu is for things",
+                "body": "kuruma, okane, jikan, youji, yakusoku — anything that isn't alive — takes arimasu. People and animals take imasu instead: kodomo ga imasu, I have a child. Using arimasu for a person is a mistake Japanese speakers notice immediately."
+            },
+            {
+                "title": "youji ga arimasu is how you say no",
+                "body": "youji means something to do and deliberately says nothing about what. Answering an invitation with youji ga arimasu kara, chotto… declines without a reason anyone can argue with. yakusoku is concrete: an arrangement with another person."
+            },
+            {
+                "title": "kara comes after the reason",
+                "body": "English can put because at either end; Japanese can't. The reason comes first and kara closes it, then the result: koohii ga suki desu kara, mainichi nomimasu. Keep desu or masu in front of kara when speaking politely — oishii desu kara, youji ga arimasu kara."
+            },
+            {
+                "title": "Don't call yourself jouzu",
+                "body": "jouzu praises, so it is for other people: nihongo ga jouzu desu ne is what a Japanese speaker says to you after two words. Saying it about yourself sounds like boasting. About yourself, heta desu, or the modest mada mada desu — not yet, not yet."
+            },
+            {
+                "title": "All four are na-adjectives",
+                "body": "suki, kirai, jouzu and heta conjugate exactly like shizuka: suki ja nai desu, jouzu deshita, heta ja nakatta desu. kirai ends in い but is na, the same trap as kirei. In front of a noun they take na: suki na tabemono, jouzu na hito."
             }
         ]
     }
