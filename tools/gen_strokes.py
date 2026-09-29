@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Generate data/strokes.json from KanjiVG.
 
-Downloads the KanjiVG SVG for every single-character kana in data/kana.json and
-extracts just the path data, in stroke order. Output is a flat
+Downloads the KanjiVG SVG for every single-character kana in data/kana.json,
+plus every character in data/kanji.json, and extracts just the path data, in
+stroke order. Output is a flat
 { "あ": ["M31.01,33c0.88...", ...] } map rendered against a 109x109 viewBox.
 
 KanjiVG (c) Ulrich Apel, CC BY-SA 3.0 — see NOTICE.md.
@@ -10,8 +11,9 @@ KanjiVG (c) Ulrich Apel, CC BY-SA 3.0 — see NOTICE.md.
 import json, os, re, sys, urllib.request, urllib.error
 from concurrent.futures import ThreadPoolExecutor
 
-KANA_JSON = sys.argv[1] if len(sys.argv) > 1 else "data/kana.json"
-OUT       = sys.argv[2] if len(sys.argv) > 2 else "data/strokes.json"
+KANA_JSON  = sys.argv[1] if len(sys.argv) > 1 else "data/kana.json"
+OUT        = sys.argv[2] if len(sys.argv) > 2 else "data/strokes.json"
+KANJI_JSON = sys.argv[3] if len(sys.argv) > 3 else "data/kanji.json"
 BASE_URL  = "https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/{:05x}.svg"
 
 # KanjiVG orders <path> elements by stroke, and tags each with an -sN id.
@@ -41,7 +43,15 @@ def main():
     # Stroke practice only makes sense for single signs; yōon are just two of
     # these written together, so they'd be redundant.
     chars = sorted({e["char"] for e in kana if len(e["char"]) == 1})
-    print(f"fetching {len(chars)} kana from KanjiVG...")
+
+    # KanjiVG is a kanji dictionary that happens to include the kana, so the
+    # same fetch serves both. The kanji list is hand-written and small.
+    kanji = []
+    if os.path.exists(KANJI_JSON):
+        with open(KANJI_JSON, encoding="utf-8") as f:
+            kanji = sorted({e["char"] for e in json.load(f)})
+    chars += [c for c in kanji if c not in chars]
+    print(f"fetching {len(chars)} signs from KanjiVG ({len(kanji)} kanji)...")
 
     out, failed = {}, []
     with ThreadPoolExecutor(max_workers=12) as pool:
@@ -63,7 +73,7 @@ def main():
 
     size = os.path.getsize(OUT)
     total = sum(len(v) for v in out.values())
-    print(f"wrote {OUT}: {len(out)}/{len(chars)} kana, {total} strokes, {size/1024:.0f} KB")
+    print(f"wrote {OUT}: {len(out)}/{len(chars)} signs, {total} strokes, {size/1024:.0f} KB")
     if failed:
         print("missing:", ", ".join(f"{c} ({e})" for c, e in failed))
 

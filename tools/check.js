@@ -18,6 +18,8 @@ const kana = JSON.parse(read("data/kana.json"));
 const words = JSON.parse(read("data/words.json"));
 const strokes = JSON.parse(read("data/strokes.json"));
 const sheets = JSON.parse(read("data/sheets.json"));
+const kanji = JSON.parse(read("data/kanji.json"));
+const revision = JSON.parse(read("data/revision.json"));
 Romaji.init(kana.kana);
 
 let failures = 0;
@@ -161,8 +163,13 @@ for (const sheet of sheets) {
                 // The ん apostrophe (takusan'arimasu) only marks a syllable
                 // boundary, and a space marks it just as well, so an override may
                 // trade one for the other.
+                // A particle in a token of its own may also be written as it
+                // is said — wa for は, e for へ — which is undone token by token
+                // before the comparison, the same way the revision check does it.
+                const SAID_AS = { wa: "ha", e: "he", o: "wo" };
                 const bare = r => r.replace(/[ ']/g, "");
-                if (c.romaji && bare(c.romaji) !== bare(Romaji.toRomaji(c.kana))) {
+                const spelled = (c.romaji || "").split(" ").map(t => SAID_AS[t] || t).join("");
+                if (c.romaji && bare(spelled) !== bare(Romaji.toRomaji(c.kana))) {
                     console.log(`  ! ${sheet.id}: "${c.kana}" override "${c.romaji}" ` +
                                 `isn't just spacing on "${Romaji.toRomaji(c.kana)}"`);
                 }
@@ -228,6 +235,197 @@ for (const w of words) {
 }
 const exceptions = adjectives.filter(AdjForms.isException).map(w => w.kana);
 console.log(`  ${adjectives.length} adjectives conjugated, ${exceptions.length} exceptions (${exceptions.join(", ")})`);
+
+// ── 9. Kanji for the Write mode ─────────────────────────────────────────────
+console.log("kanji");
+const seenKanji = new Set();
+for (const k of kanji) {
+    if ([...k.char].length !== 1) fail(`kanji "${k.char}": not a single character`);
+    if (seenKanji.has(k.char)) fail(`duplicate kanji: ${k.char}`);
+    seenKanji.add(k.char);
+    // Without stroke data the character silently vanishes from the picker.
+    if (!strokes.strokes[k.char]) fail(`${k.char}: no stroke data — rerun tools/gen_strokes.py`);
+    // note is optional — it exists for irregular readings, not every entry.
+    for (const field of ["romaji", "meaning", "word", "wordKana", "wordEnglish"]) {
+        if (!k[field]) fail(`${k.char}: missing ${field}`);
+    }
+    if (k.wordKana && ![...k.wordKana].every(c => Romaji.isKana(c))) {
+        fail(`${k.char}: wordKana "${k.wordKana}" isn't pure kana`);
+    }
+    // The character has to actually appear in the word it claims to come from.
+    if (k.word && !k.word.includes(k.char)) {
+        fail(`${k.char}: not present in its own word "${k.word}"`);
+    }
+    // A compound should be one the library teaches, or the kanji is orphaned.
+    // A single-character word is the word, so there is nothing to look up.
+    if (k.word && [...k.word].length > 1 && !words.some(w => w.kanji === k.word)) {
+        console.log(`  ! ${k.char}: "${k.word}" isn't in words.json`);
+    }
+}
+// A kanji in the Kana quiz is asked for like a sign: prompt the character, pick
+// the reading, or the reverse. That only works if the reading is unambiguous.
+const quizzed = kanji.filter(k => k.quiz);
+const kanaLabels = new Set(kana.kana.map(e => e.romaji));
+const labels = new Map();
+for (const k of quizzed) {
+    if (k.word !== k.char) {
+        fail(`${k.char}: quiz kanji must be a word on its own, not "${k.word}" — ` +
+             `otherwise there is no single reading to ask for`);
+    }
+    const label = Romaji.toRomaji(k.wordKana);
+    // In the romaji → sign direction the label is the prompt, so a label that is
+    // also a kana's romaji would have two correct answers on screen.
+    if (kanaLabels.has(label)) {
+        fail(`${k.char}: reads "${label}", which is also a kana — the reverse direction ` +
+             `would have two right answers`);
+    }
+    if (labels.has(label)) {
+        fail(`${k.char} and ${labels.get(label)} both read "${label}" — ambiguous in the quiz`);
+    }
+    labels.set(label, k.char);
+}
+console.log(`  ${kanji.length} kanji, ${kanji.reduce((n, k) => n + (strokes.strokes[k.char] || []).length, 0)} strokes, ` +
+            `${quizzed.length} in the kana quiz`);
+
+// ── 10. Revision questions ──────────────────────────────────────────────────
+console.log("revision");
+/** Same length, one differing kana, and that kana is neither the opening word
+ *  nor inside the closing verb or copula — i.e. somewhere you have to hunt. */
+function midTwin(a, b) {
+    if (a.length !== b.length) return false;
+    let at = -1;
+    for (let i = 0; i < a.length; i++) {
+        if (a[i] === b[i]) continue;
+        if (at !== -1) return false;
+        at = i;
+    }
+    return at > 1 && at < a.length - 3;
+}
+const kanjiWords = new Map(kanji.map(k => [k.word, k.wordKana]));
+const seenIds = new Set();
+const prompts = new Map();
+const sheetIds = new Set(sheets.map(s => s.id));
+for (const item of revision) {
+    const where = item.id || item.en;
+    if (!item.id) fail(`revision item "${item.en}" has no id`);
+    if (seenIds.has(item.id)) fail(`duplicate revision id: ${item.id}`);
+    seenIds.add(item.id);
+    if (!item.en) fail(`${where}: no English prompt`);
+    // Two questions with the same prompt and different answers are unanswerable:
+    // both are right, and only a hint in the prompt could separate them. That
+    // hint is what a parenthetical like "(the textbook's form)" was doing.
+    if (prompts.has(item.en)) fail(`${where}: same prompt as ${prompts.get(item.en)} — "${item.en}"`);
+    prompts.set(item.en, item.id);
+    // An item pointing at a sheet that no longer exists drops out of the topic
+    // picker without a word.
+    if (!sheetIds.has(item.sheet)) fail(`${where}: sheet "${item.sheet}" is not in sheets.json`);
+    if (!item.correct || !item.correct.kana) fail(`${where}: no correct answer`);
+    if (!Array.isArray(item.wrong) || item.wrong.length !== 3) {
+        fail(`${where}: needs exactly 3 wrong options, has ${item.wrong ? item.wrong.length : 0}`);
+        continue;
+    }
+
+    const all = [item.correct.kana, ...item.wrong.map(w => w.kana)];
+    // Two identical options would put the right answer on screen twice, and a
+    // click on the wrong copy would be graded wrong.
+    if (new Set(all).size !== all.length) fail(`${where}: two options are the same sentence`);
+    for (const kana of all) {
+        if (![...kana].every(c => Romaji.isKana(c))) {
+            fail(`${where}: "${kana}" is not pure kana — romaji can't be derived`);
+        }
+    }
+    for (const w of item.wrong) {
+        if (!w.why) fail(`${where}: "${w.kana}" has no explanation`);
+    }
+
+    // A question must not come down to spotting one kana in the middle of four
+    // otherwise identical sentences. One such pair is the point — it is the rule
+    // being tested. Two or more and the question stops testing grammar and
+    // starts testing eyesight.
+    const lookalikes = [];
+    for (let a = 0; a < all.length; a++) {
+        for (let b = a + 1; b < all.length; b++) {
+            if (midTwin(all[a], all[b])) lookalikes.push(`${all[a]} / ${all[b]}`);
+        }
+    }
+    if (lookalikes.length > 1) {
+        fail(`${where}: ${lookalikes.length} pairs of options differ by one kana ` +
+             `in the middle — at most one may:\n      ` + lookalikes.join("\n      "));
+    }
+
+    // Kanji forms. Every option carries the same kanji or none of them do:
+    // an option written differently from the rest is pickable on its looks.
+    const withKanji = [item.correct, ...item.wrong].filter(o => o.kanji);
+    if (withKanji.length && withKanji.length !== 4) {
+        fail(`${where}: ${withKanji.length} of 4 options have a kanji form — all or none`);
+    }
+    if (withKanji.length) {
+        const notes = item.kanjiNotes || [];
+        if (!notes.length) fail(`${where}: written in kanji but has no kanjiNotes for the reading bar`);
+        for (const n of notes) {
+            if (!kanjiWords.has(n.word)) {
+                fail(`${where}: reading bar names ${n.word}, which is not in kanji.json`);
+            } else if (kanjiWords.get(n.word) !== n.kana) {
+                fail(`${where}: reading bar says ${n.word} is ${n.kana}, ` +
+                     `kanji.json says ${kanjiWords.get(n.word)}`);
+            }
+        }
+        // Putting each word's reading back must give the kana exactly. This is
+        // what stops a substitution from quietly changing the sentence — 上手
+        // standing where じょうず never was, or a swap eating a neighbouring kana.
+        for (const o of [item.correct, ...item.wrong]) {
+            let back = o.kanji;
+            for (const n of notes) back = back.split(n.word).join(n.kana);
+            if (back !== o.kana) {
+                fail(`${where}: "${o.kanji}" reads back as "${back}", not "${o.kana}"`);
+            }
+        }
+    }
+    // The romaji may space the reading out and may trade the ん apostrophe for a
+    // space, but must not change it — with one exception: the particles は and へ
+    // are written ha and he and said wa and e. Because the spacing convention
+    // puts a particle in a token of its own, that substitution can be undone
+    // token by token and checked exactly.
+    const SAID_AS = { wa: "ha", e: "he", o: "wo" };
+    const spelled = (item.correct.romaji || "")
+        .split(" ")
+        .map(t => SAID_AS[t] || t)
+        .join("");
+    const bare = r => r.replace(/'/g, "");
+    if (bare(spelled) !== bare(Romaji.toRomaji(item.correct.kana))) {
+        fail(`${where}: romaji "${item.correct.romaji}" isn't just spacing on ` +
+             `"${Romaji.toRomaji(item.correct.kana)}"`);
+    }
+}
+// Coverage: a rule on a sheet with no question behind it is a rule you can read
+// and never be tested on, which is the whole gap this mode exists to close.
+const ruleIds = new Set();
+for (const sheet of sheets) {
+    for (const r of sheet.rules || []) {
+        if (!r.id) fail(`sheet ${sheet.id}: rule "${r.title}" has no id`);
+        else ruleIds.add(`${sheet.id}:${r.id}`);
+    }
+}
+const covered = new Set();
+for (const item of revision) {
+    if (!item.covers || !item.covers.length) {
+        fail(`${item.id}: doesn't say which rule it tests`);
+        continue;
+    }
+    for (const c of item.covers) {
+        if (!ruleIds.has(c)) fail(`${item.id}: covers "${c}", which is not a rule on any sheet`);
+        covered.add(c);
+    }
+}
+const uncovered = [...ruleIds].filter(r => !covered.has(r));
+if (uncovered.length) {
+    fail(`${uncovered.length} rule(s) have no revision question:\n      ` + uncovered.join("\n      "));
+}
+
+const byTopic = {};
+for (const item of revision) byTopic[item.sheet] = (byTopic[item.sheet] || 0) + 1;
+console.log(`  ${revision.length} questions: ` +
+            Object.entries(byTopic).map(([k, n]) => `${k} ${n}`).join(", "));
 
 console.log(failures ? `\nFAILED — ${failures} problem(s)` : "\nAll checks passed");
 Deno.exit(failures ? 1 : 0);

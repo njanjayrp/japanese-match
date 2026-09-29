@@ -1,0 +1,4416 @@
+[
+    {
+        "id": "suki-food",
+        "covers": [
+            "ga:ga-not-wo",
+            "ga:suki-kirai-jouzu-heta-na"
+        ],
+        "sheet": "ga",
+        "en": "I like Japanese food.",
+        "correct": {
+            "kana": "にほんのたべものがすきです",
+            "romaji": "nihon no tabemono ga suki desu"
+        },
+        "wrong": [
+            {
+                "kana": "にほんのたべものをすきです",
+                "why": "suki takes ga. It describes a state you are in, not something you do to the food."
+            },
+            {
+                "kana": "にほんのたべものがすきます",
+                "why": "suki is a na-adjective, not a verb — it never takes -masu."
+            },
+            {
+                "kana": "にほんのたべものがすきなです",
+                "why": "na only appears before a noun: suki na tabemono, but suki desu."
+            }
+        ]
+    },
+    {
+        "id": "amari-suki",
+        "covers": [
+            "ga:amari-zenzen",
+            "ga:soft-refusal",
+            "ga:ga-not-wo"
+        ],
+        "sheet": "ga",
+        "en": "I don't really like sports.",
+        "correct": {
+            "kana": "スポーツがあまりすきじゃないです",
+            "romaji": "supootsu ga amari suki ja nai desu",
+            "kanji": "スポーツがあまり好きじゃないです"
+        },
+        "wrong": [
+            {
+                "kana": "スポーツがあまりすきです",
+                "why": "amari only ever pairs with a negative.",
+                "kanji": "スポーツがあまり好きです"
+            },
+            {
+                "kana": "スポーツをあまりすきじゃないです",
+                "why": "the thing you like takes ga, not wo.",
+                "kanji": "スポーツをあまり好きじゃないです"
+            },
+            {
+                "kana": "スポーツがあまりすきくないです",
+                "why": "kunai is the i-adjective negative; suki is na, so it is suki ja nai.",
+                "kanji": "スポーツがあまり好きくないです"
+            }
+        ],
+        "kanjiNotes": [
+            {
+                "word": "好き",
+                "kana": "すき"
+            }
+        ]
+    },
+    {
+        "id": "totemo-suki",
+        "covers": [
+            "ga:scale",
+            "ga:amari-zenzen"
+        ],
+        "sheet": "ga",
+        "en": "I really like it.",
+        "correct": {
+            "kana": "とてもすきです",
+            "romaji": "totemo suki desu"
+        },
+        "wrong": [
+            {
+                "kana": "あまりすきです",
+                "why": "amari means 'not much' and needs a negative after it."
+            },
+            {
+                "kana": "とてもすきじゃないです",
+                "why": "that is the negative — I don't really like it."
+            },
+            {
+                "kana": "とてもすきます",
+                "why": "suki is not a verb."
+            }
+        ]
+    },
+    {
+        "id": "donna-ongaku",
+        "covers": [
+            "ga:donna",
+            "ga:ga-not-wo"
+        ],
+        "sheet": "ga",
+        "en": "What kind of music do you like?",
+        "correct": {
+            "kana": "どんなおんがくがすきですか",
+            "romaji": "donna ongaku ga suki desu ka"
+        },
+        "wrong": [
+            {
+                "kana": "どのおんがくがすきですか",
+                "why": "dono asks which one out of a known set, not what kind."
+            },
+            {
+                "kana": "どんなおんがくをすきですか",
+                "why": "suki takes ga."
+            },
+            {
+                "kana": "どんなおんがくがすきますか",
+                "why": "suki is not a verb."
+            }
+        ]
+    },
+    {
+        "id": "jouzu-nihongo",
+        "covers": [
+            "ga:ga-not-wo",
+            "ga:suki-kirai-jouzu-heta-na"
+        ],
+        "sheet": "ga",
+        "en": "You're good at Japanese.",
+        "correct": {
+            "kana": "にほんごがじょうずですね",
+            "romaji": "nihongo ga jouzu desu ne"
+        },
+        "wrong": [
+            {
+                "kana": "にほんごをじょうずですね",
+                "why": "jouzu takes ga, like suki and wakarimasu."
+            },
+            {
+                "kana": "にほんごがじょうずいですね",
+                "why": "jouzu is a na-adjective; there is no i to add."
+            },
+            {
+                "kana": "にほんごがじょうずますね",
+                "why": "jouzu is not a verb."
+            }
+        ]
+    },
+    {
+        "id": "zenzen-wakarimasen",
+        "covers": [
+            "ga:amari-zenzen",
+            "ga:ga-not-wo"
+        ],
+        "sheet": "ga",
+        "en": "I don't understand Chinese at all.",
+        "correct": {
+            "kana": "ちゅうごくごがぜんぜんわかりません",
+            "romaji": "chuugokugo ga zenzen wakarimasen"
+        },
+        "wrong": [
+            {
+                "kana": "ちゅうごくごがぜんぜんわかります",
+                "why": "zenzen needs the negative wakarimasen."
+            },
+            {
+                "kana": "ちゅうごくごをぜんぜんわかりません",
+                "why": "wakarimasu takes ga."
+            },
+            {
+                "kana": "ちゅうごくごがぜんぜんわかりませんでした",
+                "why": "that is the past — I didn't understand any of it then."
+            }
+        ]
+    },
+    {
+        "id": "inu-imasu",
+        "covers": [
+            "ga:arimasu-imasu",
+            "ga:ga-not-wo"
+        ],
+        "sheet": "ga",
+        "en": "I have a dog.",
+        "correct": {
+            "kana": "いぬがいます",
+            "romaji": "inu ga imasu",
+            "kanji": "犬がいます"
+        },
+        "wrong": [
+            {
+                "kana": "いぬをいます",
+                "why": "imasu takes ga, like arimasu.",
+                "kanji": "犬をいます"
+            },
+            {
+                "kana": "いぬがあります",
+                "why": "arimasu is for things that don't move; a dog is alive, so imasu.",
+                "kanji": "犬があります"
+            },
+            {
+                "kana": "いぬがいません",
+                "why": "that says the opposite — I don't have a dog.",
+                "kanji": "犬がいません"
+            }
+        ],
+        "kanjiNotes": [
+            {
+                "word": "犬",
+                "kana": "いぬ"
+            }
+        ]
+    },
+    {
+        "id": "takusan-okane",
+        "covers": [
+            "ga:amari-zenzen",
+            "ga:ga-not-wo"
+        ],
+        "sheet": "ga",
+        "en": "I have a lot of money.",
+        "correct": {
+            "kana": "おかねがたくさんあります",
+            "romaji": "okane ga takusan arimasu"
+        },
+        "wrong": [
+            {
+                "kana": "おかねをたくさんあります",
+                "why": "arimasu takes ga."
+            },
+            {
+                "kana": "おかねがあまりあります",
+                "why": "amari only goes with the negative — amari arimasen."
+            },
+            {
+                "kana": "おかねがたくさんありません",
+                "why": "that is the negative — I don't have much."
+            }
+        ]
+    },
+    {
+        "id": "kara-koohii",
+        "covers": [
+            "ga:kara-order",
+            "ga:ga-not-wo"
+        ],
+        "sheet": "ga",
+        "en": "Because I like coffee, I drink it every day.",
+        "correct": {
+            "kana": "コーヒーがすきですからまいにちのみます",
+            "romaji": "koohii ga suki desu kara mainichi nomimasu",
+            "kanji": "コーヒーが好きですからまいにちのみます"
+        },
+        "wrong": [
+            {
+                "kana": "まいにちのみますからコーヒーがすきです",
+                "why": "that reverses it: because I drink it daily, I like it. kara closes the reason.",
+                "kanji": "まいにちのみますからコーヒーが好きです"
+            },
+            {
+                "kana": "コーヒーがすきからまいにちのみます",
+                "why": "in polite speech desu stays in front of kara.",
+                "kanji": "コーヒーが好きからまいにちのみます"
+            },
+            {
+                "kana": "コーヒーをすきですからまいにちのみます",
+                "why": "suki takes ga.",
+                "kanji": "コーヒーを好きですからまいにちのみます"
+            }
+        ],
+        "kanjiNotes": [
+            {
+                "word": "好き",
+                "kana": "すき"
+            }
+        ]
+    },
+    {
+        "id": "kara-youji",
+        "covers": [
+            "ga:kara-order",
+            "ga:youji-yakusoku"
+        ],
+        "sheet": "ga",
+        "en": "I have things to do, so I'm going home at six.",
+        "correct": {
+            "kana": "ようじがありますからろくじにかえります",
+            "romaji": "youji ga arimasu kara rokuji ni kaerimasu"
+        },
+        "wrong": [
+            {
+                "kana": "ろくじにかえりますからようじがあります",
+                "why": "reversed — that says you have plans because you are going home at six."
+            },
+            {
+                "kana": "ようじをありますからろくじにかえります",
+                "why": "arimasu takes ga."
+            },
+            {
+                "kana": "ようじがありましたからろくじにかえります",
+                "why": "that is the past — I had things to do."
+            }
+        ]
+    },
+    {
+        "id": "senshuu-ni",
+        "covers": [
+            "calendar:ni-or-nothing",
+            "going:time-ni-or-nothing"
+        ],
+        "sheet": "calendar",
+        "en": "I went last week.",
+        "correct": {
+            "kana": "せんしゅういきました",
+            "romaji": "senshuu ikimashita"
+        },
+        "wrong": [
+            {
+                "kana": "せんしゅうにいきました",
+                "why": "relative time words take no ni. This is the most common slip of the lot."
+            },
+            {
+                "kana": "せんしゅういきます",
+                "why": "senshuu is last week, so the verb has to be past: ikimashita."
+            },
+            {
+                "kana": "らいしゅういきました",
+                "why": "raishuu is next week — you cannot have gone there yet."
+            }
+        ]
+    },
+    {
+        "id": "shigatsu-ni",
+        "covers": [
+            "calendar:gatsu",
+            "calendar:ni-or-nothing"
+        ],
+        "sheet": "calendar",
+        "en": "I'm going in April.",
+        "correct": {
+            "kana": "しがつにいきます",
+            "romaji": "shigatsu ni ikimasu"
+        },
+        "wrong": [
+            {
+                "kana": "よんがつにいきます",
+                "why": "April is shigatsu. There is no yongatsu."
+            },
+            {
+                "kana": "しがついきます",
+                "why": "a calendar slot takes ni, unlike kyou or senshuu."
+            },
+            {
+                "kana": "しがつでいきます",
+                "why": "de is not used for calendar slots."
+            }
+        ]
+    },
+    {
+        "id": "yoji-ni",
+        "covers": [
+            "calendar:four-seven-nine",
+            "clock:irregular-hours"
+        ],
+        "sheet": "calendar",
+        "en": "I'm going home at four.",
+        "correct": {
+            "kana": "よじにかえります",
+            "romaji": "yoji ni kaerimasu"
+        },
+        "wrong": [
+            {
+                "kana": "しじにかえります",
+                "why": "four o'clock is yoji — shi is never used for the hour."
+            },
+            {
+                "kana": "よんじにかえります",
+                "why": "the hour takes yo, not yon."
+            },
+            {
+                "kana": "よじかんにかえります",
+                "why": "yojikan is four hours long, not four o'clock."
+            }
+        ]
+    },
+    {
+        "id": "hatsuka",
+        "covers": [
+            "calendar:dates"
+        ],
+        "sheet": "calendar",
+        "en": "I'm coming back on the 20th.",
+        "correct": {
+            "kana": "はつかにかえります",
+            "romaji": "hatsuka ni kaerimasu"
+        },
+        "wrong": [
+            {
+                "kana": "にじゅうにちにかえります",
+                "why": "the 20th keeps the old reading: hatsuka."
+            },
+            {
+                "kana": "はたちにかえります",
+                "why": "hatachi is twenty years old, not the 20th."
+            },
+            {
+                "kana": "にじゅうかにかえります",
+                "why": "the -ka counter only runs through the first ten days."
+            }
+        ]
+    },
+    {
+        "id": "kinyoubi",
+        "covers": [
+            "calendar:weekdays",
+            "calendar:n-apostrophe"
+        ],
+        "sheet": "calendar",
+        "en": "Friday",
+        "correct": {
+            "kana": "きんようび",
+            "romaji": "kin'youbi"
+        },
+        "wrong": [
+            {
+                "kana": "きんよび",
+                "why": "the you is long: kin-you-bi."
+            },
+            {
+                "kana": "きにょうび",
+                "why": "the n stands on its own; it is not nyo."
+            },
+            {
+                "kana": "こんようび",
+                "why": "kon- means 'this'. Friday is gold, kin."
+            }
+        ]
+    },
+    {
+        "id": "ichiman-en",
+        "covers": [
+            "money:count-in-fours",
+            "money:drop-the-ichi"
+        ],
+        "sheet": "money",
+        "en": "It's 10,000 yen.",
+        "correct": {
+            "kana": "いちまんえんです",
+            "romaji": "ichiman'en desu"
+        },
+        "wrong": [
+            {
+                "kana": "じゅうせんえんです",
+                "why": "Japanese counts in ten-thousands. There is no juusen."
+            },
+            {
+                "kana": "まんえんです",
+                "why": "man never stands alone — it is always ichiman."
+            },
+            {
+                "kana": "いちまんねんです",
+                "why": "nen is years. Yen is en."
+            }
+        ]
+    },
+    {
+        "id": "sanzen-en",
+        "covers": [
+            "money:sound-changes"
+        ],
+        "sheet": "money",
+        "en": "It's 3,000 yen.",
+        "correct": {
+            "kana": "さんぜんえんです",
+            "romaji": "sanzen'en desu"
+        },
+        "wrong": [
+            {
+                "kana": "さんせんえんです",
+                "why": "three thousand voices the s: sanzen, not sansen."
+            },
+            {
+                "kana": "みっせんえんです",
+                "why": "thousands count with san, not mittsu."
+            },
+            {
+                "kana": "さんぜんひゃくえんです",
+                "why": "that is 3,100 — sanzen hyaku en."
+            }
+        ]
+    },
+    {
+        "id": "ikura",
+        "covers": [
+            "money:en-counter"
+        ],
+        "sheet": "money",
+        "en": "How much is it?",
+        "correct": {
+            "kana": "いくらですか",
+            "romaji": "ikura desu ka"
+        },
+        "wrong": [
+            {
+                "kana": "いくつですか",
+                "why": "ikutsu asks how many, or how old someone is."
+            },
+            {
+                "kana": "どうですか",
+                "why": "dou asks how something is, not what it costs."
+            },
+            {
+                "kana": "なんばんですか",
+                "why": "nanban asks which number."
+            }
+        ]
+    },
+    {
+        "id": "ookiku-nakatta",
+        "covers": [
+            "adjectives:i-conjugates-na-doesnt",
+            "adjectives:nai-is-i-adjective"
+        ],
+        "sheet": "adjectives",
+        "en": "It wasn't big.",
+        "correct": {
+            "kana": "おおきくなかったです",
+            "romaji": "ookiku nakatta desu"
+        },
+        "wrong": [
+            {
+                "kana": "おおきいじゃなかったです",
+                "why": "ja nai is the na-adjective pattern; ookii is an i-adjective."
+            },
+            {
+                "kana": "おおきくないでした",
+                "why": "the past sits in nakatta. desu never becomes deshita after an i-adjective."
+            },
+            {
+                "kana": "おおきかったくないです",
+                "why": "katta and kunai cannot stack."
+            }
+        ]
+    },
+    {
+        "id": "shizuka-ja-nai",
+        "covers": [
+            "adjectives:i-conjugates-na-doesnt"
+        ],
+        "sheet": "adjectives",
+        "en": "It isn't quiet.",
+        "correct": {
+            "kana": "しずかじゃないです",
+            "romaji": "shizuka ja nai desu"
+        },
+        "wrong": [
+            {
+                "kana": "しずかくないです",
+                "why": "kunai is the i-adjective negative; shizuka is na."
+            },
+            {
+                "kana": "しずかいじゃないです",
+                "why": "shizuka has no i on the end to keep."
+            },
+            {
+                "kana": "しずかじゃなかったです",
+                "why": "that is the past — it wasn't quiet."
+            }
+        ]
+    },
+    {
+        "id": "shizuka-na-heya",
+        "covers": [
+            "adjectives:na-before-noun"
+        ],
+        "sheet": "adjectives",
+        "en": "a quiet room",
+        "correct": {
+            "kana": "しずかなへや",
+            "romaji": "shizuka na heya"
+        },
+        "wrong": [
+            {
+                "kana": "しずかへや",
+                "why": "a na-adjective needs its na in front of a noun."
+            },
+            {
+                "kana": "しずかのへや",
+                "why": "no joins two nouns; shizuka is an adjective."
+            },
+            {
+                "kana": "しずかいへや",
+                "why": "shizuka does not take i."
+            }
+        ]
+    },
+    {
+        "id": "tanoshii-shigoto",
+        "covers": [
+            "adjectives:na-before-noun"
+        ],
+        "sheet": "adjectives",
+        "en": "fun work",
+        "correct": {
+            "kana": "たのしいしごと",
+            "romaji": "tanoshii shigoto"
+        },
+        "wrong": [
+            {
+                "kana": "たのしくしごと",
+                "why": "tanoshiku is the adverb form; before a noun the i stays."
+            },
+            {
+                "kana": "たのしいなしごと",
+                "why": "na belongs to na-adjectives. Tanoshii already ends in i."
+            },
+            {
+                "kana": "たのしいですしごと",
+                "why": "desu closes a sentence; before a noun the adjective attaches straight on."
+            }
+        ]
+    },
+    {
+        "id": "yokatta",
+        "covers": [
+            "adjectives:ii-irregular"
+        ],
+        "sheet": "adjectives",
+        "en": "It was good.",
+        "correct": {
+            "kana": "よかったです",
+            "romaji": "yokatta desu"
+        },
+        "wrong": [
+            {
+                "kana": "いかったです",
+                "why": "ii builds every form but the plain present from yoi: yokatta."
+            },
+            {
+                "kana": "いいでした",
+                "why": "an i-adjective carries its own past; desu does not become deshita."
+            },
+            {
+                "kana": "よくでした",
+                "why": "yoku is the adverb stem, not a past tense."
+            }
+        ]
+    },
+    {
+        "id": "sengetsu",
+        "covers": [
+            "calendar:prefixes",
+            "calendar:ni-or-nothing"
+        ],
+        "sheet": "calendar",
+        "en": "I went last month.",
+        "correct": {
+            "kana": "せんげついきました",
+            "romaji": "sengetsu ikimashita"
+        },
+        "wrong": [
+            {
+                "kana": "さきげついきました",
+                "why": "the prefix is sen-, the same one as senshuu: sengetsu."
+            },
+            {
+                "kana": "せんげつにいきました",
+                "why": "relative time words take no ni."
+            },
+            {
+                "kana": "せんつきいきました",
+                "why": "the prefix goes with getsu, not tsuki."
+            }
+        ]
+    },
+    {
+        "id": "kyonen",
+        "covers": [
+            "calendar:year-irregular"
+        ],
+        "sheet": "calendar",
+        "en": "I went last year.",
+        "correct": {
+            "kana": "きょねんいきました",
+            "romaji": "kyonen ikimashita"
+        },
+        "wrong": [
+            {
+                "kana": "せんねんいきました",
+                "why": "year ignores the sen- prefix — last year is kyonen."
+            },
+            {
+                "kana": "せんとしいきました",
+                "why": "neither half works: kyonen is a word of its own."
+            },
+            {
+                "kana": "らいねんいきました",
+                "why": "rainen is next year."
+            }
+        ]
+    },
+    {
+        "id": "ashita-no-asa",
+        "covers": [
+            "calendar:morning-night-no"
+        ],
+        "sheet": "calendar",
+        "en": "I'm going tomorrow morning.",
+        "correct": {
+            "kana": "あしたのあさいきます",
+            "romaji": "ashita no asa ikimasu"
+        },
+        "wrong": [
+            {
+                "kana": "あしたあさいきます",
+                "why": "day + no + asa. The no is not optional."
+            },
+            {
+                "kana": "あしたにあさいきます",
+                "why": "ni does not go between the day and the part of it."
+            },
+            {
+                "kana": "あさのあしたいきます",
+                "why": "the day comes first: ashita no asa."
+            }
+        ]
+    },
+    {
+        "id": "kesa",
+        "covers": [
+            "calendar:now-exceptions",
+            "adjectives:i-conjugates-na-doesnt"
+        ],
+        "sheet": "calendar",
+        "en": "It was cold this morning.",
+        "correct": {
+            "kana": "けさはさむかったです",
+            "romaji": "kesa wa samukatta desu"
+        },
+        "wrong": [
+            {
+                "kana": "きょうのあさはさむかったです",
+                "why": "this morning is kesa — kyou no asa is the one that isn't said."
+            },
+            {
+                "kana": "こんあさはさむかったです",
+                "why": "kon- works on ban but not on asa: kesa, konban."
+            },
+            {
+                "kana": "けさはさむいでした",
+                "why": "an i-adjective carries its own past: samukatta desu."
+            }
+        ]
+    },
+    {
+        "id": "sanji-juugofun",
+        "covers": [
+            "clock:hour-then-minute",
+            "clock:pun-fun"
+        ],
+        "sheet": "clock",
+        "en": "It's 3:15.",
+        "correct": {
+            "kana": "さんじじゅうごふんです",
+            "romaji": "sanji juugofun desu"
+        },
+        "wrong": [
+            {
+                "kana": "じゅうごふんさんじです",
+                "why": "the hour comes first, then the minutes."
+            },
+            {
+                "kana": "さんじとじゅうごふんです",
+                "why": "nothing goes between them — no to, and no word for 'past'."
+            },
+            {
+                "kana": "さんじじゅうごぷんです",
+                "why": "a number ending in 5 keeps fun soft: juugofun."
+            }
+        ]
+    },
+    {
+        "id": "juppun",
+        "covers": [
+            "clock:pun-fun"
+        ],
+        "sheet": "clock",
+        "en": "Ten minutes.",
+        "correct": {
+            "kana": "じゅっぷん",
+            "romaji": "juppun"
+        },
+        "wrong": [
+            {
+                "kana": "じゅうふん",
+                "why": "10 ends in a stopped sound, so the f hardens to p."
+            },
+            {
+                "kana": "じゅっふん",
+                "why": "the small tsu comes with pun, never with fun."
+            },
+            {
+                "kana": "じゅうぷん",
+                "why": "the vowel shortens when the small tsu appears: juppun."
+            }
+        ]
+    },
+    {
+        "id": "yonpun",
+        "covers": [
+            "clock:four-seven-nine-switch"
+        ],
+        "sheet": "clock",
+        "en": "Four minutes.",
+        "correct": {
+            "kana": "よんぷん",
+            "romaji": "yonpun"
+        },
+        "wrong": [
+            {
+                "kana": "よぷん",
+                "why": "yo is the hour reading — yoji. The minutes take yon."
+            },
+            {
+                "kana": "よんふん",
+                "why": "after n the f hardens: yonpun."
+            },
+            {
+                "kana": "しふん",
+                "why": "shi is not used for minutes at all."
+            }
+        ]
+    },
+    {
+        "id": "gozen-kuji",
+        "covers": [
+            "clock:han-gozen-gogo",
+            "clock:irregular-hours"
+        ],
+        "sheet": "clock",
+        "en": "Nine in the morning.",
+        "correct": {
+            "kana": "ごぜんくじ",
+            "romaji": "gozen kuji"
+        },
+        "wrong": [
+            {
+                "kana": "くじごぜん",
+                "why": "gozen goes in front of the hour, the opposite of English."
+            },
+            {
+                "kana": "ごごくじ",
+                "why": "gogo is the afternoon."
+            },
+            {
+                "kana": "ごぜんきゅうじ",
+                "why": "nine o'clock is kuji, never kyuuji."
+            }
+        ]
+    },
+    {
+        "id": "sanji-han",
+        "covers": [
+            "clock:han-gozen-gogo"
+        ],
+        "sheet": "clock",
+        "en": "Half past three.",
+        "correct": {
+            "kana": "さんじはん",
+            "romaji": "sanji han"
+        },
+        "wrong": [
+            {
+                "kana": "はんさんじ",
+                "why": "han follows the hour."
+            },
+            {
+                "kana": "さんじはんぷん",
+                "why": "han is not a minute count, so no pun."
+            },
+            {
+                "kana": "さんじにはん",
+                "why": "nothing goes between the hour and han."
+            }
+        ]
+    },
+    {
+        "id": "densha-de",
+        "covers": [
+            "going:sentence-shape",
+            "going:de-means-to-company"
+        ],
+        "sheet": "going",
+        "en": "I went to Tokyo by train last week.",
+        "correct": {
+            "kana": "せんしゅうでんしゃでとうきょうへいきました",
+            "romaji": "senshuu densha de toukyou e ikimashita"
+        },
+        "wrong": [
+            {
+                "kana": "せんしゅうでんしゃでいきましたとうきょうへ",
+                "why": "the verb always ends the sentence."
+            },
+            {
+                "kana": "せんしゅうにでんしゃでとうきょうへいきました",
+                "why": "senshuu takes no ni."
+            },
+            {
+                "kana": "せんしゅうでんしゃにとうきょうへいきました",
+                "why": "the means of travel takes de: densha de."
+            }
+        ]
+    },
+    {
+        "id": "eki-e",
+        "covers": [
+            "going:e-written-he"
+        ],
+        "sheet": "going",
+        "en": "I'm going to the station.",
+        "correct": {
+            "kana": "えきへいきます",
+            "romaji": "eki e ikimasu"
+        },
+        "wrong": [
+            {
+                "kana": "えきえいきます",
+                "why": "the particle is said e but written he — this is the one place he is not read he."
+            },
+            {
+                "kana": "えきへいきました",
+                "why": "that is past — the prompt is I'm going."
+            },
+            {
+                "kana": "えきへきます",
+                "why": "kimasu is come; going is ikimasu."
+            }
+        ]
+    },
+    {
+        "id": "tomodachi-to",
+        "covers": [
+            "going:de-means-to-company"
+        ],
+        "sheet": "going",
+        "en": "I went with a friend.",
+        "correct": {
+            "kana": "ともだちといきました",
+            "romaji": "tomodachi to ikimashita"
+        },
+        "wrong": [
+            {
+                "kana": "ともだちでいきました",
+                "why": "de is the means of travel; a person you go with takes to."
+            },
+            {
+                "kana": "ともだちといきます",
+                "why": "the prompt is past — ikimashita."
+            },
+            {
+                "kana": "ともだちといきましたです",
+                "why": "ikimashita is already the polite past; nothing follows it."
+            }
+        ]
+    },
+    {
+        "id": "aruite",
+        "covers": [
+            "going:aruite"
+        ],
+        "sheet": "going",
+        "en": "I go on foot.",
+        "correct": {
+            "kana": "あるいていきます",
+            "romaji": "aruite ikimasu"
+        },
+        "wrong": [
+            {
+                "kana": "あるいてでいきます",
+                "why": "aruite is already a te-form verb, so de never follows it."
+            },
+            {
+                "kana": "あるきでいきます",
+                "why": "the form is aruite, not aruki."
+            },
+            {
+                "kana": "あるいてにいきます",
+                "why": "nothing follows aruite at all."
+            }
+        ]
+    },
+    {
+        "id": "kuji-ni",
+        "covers": [
+            "going:time-ni-or-nothing",
+            "calendar:ni-or-nothing"
+        ],
+        "sheet": "going",
+        "en": "I'm going at nine.",
+        "correct": {
+            "kana": "くじにいきます",
+            "romaji": "kuji ni ikimasu"
+        },
+        "wrong": [
+            {
+                "kana": "くじいきます",
+                "why": "a clock time keeps its ni — only relative words like kyou drop it."
+            },
+            {
+                "kana": "くじでいきます",
+                "why": "de is where or how, never when."
+            },
+            {
+                "kana": "きゅうじにいきます",
+                "why": "nine o'clock is kuji, not kyuuji."
+            }
+        ]
+    },
+    {
+        "id": "yonhyaku-en",
+        "covers": [
+            "money:yon-nana-kyuu",
+            "money:sound-changes"
+        ],
+        "sheet": "money",
+        "en": "It's 400 yen.",
+        "correct": {
+            "kana": "よんひゃくえんです",
+            "romaji": "yonhyaku en desu"
+        },
+        "wrong": [
+            {
+                "kana": "しひゃくえんです",
+                "why": "counting uses yon. shi belongs to the clock and the calendar."
+            },
+            {
+                "kana": "よひゃくえんです",
+                "why": "yo is only the hour: yoji."
+            },
+            {
+                "kana": "よんびゃくえんです",
+                "why": "only 300, 600 and 800 move the sound."
+            }
+        ]
+    },
+    {
+        "id": "kirei-na-hito",
+        "covers": [
+            "adjectives:which-family",
+            "adjectives:na-before-noun"
+        ],
+        "sheet": "adjectives",
+        "en": "a beautiful person",
+        "correct": {
+            "kana": "きれいなひと",
+            "romaji": "kirei na hito",
+            "kanji": "きれいな人"
+        },
+        "wrong": [
+            {
+                "kana": "きれいひと",
+                "why": "kirei ends in i but takes na — that is the whole exception.",
+                "kanji": "きれい人"
+            },
+            {
+                "kana": "きれいのひと",
+                "why": "no joins two nouns.",
+                "kanji": "きれいの人"
+            },
+            {
+                "kana": "きれなひと",
+                "why": "the i is part of the word: kirei na.",
+                "kanji": "きれな人"
+            }
+        ],
+        "kanjiNotes": [
+            {
+                "word": "人",
+                "kana": "ひと"
+            }
+        ]
+    },
+    {
+        "id": "ja-arimasen",
+        "covers": [
+            "adjectives:ja-arimasen"
+        ],
+        "sheet": "adjectives",
+        "en": "It isn't famous.",
+        "correct": {
+            "kana": "ゆうめいじゃありません",
+            "romaji": "yuumei ja arimasen"
+        },
+        "wrong": [
+            {
+                "kana": "ゆうめいくありません",
+                "why": "ku arimasen is the i-adjective pattern; yuumei is na."
+            },
+            {
+                "kana": "ゆうめいじゃありませんでした",
+                "why": "that is the past — it wasn't famous."
+            },
+            {
+                "kana": "ゆうめいじゃありますせん",
+                "why": "the negative is arimasen; it does not split like that."
+            }
+        ]
+    },
+    {
+        "id": "watashi-wa-ga",
+        "covers": [
+            "ga:wa-person-ga-thing",
+            "ga:ga-not-wo",
+            "ga:amari-zenzen"
+        ],
+        "sheet": "ga",
+        "en": "I understand a little Japanese.",
+        "correct": {
+            "kana": "わたしはにほんごがすこしわかります",
+            "romaji": "watashi wa nihongo ga sukoshi wakarimasu"
+        },
+        "wrong": [
+            {
+                "kana": "わたしはにほんごをすこしわかります",
+                "why": "wakarimasu takes ga."
+            },
+            {
+                "kana": "わたしがにほんごはすこしわかります",
+                "why": "backwards: wa marks the person, ga marks the thing."
+            },
+            {
+                "kana": "わたしはにほんごがあまりわかります",
+                "why": "amari only pairs with a negative — amari wakarimasen."
+            }
+        ]
+    },
+    {
+        "id": "heta-about-yourself",
+        "covers": [
+            "ga:jouzu-not-yourself",
+            "ga:suki-kirai-jouzu-heta-na"
+        ],
+        "sheet": "ga",
+        "en": "My Japanese is poor.",
+        "correct": {
+            "kana": "にほんごがへたです",
+            "romaji": "nihongo ga heta desu"
+        },
+        "wrong": [
+            {
+                "kana": "にほんごがじょうずです",
+                "why": "that says you are good at it — and jouzu is for praising other people."
+            },
+            {
+                "kana": "にほんごをへたです",
+                "why": "heta takes ga."
+            },
+            {
+                "kana": "にほんごがへたいです",
+                "why": "heta is a na-adjective; there is no i."
+            }
+        ]
+    },
+    {
+        "id": "ga-yasai-kirai",
+        "covers": [
+            "ga:ga-not-wo",
+            "ga:suki-kirai-jouzu-heta-na"
+        ],
+        "sheet": "ga",
+        "en": "I don't like vegetables.",
+        "correct": {
+            "kana": "やさいがきらいです",
+            "romaji": "yasai ga kirai desu"
+        },
+        "wrong": [
+            {
+                "kana": "やさいをきらいです",
+                "why": "kirai takes ga — it is a state, not something done to the yasai."
+            },
+            {
+                "kana": "やさいがきらいます",
+                "why": "kirai is a na-adjective, not a verb."
+            },
+            {
+                "kana": "やさいがきらいいです",
+                "why": "kirai is na; there is no i to add."
+            }
+        ]
+    },
+    {
+        "id": "ga-eiga-suki",
+        "covers": [
+            "ga:ga-not-wo",
+            "ga:suki-kirai-jouzu-heta-na"
+        ],
+        "sheet": "ga",
+        "en": "I like films.",
+        "correct": {
+            "kana": "えいががすきです",
+            "romaji": "eiga ga suki desu"
+        },
+        "wrong": [
+            {
+                "kana": "えいがをすきです",
+                "why": "suki takes ga — it is a state, not something done to the eiga."
+            },
+            {
+                "kana": "えいががすきます",
+                "why": "suki is a na-adjective, not a verb."
+            },
+            {
+                "kana": "えいががすきいです",
+                "why": "suki is na; there is no i to add."
+            }
+        ]
+    },
+    {
+        "id": "ga-uta-jouzu",
+        "covers": [
+            "ga:ga-not-wo",
+            "ga:suki-kirai-jouzu-heta-na"
+        ],
+        "sheet": "ga",
+        "en": "She's good at singing.",
+        "correct": {
+            "kana": "うたがじょうずです",
+            "romaji": "uta ga jouzu desu"
+        },
+        "wrong": [
+            {
+                "kana": "うたをじょうずです",
+                "why": "jouzu takes ga — it is a state, not something done to the uta."
+            },
+            {
+                "kana": "うたがじょうずます",
+                "why": "jouzu is a na-adjective, not a verb."
+            },
+            {
+                "kana": "うたがじょうずいです",
+                "why": "jouzu is na; there is no i to add."
+            }
+        ]
+    },
+    {
+        "id": "ga-dansu-heta",
+        "covers": [
+            "ga:ga-not-wo",
+            "ga:suki-kirai-jouzu-heta-na"
+        ],
+        "sheet": "ga",
+        "en": "I'm bad at dancing.",
+        "correct": {
+            "kana": "ダンスがへたです",
+            "romaji": "dansu ga heta desu",
+            "kanji": "ダンスが下手です"
+        },
+        "wrong": [
+            {
+                "kana": "ダンスをへたです",
+                "why": "heta takes ga — it is a state, not something done to the dansu.",
+                "kanji": "ダンスを下手です"
+            },
+            {
+                "kana": "ダンスがへたます",
+                "why": "heta is a na-adjective, not a verb.",
+                "kanji": "ダンスが下手ます"
+            },
+            {
+                "kana": "ダンスがへたいです",
+                "why": "heta is na; there is no i to add.",
+                "kanji": "ダンスが下手いです"
+            }
+        ],
+        "kanjiNotes": [
+            {
+                "word": "下手",
+                "kana": "へた"
+            }
+        ]
+    },
+    {
+        "id": "ga-hiragana-wakarimasu",
+        "covers": [
+            "ga:ga-not-wo"
+        ],
+        "sheet": "ga",
+        "en": "I understand hiragana.",
+        "correct": {
+            "kana": "ひらがながわかります",
+            "romaji": "hiragana ga wakarimasu"
+        },
+        "wrong": [
+            {
+                "kana": "ひらがなをわかります",
+                "why": "wakarimasu takes ga."
+            },
+            {
+                "kana": "ひらがながわかりますです",
+                "why": "wakarimasu is already a verb; no desu after it."
+            },
+            {
+                "kana": "ひらがなわかります",
+                "why": "the thing you understand still needs its particle."
+            }
+        ]
+    },
+    {
+        "id": "ga-jikan-arimasu",
+        "covers": [
+            "ga:ga-not-wo",
+            "ga:arimasu-imasu"
+        ],
+        "sheet": "ga",
+        "en": "I have time.",
+        "correct": {
+            "kana": "じかんがあります",
+            "romaji": "jikan ga arimasu"
+        },
+        "wrong": [
+            {
+                "kana": "じかんをあります",
+                "why": "arimasu takes ga."
+            },
+            {
+                "kana": "じかんがいます",
+                "why": "imasu is for living things; time takes arimasu."
+            },
+            {
+                "kana": "じかんがありません",
+                "why": "that is the negative — I don't have time."
+            }
+        ]
+    },
+    {
+        "id": "wa-ga-kanji",
+        "covers": [
+            "ga:wa-person-ga-thing",
+            "ga:ga-not-wo"
+        ],
+        "sheet": "ga",
+        "en": "I understand a little kanji.",
+        "correct": {
+            "kana": "わたしはかんじがすこしわかります",
+            "romaji": "watashi wa kanji ga sukoshi wakarimasu"
+        },
+        "wrong": [
+            {
+                "kana": "わたしはかんじをすこしわかります",
+                "why": "wakarimasu takes ga."
+            },
+            {
+                "kana": "わたしがかんじはすこしわかります",
+                "why": "the other way round: wa carries the person, ga the thing."
+            },
+            {
+                "kana": "わたしはかんじがすこしわかりません",
+                "why": "that says the opposite — I don't understand kanji."
+            }
+        ]
+    },
+    {
+        "id": "wa-ga-ryouri",
+        "covers": [
+            "ga:wa-person-ga-thing",
+            "ga:jouzu-not-yourself"
+        ],
+        "sheet": "ga",
+        "en": "My mother is good at cooking.",
+        "correct": {
+            "kana": "はははりょうりがじょうずです",
+            "romaji": "haha wa ryouri ga jouzu desu",
+            "kanji": "はははりょうりが上手です"
+        },
+        "wrong": [
+            {
+                "kana": "ははがりょうりはじょうずです",
+                "why": "wa marks who you are talking about; ga marks what they are good at.",
+                "kanji": "ははがりょうりは上手です"
+            },
+            {
+                "kana": "はははりょうりをじょうずです",
+                "why": "jouzu takes ga.",
+                "kanji": "はははりょうりを上手です"
+            },
+            {
+                "kana": "はははりょうりがじょうずます",
+                "why": "jouzu is not a verb.",
+                "kanji": "はははりょうりが上手ます"
+            }
+        ],
+        "kanjiNotes": [
+            {
+                "word": "上手",
+                "kana": "じょうず"
+            }
+        ]
+    },
+    {
+        "id": "donna-tabemono",
+        "covers": [
+            "ga:donna",
+            "ga:ga-not-wo"
+        ],
+        "sheet": "ga",
+        "en": "What kind of food do you like?",
+        "correct": {
+            "kana": "どんなたべものがすきですか",
+            "romaji": "donna tabemono ga suki desu ka"
+        },
+        "wrong": [
+            {
+                "kana": "どのたべものがすきですか",
+                "why": "dono asks which one of a known set."
+            },
+            {
+                "kana": "どんなたべものをすきですか",
+                "why": "suki takes ga."
+            },
+            {
+                "kana": "どんなたべものがすきますか",
+                "why": "suki is not a verb."
+            }
+        ]
+    },
+    {
+        "id": "donna-eiga",
+        "covers": [
+            "ga:donna",
+            "ga:ga-not-wo"
+        ],
+        "sheet": "ga",
+        "en": "What kind of films do you like?",
+        "correct": {
+            "kana": "どんなえいががすきですか",
+            "romaji": "donna eiga ga suki desu ka"
+        },
+        "wrong": [
+            {
+                "kana": "どのえいががすきですか",
+                "why": "dono asks which one of a known set."
+            },
+            {
+                "kana": "どんなえいがをすきですか",
+                "why": "suki takes ga."
+            },
+            {
+                "kana": "どんなえいががすきますか",
+                "why": "suki is not a verb."
+            }
+        ]
+    },
+    {
+        "id": "amari-wakarimasen-eigo",
+        "covers": [
+            "ga:amari-zenzen",
+            "ga:ga-not-wo"
+        ],
+        "sheet": "ga",
+        "en": "I don't understand English very well.",
+        "correct": {
+            "kana": "えいごがあまりわかりません",
+            "romaji": "eigo ga amari wakarimasen"
+        },
+        "wrong": [
+            {
+                "kana": "えいごがあまりわかります",
+                "why": "amari only pairs with a negative."
+            },
+            {
+                "kana": "えいごをあまりわかりません",
+                "why": "wakarimasu takes ga."
+            },
+            {
+                "kana": "えいごがぜんぜんわかります",
+                "why": "zenzen needs a negative too."
+            }
+        ]
+    },
+    {
+        "id": "zenzen-arimasen-jikan",
+        "covers": [
+            "ga:amari-zenzen",
+            "ga:arimasu-imasu"
+        ],
+        "sheet": "ga",
+        "en": "I have no time at all.",
+        "correct": {
+            "kana": "じかんがぜんぜんありません",
+            "romaji": "jikan ga zenzen arimasen"
+        },
+        "wrong": [
+            {
+                "kana": "じかんがぜんぜんあります",
+                "why": "zenzen only pairs with a negative."
+            },
+            {
+                "kana": "じかんがあまりあります",
+                "why": "amari needs a negative as well."
+            },
+            {
+                "kana": "じかんをぜんぜんありません",
+                "why": "arimasu takes ga."
+            }
+        ]
+    },
+    {
+        "id": "sukoshi-wakarimasu-chuugokugo",
+        "covers": [
+            "ga:amari-zenzen"
+        ],
+        "sheet": "ga",
+        "en": "I understand a little Chinese.",
+        "correct": {
+            "kana": "ちゅうごくごがすこしわかります",
+            "romaji": "chuugokugo ga sukoshi wakarimasu"
+        },
+        "wrong": [
+            {
+                "kana": "ちゅうごくごがすこしわかりません",
+                "why": "that is the negative."
+            },
+            {
+                "kana": "ちゅうごくごがあまりわかります",
+                "why": "amari needs a negative verb."
+            },
+            {
+                "kana": "ちゅうごくごをすこしわかります",
+                "why": "wakarimasu takes ga."
+            }
+        ]
+    },
+    {
+        "id": "kodomo-imasu",
+        "covers": [
+            "ga:arimasu-imasu",
+            "ga:ga-not-wo"
+        ],
+        "sheet": "ga",
+        "en": "I have a child.",
+        "correct": {
+            "kana": "こどもがいます",
+            "romaji": "kodomo ga imasu"
+        },
+        "wrong": [
+            {
+                "kana": "こどもがあります",
+                "why": "a person takes imasu, never arimasu."
+            },
+            {
+                "kana": "こどもをいます",
+                "why": "imasu takes ga."
+            },
+            {
+                "kana": "こどもがいました",
+                "why": "that is the past."
+            }
+        ]
+    },
+    {
+        "id": "kuruma-arimasu",
+        "covers": [
+            "ga:arimasu-imasu"
+        ],
+        "sheet": "ga",
+        "en": "I have a car.",
+        "correct": {
+            "kana": "くるまがあります",
+            "romaji": "kuruma ga arimasu",
+            "kanji": "車があります"
+        },
+        "wrong": [
+            {
+                "kana": "くるまがいます",
+                "why": "a car is not alive; it takes arimasu.",
+                "kanji": "車がいます"
+            },
+            {
+                "kana": "くるまをあります",
+                "why": "arimasu takes ga.",
+                "kanji": "車をあります"
+            },
+            {
+                "kana": "くるまがありました",
+                "why": "that is the past — I had a car.",
+                "kanji": "車がありました"
+            }
+        ],
+        "kanjiNotes": [
+            {
+                "word": "車",
+                "kana": "くるま"
+            }
+        ]
+    },
+    {
+        "id": "yakusoku-ga",
+        "covers": [
+            "ga:youji-yakusoku",
+            "ga:ga-not-wo"
+        ],
+        "sheet": "ga",
+        "en": "I have an appointment tomorrow.",
+        "correct": {
+            "kana": "あしたやくそくがあります",
+            "romaji": "ashita yakusoku ga arimasu"
+        },
+        "wrong": [
+            {
+                "kana": "あしたじかんがあります",
+                "why": "that says you have time, which is the opposite."
+            },
+            {
+                "kana": "あしたやくそくをあります",
+                "why": "arimasu takes ga."
+            },
+            {
+                "kana": "あしたにやくそくがあります",
+                "why": "ashita is a relative time word and takes no ni."
+            }
+        ]
+    },
+    {
+        "id": "kara-samui",
+        "covers": [
+            "ga:kara-order"
+        ],
+        "sheet": "ga",
+        "en": "Because it's cold, I drink hot coffee.",
+        "correct": {
+            "kana": "さむいですからあついコーヒーをのみます",
+            "romaji": "samui desu kara atsui koohii wo nomimasu"
+        },
+        "wrong": [
+            {
+                "kana": "あついコーヒーをのみますからさむいです",
+                "why": "reversed: that says it is cold because you drink hot coffee."
+            },
+            {
+                "kana": "さむいからあついコーヒーをのみます",
+                "why": "in polite speech desu stays in front of kara."
+            },
+            {
+                "kana": "さむいですからあついコーヒーがのみます",
+                "why": "nomimasu is a real verb of doing, so what you drink takes wo."
+            }
+        ]
+    },
+    {
+        "id": "kara-yasui",
+        "covers": [
+            "ga:kara-order",
+            "ga:ga-not-wo"
+        ],
+        "sheet": "ga",
+        "en": "Because it's cheap, I like this shop.",
+        "correct": {
+            "kana": "やすいですからこのみせがすきです",
+            "romaji": "yasui desu kara kono mise ga suki desu",
+            "kanji": "やすいですからこのみせが好きです"
+        },
+        "wrong": [
+            {
+                "kana": "このみせがすきですからやすいです",
+                "why": "reversed: that says it is cheap because you like the shop.",
+                "kanji": "このみせが好きですからやすいです"
+            },
+            {
+                "kana": "やすいですからこのみせをすきです",
+                "why": "suki takes ga.",
+                "kanji": "やすいですからこのみせを好きです"
+            },
+            {
+                "kana": "やすいからこのみせがすきです",
+                "why": "desu belongs in front of kara when you are speaking politely.",
+                "kanji": "やすいからこのみせが好きです"
+            }
+        ],
+        "kanjiNotes": [
+            {
+                "word": "好き",
+                "kana": "すき"
+            }
+        ]
+    },
+    {
+        "id": "scale-kirai-totemo",
+        "covers": [
+            "ga:scale",
+            "ga:ga-not-wo"
+        ],
+        "sheet": "ga",
+        "en": "I really don't like vegetables.",
+        "correct": {
+            "kana": "やさいがとてもきらいです",
+            "romaji": "yasai ga totemo kirai desu",
+            "kanji": "やさいがとても嫌いです"
+        },
+        "wrong": [
+            {
+                "kana": "やさいがあまりきらいです",
+                "why": "amari needs a negative after it.",
+                "kanji": "やさいがあまり嫌いです"
+            },
+            {
+                "kana": "やさいがとてもきらいじゃないです",
+                "why": "that is the negative — I don't dislike them.",
+                "kanji": "やさいがとても嫌いじゃないです"
+            },
+            {
+                "kana": "やさいをとてもきらいです",
+                "why": "kirai takes ga.",
+                "kanji": "やさいをとても嫌いです"
+            }
+        ],
+        "kanjiNotes": [
+            {
+                "word": "嫌い",
+                "kana": "きらい"
+            }
+        ]
+    },
+    {
+        "id": "scale-maamaa",
+        "covers": [
+            "ga:scale",
+            "ga:soft-refusal"
+        ],
+        "sheet": "ga",
+        "en": "It's so-so.",
+        "correct": {
+            "kana": "まあまあです",
+            "romaji": "maamaa desu"
+        },
+        "wrong": [
+            {
+                "kana": "あまりです",
+                "why": "amari cannot stand on its own, and needs a negative."
+            },
+            {
+                "kana": "まあまあます",
+                "why": "maamaa is not a verb."
+            },
+            {
+                "kana": "とてもです",
+                "why": "totemo needs something to intensify."
+            }
+        ]
+    },
+    {
+        "id": "soft-refusal-eiga",
+        "covers": [
+            "ga:soft-refusal",
+            "ga:amari-zenzen"
+        ],
+        "sheet": "ga",
+        "en": "I don't really like films.",
+        "correct": {
+            "kana": "えいががあまりすきじゃないです",
+            "romaji": "eiga ga amari suki ja nai desu",
+            "kanji": "えいががあまり好きじゃないです"
+        },
+        "wrong": [
+            {
+                "kana": "えいががあまりすきです",
+                "why": "amari only pairs with a negative.",
+                "kanji": "えいががあまり好きです"
+            },
+            {
+                "kana": "えいががあまりすきくないです",
+                "why": "suki is na, so it negates with ja nai.",
+                "kanji": "えいががあまり好きくないです"
+            },
+            {
+                "kana": "えいがをあまりすきじゃないです",
+                "why": "suki takes ga.",
+                "kanji": "えいがをあまり好きじゃないです"
+            }
+        ],
+        "kanjiNotes": [
+            {
+                "word": "好き",
+                "kana": "すき"
+            }
+        ]
+    },
+    {
+        "id": "jouzu-not-self-uta",
+        "covers": [
+            "ga:jouzu-not-yourself",
+            "ga:suki-kirai-jouzu-heta-na"
+        ],
+        "sheet": "ga",
+        "en": "I'm bad at singing.",
+        "correct": {
+            "kana": "うたがへたです",
+            "romaji": "uta ga heta desu"
+        },
+        "wrong": [
+            {
+                "kana": "うたがじょうずです",
+                "why": "that praises yourself, and says the opposite."
+            },
+            {
+                "kana": "うたをへたです",
+                "why": "heta takes ga."
+            },
+            {
+                "kana": "うたがへたます",
+                "why": "heta is not a verb."
+            }
+        ]
+    },
+    {
+        "id": "na-past-jouzu",
+        "covers": [
+            "ga:suki-kirai-jouzu-heta-na",
+            "adjectives:i-conjugates-na-doesnt"
+        ],
+        "sheet": "ga",
+        "en": "He was good at cooking.",
+        "correct": {
+            "kana": "りょうりがじょうずでした",
+            "romaji": "ryouri ga jouzu deshita",
+            "kanji": "りょうりが上手でした"
+        },
+        "wrong": [
+            {
+                "kana": "りょうりがじょうずかったです",
+                "why": "katta is the i-adjective past; jouzu is na.",
+                "kanji": "りょうりが上手かったです"
+            },
+            {
+                "kana": "りょうりがじょうずです",
+                "why": "that is the present.",
+                "kanji": "りょうりが上手です"
+            },
+            {
+                "kana": "りょうりをじょうずでした",
+                "why": "jouzu takes ga.",
+                "kanji": "りょうりを上手でした"
+            }
+        ],
+        "kanjiNotes": [
+            {
+                "word": "上手",
+                "kana": "じょうず"
+            }
+        ]
+    },
+    {
+        "id": "prefix-raigetsu",
+        "covers": [
+            "calendar:prefixes",
+            "calendar:ni-or-nothing"
+        ],
+        "sheet": "calendar",
+        "en": "I'm going next month.",
+        "correct": {
+            "kana": "らいげついきます",
+            "romaji": "raigetsu ikimasu"
+        },
+        "wrong": [
+            {
+                "kana": "らいげつにいきます",
+                "why": "relative time words take no ni."
+            },
+            {
+                "kana": "つぎげついきます",
+                "why": "the prefix is the one on the sheet: raigetsu."
+            },
+            {
+                "kana": "らいげつでいきます",
+                "why": "de marks how or where, not when."
+            }
+        ]
+    },
+    {
+        "id": "prefix-saraishuu",
+        "covers": [
+            "calendar:prefixes",
+            "calendar:ni-or-nothing"
+        ],
+        "sheet": "calendar",
+        "en": "I'm going the week after next.",
+        "correct": {
+            "kana": "さらいしゅういきます",
+            "romaji": "saraishuu ikimasu"
+        },
+        "wrong": [
+            {
+                "kana": "さらいじゅういきます",
+                "why": "sarai attaches to shuu unchanged — saraishuu, no voicing."
+            },
+            {
+                "kana": "さらいしゅうにいきます",
+                "why": "relative time words take no ni."
+            },
+            {
+                "kana": "らいしゅういきます",
+                "why": "raishuu is next week; the week after next adds sarai."
+            }
+        ]
+    },
+    {
+        "id": "year-kotoshi",
+        "covers": [
+            "calendar:year-irregular"
+        ],
+        "sheet": "calendar",
+        "en": "I'm going this year.",
+        "correct": {
+            "kana": "ことしいきます",
+            "romaji": "kotoshi ikimasu"
+        },
+        "wrong": [
+            {
+                "kana": "こんねんいきます",
+                "why": "year refuses kon-: this year is kotoshi."
+            },
+            {
+                "kana": "こんとしいきます",
+                "why": "neither half works — kotoshi is its own word."
+            },
+            {
+                "kana": "ことしにいきます",
+                "why": "relative time words take no ni."
+            }
+        ]
+    },
+    {
+        "id": "year-ototoshi",
+        "covers": [
+            "calendar:year-irregular",
+            "calendar:now-exceptions"
+        ],
+        "sheet": "calendar",
+        "en": "I went the year before last.",
+        "correct": {
+            "kana": "おととしいきました",
+            "romaji": "ototoshi ikimashita"
+        },
+        "wrong": [
+            {
+                "kana": "せんせんねんいきました",
+                "why": "year ignores sensen-: it is ototoshi."
+            },
+            {
+                "kana": "おとといいきました",
+                "why": "ototoi is the day before yesterday."
+            },
+            {
+                "kana": "おととしにいきました",
+                "why": "relative time words take no ni."
+            }
+        ]
+    },
+    {
+        "id": "morning-kinou-no-ban",
+        "covers": [
+            "calendar:morning-night-no"
+        ],
+        "sheet": "calendar",
+        "en": "I went last night.",
+        "correct": {
+            "kana": "きのうのばんいきました",
+            "romaji": "kinou no ban ikimashita"
+        },
+        "wrong": [
+            {
+                "kana": "きのうばんいきました",
+                "why": "day + no + ban. The no is not optional."
+            },
+            {
+                "kana": "きのうにばんいきました",
+                "why": "ni does not join them."
+            },
+            {
+                "kana": "ばんのきのういきました",
+                "why": "the day comes first."
+            }
+        ]
+    },
+    {
+        "id": "morning-maiasa",
+        "covers": [
+            "calendar:morning-night-no",
+            "calendar:prefixes"
+        ],
+        "sheet": "calendar",
+        "en": "I study every morning.",
+        "correct": {
+            "kana": "まいあさべんきょうします",
+            "romaji": "maiasa benkyou shimasu"
+        },
+        "wrong": [
+            {
+                "kana": "まいにちのあさべんきょうします",
+                "why": "the mai- row drops the no: maiasa, maiban."
+            },
+            {
+                "kana": "まいあさにべんきょうします",
+                "why": "mai- words take no ni."
+            },
+            {
+                "kana": "あさまいべんきょうします",
+                "why": "the prefix goes in front: maiasa."
+            }
+        ]
+    },
+    {
+        "id": "konban",
+        "covers": [
+            "calendar:now-exceptions"
+        ],
+        "sheet": "calendar",
+        "en": "I'm going tonight.",
+        "correct": {
+            "kana": "こんばんいきます",
+            "romaji": "konban ikimasu"
+        },
+        "wrong": [
+            {
+                "kana": "きょうのばんいきます",
+                "why": "tonight is konban — kyou no ban is the one that isn't said."
+            },
+            {
+                "kana": "こんばんにいきます",
+                "why": "relative time words take no ni."
+            },
+            {
+                "kana": "こんよるいきます",
+                "why": "kon- goes with ban here, not yoru."
+            }
+        ]
+    },
+    {
+        "id": "weekday-kayoubi",
+        "covers": [
+            "calendar:weekdays"
+        ],
+        "sheet": "calendar",
+        "en": "Tuesday",
+        "correct": {
+            "kana": "かようび",
+            "romaji": "kayoubi"
+        },
+        "wrong": [
+            {
+                "kana": "ひようび",
+                "why": "the prefix takes its on-reading: kayoubi."
+            },
+            {
+                "kana": "かよび",
+                "why": "the you is long: -youbi."
+            },
+            {
+                "kana": "かようにち",
+                "why": "the suffix is -youbi."
+            }
+        ]
+    },
+    {
+        "id": "weekday-suiyoubi",
+        "covers": [
+            "calendar:weekdays"
+        ],
+        "sheet": "calendar",
+        "en": "Wednesday",
+        "correct": {
+            "kana": "すいようび",
+            "romaji": "suiyoubi"
+        },
+        "wrong": [
+            {
+                "kana": "みずようび",
+                "why": "the prefix takes its on-reading: suiyoubi."
+            },
+            {
+                "kana": "すいよび",
+                "why": "the you is long: -youbi."
+            },
+            {
+                "kana": "すいようにち",
+                "why": "the suffix is -youbi."
+            }
+        ]
+    },
+    {
+        "id": "weekday-mokuyoubi",
+        "covers": [
+            "calendar:weekdays"
+        ],
+        "sheet": "calendar",
+        "en": "Thursday",
+        "correct": {
+            "kana": "もくようび",
+            "romaji": "mokuyoubi"
+        },
+        "wrong": [
+            {
+                "kana": "きようび",
+                "why": "the prefix takes its on-reading: mokuyoubi."
+            },
+            {
+                "kana": "もくよび",
+                "why": "the you is long: -youbi."
+            },
+            {
+                "kana": "もくようにち",
+                "why": "the suffix is -youbi."
+            }
+        ]
+    },
+    {
+        "id": "nanyoubi",
+        "covers": [
+            "calendar:n-apostrophe",
+            "calendar:weekdays"
+        ],
+        "sheet": "calendar",
+        "en": "What day of the week is it?",
+        "correct": {
+            "kana": "なんようびですか",
+            "romaji": "nan'youbi desu ka"
+        },
+        "wrong": [
+            {
+                "kana": "なにようびですか",
+                "why": "the question word shortens to nan- in front of youbi."
+            },
+            {
+                "kana": "にゃんようびですか",
+                "why": "the n stands on its own: nan, then youbi."
+            },
+            {
+                "kana": "なんにちですか",
+                "why": "nannichi asks the date, not the weekday."
+            }
+        ]
+    },
+    {
+        "id": "month-shichigatsu",
+        "covers": [
+            "calendar:gatsu",
+            "calendar:four-seven-nine"
+        ],
+        "sheet": "calendar",
+        "en": "July",
+        "correct": {
+            "kana": "しちがつ",
+            "romaji": "shichigatsu"
+        },
+        "wrong": [
+            {
+                "kana": "ななつき",
+                "why": "the month keeps its on-reading: shichigatsu."
+            },
+            {
+                "kana": "しちげつ",
+                "why": "months of the year take -gatsu; -getsu is for the weekday and for counting months."
+            },
+            {
+                "kana": "しちつき",
+                "why": "tsuki is the moon, not the month name."
+            }
+        ]
+    },
+    {
+        "id": "month-kugatsu",
+        "covers": [
+            "calendar:gatsu",
+            "calendar:four-seven-nine"
+        ],
+        "sheet": "calendar",
+        "en": "September",
+        "correct": {
+            "kana": "くがつ",
+            "romaji": "kugatsu"
+        },
+        "wrong": [
+            {
+                "kana": "きゅうがつ",
+                "why": "the month keeps its on-reading: kugatsu."
+            },
+            {
+                "kana": "くげつ",
+                "why": "months of the year take -gatsu; -getsu is for the weekday and for counting months."
+            },
+            {
+                "kana": "くつき",
+                "why": "tsuki is the moon, not the month name."
+            }
+        ]
+    },
+    {
+        "id": "date-tsuitachi",
+        "covers": [
+            "calendar:dates"
+        ],
+        "sheet": "calendar",
+        "en": "the 1st",
+        "correct": {
+            "kana": "ついたち",
+            "romaji": "tsuitachi"
+        },
+        "wrong": [
+            {
+                "kana": "いちにち",
+                "why": "ichinichi is one day; the 1st is tsuitachi."
+            },
+            {
+                "kana": "いちか",
+                "why": "that is the plain number with the counter stuck on — this date has its own word."
+            },
+            {
+                "kana": "ついたちび",
+                "why": "-bi is not a date counter."
+            }
+        ]
+    },
+    {
+        "id": "date-mikka",
+        "covers": [
+            "calendar:dates"
+        ],
+        "sheet": "calendar",
+        "en": "the 3rd",
+        "correct": {
+            "kana": "みっか",
+            "romaji": "mikka"
+        },
+        "wrong": [
+            {
+                "kana": "さんにち",
+                "why": "the first ten days keep the old counter: mikka."
+            },
+            {
+                "kana": "さんか",
+                "why": "that is the plain number with the counter stuck on — this date has its own word."
+            },
+            {
+                "kana": "みっかび",
+                "why": "-bi is not a date counter."
+            }
+        ]
+    },
+    {
+        "id": "date-youka",
+        "covers": [
+            "calendar:dates"
+        ],
+        "sheet": "calendar",
+        "en": "the 8th",
+        "correct": {
+            "kana": "ようか",
+            "romaji": "youka"
+        },
+        "wrong": [
+            {
+                "kana": "はちにち",
+                "why": "the first ten days keep the old counter: youka."
+            },
+            {
+                "kana": "はちか",
+                "why": "that is the plain number with the counter stuck on — this date has its own word."
+            },
+            {
+                "kana": "ようかび",
+                "why": "-bi is not a date counter."
+            }
+        ]
+    },
+    {
+        "id": "date-juuyokka",
+        "covers": [
+            "calendar:dates"
+        ],
+        "sheet": "calendar",
+        "en": "the 14th",
+        "correct": {
+            "kana": "じゅうよっか",
+            "romaji": "juuyokka"
+        },
+        "wrong": [
+            {
+                "kana": "じゅうよんにち",
+                "why": "14 survives as juuyokka."
+            },
+            {
+                "kana": "じゅうよんか",
+                "why": "that is the plain number with the counter stuck on — this date has its own word."
+            },
+            {
+                "kana": "じゅうよっかび",
+                "why": "-bi is not a date counter."
+            }
+        ]
+    },
+    {
+        "id": "clock-shichiji-gofun",
+        "covers": [
+            "clock:hour-then-minute",
+            "clock:irregular-hours"
+        ],
+        "sheet": "clock",
+        "en": "It's 7:05.",
+        "correct": {
+            "kana": "しちじごふんです",
+            "romaji": "shichiji gofun desu"
+        },
+        "wrong": [
+            {
+                "kana": "ごふんしちじです",
+                "why": "the hour comes first, then the minutes."
+            },
+            {
+                "kana": "しちじとごふんです",
+                "why": "nothing goes between them."
+            },
+            {
+                "kana": "ななじごふんです",
+                "why": "that hour keeps its irregular reading: shichiji, kuji."
+            }
+        ]
+    },
+    {
+        "id": "clock-kuji-juppun",
+        "covers": [
+            "clock:hour-then-minute",
+            "clock:irregular-hours"
+        ],
+        "sheet": "clock",
+        "en": "It's 9:10.",
+        "correct": {
+            "kana": "くじじゅっぷんです",
+            "romaji": "kuji juppun desu"
+        },
+        "wrong": [
+            {
+                "kana": "じゅっぷんくじです",
+                "why": "the hour comes first, then the minutes."
+            },
+            {
+                "kana": "くじとじゅっぷんです",
+                "why": "nothing goes between them."
+            },
+            {
+                "kana": "きゅうじじゅっぷんです",
+                "why": "that hour keeps its irregular reading: shichiji, kuji."
+            }
+        ]
+    },
+    {
+        "id": "clock-ippun",
+        "covers": [
+            "clock:pun-fun"
+        ],
+        "sheet": "clock",
+        "en": "One minute.",
+        "correct": {
+            "kana": "いっぷん",
+            "romaji": "ippun"
+        },
+        "wrong": [
+            {
+                "kana": "いちふん",
+                "why": "1 ends in a stopped sound, so the f hardens to p."
+            },
+            {
+                "kana": "いっふん",
+                "why": "the small tsu and the p go together — one without the other is neither form."
+            },
+            {
+                "kana": "いちぷん",
+                "why": "the ichi shortens to i- as well: ippun."
+            }
+        ]
+    },
+    {
+        "id": "clock-roppun",
+        "covers": [
+            "clock:pun-fun"
+        ],
+        "sheet": "clock",
+        "en": "Six minutes.",
+        "correct": {
+            "kana": "ろっぷん",
+            "romaji": "roppun"
+        },
+        "wrong": [
+            {
+                "kana": "ろくふん",
+                "why": "roku shortens and the f hardens: roppun."
+            },
+            {
+                "kana": "ろっふん",
+                "why": "the small tsu and the p go together — one without the other is neither form."
+            },
+            {
+                "kana": "ろくぷん",
+                "why": "roku shortens to rop- in front of pun."
+            }
+        ]
+    },
+    {
+        "id": "clock-happun",
+        "covers": [
+            "clock:pun-fun"
+        ],
+        "sheet": "clock",
+        "en": "Eight minutes.",
+        "correct": {
+            "kana": "はっぷん",
+            "romaji": "happun"
+        },
+        "wrong": [
+            {
+                "kana": "はちふん",
+                "why": "hachi shortens and the f hardens: happun."
+            },
+            {
+                "kana": "はっふん",
+                "why": "the small tsu and the p go together — one without the other is neither form."
+            },
+            {
+                "kana": "はちぷん",
+                "why": "hachi shortens to hap- in front of pun."
+            }
+        ]
+    },
+    {
+        "id": "clock-gofun",
+        "covers": [
+            "clock:pun-fun"
+        ],
+        "sheet": "clock",
+        "en": "Five minutes.",
+        "correct": {
+            "kana": "ごふん",
+            "romaji": "gofun"
+        },
+        "wrong": [
+            {
+                "kana": "ごぷん",
+                "why": "5 has no stopped sound, so fun stays soft."
+            },
+            {
+                "kana": "ごっふん",
+                "why": "the small tsu and the p go together — one without the other is neither form."
+            },
+            {
+                "kana": "ごっぷん",
+                "why": "there is no small tsu in go — it is plain gofun."
+            }
+        ]
+    },
+    {
+        "id": "clock-nanafun",
+        "covers": [
+            "clock:four-seven-nine-switch",
+            "clock:pun-fun"
+        ],
+        "sheet": "clock",
+        "en": "Seven minutes.",
+        "correct": {
+            "kana": "ななふん",
+            "romaji": "nanafun"
+        },
+        "wrong": [
+            {
+                "kana": "しちふん",
+                "why": "the minutes use nana, where the hour uses shichi."
+            },
+            {
+                "kana": "ななぷん",
+                "why": "nana has no stopped sound, so fun stays soft."
+            },
+            {
+                "kana": "しちぷん",
+                "why": "wrong on both counts — nana, and fun."
+            }
+        ]
+    },
+    {
+        "id": "clock-kyuufun",
+        "covers": [
+            "clock:four-seven-nine-switch"
+        ],
+        "sheet": "clock",
+        "en": "Nine minutes.",
+        "correct": {
+            "kana": "きゅうふん",
+            "romaji": "kyuufun"
+        },
+        "wrong": [
+            {
+                "kana": "くふん",
+                "why": "the minutes use kyuu, where the hour uses ku."
+            },
+            {
+                "kana": "きゅうぷん",
+                "why": "kyuu has no stopped sound, so fun stays soft."
+            },
+            {
+                "kana": "くぷん",
+                "why": "wrong on both counts — kyuu, and fun."
+            }
+        ]
+    },
+    {
+        "id": "clock-gogo-sanji",
+        "covers": [
+            "clock:han-gozen-gogo"
+        ],
+        "sheet": "clock",
+        "en": "Three in the afternoon.",
+        "correct": {
+            "kana": "ごごさんじ",
+            "romaji": "gogo sanji"
+        },
+        "wrong": [
+            {
+                "kana": "さんじごご",
+                "why": "gogo goes in front of the hour."
+            },
+            {
+                "kana": "ごぜんさんじ",
+                "why": "gozen is the morning."
+            },
+            {
+                "kana": "ごごのさんじ",
+                "why": "no does not go between them."
+            }
+        ]
+    },
+    {
+        "id": "clock-rokuji-han",
+        "covers": [
+            "clock:han-gozen-gogo"
+        ],
+        "sheet": "clock",
+        "en": "Half past six.",
+        "correct": {
+            "kana": "ろくじはん",
+            "romaji": "rokuji han"
+        },
+        "wrong": [
+            {
+                "kana": "はんろくじ",
+                "why": "han follows the hour."
+            },
+            {
+                "kana": "ろくじはんぷん",
+                "why": "han is not a minute count."
+            },
+            {
+                "kana": "ろくじのはん",
+                "why": "nothing goes between the hour and han."
+            }
+        ]
+    },
+    {
+        "id": "going-basu-de",
+        "covers": [
+            "going:de-means-to-company",
+            "going:sentence-shape"
+        ],
+        "sheet": "going",
+        "en": "I'm going to the department store by bus.",
+        "correct": {
+            "kana": "バスでデパートへいきます",
+            "romaji": "basu de depaato e ikimasu"
+        },
+        "wrong": [
+            {
+                "kana": "バスとデパートへいきます",
+                "why": "to is for a person you go with; a vehicle takes de."
+            },
+            {
+                "kana": "バスでデパートへいきました",
+                "why": "that is past — the prompt is I'm going."
+            },
+            {
+                "kana": "デパートへいきますバスで",
+                "why": "the verb ends the sentence — everything else comes before it."
+            }
+        ]
+    },
+    {
+        "id": "going-kazoku-to",
+        "covers": [
+            "going:de-means-to-company"
+        ],
+        "sheet": "going",
+        "en": "I went with my family.",
+        "correct": {
+            "kana": "かぞくといきました",
+            "romaji": "kazoku to ikimashita"
+        },
+        "wrong": [
+            {
+                "kana": "かぞくでいきました",
+                "why": "de is the means of travel; people you go with take to."
+            },
+            {
+                "kana": "かぞくといきます",
+                "why": "the prompt is past — ikimashita."
+            },
+            {
+                "kana": "かぞくといきませんでした",
+                "why": "that says the opposite — I didn't go."
+            }
+        ]
+    },
+    {
+        "id": "going-hitori-de",
+        "covers": [
+            "going:de-means-to-company"
+        ],
+        "sheet": "going",
+        "en": "I went alone.",
+        "correct": {
+            "kana": "ひとりでいきました",
+            "romaji": "hitori de ikimashita"
+        },
+        "wrong": [
+            {
+                "kana": "ひとりといきました",
+                "why": "to is for a person you go with; alone is hitori de."
+            },
+            {
+                "kana": "ひとりでいきます",
+                "why": "the prompt is past — ikimashita."
+            },
+            {
+                "kana": "ひとりできました",
+                "why": "kimashita is came; went is ikimashita."
+            }
+        ]
+    },
+    {
+        "id": "going-byouin-ni",
+        "covers": [
+            "going:e-written-he"
+        ],
+        "sheet": "going",
+        "en": "I'm going to the hospital.",
+        "correct": {
+            "kana": "びょういんへいきます",
+            "romaji": "byouin e ikimasu"
+        },
+        "wrong": [
+            {
+                "kana": "びょういんえいきます",
+                "why": "the particle is said e but written he."
+            },
+            {
+                "kana": "びょういんへいきました",
+                "why": "that is past — the prompt is I'm going."
+            },
+            {
+                "kana": "びょういんいきます",
+                "why": "a destination always keeps its particle; only time words drop it."
+            }
+        ]
+    },
+    {
+        "id": "going-aruite-gakkou",
+        "covers": [
+            "going:aruite"
+        ],
+        "sheet": "going",
+        "en": "I walk to school.",
+        "correct": {
+            "kana": "がっこうへあるいていきます",
+            "romaji": "gakkou e aruite ikimasu"
+        },
+        "wrong": [
+            {
+                "kana": "がっこうへあるいてでいきます",
+                "why": "aruite is a te-form verb; de never follows it."
+            },
+            {
+                "kana": "がっこうへあるきでいきます",
+                "why": "the form is aruite."
+            },
+            {
+                "kana": "がっこうをあるいていきます",
+                "why": "the destination does not take wo."
+            }
+        ]
+    },
+    {
+        "id": "going-shichiji-ni",
+        "covers": [
+            "going:time-ni-or-nothing",
+            "clock:irregular-hours"
+        ],
+        "sheet": "going",
+        "en": "I'm going home at seven.",
+        "correct": {
+            "kana": "しちじにかえります",
+            "romaji": "shichiji ni kaerimasu"
+        },
+        "wrong": [
+            {
+                "kana": "しちじかえります",
+                "why": "a time with a number takes ni."
+            },
+            {
+                "kana": "ななじにかえります",
+                "why": "seven o'clock is shichiji."
+            },
+            {
+                "kana": "しちじでかえります",
+                "why": "de is the means, not the time."
+            }
+        ]
+    },
+    {
+        "id": "going-kyou-nothing",
+        "covers": [
+            "going:time-ni-or-nothing",
+            "calendar:ni-or-nothing"
+        ],
+        "sheet": "going",
+        "en": "I'm going today.",
+        "correct": {
+            "kana": "きょういきます",
+            "romaji": "kyou ikimasu"
+        },
+        "wrong": [
+            {
+                "kana": "きょうにいきます",
+                "why": "kyou is a relative time word — no ni."
+            },
+            {
+                "kana": "きょういきました",
+                "why": "that is past — the prompt is I'm going."
+            },
+            {
+                "kana": "あしたいきます",
+                "why": "ashita is tomorrow."
+            }
+        ]
+    },
+    {
+        "id": "going-masen-deshita",
+        "covers": [
+            "going:sentence-shape"
+        ],
+        "sheet": "going",
+        "en": "I didn't go yesterday.",
+        "correct": {
+            "kana": "きのういきませんでした",
+            "romaji": "kinou ikimasen deshita"
+        },
+        "wrong": [
+            {
+                "kana": "きのういきましたません",
+                "why": "the past sits on deshita: ikimasen deshita."
+            },
+            {
+                "kana": "きのういきませんです",
+                "why": "the past of masen is masen deshita."
+            },
+            {
+                "kana": "きのうにいきませんでした",
+                "why": "kinou takes no ni."
+            }
+        ]
+    },
+    {
+        "id": "money-nijuuman",
+        "covers": [
+            "money:count-in-fours"
+        ],
+        "sheet": "money",
+        "en": "It's 200,000 yen.",
+        "correct": {
+            "kana": "にじゅうまんえんです",
+            "romaji": "nijuuman en desu"
+        },
+        "wrong": [
+            {
+                "kana": "にひゃくせんえんです",
+                "why": "Japanese counts in ten-thousands: 200,000 is 20 man."
+            },
+            {
+                "kana": "にまんえんです",
+                "why": "that is 20,000."
+            },
+            {
+                "kana": "にじゅうまんねんです",
+                "why": "nen is years."
+            }
+        ]
+    },
+    {
+        "id": "money-hyaku",
+        "covers": [
+            "money:drop-the-ichi"
+        ],
+        "sheet": "money",
+        "en": "It's 100 yen.",
+        "correct": {
+            "kana": "ひゃくえんです",
+            "romaji": "hyaku en desu"
+        },
+        "wrong": [
+            {
+                "kana": "いちひゃくえんです",
+                "why": "hyaku drops the ichi."
+            },
+            {
+                "kana": "じゅうじゅうえんです",
+                "why": "ten tens is not how a hundred is said."
+            },
+            {
+                "kana": "ひゃくねんです",
+                "why": "nen is years."
+            }
+        ]
+    },
+    {
+        "id": "money-sen",
+        "covers": [
+            "money:drop-the-ichi"
+        ],
+        "sheet": "money",
+        "en": "It's 1,000 yen.",
+        "correct": {
+            "kana": "せんえんです",
+            "romaji": "sen en desu"
+        },
+        "wrong": [
+            {
+                "kana": "いちせんえんです",
+                "why": "sen drops the ichi, the way hyaku does."
+            },
+            {
+                "kana": "じゅうひゃくえんです",
+                "why": "ten hundreds is not how a thousand is said."
+            },
+            {
+                "kana": "せんねんです",
+                "why": "nen is years."
+            }
+        ]
+    },
+    {
+        "id": "money-roppyaku",
+        "covers": [
+            "money:sound-changes",
+            "money:en-counter"
+        ],
+        "sheet": "money",
+        "en": "It's 600 yen.",
+        "correct": {
+            "kana": "ろっぴゃくえんです",
+            "romaji": "roppyaku en desu"
+        },
+        "wrong": [
+            {
+                "kana": "ろくひゃくえんです",
+                "why": "600 shortens roku and hardens the h to p."
+            },
+            {
+                "kana": "ろっぴゃくのえんです",
+                "why": "en attaches straight to the number, with no no."
+            },
+            {
+                "kana": "ろっぴゃくえんます",
+                "why": "en desu, not en masu — it is a noun."
+            }
+        ]
+    },
+    {
+        "id": "money-happyaku",
+        "covers": [
+            "money:sound-changes",
+            "money:en-counter"
+        ],
+        "sheet": "money",
+        "en": "It's 800 yen.",
+        "correct": {
+            "kana": "はっぴゃくえんです",
+            "romaji": "happyaku en desu"
+        },
+        "wrong": [
+            {
+                "kana": "はちひゃくえんです",
+                "why": "800 shortens hachi and hardens the h to p."
+            },
+            {
+                "kana": "はっぴゃくのえんです",
+                "why": "en attaches straight to the number, with no no."
+            },
+            {
+                "kana": "はっぴゃくえんます",
+                "why": "en desu, not en masu — it is a noun."
+            }
+        ]
+    },
+    {
+        "id": "money-sanbyaku",
+        "covers": [
+            "money:sound-changes",
+            "money:en-counter"
+        ],
+        "sheet": "money",
+        "en": "It's 300 yen.",
+        "correct": {
+            "kana": "さんびゃくえんです",
+            "romaji": "sanbyaku en desu"
+        },
+        "wrong": [
+            {
+                "kana": "さんひゃくえんです",
+                "why": "after n the h voices to b: sanbyaku."
+            },
+            {
+                "kana": "さんびゃくのえんです",
+                "why": "en attaches straight to the number, with no no."
+            },
+            {
+                "kana": "さんびゃくえんます",
+                "why": "en desu, not en masu — it is a noun."
+            }
+        ]
+    },
+    {
+        "id": "money-hassen",
+        "covers": [
+            "money:sound-changes",
+            "money:en-counter"
+        ],
+        "sheet": "money",
+        "en": "It's 8,000 yen.",
+        "correct": {
+            "kana": "はっせんえんです",
+            "romaji": "hassen en desu"
+        },
+        "wrong": [
+            {
+                "kana": "はちせんえんです",
+                "why": "8,000 shortens hachi: hassen."
+            },
+            {
+                "kana": "はっせんのえんです",
+                "why": "en attaches straight to the number, with no no."
+            },
+            {
+                "kana": "はっせんえんます",
+                "why": "en desu, not en masu — it is a noun."
+            }
+        ]
+    },
+    {
+        "id": "money-nanasen",
+        "covers": [
+            "money:yon-nana-kyuu"
+        ],
+        "sheet": "money",
+        "en": "It's 7,000 yen.",
+        "correct": {
+            "kana": "ななせんえんです",
+            "romaji": "nanasen en desu"
+        },
+        "wrong": [
+            {
+                "kana": "しちせんえんです",
+                "why": "counting uses nana; shichi belongs to the clock."
+            },
+            {
+                "kana": "ななせんえんでした",
+                "why": "that is the past."
+            },
+            {
+                "kana": "ななせんねんです",
+                "why": "nen is years."
+            }
+        ]
+    },
+    {
+        "id": "money-kyuuhyaku",
+        "covers": [
+            "money:yon-nana-kyuu"
+        ],
+        "sheet": "money",
+        "en": "It's 900 yen.",
+        "correct": {
+            "kana": "きゅうひゃくえんです",
+            "romaji": "kyuuhyaku en desu"
+        },
+        "wrong": [
+            {
+                "kana": "くひゃくえんです",
+                "why": "counting uses kyuu; ku belongs to the clock."
+            },
+            {
+                "kana": "きゅうひゃくえんでした",
+                "why": "that is the past."
+            },
+            {
+                "kana": "きゅうひゃくねんです",
+                "why": "nen is years."
+            }
+        ]
+    },
+    {
+        "id": "money-ikura-kore",
+        "covers": [
+            "money:en-counter"
+        ],
+        "sheet": "money",
+        "en": "How much is this one?",
+        "correct": {
+            "kana": "これはいくらですか",
+            "romaji": "kore wa ikura desu ka"
+        },
+        "wrong": [
+            {
+                "kana": "これはいくつですか",
+                "why": "ikutsu asks how many; a price asks ikura."
+            },
+            {
+                "kana": "これはなんえんますか",
+                "why": "nan en needs desu ka, not masu ka — there is no verb here."
+            },
+            {
+                "kana": "これはいくらえんですか",
+                "why": "ikura already means how much; the en is not repeated."
+            }
+        ]
+    },
+    {
+        "id": "which-family-yuumei",
+        "covers": [
+            "adjectives:which-family",
+            "adjectives:na-before-noun"
+        ],
+        "sheet": "adjectives",
+        "en": "a famous person",
+        "correct": {
+            "kana": "ゆうめいなひと",
+            "romaji": "yuumei na hito",
+            "kanji": "ゆうめいな人"
+        },
+        "wrong": [
+            {
+                "kana": "ゆうめいひと",
+                "why": "yuumei ends in i but takes na.",
+                "kanji": "ゆうめい人"
+            },
+            {
+                "kana": "ゆうめいのひと",
+                "why": "no joins two nouns.",
+                "kanji": "ゆうめいの人"
+            },
+            {
+                "kana": "ゆうめなひと",
+                "why": "the i belongs to the word itself.",
+                "kanji": "ゆうめな人"
+            }
+        ],
+        "kanjiNotes": [
+            {
+                "word": "人",
+                "kana": "ひと"
+            }
+        ]
+    },
+    {
+        "id": "which-family-kirai",
+        "covers": [
+            "adjectives:which-family",
+            "adjectives:na-before-noun"
+        ],
+        "sheet": "adjectives",
+        "en": "a food I dislike",
+        "correct": {
+            "kana": "きらいなたべもの",
+            "romaji": "kirai na tabemono",
+            "kanji": "嫌いなたべもの"
+        },
+        "wrong": [
+            {
+                "kana": "きらいのたべもの",
+                "why": "no joins two nouns; kirai is an adjective and takes na.",
+                "kanji": "嫌いのたべもの"
+            },
+            {
+                "kana": "きらいたべもの",
+                "why": "kirai is a na-adjective — before a noun it needs its na.",
+                "kanji": "嫌いたべもの"
+            },
+            {
+                "kana": "きらいですたべもの",
+                "why": "desu closes a sentence; before a noun it is kirai na.",
+                "kanji": "嫌いですたべもの"
+            }
+        ],
+        "kanjiNotes": [
+            {
+                "word": "嫌い",
+                "kana": "きらい"
+            }
+        ]
+    },
+    {
+        "id": "i-past-samui",
+        "covers": [
+            "adjectives:i-conjugates-na-doesnt"
+        ],
+        "sheet": "adjectives",
+        "en": "It was cold.",
+        "correct": {
+            "kana": "さむかったです",
+            "romaji": "samukatta desu"
+        },
+        "wrong": [
+            {
+                "kana": "さむいでした",
+                "why": "an i-adjective carries its own past; desu does not become deshita."
+            },
+            {
+                "kana": "さむいじゃなかったです",
+                "why": "ja nakatta is the na pattern."
+            },
+            {
+                "kana": "さむくなかったです",
+                "why": "that is the past negative."
+            }
+        ]
+    },
+    {
+        "id": "i-negpast-samui",
+        "covers": [
+            "adjectives:nai-is-i-adjective"
+        ],
+        "sheet": "adjectives",
+        "en": "It wasn't cold.",
+        "correct": {
+            "kana": "さむくなかったです",
+            "romaji": "samuku nakatta desu"
+        },
+        "wrong": [
+            {
+                "kana": "さむくないでした",
+                "why": "nai is itself an i-adjective, so its past is nakatta."
+            },
+            {
+                "kana": "さむいじゃなかったです",
+                "why": "ja nakatta is the na pattern."
+            },
+            {
+                "kana": "さむかったです",
+                "why": "that is the past, without the negative."
+            }
+        ]
+    },
+    {
+        "id": "i-past-takai",
+        "covers": [
+            "adjectives:i-conjugates-na-doesnt"
+        ],
+        "sheet": "adjectives",
+        "en": "It was expensive.",
+        "correct": {
+            "kana": "たかかったです",
+            "romaji": "takakatta desu"
+        },
+        "wrong": [
+            {
+                "kana": "たかいでした",
+                "why": "an i-adjective carries its own past; desu does not become deshita."
+            },
+            {
+                "kana": "たかいじゃなかったです",
+                "why": "ja nakatta is the na pattern."
+            },
+            {
+                "kana": "たかくなかったです",
+                "why": "that is the past negative."
+            }
+        ]
+    },
+    {
+        "id": "i-negpast-takai",
+        "covers": [
+            "adjectives:nai-is-i-adjective"
+        ],
+        "sheet": "adjectives",
+        "en": "It wasn't expensive.",
+        "correct": {
+            "kana": "たかくなかったです",
+            "romaji": "takaku nakatta desu"
+        },
+        "wrong": [
+            {
+                "kana": "たかくないでした",
+                "why": "nai is itself an i-adjective, so its past is nakatta."
+            },
+            {
+                "kana": "たかいじゃなかったです",
+                "why": "ja nakatta is the na pattern."
+            },
+            {
+                "kana": "たかかったです",
+                "why": "that is the past, without the negative."
+            }
+        ]
+    },
+    {
+        "id": "i-past-oishii",
+        "covers": [
+            "adjectives:i-conjugates-na-doesnt"
+        ],
+        "sheet": "adjectives",
+        "en": "It was delicious.",
+        "correct": {
+            "kana": "おいしかったです",
+            "romaji": "oishikatta desu"
+        },
+        "wrong": [
+            {
+                "kana": "おいしいでした",
+                "why": "an i-adjective carries its own past; desu does not become deshita."
+            },
+            {
+                "kana": "おいしいじゃなかったです",
+                "why": "ja nakatta is the na pattern."
+            },
+            {
+                "kana": "おいしくなかったです",
+                "why": "that is the past negative."
+            }
+        ]
+    },
+    {
+        "id": "i-negpast-oishii",
+        "covers": [
+            "adjectives:nai-is-i-adjective"
+        ],
+        "sheet": "adjectives",
+        "en": "It wasn't delicious.",
+        "correct": {
+            "kana": "おいしくなかったです",
+            "romaji": "oishiku nakatta desu"
+        },
+        "wrong": [
+            {
+                "kana": "おいしくないでした",
+                "why": "nai is itself an i-adjective, so its past is nakatta."
+            },
+            {
+                "kana": "おいしいじゃなかったです",
+                "why": "ja nakatta is the na pattern."
+            },
+            {
+                "kana": "おいしかったです",
+                "why": "that is the past, without the negative."
+            }
+        ]
+    },
+    {
+        "id": "na-neg-benri",
+        "covers": [
+            "adjectives:i-conjugates-na-doesnt"
+        ],
+        "sheet": "adjectives",
+        "en": "It isn't convenient.",
+        "correct": {
+            "kana": "べんりじゃないです",
+            "romaji": "benri ja nai desu"
+        },
+        "wrong": [
+            {
+                "kana": "べんりくないです",
+                "why": "kunai is the i-adjective negative."
+            },
+            {
+                "kana": "べんりいです",
+                "why": "benri has no i on the end."
+            },
+            {
+                "kana": "べんりじゃなかったです",
+                "why": "that is the past negative."
+            }
+        ]
+    },
+    {
+        "id": "na-past-benri",
+        "covers": [
+            "adjectives:i-conjugates-na-doesnt"
+        ],
+        "sheet": "adjectives",
+        "en": "It was convenient.",
+        "correct": {
+            "kana": "べんりでした",
+            "romaji": "benri deshita"
+        },
+        "wrong": [
+            {
+                "kana": "べんりかったです",
+                "why": "katta is the i-adjective past."
+            },
+            {
+                "kana": "べんりです",
+                "why": "that is the present."
+            },
+            {
+                "kana": "べんりじゃなかったです",
+                "why": "that is the past negative."
+            }
+        ]
+    },
+    {
+        "id": "na-neg-nigiyaka",
+        "covers": [
+            "adjectives:i-conjugates-na-doesnt"
+        ],
+        "sheet": "adjectives",
+        "en": "It isn't lively.",
+        "correct": {
+            "kana": "にぎやかじゃないです",
+            "romaji": "nigiyaka ja nai desu"
+        },
+        "wrong": [
+            {
+                "kana": "にぎやかくないです",
+                "why": "kunai is the i-adjective negative."
+            },
+            {
+                "kana": "にぎやかいです",
+                "why": "nigiyaka has no i on the end."
+            },
+            {
+                "kana": "にぎやかじゃなかったです",
+                "why": "that is the past negative."
+            }
+        ]
+    },
+    {
+        "id": "na-past-nigiyaka",
+        "covers": [
+            "adjectives:i-conjugates-na-doesnt"
+        ],
+        "sheet": "adjectives",
+        "en": "It was lively.",
+        "correct": {
+            "kana": "にぎやかでした",
+            "romaji": "nigiyaka deshita"
+        },
+        "wrong": [
+            {
+                "kana": "にぎやかかったです",
+                "why": "katta is the i-adjective past."
+            },
+            {
+                "kana": "にぎやかです",
+                "why": "that is the present."
+            },
+            {
+                "kana": "にぎやかじゃなかったです",
+                "why": "that is the past negative."
+            }
+        ]
+    },
+    {
+        "id": "i-before-noun-atarashii",
+        "covers": [
+            "adjectives:na-before-noun"
+        ],
+        "sheet": "adjectives",
+        "en": "a new car",
+        "correct": {
+            "kana": "あたらしいくるま",
+            "romaji": "atarashii kuruma",
+            "kanji": "あたらしい車"
+        },
+        "wrong": [
+            {
+                "kana": "あたらしくくるま",
+                "why": "atarashiku is the adverb form; before a noun the i stays.",
+                "kanji": "あたらしく車"
+            },
+            {
+                "kana": "あたらしいなくるま",
+                "why": "na belongs to na-adjectives. Atarashii already ends in i.",
+                "kanji": "あたらしいな車"
+            },
+            {
+                "kana": "あたらしいですくるま",
+                "why": "desu closes a sentence; before a noun the adjective attaches straight on.",
+                "kanji": "あたらしいです車"
+            }
+        ],
+        "kanjiNotes": [
+            {
+                "word": "車",
+                "kana": "くるま"
+            }
+        ]
+    },
+    {
+        "id": "i-before-noun-isogashii",
+        "covers": [
+            "adjectives:na-before-noun"
+        ],
+        "sheet": "adjectives",
+        "en": "a busy person",
+        "correct": {
+            "kana": "いそがしいひと",
+            "romaji": "isogashii hito",
+            "kanji": "いそがしい人"
+        },
+        "wrong": [
+            {
+                "kana": "いそがしいなひと",
+                "why": "an i-adjective attaches bare; na belongs to the other family.",
+                "kanji": "いそがしいな人"
+            },
+            {
+                "kana": "いそがしいのひと",
+                "why": "no joins two nouns.",
+                "kanji": "いそがしいの人"
+            },
+            {
+                "kana": "いそがしくひと",
+                "why": "that is the adverb form.",
+                "kanji": "いそがしく人"
+            }
+        ],
+        "kanjiNotes": [
+            {
+                "word": "人",
+                "kana": "ひと"
+            }
+        ]
+    },
+    {
+        "id": "na-before-noun-shinsetsu",
+        "covers": [
+            "adjectives:na-before-noun"
+        ],
+        "sheet": "adjectives",
+        "en": "a kind person",
+        "correct": {
+            "kana": "しんせつなひと",
+            "romaji": "shinsetsu na hito",
+            "kanji": "しんせつな人"
+        },
+        "wrong": [
+            {
+                "kana": "しんせつひと",
+                "why": "a na-adjective needs its na in front of a noun.",
+                "kanji": "しんせつ人"
+            },
+            {
+                "kana": "しんせつのひと",
+                "why": "no joins two nouns.",
+                "kanji": "しんせつの人"
+            },
+            {
+                "kana": "しんせついひと",
+                "why": "shinsetsu does not take i.",
+                "kanji": "しんせつい人"
+            }
+        ],
+        "kanjiNotes": [
+            {
+                "word": "人",
+                "kana": "ひと"
+            }
+        ]
+    },
+    {
+        "id": "na-before-noun-suteki",
+        "covers": [
+            "adjectives:na-before-noun"
+        ],
+        "sheet": "adjectives",
+        "en": "a lovely shop",
+        "correct": {
+            "kana": "すてきなみせ",
+            "romaji": "suteki na mise"
+        },
+        "wrong": [
+            {
+                "kana": "すてきみせ",
+                "why": "a na-adjective needs its na in front of a noun."
+            },
+            {
+                "kana": "すてきのみせ",
+                "why": "no joins two nouns."
+            },
+            {
+                "kana": "すてきいみせ",
+                "why": "suteki does not take i."
+            }
+        ]
+    },
+    {
+        "id": "ii-negative",
+        "covers": [
+            "adjectives:ii-irregular"
+        ],
+        "sheet": "adjectives",
+        "en": "It isn't good.",
+        "correct": {
+            "kana": "よくないです",
+            "romaji": "yoku nai desu"
+        },
+        "wrong": [
+            {
+                "kana": "いくないです",
+                "why": "ii builds every form but the plain present from yoi."
+            },
+            {
+                "kana": "いいじゃないです",
+                "why": "ja nai is the na pattern; ii is an i-adjective."
+            },
+            {
+                "kana": "いいくないです",
+                "why": "the ii does not survive into the negative."
+            }
+        ]
+    },
+    {
+        "id": "ii-past-negative",
+        "covers": [
+            "adjectives:ii-irregular",
+            "adjectives:nai-is-i-adjective"
+        ],
+        "sheet": "adjectives",
+        "en": "It wasn't good.",
+        "correct": {
+            "kana": "よくなかったです",
+            "romaji": "yoku nakatta desu"
+        },
+        "wrong": [
+            {
+                "kana": "いくなかったです",
+                "why": "every form but the plain present is built on yoi."
+            },
+            {
+                "kana": "よくないでした",
+                "why": "nai is an i-adjective, so its past is nakatta."
+            },
+            {
+                "kana": "いいじゃなかったです",
+                "why": "ja nakatta is the na pattern."
+            }
+        ]
+    },
+    {
+        "id": "ja-arimasen-hima",
+        "covers": [
+            "adjectives:ja-arimasen"
+        ],
+        "sheet": "adjectives",
+        "en": "I'm not free today.",
+        "correct": {
+            "kana": "きょうひまじゃありません",
+            "romaji": "kyou hima ja arimasen"
+        },
+        "wrong": [
+            {
+                "kana": "きょうひまくありません",
+                "why": "ku arimasen is the i-adjective pattern; hima is na."
+            },
+            {
+                "kana": "きょうひまじゃありませんでした",
+                "why": "that is the past — I wasn't free."
+            },
+            {
+                "kana": "きょうにひまじゃありません",
+                "why": "kyou is a relative time word and takes no ni."
+            }
+        ]
+    },
+    {
+        "id": "sakana-suki",
+        "covers": [
+            "ga:ga-not-wo",
+            "ga:suki-kirai-jouzu-heta-na"
+        ],
+        "sheet": "ga",
+        "en": "I like fish.",
+        "correct": {
+            "kana": "さかながすきです",
+            "romaji": "sakana ga suki desu",
+            "kanji": "魚が好きです"
+        },
+        "wrong": [
+            {
+                "kana": "さかなをすきです",
+                "why": "suki takes ga — it is a state you are in, not something you do to the fish.",
+                "kanji": "魚を好きです"
+            },
+            {
+                "kana": "さかながすきなです",
+                "why": "na only goes in front of a noun: suki na sakana, but suki desu.",
+                "kanji": "魚が好きなです"
+            },
+            {
+                "kana": "さかながすきいです",
+                "why": "suki is a na-adjective; there is no i to add.",
+                "kanji": "魚が好きいです"
+            }
+        ],
+        "kanjiNotes": [
+            {
+                "word": "魚",
+                "kana": "さかな"
+            },
+            {
+                "word": "好き",
+                "kana": "すき"
+            }
+        ]
+    },
+    {
+        "id": "hito-imasu",
+        "covers": [
+            "ga:arimasu-imasu",
+            "ga:ga-not-wo"
+        ],
+        "sheet": "ga",
+        "en": "There are people.",
+        "correct": {
+            "kana": "ひとがいます",
+            "romaji": "hito ga imasu",
+            "kanji": "人がいます"
+        },
+        "wrong": [
+            {
+                "kana": "ひとをいます",
+                "why": "imasu takes ga.",
+                "kanji": "人をいます"
+            },
+            {
+                "kana": "ひとがあります",
+                "why": "arimasu is for things that don't move; people take imasu.",
+                "kanji": "人があります"
+            },
+            {
+                "kana": "ひとがいました",
+                "why": "that is past — there were people.",
+                "kanji": "人がいました"
+            }
+        ],
+        "kanjiNotes": [
+            {
+                "word": "人",
+                "kana": "ひと"
+            }
+        ]
+    },
+    {
+        "id": "takai-yama",
+        "covers": [
+            "adjectives:na-before-noun",
+            "adjectives:which-family"
+        ],
+        "sheet": "adjectives",
+        "en": "a tall mountain",
+        "correct": {
+            "kana": "たかいやま",
+            "romaji": "takai yama",
+            "kanji": "たかい山"
+        },
+        "wrong": [
+            {
+                "kana": "たかいなやま",
+                "why": "na belongs to na-adjectives. Takai already ends in i.",
+                "kanji": "たかいな山"
+            },
+            {
+                "kana": "たかくやま",
+                "why": "takaku is the adverb form; in front of a noun the i stays.",
+                "kanji": "たかく山"
+            },
+            {
+                "kana": "たかいですやま",
+                "why": "desu closes a sentence; in front of a noun the adjective attaches straight on.",
+                "kanji": "たかいです山"
+            }
+        ],
+        "kanjiNotes": [
+            {
+                "word": "山",
+                "kana": "やま"
+            }
+        ]
+    },
+    {
+        "id": "mizu-tsumetakatta",
+        "covers": [
+            "adjectives:i-conjugates-na-doesnt"
+        ],
+        "sheet": "adjectives",
+        "en": "The water was cold.",
+        "correct": {
+            "kana": "みずがつめたかったです",
+            "romaji": "mizu ga tsumetakatta desu",
+            "kanji": "水がつめたかったです"
+        },
+        "wrong": [
+            {
+                "kana": "みずがつめたいでした",
+                "why": "an i-adjective goes past on its own — tsumetakatta desu, never deshita.",
+                "kanji": "水がつめたいでした"
+            },
+            {
+                "kana": "みずがつめたかったでした",
+                "why": "katta already carries the past; deshita would say it twice.",
+                "kanji": "水がつめたかったでした"
+            },
+            {
+                "kana": "みずがつめたいです",
+                "why": "that is the present — the water is cold.",
+                "kanji": "水がつめたいです"
+            }
+        ],
+        "kanjiNotes": [
+            {
+                "word": "水",
+                "kana": "みず"
+            }
+        ]
+    },
+    {
+        "id": "tsuki-kirei",
+        "covers": [
+            "adjectives:which-family",
+            "adjectives:i-conjugates-na-doesnt"
+        ],
+        "sheet": "adjectives",
+        "en": "The moon was pretty.",
+        "correct": {
+            "kana": "つきがきれいでした",
+            "romaji": "tsuki ga kirei deshita",
+            "kanji": "月がきれいでした"
+        },
+        "wrong": [
+            {
+                "kana": "つきがきれいかったです",
+                "why": "kirei ends in i but is a na-adjective — it takes deshita.",
+                "kanji": "月がきれいかったです"
+            },
+            {
+                "kana": "つきがきれいなでした",
+                "why": "na only goes in front of a noun.",
+                "kanji": "月がきれいなでした"
+            },
+            {
+                "kana": "つきがきれいです",
+                "why": "that is the present — the moon is pretty.",
+                "kanji": "月がきれいです"
+            }
+        ],
+        "kanjiNotes": [
+            {
+                "word": "月",
+                "kana": "つき"
+            }
+        ]
+    },
+    {
+        "id": "kuruma-de-yama",
+        "covers": [
+            "going:de-means-to-company",
+            "going:e-written-he",
+            "going:sentence-shape"
+        ],
+        "sheet": "going",
+        "en": "I'm going to the mountain by car.",
+        "correct": {
+            "kana": "くるまでやまへいきます",
+            "romaji": "kuruma de yama e ikimasu",
+            "kanji": "車で山へいきます"
+        },
+        "wrong": [
+            {
+                "kana": "くるまとやまへいきます",
+                "why": "to is for a person you go with; a vehicle takes de.",
+                "kanji": "車と山へいきます"
+            },
+            {
+                "kana": "やまへいきますくるまで",
+                "why": "the verb ends the sentence — everything else comes before it.",
+                "kanji": "山へいきます車で"
+            },
+            {
+                "kana": "くるまでやまへいきました",
+                "why": "that is past — the prompt is I'm going.",
+                "kanji": "車で山へいきました"
+            }
+        ],
+        "kanjiNotes": [
+            {
+                "word": "車",
+                "kana": "くるま"
+            },
+            {
+                "word": "山",
+                "kana": "やま"
+            }
+        ]
+    },
+    {
+        "id": "ame-amari-suki",
+        "covers": [
+            "ga:amari-zenzen",
+            "ga:ga-not-wo",
+            "ga:soft-refusal"
+        ],
+        "sheet": "ga",
+        "en": "I don't like rain very much.",
+        "correct": {
+            "kana": "あめがあまりすきじゃないです",
+            "romaji": "ame ga amari suki ja nai desu",
+            "kanji": "雨があまり好きじゃないです"
+        },
+        "wrong": [
+            {
+                "kana": "あめをあまりすきじゃないです",
+                "why": "suki takes ga.",
+                "kanji": "雨をあまり好きじゃないです"
+            },
+            {
+                "kana": "あめがあまりすきです",
+                "why": "amari only pairs with a negative.",
+                "kanji": "雨があまり好きです"
+            },
+            {
+                "kana": "あめがあまりすきくないです",
+                "why": "suki is a na-adjective — the negative is ja nai desu.",
+                "kanji": "雨があまり好きくないです"
+            }
+        ],
+        "kanjiNotes": [
+            {
+                "word": "雨",
+                "kana": "あめ"
+            },
+            {
+                "word": "好き",
+                "kana": "すき"
+            }
+        ]
+    },
+    {
+        "id": "hon-gohyaku-en",
+        "covers": [
+            "money:en-counter"
+        ],
+        "sheet": "money",
+        "en": "The book is 500 yen.",
+        "correct": {
+            "kana": "ほんはごひゃくえんです",
+            "romaji": "hon wa gohyaku en desu",
+            "kanji": "本はごひゃくえんです"
+        },
+        "wrong": [
+            {
+                "kana": "ほんはごひゃくえんでした",
+                "why": "that is past — it was 500 yen.",
+                "kanji": "本はごひゃくえんでした"
+            },
+            {
+                "kana": "ほんはごひゃくです",
+                "why": "a price keeps its counter: en.",
+                "kanji": "本はごひゃくです"
+            },
+            {
+                "kana": "ほんはごせんえんです",
+                "why": "that is 5,000 — gosen.",
+                "kanji": "本はごせんえんです"
+            }
+        ],
+        "kanjiNotes": [
+            {
+                "word": "本",
+                "kana": "ほん"
+            }
+        ]
+    },
+    {
+        "id": "inu-to-kawa",
+        "covers": [
+            "going:de-means-to-company",
+            "going:e-written-he"
+        ],
+        "sheet": "going",
+        "en": "I went to the river with my dog.",
+        "correct": {
+            "kana": "いぬとかわへいきました",
+            "romaji": "inu to kawa e ikimashita",
+            "kanji": "犬と川へいきました"
+        },
+        "wrong": [
+            {
+                "kana": "いぬでかわへいきました",
+                "why": "de is the means of travel; someone you go with takes to.",
+                "kanji": "犬で川へいきました"
+            },
+            {
+                "kana": "いぬとかわへいきます",
+                "why": "the prompt is past — ikimashita.",
+                "kanji": "犬と川へいきます"
+            },
+            {
+                "kana": "いぬとかわへいきましたです",
+                "why": "ikimashita is already the polite past; nothing follows it.",
+                "kanji": "犬と川へいきましたです"
+            }
+        ],
+        "kanjiNotes": [
+            {
+                "word": "犬",
+                "kana": "いぬ"
+            },
+            {
+                "word": "川",
+                "kana": "かわ"
+            }
+        ]
+    },
+    {
+        "id": "hana-akakunai",
+        "covers": [
+            "adjectives:nai-is-i-adjective"
+        ],
+        "sheet": "adjectives",
+        "en": "The flower isn't red.",
+        "correct": {
+            "kana": "はなはあかくないです",
+            "romaji": "hana wa akakunai desu",
+            "kanji": "花はあかくないです"
+        },
+        "wrong": [
+            {
+                "kana": "はなはあかいじゃないです",
+                "why": "ja nai is for na-adjectives; an i-adjective drops the i for ku nai.",
+                "kanji": "花はあかいじゃないです"
+            },
+            {
+                "kana": "はなはあかくないでした",
+                "why": "nai is itself an i-adjective — it goes past as nakatta desu.",
+                "kanji": "花はあかくないでした"
+            },
+            {
+                "kana": "はなはあかくなかったです",
+                "why": "that is the past — it wasn't red.",
+                "kanji": "花はあかくなかったです"
+            }
+        ],
+        "kanjiNotes": [
+            {
+                "word": "花",
+                "kana": "はな"
+            }
+        ]
+    },
+    {
+        "id": "where-tsukue-shita",
+        "covers": [
+            "where:ni-not-de",
+            "where:no-position"
+        ],
+        "sheet": "where",
+        "en": "There's a cat under the desk.",
+        "correct": {
+            "kana": "つくえのしたにねこがいます",
+            "romaji": "tsukue no shita ni neko ga imasu"
+        },
+        "wrong": [
+            {
+                "kana": "つくえのしたでねこがいます",
+                "why": "de is where something happens; being somewhere takes ni."
+            },
+            {
+                "kana": "つくえのしたにねこがあります",
+                "why": "a cat moves by itself, so imasu."
+            },
+            {
+                "kana": "つくえしたにねこがいます",
+                "why": "a position joins its noun with no: tsukue no shita."
+            }
+        ]
+    },
+    {
+        "id": "where-kouen-inu",
+        "covers": [
+            "where:ni-not-de",
+            "where:imasu-arimasu"
+        ],
+        "sheet": "where",
+        "en": "There's a dog in the park.",
+        "correct": {
+            "kana": "こうえんにいぬがいます",
+            "romaji": "kouen ni inu ga imasu",
+            "kanji": "こうえんに犬がいます"
+        },
+        "wrong": [
+            {
+                "kana": "こうえんでいぬがいます",
+                "why": "de marks where an action goes on, not where something is.",
+                "kanji": "こうえんで犬がいます"
+            },
+            {
+                "kana": "こうえんにいぬがあります",
+                "why": "a dog moves by itself, so imasu.",
+                "kanji": "こうえんに犬があります"
+            },
+            {
+                "kana": "こうえんにいぬがいました",
+                "why": "that is past — there was a dog.",
+                "kanji": "こうえんに犬がいました"
+            }
+        ],
+        "kanjiNotes": [
+            {
+                "word": "犬",
+                "kana": "いぬ"
+            }
+        ]
+    },
+    {
+        "id": "where-ie-terebi",
+        "covers": [
+            "where:imasu-arimasu",
+            "where:ni-not-de"
+        ],
+        "sheet": "where",
+        "en": "There's a TV at home.",
+        "correct": {
+            "kana": "いえにテレビがあります",
+            "romaji": "ie ni terebi ga arimasu"
+        },
+        "wrong": [
+            {
+                "kana": "いえでテレビがあります",
+                "why": "de is where something happens; existing takes ni."
+            },
+            {
+                "kana": "いえにテレビがいます",
+                "why": "a TV doesn't move by itself — arimasu."
+            },
+            {
+                "kana": "いえにテレビあります",
+                "why": "the thing that is there keeps its ga."
+            }
+        ]
+    },
+    {
+        "id": "where-kouen-kodomo",
+        "covers": [
+            "where:imasu-arimasu",
+            "where:ga-marks-what-is-there"
+        ],
+        "sheet": "where",
+        "en": "There are children in the park.",
+        "correct": {
+            "kana": "こうえんにこどもがいます",
+            "romaji": "kouen ni kodomo ga imasu"
+        },
+        "wrong": [
+            {
+                "kana": "こうえんでこどもがいます",
+                "why": "de is where something happens."
+            },
+            {
+                "kana": "こうえんにこどもがあります",
+                "why": "children are people — imasu."
+            },
+            {
+                "kana": "こうえんにこどもがいません",
+                "why": "that says the opposite — there are no children."
+            }
+        ]
+    },
+    {
+        "id": "where-heya-tana",
+        "covers": [
+            "where:ga-marks-what-is-there",
+            "where:imasu-arimasu"
+        ],
+        "sheet": "where",
+        "en": "There's a shelf in the room.",
+        "correct": {
+            "kana": "へやにたながあります",
+            "romaji": "heya ni tana ga arimasu"
+        },
+        "wrong": [
+            {
+                "kana": "へやにたなをあります",
+                "why": "what is there takes ga, never wo — nothing is being done to it."
+            },
+            {
+                "kana": "へやにたながいます",
+                "why": "a shelf is a thing — arimasu."
+            },
+            {
+                "kana": "へやたながあります",
+                "why": "the place keeps its ni."
+            }
+        ]
+    },
+    {
+        "id": "where-eki-posuto",
+        "covers": [
+            "where:ga-marks-what-is-there",
+            "where:no-position"
+        ],
+        "sheet": "where",
+        "en": "There's a postbox in front of the station.",
+        "correct": {
+            "kana": "えきのまえにポストがあります",
+            "romaji": "eki no mae ni posuto ga arimasu"
+        },
+        "wrong": [
+            {
+                "kana": "えきのまえにポストをあります",
+                "why": "wo never marks what is there."
+            },
+            {
+                "kana": "えきのまえにポストがいます",
+                "why": "a postbox is a thing — arimasu."
+            },
+            {
+                "kana": "えきまえにポストがあります",
+                "why": "the position joins on with no: eki no mae."
+            }
+        ]
+    },
+    {
+        "id": "where-dare-kouen",
+        "covers": [
+            "where:dare-nani"
+        ],
+        "sheet": "where",
+        "en": "Who's in the park?",
+        "correct": {
+            "kana": "こうえんにだれがいますか",
+            "romaji": "kouen ni dare ga imasu ka"
+        },
+        "wrong": [
+            {
+                "kana": "こうえんになにがいますか",
+                "why": "nani asks about an animal or a thing; a person is dare."
+            },
+            {
+                "kana": "こうえんにだれがありますか",
+                "why": "people take imasu."
+            },
+            {
+                "kana": "こうえんにだれをいますか",
+                "why": "the one who is there takes ga."
+            }
+        ]
+    },
+    {
+        "id": "where-nani-kouen",
+        "covers": [
+            "where:dare-nani",
+            "where:ni-not-de"
+        ],
+        "sheet": "where",
+        "en": "What animal is in the park?",
+        "correct": {
+            "kana": "こうえんになにがいますか",
+            "romaji": "kouen ni nani ga imasu ka"
+        },
+        "wrong": [
+            {
+                "kana": "こうえんにだれがいますか",
+                "why": "dare is only for people, even though animals take imasu too."
+            },
+            {
+                "kana": "こうえんになにがありますか",
+                "why": "an animal takes imasu."
+            },
+            {
+                "kana": "こうえんでなにがいますか",
+                "why": "de is where something happens."
+            }
+        ]
+    },
+    {
+        "id": "where-daremo",
+        "covers": [
+            "where:daremo-nanimo"
+        ],
+        "sheet": "where",
+        "en": "Nobody is there.",
+        "correct": {
+            "kana": "だれもいません",
+            "romaji": "dare mo imasen"
+        },
+        "wrong": [
+            {
+                "kana": "だれがいません",
+                "why": "the question word takes mo here, not ga."
+            },
+            {
+                "kana": "だれもいます",
+                "why": "mo demands a negative verb."
+            },
+            {
+                "kana": "だれもありません",
+                "why": "people take imasu."
+            }
+        ]
+    },
+    {
+        "id": "where-nanimo",
+        "covers": [
+            "where:daremo-nanimo"
+        ],
+        "sheet": "where",
+        "en": "Nothing is there.",
+        "correct": {
+            "kana": "なにもありません",
+            "romaji": "nani mo arimasen"
+        },
+        "wrong": [
+            {
+                "kana": "なにがありません",
+                "why": "the question word takes mo here, not ga."
+            },
+            {
+                "kana": "なにもあります",
+                "why": "mo demands a negative verb."
+            },
+            {
+                "kana": "なにもいません",
+                "why": "a thing takes arimasu."
+            }
+        ]
+    },
+    {
+        "id": "where-tsukue-no-ue",
+        "covers": [
+            "where:no-position"
+        ],
+        "sheet": "where",
+        "en": "on the desk",
+        "correct": {
+            "kana": "つくえのうえ",
+            "romaji": "tsukue no ue"
+        },
+        "wrong": [
+            {
+                "kana": "つくえなうえ",
+                "why": "no joins two nouns; na belongs to adjectives."
+            },
+            {
+                "kana": "つくえうえ",
+                "why": "the position needs its no."
+            },
+            {
+                "kana": "うえのつくえ",
+                "why": "that is the desk on top of something else — the order carries the meaning."
+            }
+        ]
+    },
+    {
+        "id": "where-hako-naka",
+        "covers": [
+            "where:no-position",
+            "where:ni-not-de"
+        ],
+        "sheet": "where",
+        "en": "There's a cat inside the box.",
+        "correct": {
+            "kana": "はこのなかにねこがいます",
+            "romaji": "hako no naka ni neko ga imasu"
+        },
+        "wrong": [
+            {
+                "kana": "はこのなかでねこがいます",
+                "why": "de is where something happens."
+            },
+            {
+                "kana": "はこなかにねこがいます",
+                "why": "the position joins on with no: hako no naka."
+            },
+            {
+                "kana": "はこのなかにねこがあります",
+                "why": "a cat moves by itself — imasu."
+            }
+        ]
+    },
+    {
+        "id": "where-aida-kaban",
+        "covers": [
+            "where:aida-needs-two",
+            "where:wa-doko"
+        ],
+        "sheet": "where",
+        "en": "The bag is between the chair and the desk.",
+        "correct": {
+            "kana": "かばんはいすとつくえのあいだにあります",
+            "romaji": "kaban wa isu to tsukue no aida ni arimasu"
+        },
+        "wrong": [
+            {
+                "kana": "かばんはいすやつくえのあいだにあります",
+                "why": "aida joins its two things with to, not ya."
+            },
+            {
+                "kana": "かばんはいすとつくえのあいだにいます",
+                "why": "a bag is a thing — arimasu."
+            },
+            {
+                "kana": "かばんはいすとつくえあいだにあります",
+                "why": "the position still needs its no."
+            }
+        ]
+    },
+    {
+        "id": "where-aida-kouen",
+        "covers": [
+            "where:aida-needs-two",
+            "where:ni-not-de"
+        ],
+        "sheet": "where",
+        "en": "There's a park between the station and the bank.",
+        "correct": {
+            "kana": "えきとぎんこうのあいだにこうえんがあります",
+            "romaji": "eki to ginkou no aida ni kouen ga arimasu"
+        },
+        "wrong": [
+            {
+                "kana": "えきとぎんこうのあいだでこうえんがあります",
+                "why": "existing takes ni; de is where something happens."
+            },
+            {
+                "kana": "えきぎんこうのあいだにこうえんがあります",
+                "why": "aida needs both things, joined by to."
+            },
+            {
+                "kana": "えきとぎんこうのあいだにこうえんがいます",
+                "why": "a park is a place — arimasu."
+            }
+        ]
+    },
+    {
+        "id": "where-doko-inu",
+        "covers": [
+            "where:wa-doko",
+            "where:imasu-arimasu"
+        ],
+        "sheet": "where",
+        "en": "Where's the dog?",
+        "correct": {
+            "kana": "いぬはどこにいますか",
+            "romaji": "inu wa doko ni imasu ka",
+            "kanji": "犬はどこにいますか"
+        },
+        "wrong": [
+            {
+                "kana": "いぬがどこにいますか",
+                "why": "the thing you are asking about takes wa.",
+                "kanji": "犬がどこにいますか"
+            },
+            {
+                "kana": "いぬはどこにありますか",
+                "why": "a dog moves by itself — imasu.",
+                "kanji": "犬はどこにありますか"
+            },
+            {
+                "kana": "いぬはどこにいましたか",
+                "why": "that is past — where was the dog?",
+                "kanji": "犬はどこにいましたか"
+            }
+        ],
+        "kanjiNotes": [
+            {
+                "word": "犬",
+                "kana": "いぬ"
+            }
+        ]
+    },
+    {
+        "id": "where-doko-kagi",
+        "covers": [
+            "where:wa-doko",
+            "where:ga-marks-what-is-there"
+        ],
+        "sheet": "where",
+        "en": "Where are the keys?",
+        "correct": {
+            "kana": "かぎはどこにありますか",
+            "romaji": "kagi wa doko ni arimasu ka"
+        },
+        "wrong": [
+            {
+                "kana": "かぎがどこにありますか",
+                "why": "the thing you are asking about takes wa."
+            },
+            {
+                "kana": "かぎはどこにいますか",
+                "why": "keys are things — arimasu."
+            },
+            {
+                "kana": "かぎはどこにありましたか",
+                "why": "that is past — where were the keys?"
+            }
+        ]
+    }
+]

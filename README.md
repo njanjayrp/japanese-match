@@ -22,16 +22,27 @@ the two hand-edited data files are network-first, so a reload picks up changes
 without touching `CACHE_NAME` — bump it in [`sw.js`](sw.js) only when
 `kana.json`, `strokes.json` or the icons change, since those are cache-first.
 
-## The six modes
+## The three sections
 
-**Words** — two-stage reveal. You get the written form, recall the *reading*,
+The tab bar has two rows: the section, then the modes inside it.
+
+```
+Words     Practice · Adj · Browse
+Writing   Practice · Learning
+Grammar   Cheat · Revise
+```
+
+Each section remembers which mode you were last in, so coming back to Writing
+lands you where you left it.
+
+**Words → Practice** — two-stage reveal. You get the written form, recall the *reading*,
 and only then the *meaning*. A Japanese word is three linked facts (form,
 reading, meaning) and testing them as one lump lets you coast on vague
 recognition. Both stages have to be right for the word to count. The `EN → JP`
 toggle flips to production, which is the harder and more useful direction once a
 word is familiar.
 
-**Adj** — pick the right form. An adjective comes up with a slot — present,
+**Words → Adj** — pick the right form. An adjective comes up with a slot — present,
 past, or either of them negated — and four candidate conjugations. Every other
 question in a round is a negative one, and the tense alternates evenly inside
 each polarity: drawing the slot at random per question was uniform across a
@@ -44,20 +55,46 @@ and the reveal lays out all four forms at once, because seeing ja nakatta desu
 and ku nakatta desu side by side is what shows they're the same shape. The
 family filter narrows to い, to な, or to the three exceptions on their own.
 
-**Kana** — a sign appears, you pick its reading (or the reverse). Distractors
+**Writing → Practice** — a kana sign appears, you pick its reading (or the reverse). Under *Both
+scripts* + *Everything*, or on its own with *Kanji only*, the pool also holds
+the basic kanji from [`data/kanji.json`](data/kanji.json) marked `"quiz": true`
+— only characters that are a word by themselves (山 yama, 川 kawa), because a
+character like 上 has no single reading to ask for. Distractors
 come from a hand-built confusability map, not at random: シ/ツ/ソ/ン, ぬ/め/ね/れ/わ,
 は/ほ/ま and the rest of the shapes beginners actually mix up, then same-row
 (vowel discrimination), then same-column (consonant discrimination). Random
 options would make this trivial.
 
-**Write** — stroke-order playback for every single kana, drawn one stroke at a
-time. Writing kana by hand is the fastest way to stop confusing them.
+**Writing → Learning** — stroke-order playback for every single kana, drawn one stroke at a
+time. Writing kana by hand is the fastest way to stop confusing them. The script
+picker also has a small hand-picked kanji set ([`data/kanji.json`](data/kanji.json)),
+shown with the word each character was taken from — 上 alone has no one reading,
+so it is labelled and spoken as 上手 じょうず.
 
-**Browse** — the whole library in one list. Mostly a proofreading tool: after
+**Words → Browse** — the whole library in one list. Mostly a proofreading tool: after
 adding words, check here that the furigana lines up and the derived romaji looks
 right. Tapping a row speaks it.
 
-**Cheat** — reference tables, not a quiz. Some vocabulary isn't a list of words
+**Grammar → Revise** — the quiz the cheat sheets don't give you. An English meaning comes
+up with four Japanese sentences, one right and three carrying the exact mistakes
+the sheets warn about: `wo` where `ga` belongs, `amari` with a positive verb,
+`na` on an i-adjective, `ni` after `senshuu`. Answer and the reveal lists every
+option with what is wrong with it, so one question teaches three rules. Fifteen
+questions a round, filtered by topic or drawn from everything.
+
+Where the words exist in [`data/kanji.json`](data/kanji.json) the sentences are
+written in kanji, with a bar under the options giving each word its reading.
+All four options of a question always carry the same kanji, so the writing can
+never single one of them out, and knowing that 上手 is *jouzu* tells you nothing
+about whether the particle is right.
+
+The wrong sentences are written by hand in
+[`data/revision.json`](data/revision.json) and never generated. Generating them
+is a trap: swapping a particle usually yields another perfectly correct sentence
+with a different meaning, and a quiz that calls a correct sentence wrong teaches
+you something false.
+
+**Grammar → Cheat** — reference tables, not a quiz. Some vocabulary isn't a list of words
 but a shape: relative time expressions are six prefixes crossed with four scales,
 and drilling them one flashcard at a time hides the very pattern that makes them
 cheap to learn. So this mode lays the grid out whole, stripes the cells that
@@ -173,6 +210,79 @@ Both are committed, so you only need this if you change the generators.
 python3 tools/gen_kana.py data/kana.json                    # kana tables + confusability map
 python3 tools/gen_strokes.py data/kana.json data/strokes.json   # stroke paths, needs network
 ```
+
+`gen_strokes.py` also picks up every character in [`data/kanji.json`](data/kanji.json),
+so rerun it after adding a kanji — KanjiVG is a kanji dictionary that happens to
+include the kana, and the same fetch serves both. A kanji with no stroke data
+would just vanish from the picker, so `check.js` fails on one.
+
+## Adding a revision question
+
+Edit [`data/revision.json`](data/revision.json). One object per question:
+
+```json
+{
+    "id": "senshuu-ni", "covers": ["calendar:ni-or-nothing"], "sheet": "calendar",
+    "en": "I went last week.",
+    "correct": { "kana": "せんしゅういきました", "romaji": "senshuu ikimashita" },
+    "wrong": [
+        { "kana": "せんしゅうにいきました", "why": "relative time words take no ni." }
+    ]
+}
+```
+
+`covers` lists the sheet rules the question tests, as `sheet:rule-id` — every
+rule in `sheets.json` carries an `id` for this. **`check.js` fails if any rule
+has no question behind it**, so coverage is enforced rather than remembered: add
+a rule to a sheet and the checks stay red until you write a question for it.
+
+Exactly three wrong options, each with its `why` — that text is the lesson, so
+say what rule was broken rather than "wrong particle". `sheet` has to match a
+sheet id in `sheets.json`, which is what the topic picker filters on. Every
+option must be pure kana so the romaji derives, and the check refuses two
+identical options, since the right answer would then be on screen twice.
+
+The romaji follows the cheat-sheet convention — spacing only, no re-spelling —
+with one exception: a particle in a token of its own may be written as it is
+said, so `wa` for は and `e` for へ. The check undoes that substitution token by
+token, so it still catches a typo.
+
+A question must not come down to spotting one kana in the middle of four
+otherwise identical sentences. One such pair is the point — it is the rule being
+tested. Two or more and you are testing eyesight, not grammar, so `check.js`
+fails on it; make the other distractors go wrong somewhere the eye lands, at the
+verb ending, on a missing particle, in a different word.
+
+Kanji forms are added by a script and stored as a `kanji` string beside each
+option plus a `kanjiNotes` list for the reading bar. The substitution is
+word-wise and guarded, because `hito` is 人 but `hitori` is 一人, and it is
+skipped wherever a wrong option would come out as a real word — 好きます and
+嫌います are 好く and 嫌う conjugated, and 上手い is *umai*. `check.js` reads every
+kanji form back to kana and fails if it doesn't match.
+
+Make sure a wrong option is actually wrong. The temptation is to flip a particle
+and move on, but `ookii kuruma` and `ookina kuruma` are both correct, and
+`kyou wa samui` and `kyou ga samui` differ in emphasis, not in grammar.
+
+## Adding a kanji
+
+Edit [`data/kanji.json`](data/kanji.json), then rerun `gen_strokes.py`:
+
+```json
+{ "char": "上", "romaji": "ue / jou", "meaning": "above, up",
+  "word": "上手", "wordKana": "じょうず", "wordEnglish": "good at",
+  "note": "じょうず is jukujikun — the word carries its own reading." }
+```
+
+`word` has to contain the character, and a multi-character one should already be
+in `words.json`. Add `"quiz": true` to put the character in the Kana quiz as
+well; `check.js` then insists the character is a word on its own and that its
+reading collides with no kana and no other quiz kanji — otherwise the
+reading → sign direction would show two right answers. `romaji` is the character's own reading — kun, or kun / on — and
+labels it in the picker; it is deliberately *not* the slice of the word's
+reading that lines up with it, because for a jukujikun word like 上手 or 下手
+no such slice exists and writing one down teaches a reading that isn't real.
+That is what `note` is for.
 
 ## Tests
 

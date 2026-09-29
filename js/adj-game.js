@@ -146,6 +146,9 @@ const AdjGame = (() => {
         el["adj-reveal"].hidden = true;
         el["adj-options"].hidden = false;
         el["adj-question"].hidden = false;
+        el["adj-prompt"].hidden = false;
+        el["adj-prompt-sub"].hidden = false;
+        el["adj-speak"].hidden = false;
         el["adj-progress"].textContent = `${idx + 1} / ${roundSize()}`;
 
         const slot = AdjForms.SLOTS.find(s => s.id === q.slot);
@@ -220,6 +223,10 @@ const AdjGame = (() => {
 
         el["adj-options"].hidden = true;
         el["adj-question"].hidden = true;
+        // Same word, twice on screen otherwise: the reveal repeats it.
+        el["adj-prompt"].hidden = true;
+        el["adj-prompt-sub"].hidden = true;
+        el["adj-speak"].hidden = true;
         el["adj-reveal"].hidden = false;
 
         el["adj-reveal-word"].innerHTML =

@@ -153,6 +153,8 @@ const WordMode = (() => {
         el["word-reveal"].hidden = true;
         el["word-options"].hidden = false;
         el["word-question"].hidden = false;
+        el["word-prompt"].hidden = false;
+        el["word-prompt-sub"].hidden = false;
         el["word-progress"].textContent = `${idx + 1} / ${roundSize()}`;
         renderStage();
     }
@@ -357,6 +359,11 @@ const WordMode = (() => {
         stage = "done";
         el["word-options"].hidden = true;
         el["word-question"].hidden = true;
+        // The reveal shows the word again, in full — leaving the prompt above it
+        // printed the same word twice.
+        el["word-prompt"].hidden = true;
+        el["word-prompt-sub"].hidden = true;
+        el["word-speak"].hidden = true;
         el["word-reveal"].hidden = false;
 
         const reading = Romaji.readingOf(w);

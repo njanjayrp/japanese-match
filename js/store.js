@@ -153,8 +153,13 @@ const Store = (() => {
      * @param {string[]} hold  ids already dealt into the round on screen; they
      *                         go to the bottom of a fresh shuffle so a pass
      *                         boundary can't repeat one straight away
+     * @param {(ids:string[])=>string[]} arrange
+     *        optional reordering of a fresh shuffle. A plain shuffle is random
+     *        but not varied: with nine questions on one rule in the pack, three
+     *        of them land in a row often enough to feel broken. A deck can pass
+     *        a function that spreads the cards out instead.
      */
-    function dealCard(deck, pool, idOf, hold = []) {
+    function dealCard(deck, pool, idOf, hold = [], arrange = null) {
         if (!pool.length) return null;
 
         const key  = "deck_" + deck;
@@ -164,7 +169,8 @@ const Store = (() => {
 
         if (!queue.length) {
             const held  = new Set(hold);
-            const fresh = shuffle([...byId.keys()]);
+            const fresh = arrange ? arrange(shuffle([...byId.keys()]))
+                                  : shuffle([...byId.keys()]);
             queue = [...fresh.filter(id => !held.has(id)),
                      ...fresh.filter(id => held.has(id))];
         }

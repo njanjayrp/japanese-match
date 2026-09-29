@@ -8,7 +8,7 @@
 // change by hand, so those stay cache-first — that's where offline speed
 // actually comes from.
 
-const CACHE_NAME = 'japanese-match-v20';
+const CACHE_NAME = 'japanese-match-v25';
 
 const ASSETS = [
     './',
@@ -26,11 +26,14 @@ const ASSETS = [
     './js/strokes.js',
     './js/browse.js',
     './js/cheat.js',
+    './js/revise.js',
     './js/app.js',
     './data/kana.json',
     './data/words.json',
     './data/strokes.json',
     './data/sheets.json',
+    './data/kanji.json',
+    './data/revision.json',
     './icons/icon-192.png',
     './icons/icon-512.png',
 ];
@@ -65,7 +68,9 @@ self.addEventListener('fetch', e => {
                    path.endsWith('.js') ||
                    path.endsWith('.css') ||
                    path.endsWith('/data/words.json') ||
-                   path.endsWith('/data/sheets.json');
+                   path.endsWith('/data/sheets.json') ||
+                   path.endsWith('/data/kanji.json') ||
+                   path.endsWith('/data/revision.json');
 
     if (isLive) {
         e.respondWith(

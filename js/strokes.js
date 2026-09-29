@@ -14,6 +14,7 @@ const StrokeMode = (() => {
 
     let strokes = {};       // char → [path d, ...]
     let kana = [];
+    let kanji = [];
     let current = null;
     let timers = [];
     let script = "hiragana";
@@ -21,12 +22,13 @@ const StrokeMode = (() => {
 
     const el = {};
 
-    function init(kanaData, strokeData) {
+    function init(kanaData, strokeData, kanjiData) {
         kana = kanaData.kana;
+        kanji = kanjiData || [];
         strokes = strokeData.strokes || {};
 
         for (const id of ["write-script", "write-set", "stroke-paths", "write-char",
-                          "write-romaji", "write-count", "write-replay",
+                          "write-romaji", "write-count", "write-note", "write-replay",
                           "write-picker", "write-speak"]) {
             el[id] = document.getElementById(id);
         }
@@ -39,16 +41,34 @@ const StrokeMode = (() => {
         el["write-script"].addEventListener("change", e => {
             script = e.target.value; Store.setPref("writeScript", script); buildPicker();
         });
+        syncSetPicker();
         el["write-set"].addEventListener("change", e => {
             set = e.target.value; Store.setPref("writeSet", set); buildPicker();
         });
         el["write-replay"].addEventListener("click", () => current && play(current));
-        el["write-speak"].addEventListener("click", () => current && Speech.say(current.char));
+        el["write-speak"].addEventListener("click", () => current && Speech.say(saidAs(current)));
 
         buildPicker();
     }
 
+    // A kanji entry carries the word it was taken from; a kana entry doesn't.
+    function isKanji(k) {
+        return !!k.wordKana;
+    }
+
+    // 上 on its own is read ue or jou depending on the word, and no voice
+    // guesses right — so a kanji is spoken as the word it came from.
+    function saidAs(k) {
+        return isKanji(k) ? k.wordKana : k.char;
+    }
+
+    // The character-set picker only means anything for kana.
+    function syncSetPicker() {
+        el["write-set"].hidden = script === "kanji";
+    }
+
     function pool() {
+        if (script === "kanji") return kanji.filter(k => strokes[k.char]);
         const types = set === "base"
             ? new Set(["base"])
             : new Set(["base", "dakuten", "handakuten", "small"]);
@@ -59,6 +79,7 @@ const StrokeMode = (() => {
     }
 
     function buildPicker() {
+        syncSetPicker();
         const box = el["write-picker"];
         box.innerHTML = "";
         const list = pool();
@@ -81,11 +102,21 @@ const StrokeMode = (() => {
         for (const b of el["write-picker"].children) b.classList.remove("active");
         if (btn) btn.classList.add("active");
         el["write-char"].textContent = k.char;
-        el["write-romaji"].textContent = k.romaji;
+        // For a kanji the useful line is the word it lives in — the character
+        // alone has no single reading to show.
+        el["write-romaji"].textContent = isKanji(k)
+            ? `${Romaji.toRomaji(k.wordKana)} — ${k.wordEnglish}`
+            : k.romaji;
         const n = (strokes[k.char] || []).length;
-        el["write-count"].textContent = n === 1 ? "1 stroke" : `${n} strokes`;
+        const count = n === 1 ? "1 stroke" : `${n} strokes`;
+        el["write-count"].textContent = isKanji(k) ? `${count} · ${k.meaning}` : count;
+        // Several of these words are jukujikun: the compound has a reading of
+        // its own, and splitting it across the characters teaches a reading
+        // that doesn't exist. The note is where that gets said.
+        el["write-note"].textContent = k.note || "";
+        el["write-note"].hidden = !k.note;
         play(k);
-        if (!silent) Speech.say(k.char);
+        if (!silent) Speech.say(saidAs(k));
     }
 
     // Writing it once is easy to miss. Play the whole sign LOOPS times, pausing

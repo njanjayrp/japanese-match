@@ -58,16 +58,18 @@ globalThis.App = { onAnswer() {} };
 
 const SOURCES = ["js/romaji.js", "js/store.js", "js/audio.js", "js/furigana.js",
                  "js/words.js", "js/adjective-forms.js", "js/adj-game.js",
-                 "js/kana-game.js", "js/browse.js", "js/cheat.js"];
+                 "js/kana-game.js", "js/browse.js", "js/cheat.js", "js/revise.js"];
 const bundle = SOURCES.map(read).join("\n;\n");
 const exported = new Function(
-    bundle + "\n;return { Romaji, Store, Speech, Furigana, WordMode, AdjForms, AdjGame, KanaGame, BrowseMode, CheatMode };"
+    bundle + "\n;return { Romaji, Store, Speech, Furigana, WordMode, AdjForms, AdjGame, KanaGame, BrowseMode, CheatMode, ReviseMode };"
 )();
-const { Romaji, Store, Speech, WordMode, AdjForms, AdjGame, KanaGame, BrowseMode, CheatMode } = exported;
+const { Romaji, Store, Speech, WordMode, AdjForms, AdjGame, KanaGame, BrowseMode, CheatMode, ReviseMode } = exported;
 
 const kanaData = JSON.parse(read("data/kana.json"));
 const words = JSON.parse(read("data/words.json"));
 const sheets = JSON.parse(read("data/sheets.json"));
+const kanji = JSON.parse(read("data/kanji.json"));
+const revision = JSON.parse(read("data/revision.json"));
 
 localStorage.clear();
 Romaji.init(kanaData.kana);
@@ -255,7 +257,7 @@ ok(`kirei drills against ${kireiOpts.filter(o => o !== "きれいじゃないで
 // ── Kana game ───────────────────────────────────────────────────────────────
 
 console.log("kana game");
-KanaGame.init(kanaData);
+KanaGame.init(kanaData, kanji);
 KanaGame.onShow();
 
 const kanaOptions = doc.getElementById("kana-options");
@@ -306,6 +308,50 @@ flush();
 if (kanaOptions.children.length !== 6) fail("full katakana set did not produce 6 options");
 ok("full katakana set builds a question");
 
+console.log("kana game — kanji");
+doc.getElementById("kana-script").value = "kanji";
+fire(doc.getElementById("kana-script"), "change");
+flush();
+const quizKanji = new Set(kanji.filter(k => k.quiz).map(k => k.char));
+if (!quizKanji.size) fail("no kanji flagged for the quiz");
+const dirBtnFor = d => [...doc.getElementById("kana-dir").children].find(b => b.dataset.dir === d);
+
+// Sign → reading: the prompt is the character, the options are readings.
+fire(dirBtnFor("toRomaji"), "click");
+flush();
+if (kanaOptions.children.length !== 6) fail(`kanji round built ${kanaOptions.children.length} options, expected 6`);
+const kanjiPrompt = doc.getElementById("kana-prompt").textContent;
+if (!quizKanji.has(kanjiPrompt)) fail(`kanji round prompted "${kanjiPrompt}", which isn't a quiz kanji`);
+const kanjiOpts = [...kanaOptions.children].map(b => b.textContent);
+if (new Set(kanjiOpts).size !== kanjiOpts.length) fail(`duplicate kanji options: ${kanjiOpts}`);
+ok(`kanji → reading: ${kanjiPrompt} → ${JSON.stringify(kanjiOpts)}`);
+
+// Reading → sign: now the prompt is the reading and every option is a kanji.
+// This is the direction that breaks if two signs share a reading.
+fire(dirBtnFor("toKana"), "click");
+flush();
+const backPrompt = doc.getElementById("kana-prompt").textContent;
+const backOpts = [...kanaOptions.children].map(b => b.textContent);
+if (quizKanji.has(backPrompt)) fail(`reverse direction prompted the character "${backPrompt}", expected a reading`);
+if (!backOpts.every(o => quizKanji.has(o))) fail(`reverse options aren't all kanji: ${backOpts}`);
+if (new Set(backOpts).size !== backOpts.length) fail(`duplicate kanji options: ${backOpts}`);
+ok(`reading → kanji: ${backPrompt} → ${JSON.stringify(backOpts)}`);
+
+// Under "Both scripts" the kanji only join the Everything set, never Basic 46.
+doc.getElementById("kana-script").value = "both";
+fire(doc.getElementById("kana-script"), "change");
+doc.getElementById("kana-set").value = "base";
+fire(doc.getElementById("kana-set"), "change");
+flush();
+let sawKanji = false;
+for (let i = 0; i < 40 && !sawKanji; i++) {
+    if (quizKanji.has(doc.getElementById("kana-prompt").textContent)) sawKanji = true;
+    fire(kanaOptions.children[0], "click");
+    flush();
+}
+if (sawKanji) fail("a kanji turned up in the Basic 46 set");
+ok("Basic 46 stays kana-only");
+
 // ── Browse ──────────────────────────────────────────────────────────────────
 
 console.log("browse");
@@ -346,6 +392,79 @@ fire(picker, "change");
 if (!cheatBody.innerHTML.includes(sheets[1].title)) fail("switching sheets did not re-render");
 if (cheatBody.innerHTML.includes(sheets[0].blurb)) fail("old sheet left behind after switching");
 ok(`switched to "${sheets[1].title}"`);
+
+// ── Revision ────────────────────────────────────────────────────────────────
+
+console.log("revision");
+ReviseMode.init(revision, sheets);
+const revOptions = doc.getElementById("rev-options");
+const revPrompt  = doc.getElementById("rev-prompt");
+
+if (doc.getElementById("rev-card").hidden) fail("revision card hidden with questions loaded");
+if (doc.getElementById("rev-sheet").children.length < 2) fail("topic picker has no sheets");
+
+// Answer right and wrong on alternate questions. The English prompt identifies
+// the item, so the expected answer is known — which is the assertion that
+// matters: what the app grades as correct has to be the authored answer.
+let revRight = 0, revWrong = 0;
+let revKanji = 0;
+for (let i = 0; i < 12; i++) {
+    const opts = [...revOptions.children];
+    if (opts.length !== 4) { fail(`revision ${i}: ${opts.length} options`); break; }
+    const texts = opts.map(b => b.textContent);
+    if (new Set(texts).size !== texts.length) fail(`revision ${i}: duplicate options ${texts}`);
+
+    const item = revision.find(it => it.en === revPrompt.textContent);
+    if (!item) { fail(`revision ${i}: prompt "${revPrompt.textContent}" matches no item`); break; }
+    // The buttons show the kanji form where the question has one.
+    const right = item.correct.kanji || item.correct.kana;
+    if (!texts.includes(right)) {
+        fail(`revision ${i}: the correct sentence isn't among the options`);
+        break;
+    }
+    const wantRight = i % 2 === 0;
+    const picked = wantRight ? opts[texts.indexOf(right)]
+                             : opts[texts.findIndex(t => t !== right)];
+    fire(picked, "click");
+    if (picked.classList.contains("correct") !== wantRight) {
+        fail(`revision ${i}: "${item.en}" graded the wrong way round`);
+    }
+    if (picked.classList.contains("correct")) revRight++; else revWrong++;
+    if (!opts.every(b => b.disabled)) fail(`revision ${i}: options still clickable`);
+    flush();
+
+    const reveal = doc.getElementById("rev-reveal");
+    if (reveal.hidden) { fail(`revision ${i}: reveal did not appear`); break; }
+    const rows = [...doc.getElementById("rev-why").children];
+    // Every option gets a line, so one question teaches three mistakes.
+    if (rows.length !== 4) fail(`revision ${i}: reveal listed ${rows.length} options, expected 4`);
+    if (rows.filter(r => r.classList.contains("ok")).length !== 1) {
+        fail(`revision ${i}: not exactly one option marked correct in the reveal`);
+    }
+    if (rows.filter(r => r.classList.contains("yours")).length !== 1) {
+        fail(`revision ${i}: the answer you picked isn't marked`);
+    }
+    if (!doc.getElementById("rev-romaji").textContent) fail(`revision ${i}: no romaji on the reveal`);
+    // The reading bar: shown exactly when the sentence is written in kanji.
+    const bar = doc.getElementById("rev-kanji");
+    const notes = item.kanjiNotes || [];
+    if (bar.hidden !== (notes.length === 0)) {
+        fail(`revision ${i}: reading bar ${bar.hidden ? "missing" : "shown"} for "${item.en}"`);
+    }
+    if (notes.length) {
+        revKanji += 1;
+        if (bar.querySelectorAll("span").length !== notes.length) {
+            fail(`revision ${i}: reading bar lists ${bar.querySelectorAll("span").length} of ${notes.length} words`);
+        }
+    }
+    fire(doc.getElementById("rev-next"), "click");
+    flush();
+}
+if (revRight !== 6 || revWrong !== 6) {
+    fail(`expected 6 right and 6 wrong by construction, got ${revRight} / ${revWrong}`);
+}
+ok(`12 revision questions played, ${revRight} right / ${revWrong} wrong, ` +
+   `${revKanji} written in kanji`);
 
 // ── SRS actually adapts ─────────────────────────────────────────────────────
 

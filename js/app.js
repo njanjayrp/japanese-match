@@ -10,32 +10,61 @@ const App = (() => {
         write:  () => StrokeMode,
         browse: () => BrowseMode,
         cheat:  () => CheatMode,
+        revise: () => ReviseMode,
     };
+
+    // Two rows of navigation: the section, then the modes in it. The labels
+    // live here and nowhere else — the markup for both rows is rendered from
+    // this list. A mode's internal name (kana, write) is not its label, because
+    // "Practice" means a different thing in Words than in Writing.
+    const GROUPS = [
+        { id: "words", label: "Words", modes: [
+            { id: "words",  label: "Practice" },
+            { id: "adj",    label: "Adj" },
+            { id: "browse", label: "Browse" },
+        ] },
+        { id: "writing", label: "Writing", modes: [
+            { id: "kana",  label: "Practice" },
+            { id: "write", label: "Learning" },
+        ] },
+        { id: "grammar", label: "Grammar", modes: [
+            { id: "cheat",  label: "Cheat" },
+            { id: "revise", label: "Revise" },
+        ] },
+    ];
 
     let mode = "words";
 
     async function boot() {
-        const [kanaData, words, strokeData, sheets] = await Promise.all([
+        const [kanaData, words, strokeData, sheets, kanji, revision] = await Promise.all([
             loadJSON("data/kana.json"),
             loadJSON("data/words.json").catch(() => []),
             loadJSON("data/strokes.json").catch(() => ({ strokes: {} })),
             loadJSON("data/sheets.json").catch(() => []),
+            loadJSON("data/kanji.json").catch(() => []),
+            loadJSON("data/revision.json").catch(() => []),
         ]);
 
         Romaji.init(kanaData.kana);
         Speech.init();
 
         WordMode.init(words);
-        KanaGame.init(kanaData);
+        KanaGame.init(kanaData, kanji);
         AdjGame.init(words);
-        StrokeMode.init(kanaData, strokeData);
+        StrokeMode.init(kanaData, strokeData, kanji);
         BrowseMode.init(words);
         CheatMode.init(sheets);
+        ReviseMode.init(revision, sheets);
 
+        document.getElementById("groups").addEventListener("click", e => {
+            const btn = e.target.closest(".group");
+            if (btn) switchGroup(btn.dataset.group);
+        });
         document.getElementById("tabs").addEventListener("click", e => {
             const tab = e.target.closest(".tab");
             if (tab) switchMode(tab.dataset.mode);
         });
+        renderGroups();
 
         const startMode = new URLSearchParams(location.search).get("mode")
                        || Store.pref("mode", "words");
@@ -53,17 +82,58 @@ const App = (() => {
         return res.json();
     }
 
+    function groupOf(id) {
+        return GROUPS.find(g => g.modes.some(m => m.id === id)) || GROUPS[0];
+    }
+
     function switchMode(next) {
         mode = next;
+        const group = groupOf(mode);
         Store.setPref("mode", mode);
-        for (const tab of document.getElementById("tabs").children) {
-            tab.classList.toggle("active", tab.dataset.mode === mode);
+        // Remembered per section, so coming back to Writing lands you where you
+        // left it rather than always on its first mode.
+        Store.setPref("mode_" + group.id, mode);
+
+        for (const btn of document.getElementById("groups").children) {
+            btn.classList.toggle("active", btn.dataset.group === group.id);
         }
+        renderTabs(group);
         for (const view of document.querySelectorAll(".view")) {
             view.classList.toggle("active", view.id === `${mode}-view`);
         }
         window.scrollTo(0, 0);
         MODES[mode]().onShow();
+    }
+
+    function switchGroup(id) {
+        const group = GROUPS.find(g => g.id === id);
+        if (!group) return;
+        const remembered = Store.pref("mode_" + id, group.modes[0].id);
+        switchMode(group.modes.some(m => m.id === remembered) ? remembered : group.modes[0].id);
+    }
+
+    function renderGroups() {
+        const box = document.getElementById("groups");
+        box.innerHTML = "";
+        for (const g of GROUPS) {
+            const btn = document.createElement("button");
+            btn.className = "group";
+            btn.dataset.group = g.id;
+            btn.textContent = g.label;
+            box.appendChild(btn);
+        }
+    }
+
+    function renderTabs(group) {
+        const box = document.getElementById("tabs");
+        box.innerHTML = "";
+        for (const m of group.modes) {
+            const btn = document.createElement("button");
+            btn.className = "tab" + (m.id === mode ? " active" : "");
+            btn.dataset.mode = m.id;
+            btn.textContent = m.label;
+            box.appendChild(btn);
+        }
     }
 
     // Called by each mode after a graded answer, so the streak badge is shared.

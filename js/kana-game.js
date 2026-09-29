@@ -11,6 +11,7 @@ const KanaGame = (() => {
     const OPTIONS = 6;
 
     let all = [];
+    let kanji = [];         // single-character words, quizzed like a sign
     let confusables = {};
     let round = [];
     let idx = 0;
@@ -24,15 +25,31 @@ const KanaGame = (() => {
 
     const SETS = {
         base:    new Set(["base"]),
+        // The basic 46 plus the kanji, so the kanji actually come up: in
+        // Everything they are 15 signs among 250 and a round of 12 usually
+        // has none.
+        kanji:   new Set(["base", "kanji"]),
         dakuten: new Set(["base", "dakuten", "handakuten"]),
         yoon:    new Set(["base", "dakuten", "handakuten", "yoon"]),
-        all:     new Set(["base", "dakuten", "handakuten", "yoon", "small", "mark", "extended"]),
+        all:     new Set(["base", "dakuten", "handakuten", "yoon", "small", "mark",
+                          "extended", "kanji"]),
     };
 
     const el = {};
 
-    function init(data) {
-        all = data.kana;
+    function init(data, kanjiData) {
+        // A kanji only joins the quiz if the character is a word on its own, so
+        // there is one reading to ask for — 山 is yama, where 上 could be ue,
+        // jou or the ず of jouzu. The label is that word's reading, which is
+        // why a kanji sits in the pool looking exactly like a kana.
+        kanji = (kanjiData || []).filter(k => k.quiz).map(k => ({
+            char: k.char,
+            romaji: Romaji.toRomaji(k.wordKana),
+            script: "kanji",
+            type: "kanji",
+            meaning: k.meaning,
+        }));
+        all = data.kana.concat(kanji);
         confusables = data.confusables || {};
 
         for (const id of ["kana-script", "kana-set", "kana-dir", "kana-prompt",
@@ -72,6 +89,10 @@ const KanaGame = (() => {
     }
 
     function pool() {
+        // Kanji only: the character-set picker is about kana, so it is ignored
+        // rather than left to empty the pool.
+        if (script === "kanji") return kanji;
+
         const types = SETS[set] || SETS.base;
         return all.filter(k =>
             types.has(k.type) &&
