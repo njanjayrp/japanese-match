@@ -445,14 +445,14 @@ for (let i = 0; i < 12; i++) {
         fail(`revision ${i}: the answer you picked isn't marked`);
     }
     if (!doc.getElementById("rev-romaji").textContent) fail(`revision ${i}: no romaji on the reveal`);
-    // The reading bar: shown exactly when the sentence is written in kanji.
-    const bar = doc.getElementById("rev-kanji");
-    const notes = item.kanjiNotes || [];
+    // The reference bar: shown exactly when there is a reading or a family to give.
+    const bar = doc.getElementById("rev-notes");
+    const notes = (item.kanjiNotes || []).concat(item.adjNotes || []);
     if (bar.hidden !== (notes.length === 0)) {
         fail(`revision ${i}: reading bar ${bar.hidden ? "missing" : "shown"} for "${item.en}"`);
     }
     if (notes.length) {
-        revKanji += 1;
+        if ((item.kanjiNotes || []).length) revKanji += 1;
         if (bar.querySelectorAll("span").length !== notes.length) {
             fail(`revision ${i}: reading bar lists ${bar.querySelectorAll("span").length} of ${notes.length} words`);
         }

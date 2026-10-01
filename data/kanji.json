@@ -1,57 +1,303 @@
 [
-    { "char": "上", "romaji": "ue / jou", "meaning": "above, up",
-      "word": "上手", "wordKana": "じょうず", "wordEnglish": "good at",
-      "note": "じょうず is jukujikun — the word carries its own reading. Don't learn it as 上=じょう plus 手=ず." },
-    { "char": "下", "romaji": "shita / ka", "meaning": "below, down",
-      "word": "下手", "wordKana": "へた", "wordEnglish": "bad at",
-      "note": "へた is irregular as well: 下 is した or か everywhere else, and へ only here." },
-    { "char": "手", "romaji": "te", "meaning": "hand",
-      "word": "手", "wordKana": "て", "wordEnglish": "hand",
-      "note": "The same 手 sits in 上手 and 下手, read ず and た — neither is a normal reading of it." },
-    { "char": "好", "romaji": "su / kou", "meaning": "fond of, like",
-      "word": "好き", "wordKana": "すき", "wordEnglish": "liked / favourite",
-      "note": "Regular: 好 is す and the き is okurigana." },
-    { "char": "嫌", "romaji": "kira / ken", "meaning": "dislike, hate",
-      "word": "嫌い", "wordKana": "きらい", "wordEnglish": "disliked",
-      "note": "Regular: 嫌 is きら and the い is okurigana." },
-
-    { "char": "人", "romaji": "hito / jin", "meaning": "person", "quiz": true,
-      "word": "人", "wordKana": "ひと", "wordEnglish": "person",
-      "note": "Counting people switches to にん — ひとり, ふたり, さんにん." },
-    { "char": "山", "romaji": "yama / san", "meaning": "mountain", "quiz": true,
-      "word": "山", "wordKana": "やま", "wordEnglish": "mountain",
-      "note": "富士山 is ふじさん — the on-reading さん, not やま." },
-    { "char": "川", "romaji": "kawa / sen", "meaning": "river", "quiz": true,
-      "word": "川", "wordKana": "かわ", "wordEnglish": "river" },
-    { "char": "水", "romaji": "mizu / sui", "meaning": "water", "quiz": true,
-      "word": "水", "wordKana": "みず", "wordEnglish": "water",
-      "note": "水曜日 すいようび uses すい, the on-reading." },
-    { "char": "月", "romaji": "tsuki / getsu", "meaning": "moon, month", "quiz": true,
-      "word": "月", "wordKana": "つき", "wordEnglish": "moon",
-      "note": "げつ in 月曜日, がつ in the month names — 四月 しがつ." },
-    { "char": "空", "romaji": "sora / kuu", "meaning": "sky, empty", "quiz": true,
-      "word": "空", "wordKana": "そら", "wordEnglish": "sky" },
-    { "char": "雨", "romaji": "ame / u", "meaning": "rain", "quiz": true,
-      "word": "雨", "wordKana": "あめ", "wordEnglish": "rain",
-      "note": "Same reading as 飴 あめ, sweets — different kanji, different pitch." },
-    { "char": "花", "romaji": "hana / ka", "meaning": "flower", "quiz": true,
-      "word": "花", "wordKana": "はな", "wordEnglish": "flower",
-      "note": "Same reading as 鼻 はな, nose." },
-    { "char": "車", "romaji": "kuruma / sha", "meaning": "car, wheel", "quiz": true,
-      "word": "車", "wordKana": "くるま", "wordEnglish": "car",
-      "note": "しゃ in compounds — 電車 でんしゃ, 自転車 じてんしゃ." },
-    { "char": "本", "romaji": "hon", "meaning": "book, origin", "quiz": true,
-      "word": "本", "wordKana": "ほん", "wordEnglish": "book",
-      "note": "Here the everyday reading is the on-reading ほん, as in 日本 にほん." },
-    { "char": "魚", "romaji": "sakana / gyo", "meaning": "fish", "quiz": true,
-      "word": "魚", "wordKana": "さかな", "wordEnglish": "fish" },
-    { "char": "犬", "romaji": "inu / ken", "meaning": "dog", "quiz": true,
-      "word": "犬", "wordKana": "いぬ", "wordEnglish": "dog" },
-    { "char": "口", "romaji": "kuchi / kou", "meaning": "mouth", "quiz": true,
-      "word": "口", "wordKana": "くち", "wordEnglish": "mouth",
-      "note": "入口 いりぐち and 出口 でぐち voice it to ぐち." },
-    { "char": "耳", "romaji": "mimi / ji", "meaning": "ear", "quiz": true,
-      "word": "耳", "wordKana": "みみ", "wordEnglish": "ear" },
-    { "char": "足", "romaji": "ashi / soku", "meaning": "foot, leg", "quiz": true,
-      "word": "足", "wordKana": "あし", "wordEnglish": "foot" }
+    {
+        "char": "上",
+        "romaji": "ue / jou",
+        "meaning": "above, up",
+        "word": "上",
+        "wordKana": "うえ",
+        "wordEnglish": "above, on top",
+        "note": "上手 じょうず is jukujikun — the compound carries its own reading. Don't read it as じょう plus ず.",
+        "quiz": true,
+        "compounds": [
+            {
+                "word": "上手",
+                "kana": "じょうず",
+                "english": "good at"
+            }
+        ]
+    },
+    {
+        "char": "下",
+        "romaji": "shita / ka",
+        "meaning": "below, down",
+        "word": "下",
+        "wordKana": "した",
+        "wordEnglish": "below, under",
+        "note": "下手 へた is irregular the same way: 下 is した or か everywhere else, and へ only there.",
+        "quiz": true,
+        "compounds": [
+            {
+                "word": "下手",
+                "kana": "へた",
+                "english": "bad at"
+            }
+        ]
+    },
+    {
+        "char": "手",
+        "romaji": "te",
+        "meaning": "hand",
+        "word": "手",
+        "wordKana": "て",
+        "wordEnglish": "hand",
+        "note": "The same 手 sits in 上手 and 下手, read ず and た — neither is a normal reading of it."
+    },
+    {
+        "char": "好",
+        "romaji": "su / kou",
+        "meaning": "fond of, like",
+        "word": "好き",
+        "wordKana": "すき",
+        "wordEnglish": "liked / favourite",
+        "note": "Regular: 好 is す and the き is okurigana."
+    },
+    {
+        "char": "嫌",
+        "romaji": "kira / ken",
+        "meaning": "dislike, hate",
+        "word": "嫌い",
+        "wordKana": "きらい",
+        "wordEnglish": "disliked",
+        "note": "Regular: 嫌 is きら and the い is okurigana."
+    },
+    {
+        "char": "人",
+        "romaji": "hito / jin",
+        "meaning": "person",
+        "quiz": true,
+        "word": "人",
+        "wordKana": "ひと",
+        "wordEnglish": "person",
+        "note": "Counting people switches to にん — ひとり, ふたり, さんにん."
+    },
+    {
+        "char": "山",
+        "romaji": "yama / san",
+        "meaning": "mountain",
+        "quiz": true,
+        "word": "山",
+        "wordKana": "やま",
+        "wordEnglish": "mountain",
+        "note": "富士山 is ふじさん — the on-reading さん, not やま."
+    },
+    {
+        "char": "川",
+        "romaji": "kawa / sen",
+        "meaning": "river",
+        "quiz": true,
+        "word": "川",
+        "wordKana": "かわ",
+        "wordEnglish": "river"
+    },
+    {
+        "char": "水",
+        "romaji": "mizu / sui",
+        "meaning": "water",
+        "quiz": true,
+        "word": "水",
+        "wordKana": "みず",
+        "wordEnglish": "water",
+        "note": "水曜日 すいようび uses すい, the on-reading."
+    },
+    {
+        "char": "月",
+        "romaji": "tsuki / getsu",
+        "meaning": "moon, month",
+        "quiz": true,
+        "word": "月",
+        "wordKana": "つき",
+        "wordEnglish": "moon",
+        "note": "げつ in 月曜日, がつ in the month names — 四月 しがつ."
+    },
+    {
+        "char": "空",
+        "romaji": "sora / kuu",
+        "meaning": "sky, empty",
+        "quiz": true,
+        "word": "空",
+        "wordKana": "そら",
+        "wordEnglish": "sky"
+    },
+    {
+        "char": "雨",
+        "romaji": "ame / u",
+        "meaning": "rain",
+        "quiz": true,
+        "word": "雨",
+        "wordKana": "あめ",
+        "wordEnglish": "rain",
+        "note": "Same reading as 飴 あめ, sweets — different kanji, different pitch."
+    },
+    {
+        "char": "花",
+        "romaji": "hana / ka",
+        "meaning": "flower",
+        "quiz": true,
+        "word": "花",
+        "wordKana": "はな",
+        "wordEnglish": "flower",
+        "note": "Same reading as 鼻 はな, nose."
+    },
+    {
+        "char": "車",
+        "romaji": "kuruma / sha",
+        "meaning": "car, wheel",
+        "quiz": true,
+        "word": "車",
+        "wordKana": "くるま",
+        "wordEnglish": "car",
+        "note": "しゃ in compounds — 電車 でんしゃ, 自転車 じてんしゃ."
+    },
+    {
+        "char": "本",
+        "romaji": "hon",
+        "meaning": "book, origin",
+        "quiz": true,
+        "word": "本",
+        "wordKana": "ほん",
+        "wordEnglish": "book",
+        "note": "Here the everyday reading is the on-reading ほん, as in 日本 にほん."
+    },
+    {
+        "char": "魚",
+        "romaji": "sakana / gyo",
+        "meaning": "fish",
+        "quiz": true,
+        "word": "魚",
+        "wordKana": "さかな",
+        "wordEnglish": "fish"
+    },
+    {
+        "char": "犬",
+        "romaji": "inu / ken",
+        "meaning": "dog",
+        "quiz": true,
+        "word": "犬",
+        "wordKana": "いぬ",
+        "wordEnglish": "dog"
+    },
+    {
+        "char": "口",
+        "romaji": "kuchi / kou",
+        "meaning": "mouth",
+        "quiz": true,
+        "word": "口",
+        "wordKana": "くち",
+        "wordEnglish": "mouth",
+        "note": "入口 いりぐち and 出口 でぐち voice it to ぐち."
+    },
+    {
+        "char": "耳",
+        "romaji": "mimi / ji",
+        "meaning": "ear",
+        "quiz": true,
+        "word": "耳",
+        "wordKana": "みみ",
+        "wordEnglish": "ear"
+    },
+    {
+        "char": "足",
+        "romaji": "ashi / soku",
+        "meaning": "foot, leg",
+        "quiz": true,
+        "word": "足",
+        "wordKana": "あし",
+        "wordEnglish": "foot"
+    },
+    {
+        "char": "中",
+        "romaji": "naka / chuu",
+        "meaning": "middle, inside",
+        "quiz": true,
+        "word": "中",
+        "wordKana": "なか",
+        "wordEnglish": "in, inside",
+        "note": "ちゅう in compounds — 中国 ちゅうごく, China."
+    },
+    {
+        "char": "外",
+        "romaji": "soto / gai",
+        "meaning": "outside",
+        "quiz": true,
+        "word": "外",
+        "wordKana": "そと",
+        "wordEnglish": "outside",
+        "note": "がい in compounds — 外国 がいこく, a foreign country."
+    },
+    {
+        "char": "前",
+        "romaji": "mae / zen",
+        "meaning": "front, before",
+        "quiz": true,
+        "word": "前",
+        "wordKana": "まえ",
+        "wordEnglish": "front, before",
+        "note": "ぜん in compounds — 午前 ごぜん, the morning half of the clock."
+    },
+    {
+        "char": "右",
+        "romaji": "migi / u",
+        "meaning": "right",
+        "quiz": true,
+        "word": "右",
+        "wordKana": "みぎ",
+        "wordEnglish": "right"
+    },
+    {
+        "char": "左",
+        "romaji": "hidari / sa",
+        "meaning": "left",
+        "quiz": true,
+        "word": "左",
+        "wordKana": "ひだり",
+        "wordEnglish": "left",
+        "note": "左 and 右 differ in stroke order, not just shape: 左 starts with the horizontal, 右 with the sweep."
+    },
+    {
+        "char": "間",
+        "romaji": "aida / kan",
+        "meaning": "between, interval",
+        "quiz": true,
+        "word": "間",
+        "wordKana": "あいだ",
+        "wordEnglish": "between",
+        "note": "かん in compounds — 時間 じかん, time. Alone it is あいだ."
+    },
+    {
+        "char": "隣",
+        "romaji": "tonari / rin",
+        "meaning": "next door, adjacent",
+        "quiz": true,
+        "word": "隣",
+        "wordKana": "となり",
+        "wordEnglish": "next to",
+        "note": "となり is the next one in a row; for merely beside something you want よこ."
+    },
+    {
+        "char": "後",
+        "romaji": "ushiro / go / ato",
+        "meaning": "back, behind, after",
+        "word": "後ろ",
+        "wordKana": "うしろ",
+        "wordEnglish": "back, behind",
+        "note": "Three readings worth knowing: うしろ behind, ご in 午後 ごご the afternoon, あと in 後で あとで, later."
+    },
+    {
+        "char": "近",
+        "romaji": "chika / kin",
+        "meaning": "near, close",
+        "word": "近く",
+        "wordKana": "ちかく",
+        "wordEnglish": "near, nearby",
+        "note": "近い ちかい is the adjective, 近く the place. きん in compounds — 最近 さいきん, lately."
+    },
+    {
+        "char": "買",
+        "romaji": "ka / bai",
+        "meaning": "buy",
+        "word": "買います",
+        "wordKana": "かいます",
+        "wordEnglish": "to buy",
+        "note": "Dictionary form 買う かう; 買い物 かいもの is shopping. The lid on top is 罒, a net — not 四."
+    }
 ]

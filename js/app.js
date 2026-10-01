@@ -72,6 +72,20 @@ const App = (() => {
         renderStreak();
 
         if ("serviceWorker" in navigator) {
+            // The page you are looking at was served by the worker that was
+            // already installed, so a reload after the data changed still shows
+            // the old data — the new worker only takes over once that load has
+            // finished. Reloading once when it does is the difference between
+            // changes appearing and you reloading twice wondering why they
+            // didn't. Only when a worker was already in charge: on a first
+            // visit the handover is expected and there is nothing stale to drop.
+            const had = !!navigator.serviceWorker.controller;
+            let reloaded = false;
+            navigator.serviceWorker.addEventListener("controllerchange", () => {
+                if (!had || reloaded) return;
+                reloaded = true;
+                location.reload();
+            });
             navigator.serviceWorker.register("./sw.js").catch(() => {});
         }
     }

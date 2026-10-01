@@ -706,7 +706,7 @@
         "english": "eraser",
         "group": "Everyday things",
         "note": "消し from 消します + ゴム, gum",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "",
@@ -983,7 +983,7 @@
         "kana": "やさい",
         "english": "vegetable",
         "group": "Food & drink",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "",
@@ -1035,14 +1035,14 @@
         "kana": "え",
         "english": "picture / drawing",
         "group": "Hobbies",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "料理",
         "kana": "りょうり",
         "english": "cooking / cooked food",
         "group": "Hobbies",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "食べます",
@@ -1106,7 +1106,7 @@
         "english": "to read",
         "group": "Verbs",
         "note": "godan (う-verb) — dictionary form 読む (よむ)",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "書きます",
@@ -1218,7 +1218,7 @@
         "english": "to send",
         "group": "Verbs",
         "note": "godan — 送る (おくる)",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "",
@@ -1408,7 +1408,7 @@
         "group": "Adjectives",
         "adj": "na",
         "note": "na-adjective",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "有名",
@@ -1426,7 +1426,7 @@
         "group": "Adjectives",
         "adj": "na",
         "note": "na-adjective",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "暇",
@@ -1435,7 +1435,7 @@
         "group": "Adjectives",
         "adj": "na",
         "note": "na-adjective",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "便利",
@@ -1444,7 +1444,7 @@
         "group": "Adjectives",
         "adj": "na",
         "note": "na-adjective",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "素敵",
@@ -1507,7 +1507,7 @@
         "group": "Adjectives",
         "adj": "i",
         "note": "i-adjective — the opposite of 高い",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "",
@@ -1588,7 +1588,7 @@
         "group": "Adjectives",
         "adj": "na",
         "note": "na-adjective — うたがじょうずです",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "下手",
@@ -1597,7 +1597,7 @@
         "group": "Adjectives",
         "adj": "na",
         "note": "na-adjective",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "色々",
@@ -2340,7 +2340,7 @@
         "english": "pleasantly cool",
         "group": "Weather",
         "adj": "i",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "暖かい",
@@ -2588,7 +2588,7 @@
         "kana": "ちかてつ",
         "english": "subway",
         "group": "Transport",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "新幹線",

@@ -24,6 +24,12 @@
                 "kana": "にほんのたべものがすきなです",
                 "why": "na only appears before a noun: suki na tabemono, but suki desu."
             }
+        ],
+        "adjNotes": [
+            {
+                "kana": "すき",
+                "family": "na"
+            }
         ]
     },
     {
@@ -62,6 +68,12 @@
                 "word": "好き",
                 "kana": "すき"
             }
+        ],
+        "adjNotes": [
+            {
+                "kana": "すき",
+                "family": "na"
+            }
         ]
     },
     {
@@ -88,6 +100,12 @@
             {
                 "kana": "とてもすきます",
                 "why": "suki is not a verb."
+            }
+        ],
+        "adjNotes": [
+            {
+                "kana": "すき",
+                "family": "na"
             }
         ]
     },
@@ -116,6 +134,12 @@
                 "kana": "どんなおんがくがすきますか",
                 "why": "suki is not a verb."
             }
+        ],
+        "adjNotes": [
+            {
+                "kana": "すき",
+                "family": "na"
+            }
         ]
     },
     {
@@ -142,6 +166,12 @@
             {
                 "kana": "にほんごがじょうずますね",
                 "why": "jouzu is not a verb."
+            }
+        ],
+        "adjNotes": [
+            {
+                "kana": "じょうず",
+                "family": "na"
             }
         ]
     },
@@ -270,6 +300,12 @@
             {
                 "word": "好き",
                 "kana": "すき"
+            }
+        ],
+        "adjNotes": [
+            {
+                "kana": "すき",
+                "family": "na"
             }
         ]
     },
@@ -538,6 +574,12 @@
                 "kana": "おおきかったくないです",
                 "why": "katta and kunai cannot stack."
             }
+        ],
+        "adjNotes": [
+            {
+                "kana": "おおきい",
+                "family": "i"
+            }
         ]
     },
     {
@@ -563,6 +605,12 @@
             {
                 "kana": "しずかじゃなかったです",
                 "why": "that is the past — it wasn't quiet."
+            }
+        ],
+        "adjNotes": [
+            {
+                "kana": "しずか",
+                "family": "na"
             }
         ]
     },
@@ -590,6 +638,12 @@
                 "kana": "しずかいへや",
                 "why": "shizuka does not take i."
             }
+        ],
+        "adjNotes": [
+            {
+                "kana": "しずか",
+                "family": "na"
+            }
         ]
     },
     {
@@ -616,6 +670,12 @@
                 "kana": "たのしいですしごと",
                 "why": "desu closes a sentence; before a noun the adjective attaches straight on."
             }
+        ],
+        "adjNotes": [
+            {
+                "kana": "たのしい",
+                "family": "i"
+            }
         ]
     },
     {
@@ -641,6 +701,12 @@
             {
                 "kana": "よくでした",
                 "why": "yoku is the adverb stem, not a past tense."
+            }
+        ],
+        "adjNotes": [
+            {
+                "kana": "いい",
+                "family": "i"
             }
         ]
     },
@@ -747,6 +813,12 @@
             {
                 "kana": "けさはさむいでした",
                 "why": "an i-adjective carries its own past: samukatta desu."
+            }
+        ],
+        "adjNotes": [
+            {
+                "kana": "さむい",
+                "family": "i"
             }
         ]
     },
@@ -1102,6 +1174,12 @@
                 "kana": "ゆうめいじゃありますせん",
                 "why": "the negative is arimasen; it does not split like that."
             }
+        ],
+        "adjNotes": [
+            {
+                "kana": "ゆうめい",
+                "family": "na"
+            }
         ]
     },
     {
@@ -1157,6 +1235,12 @@
                 "kana": "にほんごがへたいです",
                 "why": "heta is a na-adjective; there is no i."
             }
+        ],
+        "adjNotes": [
+            {
+                "kana": "へた",
+                "family": "na"
+            }
         ]
     },
     {
@@ -1183,6 +1267,12 @@
             {
                 "kana": "やさいがきらいいです",
                 "why": "kirai is na; there is no i to add."
+            }
+        ],
+        "adjNotes": [
+            {
+                "kana": "きらい",
+                "family": "na"
             }
         ]
     },
@@ -1211,6 +1301,12 @@
                 "kana": "えいががすきいです",
                 "why": "suki is na; there is no i to add."
             }
+        ],
+        "adjNotes": [
+            {
+                "kana": "すき",
+                "family": "na"
+            }
         ]
     },
     {
@@ -1237,6 +1333,12 @@
             {
                 "kana": "うたがじょうずいです",
                 "why": "jouzu is na; there is no i to add."
+            }
+        ],
+        "adjNotes": [
+            {
+                "kana": "じょうず",
+                "family": "na"
             }
         ]
     },
@@ -1274,6 +1376,12 @@
             {
                 "word": "下手",
                 "kana": "へた"
+            }
+        ],
+        "adjNotes": [
+            {
+                "kana": "へた",
+                "family": "na"
             }
         ]
     },
@@ -1392,6 +1500,12 @@
                 "word": "上手",
                 "kana": "じょうず"
             }
+        ],
+        "adjNotes": [
+            {
+                "kana": "じょうず",
+                "family": "na"
+            }
         ]
     },
     {
@@ -1419,6 +1533,12 @@
                 "kana": "どんなたべものがすきますか",
                 "why": "suki is not a verb."
             }
+        ],
+        "adjNotes": [
+            {
+                "kana": "すき",
+                "family": "na"
+            }
         ]
     },
     {
@@ -1445,6 +1565,12 @@
             {
                 "kana": "どんなえいががすきますか",
                 "why": "suki is not a verb."
+            }
+        ],
+        "adjNotes": [
+            {
+                "kana": "すき",
+                "family": "na"
             }
         ]
     },
@@ -1642,6 +1768,16 @@
                 "kana": "さむいですからあついコーヒーがのみます",
                 "why": "nomimasu is a real verb of doing, so what you drink takes wo."
             }
+        ],
+        "adjNotes": [
+            {
+                "kana": "さむい",
+                "family": "i"
+            },
+            {
+                "kana": "あつい",
+                "family": "i"
+            }
         ]
     },
     {
@@ -1679,6 +1815,16 @@
                 "word": "好き",
                 "kana": "すき"
             }
+        ],
+        "adjNotes": [
+            {
+                "kana": "やすい",
+                "family": "i"
+            },
+            {
+                "kana": "すき",
+                "family": "na"
+            }
         ]
     },
     {
@@ -1715,6 +1861,12 @@
             {
                 "word": "嫌い",
                 "kana": "きらい"
+            }
+        ],
+        "adjNotes": [
+            {
+                "kana": "きらい",
+                "family": "na"
             }
         ]
     },
@@ -1780,6 +1932,12 @@
                 "word": "好き",
                 "kana": "すき"
             }
+        ],
+        "adjNotes": [
+            {
+                "kana": "すき",
+                "family": "na"
+            }
         ]
     },
     {
@@ -1806,6 +1964,12 @@
             {
                 "kana": "うたがへたます",
                 "why": "heta is not a verb."
+            }
+        ],
+        "adjNotes": [
+            {
+                "kana": "へた",
+                "family": "na"
             }
         ]
     },
@@ -1843,6 +2007,12 @@
             {
                 "word": "上手",
                 "kana": "じょうず"
+            }
+        ],
+        "adjNotes": [
+            {
+                "kana": "じょうず",
+                "family": "na"
             }
         ]
     },
@@ -3131,6 +3301,12 @@
                 "kana": "さむくなかったです",
                 "why": "that is the past negative."
             }
+        ],
+        "adjNotes": [
+            {
+                "kana": "さむい",
+                "family": "i"
+            }
         ]
     },
     {
@@ -3156,6 +3332,12 @@
             {
                 "kana": "さむかったです",
                 "why": "that is the past, without the negative."
+            }
+        ],
+        "adjNotes": [
+            {
+                "kana": "さむい",
+                "family": "i"
             }
         ]
     },
@@ -3183,6 +3365,12 @@
                 "kana": "たかくなかったです",
                 "why": "that is the past negative."
             }
+        ],
+        "adjNotes": [
+            {
+                "kana": "たかい",
+                "family": "i"
+            }
         ]
     },
     {
@@ -3208,6 +3396,12 @@
             {
                 "kana": "たかかったです",
                 "why": "that is the past, without the negative."
+            }
+        ],
+        "adjNotes": [
+            {
+                "kana": "たかい",
+                "family": "i"
             }
         ]
     },
@@ -3235,6 +3429,12 @@
                 "kana": "おいしくなかったです",
                 "why": "that is the past negative."
             }
+        ],
+        "adjNotes": [
+            {
+                "kana": "おいしい",
+                "family": "i"
+            }
         ]
     },
     {
@@ -3260,6 +3460,12 @@
             {
                 "kana": "おいしかったです",
                 "why": "that is the past, without the negative."
+            }
+        ],
+        "adjNotes": [
+            {
+                "kana": "おいしい",
+                "family": "i"
             }
         ]
     },
@@ -3287,6 +3493,12 @@
                 "kana": "べんりじゃなかったです",
                 "why": "that is the past negative."
             }
+        ],
+        "adjNotes": [
+            {
+                "kana": "べんり",
+                "family": "na"
+            }
         ]
     },
     {
@@ -3312,6 +3524,12 @@
             {
                 "kana": "べんりじゃなかったです",
                 "why": "that is the past negative."
+            }
+        ],
+        "adjNotes": [
+            {
+                "kana": "べんり",
+                "family": "na"
             }
         ]
     },
@@ -3339,6 +3557,12 @@
                 "kana": "にぎやかじゃなかったです",
                 "why": "that is the past negative."
             }
+        ],
+        "adjNotes": [
+            {
+                "kana": "にぎやか",
+                "family": "na"
+            }
         ]
     },
     {
@@ -3364,6 +3588,12 @@
             {
                 "kana": "にぎやかじゃなかったです",
                 "why": "that is the past negative."
+            }
+        ],
+        "adjNotes": [
+            {
+                "kana": "にぎやか",
+                "family": "na"
             }
         ]
     },
@@ -3401,6 +3631,12 @@
                 "word": "車",
                 "kana": "くるま"
             }
+        ],
+        "adjNotes": [
+            {
+                "kana": "あたらしい",
+                "family": "i"
+            }
         ]
     },
     {
@@ -3436,6 +3672,12 @@
             {
                 "word": "人",
                 "kana": "ひと"
+            }
+        ],
+        "adjNotes": [
+            {
+                "kana": "いそがしい",
+                "family": "i"
             }
         ]
     },
@@ -3473,6 +3715,12 @@
                 "word": "人",
                 "kana": "ひと"
             }
+        ],
+        "adjNotes": [
+            {
+                "kana": "しんせつ",
+                "family": "na"
+            }
         ]
     },
     {
@@ -3499,6 +3747,12 @@
                 "kana": "すてきいみせ",
                 "why": "suteki does not take i."
             }
+        ],
+        "adjNotes": [
+            {
+                "kana": "すてき",
+                "family": "na"
+            }
         ]
     },
     {
@@ -3524,6 +3778,12 @@
             {
                 "kana": "いいくないです",
                 "why": "the ii does not survive into the negative."
+            }
+        ],
+        "adjNotes": [
+            {
+                "kana": "いい",
+                "family": "i"
             }
         ]
     },
@@ -3552,6 +3812,12 @@
                 "kana": "いいじゃなかったです",
                 "why": "ja nakatta is the na pattern."
             }
+        ],
+        "adjNotes": [
+            {
+                "kana": "いい",
+                "family": "i"
+            }
         ]
     },
     {
@@ -3577,6 +3843,12 @@
             {
                 "kana": "きょうにひまじゃありません",
                 "why": "kyou is a relative time word and takes no ni."
+            }
+        ],
+        "adjNotes": [
+            {
+                "kana": "ひま",
+                "family": "na"
             }
         ]
     },
@@ -3618,6 +3890,12 @@
             {
                 "word": "好き",
                 "kana": "すき"
+            }
+        ],
+        "adjNotes": [
+            {
+                "kana": "すき",
+                "family": "na"
             }
         ]
     },
@@ -3728,6 +4006,12 @@
             {
                 "word": "水",
                 "kana": "みず"
+            }
+        ],
+        "adjNotes": [
+            {
+                "kana": "つめたい",
+                "family": "i"
             }
         ]
     },
@@ -3850,6 +4134,12 @@
                 "word": "好き",
                 "kana": "すき"
             }
+        ],
+        "adjNotes": [
+            {
+                "kana": "すき",
+                "family": "na"
+            }
         ]
     },
     {
@@ -3962,6 +4252,12 @@
             {
                 "word": "花",
                 "kana": "はな"
+            }
+        ],
+        "adjNotes": [
+            {
+                "kana": "あかい",
+                "family": "i"
             }
         ]
     },
@@ -4120,20 +4416,30 @@
         "en": "There's a postbox in front of the station.",
         "correct": {
             "kana": "えきのまえにポストがあります",
-            "romaji": "eki no mae ni posuto ga arimasu"
+            "romaji": "eki no mae ni posuto ga arimasu",
+            "kanji": "えきの前にポストがあります"
         },
         "wrong": [
             {
                 "kana": "えきのまえにポストをあります",
-                "why": "wo never marks what is there."
+                "why": "wo never marks what is there.",
+                "kanji": "えきの前にポストをあります"
             },
             {
                 "kana": "えきのまえにポストがいます",
-                "why": "a postbox is a thing — arimasu."
+                "why": "a postbox is a thing — arimasu.",
+                "kanji": "えきの前にポストがいます"
             },
             {
-                "kana": "えきまえにポストがあります",
-                "why": "the position joins on with no: eki no mae."
+                "kana": "えきのまえにポストがありました",
+                "why": "that is past — there was a postbox.",
+                "kanji": "えきの前にポストがありました"
+            }
+        ],
+        "kanjiNotes": [
+            {
+                "word": "前",
+                "kana": "まえ"
             }
         ]
     },
@@ -4251,20 +4557,30 @@
         "en": "on the desk",
         "correct": {
             "kana": "つくえのうえ",
-            "romaji": "tsukue no ue"
+            "romaji": "tsukue no ue",
+            "kanji": "つくえの上"
         },
         "wrong": [
             {
                 "kana": "つくえなうえ",
-                "why": "no joins two nouns; na belongs to adjectives."
+                "why": "no joins two nouns; na belongs to adjectives.",
+                "kanji": "つくえな上"
             },
             {
                 "kana": "つくえうえ",
-                "why": "the position needs its no."
+                "why": "the position needs its no.",
+                "kanji": "つくえ上"
             },
             {
                 "kana": "うえのつくえ",
-                "why": "that is the desk on top of something else — the order carries the meaning."
+                "why": "that is the desk on top of something else — the order carries the meaning.",
+                "kanji": "上のつくえ"
+            }
+        ],
+        "kanjiNotes": [
+            {
+                "word": "上",
+                "kana": "うえ"
             }
         ]
     },
@@ -4278,20 +4594,30 @@
         "en": "There's a cat inside the box.",
         "correct": {
             "kana": "はこのなかにねこがいます",
-            "romaji": "hako no naka ni neko ga imasu"
+            "romaji": "hako no naka ni neko ga imasu",
+            "kanji": "はこの中にねこがいます"
         },
         "wrong": [
             {
                 "kana": "はこのなかでねこがいます",
-                "why": "de is where something happens."
+                "why": "de is where something happens.",
+                "kanji": "はこの中でねこがいます"
             },
             {
                 "kana": "はこなかにねこがいます",
-                "why": "the position joins on with no: hako no naka."
+                "why": "the position joins on with no: hako no naka.",
+                "kanji": "はこ中にねこがいます"
             },
             {
                 "kana": "はこのなかにねこがあります",
-                "why": "a cat moves by itself — imasu."
+                "why": "a cat moves by itself — imasu.",
+                "kanji": "はこの中にねこがあります"
+            }
+        ],
+        "kanjiNotes": [
+            {
+                "word": "中",
+                "kana": "なか"
             }
         ]
     },
@@ -4305,20 +4631,30 @@
         "en": "The bag is between the chair and the desk.",
         "correct": {
             "kana": "かばんはいすとつくえのあいだにあります",
-            "romaji": "kaban wa isu to tsukue no aida ni arimasu"
+            "romaji": "kaban wa isu to tsukue no aida ni arimasu",
+            "kanji": "かばんはいすとつくえの間にあります"
         },
         "wrong": [
             {
                 "kana": "かばんはいすやつくえのあいだにあります",
-                "why": "aida joins its two things with to, not ya."
+                "why": "aida joins its two things with to, not ya.",
+                "kanji": "かばんはいすやつくえの間にあります"
             },
             {
                 "kana": "かばんはいすとつくえのあいだにいます",
-                "why": "a bag is a thing — arimasu."
+                "why": "a bag is a thing — arimasu.",
+                "kanji": "かばんはいすとつくえの間にいます"
             },
             {
                 "kana": "かばんはいすとつくえあいだにあります",
-                "why": "the position still needs its no."
+                "why": "the position still needs its no.",
+                "kanji": "かばんはいすとつくえ間にあります"
+            }
+        ],
+        "kanjiNotes": [
+            {
+                "word": "間",
+                "kana": "あいだ"
             }
         ]
     },
@@ -4332,20 +4668,30 @@
         "en": "There's a park between the station and the bank.",
         "correct": {
             "kana": "えきとぎんこうのあいだにこうえんがあります",
-            "romaji": "eki to ginkou no aida ni kouen ga arimasu"
+            "romaji": "eki to ginkou no aida ni kouen ga arimasu",
+            "kanji": "えきとぎんこうの間にこうえんがあります"
         },
         "wrong": [
             {
                 "kana": "えきとぎんこうのあいだでこうえんがあります",
-                "why": "existing takes ni; de is where something happens."
+                "why": "existing takes ni; de is where something happens.",
+                "kanji": "えきとぎんこうの間でこうえんがあります"
             },
             {
                 "kana": "えきぎんこうのあいだにこうえんがあります",
-                "why": "aida needs both things, joined by to."
+                "why": "aida needs both things, joined by to.",
+                "kanji": "えきぎんこうの間にこうえんがあります"
             },
             {
                 "kana": "えきとぎんこうのあいだにこうえんがいます",
-                "why": "a park is a place — arimasu."
+                "why": "a park is a place — arimasu.",
+                "kanji": "えきとぎんこうの間にこうえんがいます"
+            }
+        ],
+        "kanjiNotes": [
+            {
+                "word": "間",
+                "kana": "あいだ"
             }
         ]
     },

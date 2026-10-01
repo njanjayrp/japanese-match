@@ -18,6 +18,10 @@
 // Where the words exist in data/kanji.json the sentences are written in kanji,
 // with a bar under the options giving each one's reading. All four options of a
 // question always carry the same kanji, so the writing never singles one out.
+// The same bar names the family of any adjective being conjugated, because
+// "The water was cold" is unanswerable unless you know tsumetai takes the i
+// rule — except on the questions whose whole point is telling the families
+// apart, which declare adjectives:which-family and go without.
 //
 // A round is 15 questions, dealt so that consecutive ones test different rules.
 // Nine of the questions in the pack are about ga against wo, so a plain shuffle
@@ -41,7 +45,7 @@ const ReviseMode = (() => {
         items = data || [];
         titles = Object.fromEntries((sheets || []).map(s => [s.id, s.title]));
         for (const id of ["rev-sheet", "rev-card", "rev-progress", "rev-topic", "rev-prompt",
-                          "rev-question", "rev-options", "rev-kanji", "rev-reveal", "rev-correct",
+                          "rev-question", "rev-options", "rev-notes", "rev-reveal", "rev-correct",
                           "rev-romaji", "rev-why", "rev-next", "rev-empty"]) {
             el[id] = document.getElementById(id);
         }
@@ -167,7 +171,7 @@ const ReviseMode = (() => {
             ...item.wrong.map(w => ({ kana: w.kana, jp: jpOf(w), why: w.why })),
         ]);
 
-        el["rev-options"].after(el["rev-kanji"]);
+        el["rev-options"].after(el["rev-notes"]);
         readings(item);
 
         const box = el["rev-options"];
@@ -191,14 +195,27 @@ const ReviseMode = (() => {
         return side.kanji || side.kana;
     }
 
-    // The bar under the options: every kanji word on screen with its reading.
-    // Knowing that 上手 is jouzu does not tell you whether the particle is right,
-    // so this costs the question nothing and saves squinting at a wall of kanji.
+    /**
+     * The bar under the options: what you would otherwise need a dictionary
+     * open for. Every kanji on screen with its reading, and the family of every
+     * adjective being conjugated — "The water was cold" cannot be answered
+     * unless you know tsumetai takes the i rule, and nothing else on the screen
+     * says so.
+     *
+     * Neither line gives the question away. All four options carry the same
+     * kanji, and a question that tests which family a word belongs to declares
+     * adjectives:which-family and is left without the line — spotting that kirei
+     * ends in i and still takes na is the whole exercise there.
+     */
     function readings(item) {
-        const notes = item.kanjiNotes || [];
-        el["rev-kanji"].hidden = notes.length === 0;
-        el["rev-kanji"].innerHTML = notes.map(n =>
-            `<span><b>${Furigana.esc(n.word)}</b> ${Furigana.esc(n.kana)}</span>`).join("");
+        const kanji = item.kanjiNotes || [];
+        const adj   = item.adjNotes || [];
+        el["rev-notes"].hidden = kanji.length + adj.length === 0;
+        el["rev-notes"].innerHTML =
+            kanji.map(n => `<span><b>${Furigana.esc(n.word)}</b> ${Furigana.esc(n.kana)}</span>`)
+                 .concat(adj.map(a =>
+                     `<span><b>${Furigana.esc(a.kana)}</b> ${a.family}-adjective</span>`))
+                 .join("");
     }
 
     function answered(btn, box, opt, options) {
@@ -242,7 +259,7 @@ const ReviseMode = (() => {
 
         // The explanations are written in the same kanji, so the reading bar
         // follows them down rather than sitting above the answer.
-        el["rev-next"].before(el["rev-kanji"]);
+        el["rev-next"].before(el["rev-notes"]);
         el["rev-next"].textContent = idx === roundSize() - 1 ? "Finish round" : "Next";
         Speech.say(item.correct.kana);
         el["rev-next"].focus({ preventScroll: true });

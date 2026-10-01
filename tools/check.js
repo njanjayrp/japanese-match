@@ -301,7 +301,18 @@ function midTwin(a, b) {
     }
     return at > 1 && at < a.length - 3;
 }
-const kanjiWords = new Map(kanji.map(k => [k.word, k.wordKana]));
+// Every word this file knows how to write, for validating the revision reading
+// bar. A character's own word plus any compound it lists — 上手 is not read
+// 上 + 手, so it can only be known by being written down.
+const kanjiWords = new Map();
+for (const k of kanji) {
+    kanjiWords.set(k.word, k.wordKana);
+    for (const c of k.compounds || []) {
+        if (!c.word || !c.kana) fail(`${k.char}: a compound is missing word or kana`);
+        else if (!c.word.includes(k.char)) fail(`${k.char}: not present in its compound "${c.word}"`);
+        else kanjiWords.set(c.word, c.kana);
+    }
+}
 const seenIds = new Set();
 const prompts = new Map();
 const sheetIds = new Set(sheets.map(s => s.id));
@@ -359,6 +370,25 @@ for (const item of revision) {
     if (withKanji.length && withKanji.length !== 4) {
         fail(`${where}: ${withKanji.length} of 4 options have a kanji form — all or none`);
     }
+    // The family the reading bar prints has to be the one words.json records,
+    // and the adjective has to actually be in the sentence — a bar that names
+    // the wrong family teaches the opposite of the rule.
+    for (const n of item.adjNotes || []) {
+        const word = words.find(w => w.kana === n.kana && w.adj);
+        if (!word) { fail(`${where}: names ${n.kana} as an adjective, words.json doesn't`); continue; }
+        if (word.adj !== n.family) {
+            fail(`${where}: calls ${n.kana} ${n.family}, words.json says ${word.adj}`);
+        }
+        const shows = Object.values(AdjForms.formsOf({ kana: n.kana, adj: n.family }))
+            .some(f => item.correct.kana.includes(f.replace(/です$/, "")));
+        if (!shows) fail(`${where}: names ${n.kana}, which isn't in "${item.correct.kana}"`);
+    }
+    // A question whose point is telling the families apart must not be handed
+    // the answer: kirei ends in i and takes na, and spotting that is the test.
+    if (item.covers.includes("adjectives:which-family") && (item.adjNotes || []).length) {
+        fail(`${where}: tests which-family and still names the family`);
+    }
+
     if (withKanji.length) {
         const notes = item.kanjiNotes || [];
         if (!notes.length) fail(`${where}: written in kanji but has no kanjiNotes for the reading bar`);

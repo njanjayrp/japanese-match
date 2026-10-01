@@ -4,11 +4,15 @@
 // whenever the network answers, and the cache is only the offline fallback.
 // Cache-first was making every change need a CACHE_NAME bump plus two reloads,
 // and forgetting either one served a stale app that looked like a bug in the
-// app rather than in the cache. The generated datasets and the icons never
-// change by hand, so those stay cache-first — that's where offline speed
-// actually comes from.
+// app rather than in the cache. The icons never change, so they stay
+// cache-first — that's where offline speed actually comes from.
+//
+// strokes.json is generated, but it is regenerated every time a kanji is added,
+// and a kanji with no stroke data is dropped from the picker without a word. So
+// a stale copy of it doesn't look like a cache problem, it looks like the kanji
+// were never added. It goes on the network-first list with the rest.
 
-const CACHE_NAME = 'japanese-match-v25';
+const CACHE_NAME = 'japanese-match-v30';
 
 const ASSETS = [
     './',
@@ -68,6 +72,7 @@ self.addEventListener('fetch', e => {
                    path.endsWith('.js') ||
                    path.endsWith('.css') ||
                    path.endsWith('/data/words.json') ||
+                   path.endsWith('/data/strokes.json') ||
                    path.endsWith('/data/sheets.json') ||
                    path.endsWith('/data/kanji.json') ||
                    path.endsWith('/data/revision.json');

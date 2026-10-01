@@ -88,6 +88,13 @@ All four options of a question always carry the same kanji, so the writing can
 never single one of them out, and knowing that 上手 is *jouzu* tells you nothing
 about whether the particle is right.
 
+The same bar names the family of any adjective the question conjugates. "The
+water was cold" cannot be answered unless you already know *tsumetai* takes the
+i rule, and nothing else on the screen says so. The questions whose point is
+telling the families apart declare `adjectives:which-family` and go without it —
+spotting that *kirei* ends in i and still takes na is the whole exercise there,
+and `check.js` fails if such a question carries the line anyway.
+
 The wrong sentences are written by hand in
 [`data/revision.json`](data/revision.json) and never generated. Generating them
 is a trap: swapping a particle usually yields another perfectly correct sentence
