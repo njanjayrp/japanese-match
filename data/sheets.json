@@ -3602,5 +3602,653 @@
                 "body": "inu wa doko ni imasu ka — the thing comes first with wa, the place is what you don't know. The answer keeps that order: inu wa kouen ni imasu. Compare kouen ni inu ga imasu, which answers what is in the park instead."
             }
         ]
+    },
+    {
+        "id": "counters",
+        "title": "Counting things",
+        "blurb": "A number on its own counts nothing — it needs a word attached, and which word depends on the shape of the thing. The counter then sits next to the verb, not next to the noun, which is the part that catches everyone.",
+        "legend": [
+            {
+                "term": "tsu",
+                "gloss": "the all-purpose set, 1 to 10"
+            },
+            {
+                "term": "mai",
+                "gloss": "flat things"
+            },
+            {
+                "term": "dai",
+                "gloss": "machines"
+            },
+            {
+                "term": "nin",
+                "gloss": "people"
+            },
+            {
+                "term": "kan",
+                "gloss": "makes a span of time"
+            }
+        ],
+        "grids": [
+            {
+                "title": "the all-purpose set",
+                "columns": [
+                    "word",
+                    "watch out"
+                ],
+                "rows": [
+                    {
+                        "label": "1",
+                        "cells": [
+                            {
+                                "kana": "ひとつ",
+                                "en": "one thing"
+                            },
+                            {
+                                "term": "—",
+                                "en": ""
+                            }
+                        ]
+                    },
+                    {
+                        "label": "2",
+                        "cells": [
+                            {
+                                "kana": "ふたつ",
+                                "en": "two things"
+                            },
+                            {
+                                "term": "—",
+                                "en": ""
+                            }
+                        ]
+                    },
+                    {
+                        "label": "3",
+                        "cells": [
+                            {
+                                "kana": "みっつ",
+                                "en": "three things"
+                            },
+                            {
+                                "term": "ltsu",
+                                "en": "small つ, like 4, 6 and 8"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "4",
+                        "cells": [
+                            {
+                                "kana": "よっつ",
+                                "en": "four things"
+                            },
+                            {
+                                "term": "yo-",
+                                "en": "never よんつ"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "5",
+                        "cells": [
+                            {
+                                "kana": "いつつ",
+                                "en": "five things"
+                            },
+                            {
+                                "term": "—",
+                                "en": ""
+                            }
+                        ]
+                    },
+                    {
+                        "label": "6",
+                        "cells": [
+                            {
+                                "kana": "むっつ",
+                                "en": "six things"
+                            },
+                            {
+                                "term": "—",
+                                "en": ""
+                            }
+                        ]
+                    },
+                    {
+                        "label": "7",
+                        "cells": [
+                            {
+                                "kana": "ななつ",
+                                "en": "seven things"
+                            },
+                            {
+                                "term": "—",
+                                "en": "no small つ here"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "8",
+                        "cells": [
+                            {
+                                "kana": "やっつ",
+                                "en": "eight things"
+                            },
+                            {
+                                "term": "—",
+                                "en": ""
+                            }
+                        ]
+                    },
+                    {
+                        "label": "9",
+                        "cells": [
+                            {
+                                "kana": "ここのつ",
+                                "en": "nine things"
+                            },
+                            {
+                                "term": "—",
+                                "en": ""
+                            }
+                        ]
+                    },
+                    {
+                        "label": "10",
+                        "cells": [
+                            {
+                                "kana": "とお",
+                                "en": "ten things",
+                                "odd": true
+                            },
+                            {
+                                "term": "no tsu",
+                                "en": "the set ends here"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "11+",
+                        "cells": [
+                            {
+                                "kana": "じゅういち",
+                                "en": "eleven"
+                            },
+                            {
+                                "term": "—",
+                                "en": "past ten you use a proper counter"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "how many",
+                        "cells": [
+                            {
+                                "kana": "いくつ",
+                                "en": "how many things"
+                            },
+                            {
+                                "term": "ikutsu",
+                                "en": "only for this set — a counter takes 何〜"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "counters by shape",
+                "columns": [
+                    "what it counts",
+                    "the ones that move"
+                ],
+                "rows": [
+                    {
+                        "label": "mai",
+                        "cells": [
+                            {
+                                "kana": "まい",
+                                "en": "flat, thin things — paper, stamps, shirts, plates"
+                            },
+                            {
+                                "term": "—",
+                                "en": "regular all the way: いちまい, さんまい, じゅうまい"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "dai",
+                        "cells": [
+                            {
+                                "kana": "だい",
+                                "en": "machines and vehicles — cars, TVs, bikes, computers"
+                            },
+                            {
+                                "term": "—",
+                                "en": "regular too: いちだい, さんだい, じゅうだい"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "nin",
+                        "cells": [
+                            {
+                                "kana": "にん",
+                                "en": "people",
+                                "odd": true
+                            },
+                            {
+                                "term": "hitori / futari",
+                                "en": "1 and 2 are ひとり and ふたり; 4 is よにん, never よんにん"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "kai",
+                        "cells": [
+                            {
+                                "kana": "かい",
+                                "en": "times something happens",
+                                "odd": true
+                            },
+                            {
+                                "term": "1 6 8 10",
+                                "en": "いっかい, ろっかい, はっかい, じゅっかい"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "how long",
+                "columns": [
+                    "example",
+                    "what changes"
+                ],
+                "rows": [
+                    {
+                        "label": "minutes",
+                        "cells": [
+                            {
+                                "kana": "ごふんかん",
+                                "en": "for five minutes",
+                                "romaji": "gofun kan"
+                            },
+                            {
+                                "term": "fun / pun",
+                                "en": "1 3 4 6 8 10 take ぷん — the clock sheet has the table"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "hours",
+                        "cells": [
+                            {
+                                "kana": "にじかん",
+                                "en": "for two hours"
+                            },
+                            {
+                                "term": "jikan",
+                                "en": "4 is よじかん, 9 is くじかん. 時間 is already a span, so no かん on top"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "days",
+                        "cells": [
+                            {
+                                "kana": "みっか",
+                                "en": "for three days",
+                                "odd": true
+                            },
+                            {
+                                "term": "ka / nichi",
+                                "en": "1 is いちにち; 2 to 10 reuse the date words ふつか みっか よっか"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "weeks",
+                        "cells": [
+                            {
+                                "kana": "いっしゅうかん",
+                                "en": "for one week"
+                            },
+                            {
+                                "term": "1 8 10",
+                                "en": "いっしゅうかん, はっしゅうかん, じゅっしゅうかん"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "months",
+                        "cells": [
+                            {
+                                "kana": "いっかげつ",
+                                "en": "for one month"
+                            },
+                            {
+                                "term": "1 6 8 10",
+                                "en": "いっかげつ, ろっかげつ, はっかげつ, じゅっかげつ"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "years",
+                        "cells": [
+                            {
+                                "kana": "いちねん",
+                                "en": "for one year"
+                            },
+                            {
+                                "term": "nen",
+                                "en": "4 is よねん; 7 is しちねん or ななねん"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "where the counter goes",
+                "columns": [
+                    "sentence",
+                    "the shape"
+                ],
+                "rows": [
+                    {
+                        "label": "eating",
+                        "cells": [
+                            {
+                                "kana": "りんごをみっつたべました",
+                                "en": "I ate three apples",
+                                "romaji": "ringo wo mittsu tabemashita"
+                            },
+                            {
+                                "term": "noun を counter verb",
+                                "en": "the counter stands by the verb"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "drawing",
+                        "cells": [
+                            {
+                                "kana": "えをにまいかきました",
+                                "en": "I drew two pictures",
+                                "romaji": "e wo nimai kakimashita"
+                            },
+                            {
+                                "term": "—",
+                                "en": "not にまいのえ — the number does not hang off the noun"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "existing",
+                        "cells": [
+                            {
+                                "kana": "つくえのうえにみかんがよっつあります",
+                                "en": "there are four mandarins on the desk",
+                                "romaji": "tsukue no ue ni mikan ga yottsu arimasu"
+                            },
+                            {
+                                "term": "… が counter あります",
+                                "en": "same slot in an existence sentence"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "being",
+                        "cells": [
+                            {
+                                "kana": "かぞくはよにんです",
+                                "en": "my family is four people",
+                                "romaji": "kazoku wa yonin desu"
+                            },
+                            {
+                                "term": "… は counter です",
+                                "en": "counting what something consists of"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "asking how many",
+                "columns": [
+                    "question",
+                    "answer"
+                ],
+                "rows": [
+                    {
+                        "label": "things",
+                        "cells": [
+                            {
+                                "kana": "みかんがいくつありますか",
+                                "en": "how many mandarins are there?",
+                                "romaji": "mikan ga ikutsu arimasu ka"
+                            },
+                            {
+                                "kana": "よっつあります",
+                                "en": "there are four",
+                                "romaji": "yottsu arimasu"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "flat",
+                        "cells": [
+                            {
+                                "kana": "きってがなんまいありますか",
+                                "en": "how many stamps are there?",
+                                "romaji": "kitte ga nanmai arimasu ka"
+                            },
+                            {
+                                "kana": "さんまいあります",
+                                "en": "there are three",
+                                "romaji": "sanmai arimasu"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "machines",
+                        "cells": [
+                            {
+                                "kana": "くるまがなんだいありますか",
+                                "en": "how many cars are there?",
+                                "romaji": "kuruma ga nandai arimasu ka"
+                            },
+                            {
+                                "kana": "にだいあります",
+                                "en": "there are two",
+                                "romaji": "nidai arimasu"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "people",
+                        "cells": [
+                            {
+                                "kana": "かぞくはなんにんいますか",
+                                "en": "how many are there in your family?",
+                                "romaji": "kazoku wa nannin imasu ka"
+                            },
+                            {
+                                "kana": "よにんいます",
+                                "en": "four",
+                                "romaji": "yonin imasu"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "how long and how much it takes",
+                "columns": [
+                    "sentence",
+                    "what it does"
+                ],
+                "rows": [
+                    {
+                        "label": "how long",
+                        "cells": [
+                            {
+                                "kana": "どのくらいかかりますか",
+                                "en": "how long does it take?",
+                                "romaji": "dono kurai kakarimasu ka"
+                            },
+                            {
+                                "term": "dono kurai",
+                                "en": "time or money; いくら asks money only"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "from, to",
+                        "cells": [
+                            {
+                                "kana": "えきまでじゅっぷんかかります",
+                                "en": "it takes ten minutes to the station",
+                                "romaji": "eki made juppun kakarimasu"
+                            },
+                            {
+                                "term": "から … まで",
+                                "en": "from … to, either half can be left out"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "the particle",
+                        "cells": [
+                            {
+                                "kana": "じかんがかかります",
+                                "en": "it takes time",
+                                "romaji": "jikan ga kakarimasu"
+                            },
+                            {
+                                "term": "ga",
+                                "en": "the time or the money takes が, the same as あります"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "about",
+                        "cells": [
+                            {
+                                "kana": "ろくまんえんくらいかかります",
+                                "en": "it costs about 60,000 yen",
+                                "romaji": "rokuman en kurai kakarimasu"
+                            },
+                            {
+                                "term": "kurai",
+                                "en": "about — it follows the amount, also written ぐらい"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "how often",
+                "columns": [
+                    "phrase",
+                    "english"
+                ],
+                "rows": [
+                    {
+                        "label": "a day",
+                        "cells": [
+                            {
+                                "kana": "いちにちにさんかい",
+                                "en": "three times a day",
+                                "romaji": "ichinichi ni sankai"
+                            },
+                            {
+                                "term": "span に count かい",
+                                "en": "the span takes に"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "a week",
+                        "cells": [
+                            {
+                                "kana": "いっしゅうかんにさんかい",
+                                "en": "three times a week",
+                                "romaji": "isshuukan ni sankai"
+                            },
+                            {
+                                "term": "—",
+                                "en": ""
+                            }
+                        ]
+                    },
+                    {
+                        "label": "a month",
+                        "cells": [
+                            {
+                                "kana": "いっかげつにいっかい",
+                                "en": "once a month",
+                                "romaji": "ikkagetsu ni ikkai"
+                            },
+                            {
+                                "term": "—",
+                                "en": ""
+                            }
+                        ]
+                    },
+                    {
+                        "label": "a year",
+                        "cells": [
+                            {
+                                "kana": "いちねんにいっかい",
+                                "en": "once a year",
+                                "romaji": "ichinen ni ikkai"
+                            },
+                            {
+                                "term": "—",
+                                "en": ""
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "rules": [
+            {
+                "id": "counter-is-adverb",
+                "title": "the counter stands by the verb",
+                "body": "ringo wo mittsu tabemashita — the particle stays on the noun and the number goes next to the verb, like an adverb. English puts it in front of the noun and that is the habit to break: ringo mittsu wo is wrong, and nimai no e is not how you say it."
+            },
+            {
+                "id": "tsu-set",
+                "title": "the tsu set runs out at ten",
+                "body": "hitotsu to kokonotsu, then too with no tsu at all, and that is the end of it. From eleven you use juuichi with a proper counter. This set is the fallback for anything whose counter you don't know, and ikutsu is how you ask it."
+            },
+            {
+                "id": "hitori-futari",
+                "title": "one and two people are irregular",
+                "body": "hitori and futari, not ichinin and ninin. From three it is regular — sannin, gonin, rokunin — except four, which is yonin and never yonnin. The question is nannin."
+            },
+            {
+                "id": "mai-dai-nin",
+                "title": "the shape picks the counter",
+                "body": "mai for anything flat and thin: paper, stamps, shirts, plates, tickets. dai for machines and vehicles: cars, TVs, bicycles, computers, fridges. nin for people. Both mai and dai are regular from one to ten, which makes them the easy two."
+            },
+            {
+                "id": "kan-makes-a-span",
+                "title": "kan turns a point into a span",
+                "body": "nen is a year, isshuukan is a week long. jikan is already a span, so nijikan is two hours and nijikankan is nothing. Days are the odd ones: ichinichi for one, then the date words — futsuka, mikka, yokka — which are spans as they stand."
+            },
+            {
+                "id": "kai-frequency",
+                "title": "how often: span ni count kai",
+                "body": "isshuukan ni sankai — three times a week. The span takes ni and the count takes kai. kai stops the sound after 1, 6, 8 and 10: ikkai, rokkai, hakkai, jukkai. Watch sankai, three times, against sangai, the third floor — same kana, different word."
+            },
+            {
+                "id": "kakarimasu-ga",
+                "title": "what it takes is marked with ga",
+                "body": "jikan ga kakarimasu, okane ga kakarimasu — the time or the money takes ga, the same way arimasu does. Ask with dono kurai for either, or ikura when it is only money. kurai means about and follows the amount: nijikan kurai, rokuman en kurai."
+            }
+        ]
     }
 ]

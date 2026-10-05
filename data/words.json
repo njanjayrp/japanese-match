@@ -360,6 +360,80 @@
         "marked": false
     },
     {
+        "kanji": "両親",
+        "kana": "りょうしん",
+        "english": "(my) parents",
+        "group": "People",
+        "note": "someone else's are ご両親 ごりょうしん",
+        "marked": false
+    },
+    {
+        "kanji": "兄弟",
+        "kana": "きょうだい",
+        "english": "brothers and sisters",
+        "group": "People",
+        "note": "covers both, like siblings",
+        "marked": false
+    },
+    {
+        "kanji": "兄",
+        "kana": "あに",
+        "english": "(my) older brother",
+        "group": "People",
+        "note": "talking about your own family drops the さん",
+        "marked": false
+    },
+    {
+        "kanji": "姉",
+        "kana": "あね",
+        "english": "(my) older sister",
+        "group": "People",
+        "marked": false
+    },
+    {
+        "kanji": "弟",
+        "kana": "おとうと",
+        "english": "(my) younger brother",
+        "group": "People",
+        "marked": false
+    },
+    {
+        "kanji": "妹",
+        "kana": "いもうと",
+        "english": "(my) younger sister",
+        "group": "People",
+        "marked": false
+    },
+    {
+        "kanji": "お兄さん",
+        "kana": "おにいさん",
+        "english": "someone else's older brother",
+        "group": "People",
+        "marked": false
+    },
+    {
+        "kanji": "お姉さん",
+        "kana": "おねえさん",
+        "english": "someone else's older sister",
+        "group": "People",
+        "marked": false
+    },
+    {
+        "kanji": "弟さん",
+        "kana": "おとうとさん",
+        "english": "someone else's younger brother",
+        "group": "People",
+        "note": "no お on this one, only さん",
+        "marked": false
+    },
+    {
+        "kanji": "妹さん",
+        "kana": "いもうとさん",
+        "english": "someone else's younger sister",
+        "group": "People",
+        "marked": false
+    },
+    {
         "kanji": "本",
         "kana": "ほん",
         "english": "book",
@@ -858,6 +932,13 @@
         "marked": false
     },
     {
+        "kanji": "写真",
+        "kana": "しゃしん",
+        "english": "photograph",
+        "group": "Everyday things",
+        "marked": false
+    },
+    {
         "kanji": "食べ物",
         "kana": "たべもの",
         "english": "food",
@@ -983,6 +1064,36 @@
         "kana": "やさい",
         "english": "vegetable",
         "group": "Food & drink",
+        "marked": false
+    },
+    {
+        "kanji": "",
+        "kana": "りんご",
+        "english": "apple",
+        "group": "Food & drink",
+        "marked": false
+    },
+    {
+        "kanji": "",
+        "kana": "みかん",
+        "english": "mandarin orange",
+        "group": "Food & drink",
+        "note": "the small peelable kind; a Western orange is オレンジ",
+        "marked": false
+    },
+    {
+        "kanji": "卵",
+        "kana": "たまご",
+        "english": "egg",
+        "group": "Food & drink",
+        "marked": false
+    },
+    {
+        "kanji": "",
+        "kana": "カレーライス",
+        "english": "curry and rice",
+        "group": "Food & drink",
+        "note": "often shortened to just カレー",
         "marked": false
     },
     {
@@ -1282,6 +1393,22 @@
         "english": "to be / there is (living things)",
         "group": "Verbs",
         "note": "arimasu for things, imasu for anything alive",
+        "marked": false
+    },
+    {
+        "kanji": "",
+        "kana": "かかります",
+        "english": "to take / to cost",
+        "group": "Verbs",
+        "note": "godan — 掛かる (かかる). The time or the money takes が: じかんがかかります",
+        "marked": false
+    },
+    {
+        "kanji": "撮ります",
+        "kana": "とります",
+        "english": "to take a photo",
+        "group": "Verbs",
+        "note": "godan — 撮る (とる). しゃしんをとります",
         "marked": false
     },
     {
@@ -2065,6 +2192,148 @@
         "english": "weekend",
         "group": "Numbers & time",
         "note": "に is optional here",
+        "marked": false
+    },
+    {
+        "kanji": "一つ",
+        "kana": "ひとつ",
+        "english": "one thing",
+        "group": "Numbers & time",
+        "marked": false
+    },
+    {
+        "kanji": "二つ",
+        "kana": "ふたつ",
+        "english": "two things",
+        "group": "Numbers & time",
+        "marked": false
+    },
+    {
+        "kanji": "三つ",
+        "kana": "みっつ",
+        "english": "three things",
+        "group": "Numbers & time",
+        "marked": false
+    },
+    {
+        "kanji": "四つ",
+        "kana": "よっつ",
+        "english": "four things",
+        "group": "Numbers & time",
+        "marked": false
+    },
+    {
+        "kanji": "",
+        "kana": "いつつ",
+        "english": "five things",
+        "group": "Numbers & time",
+        "marked": false,
+        "note": "written 五つ — the ruby can't be split, 五 carries いつ"
+    },
+    {
+        "kanji": "六つ",
+        "kana": "むっつ",
+        "english": "six things",
+        "group": "Numbers & time",
+        "marked": false
+    },
+    {
+        "kanji": "七つ",
+        "kana": "ななつ",
+        "english": "seven things",
+        "group": "Numbers & time",
+        "marked": false
+    },
+    {
+        "kanji": "八つ",
+        "kana": "やっつ",
+        "english": "eight things",
+        "group": "Numbers & time",
+        "marked": false
+    },
+    {
+        "kanji": "九つ",
+        "kana": "ここのつ",
+        "english": "nine things",
+        "group": "Numbers & time",
+        "marked": false
+    },
+    {
+        "kanji": "一人",
+        "kana": "ひとり",
+        "english": "one person",
+        "group": "Numbers & time",
+        "note": "irregular, like ふたり — から さんにん it is regular",
+        "marked": false
+    },
+    {
+        "kanji": "二人",
+        "kana": "ふたり",
+        "english": "two people",
+        "group": "Numbers & time",
+        "marked": false
+    },
+    {
+        "kanji": "",
+        "kana": "いくつ",
+        "english": "how many things",
+        "group": "Numbers & time",
+        "note": "for the ひとつ set; a counter takes 何〜 instead",
+        "marked": false
+    },
+    {
+        "kanji": "何人",
+        "kana": "なんにん",
+        "english": "how many people",
+        "group": "Numbers & time",
+        "marked": false
+    },
+    {
+        "kanji": "何枚",
+        "kana": "なんまい",
+        "english": "how many flat things",
+        "group": "Numbers & time",
+        "note": "枚 まい — paper, stamps, shirts, plates",
+        "marked": false
+    },
+    {
+        "kanji": "何台",
+        "kana": "なんだい",
+        "english": "how many machines",
+        "group": "Numbers & time",
+        "note": "台 だい — cars, TVs, bicycles, computers",
+        "marked": false
+    },
+    {
+        "kanji": "何回",
+        "kana": "なんかい",
+        "english": "how many times",
+        "group": "Numbers & time",
+        "note": "3回 さんかい, but 3階 さんがい — same kana, different word",
+        "marked": false
+    },
+    {
+        "kanji": "",
+        "kana": "どのくらい",
+        "english": "how long / how much",
+        "group": "Numbers & time",
+        "note": "time or money; いくら is money only",
+        "marked": false
+    },
+    {
+        "kanji": "",
+        "kana": "くらい",
+        "english": "about, roughly",
+        "group": "Numbers & time",
+        "note": "also written ぐらい — 2じかんくらい",
+        "marked": false
+    },
+    {
+        "kanji": "",
+        "kana": "とお",
+        "english": "ten things",
+        "group": "Numbers & time",
+        "note": "written 十, the same kanji as じゅう; the set stops here",
         "marked": false
     },
     {
@@ -2925,6 +3194,59 @@
         "kana": "あいだ",
         "english": "between",
         "group": "Where things are",
+        "marked": false
+    },
+    {
+        "kanji": "切手",
+        "kana": "きって",
+        "english": "postage stamp",
+        "group": "Post and mail",
+        "marked": false
+    },
+    {
+        "kanji": "葉書",
+        "kana": "はがき",
+        "english": "postcard",
+        "group": "Post and mail",
+        "note": "usually written はがき",
+        "marked": false
+    },
+    {
+        "kanji": "封筒",
+        "kana": "ふうとう",
+        "english": "envelope",
+        "group": "Post and mail",
+        "marked": false
+    },
+    {
+        "kanji": "速達",
+        "kana": "そくたつ",
+        "english": "special delivery",
+        "group": "Post and mail",
+        "note": "そく = fast, as in 速い はやい",
+        "marked": false
+    },
+    {
+        "kanji": "書留",
+        "kana": "かきとめ",
+        "english": "registered mail",
+        "group": "Post and mail",
+        "marked": false
+    },
+    {
+        "kanji": "航空便",
+        "kana": "こうくうびん",
+        "english": "airmail",
+        "group": "Post and mail",
+        "note": "びん = a service or flight",
+        "marked": false
+    },
+    {
+        "kanji": "船便",
+        "kana": "ふなびん",
+        "english": "sea mail",
+        "group": "Post and mail",
+        "note": "ふね becomes ふな in compounds",
         "marked": false
     }
 ]

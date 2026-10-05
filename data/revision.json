@@ -4758,5 +4758,398 @@
                 "why": "that is past — where were the keys?"
             }
         ]
+    },
+    {
+        "id": "cnt-ringo-mittsu",
+        "covers": [
+            "counters:counter-is-adverb",
+            "counters:tsu-set"
+        ],
+        "sheet": "counters",
+        "en": "I ate three apples.",
+        "correct": {
+            "kana": "りんごをみっつたべました",
+            "romaji": "ringo wo mittsu tabemashita"
+        },
+        "wrong": [
+            {
+                "kana": "りんごみっつをたべました",
+                "why": "the particle stays on the noun: ringo wo, then the count."
+            },
+            {
+                "kana": "りんごをさんつたべました",
+                "why": "three things is みっつ — the tsu set has its own words."
+            },
+            {
+                "kana": "りんごをみっつたべます",
+                "why": "that is the present — the prompt is past."
+            }
+        ]
+    },
+    {
+        "id": "cnt-kuruma-ichidai",
+        "covers": [
+            "counters:counter-is-adverb",
+            "counters:mai-dai-nin"
+        ],
+        "sheet": "counters",
+        "en": "I bought one car.",
+        "correct": {
+            "kana": "くるまをいちだいかいました",
+            "romaji": "kuruma wo ichidai kaimashita",
+            "kanji": "車をいちだいかいました"
+        },
+        "wrong": [
+            {
+                "kana": "くるまをいちまいかいました",
+                "why": "まい is for flat things; a car is a machine — だい.",
+                "kanji": "車をいちまいかいました"
+            },
+            {
+                "kana": "くるまいちだいをかいました",
+                "why": "the particle stays on the noun, the count goes by the verb.",
+                "kanji": "車いちだいをかいました"
+            },
+            {
+                "kana": "くるまをいちだいかいます",
+                "why": "that is the present — the prompt is past.",
+                "kanji": "車をいちだいかいます"
+            }
+        ],
+        "kanjiNotes": [
+            {
+                "word": "車",
+                "kana": "くるま"
+            }
+        ]
+    },
+    {
+        "id": "cnt-ikutsu-mikan",
+        "covers": [
+            "counters:tsu-set"
+        ],
+        "sheet": "counters",
+        "en": "How many mandarins are there?",
+        "correct": {
+            "kana": "みかんがいくつありますか",
+            "romaji": "mikan ga ikutsu arimasu ka"
+        },
+        "wrong": [
+            {
+                "kana": "みかんをいくつありますか",
+                "why": "arimasu takes ga."
+            },
+            {
+                "kana": "みかんがなんつありますか",
+                "why": "the tsu set is asked with いくつ; 何〜 is for the other counters."
+            },
+            {
+                "kana": "みかんがいくついますか",
+                "why": "a mandarin is a thing — arimasu."
+            }
+        ]
+    },
+    {
+        "id": "cnt-too",
+        "covers": [
+            "counters:tsu-set"
+        ],
+        "sheet": "counters",
+        "en": "There are ten apples.",
+        "correct": {
+            "kana": "りんごがとおあります",
+            "romaji": "ringo ga too arimasu"
+        },
+        "wrong": [
+            {
+                "kana": "りんごをとおあります",
+                "why": "arimasu takes ga."
+            },
+            {
+                "kana": "りんごがとおつあります",
+                "why": "とお is the one in the set with no つ."
+            },
+            {
+                "kana": "りんごがじゅうあります",
+                "why": "じゅう needs a counter after it; the tsu set says とお."
+            }
+        ]
+    },
+    {
+        "id": "cnt-yonin",
+        "covers": [
+            "counters:hitori-futari"
+        ],
+        "sheet": "counters",
+        "en": "There are four people.",
+        "correct": {
+            "kana": "よにんいます",
+            "romaji": "yonin imasu"
+        },
+        "wrong": [
+            {
+                "kana": "よんにんいます",
+                "why": "four people is よにん — the only number that drops the ん."
+            },
+            {
+                "kana": "よにんあります",
+                "why": "people take imasu."
+            },
+            {
+                "kana": "よっつにんいます",
+                "why": "よっつ is already a count; it doesn't take another counter."
+            }
+        ]
+    },
+    {
+        "id": "cnt-otouto-hitori",
+        "covers": [
+            "counters:hitori-futari",
+            "counters:counter-is-adverb"
+        ],
+        "sheet": "counters",
+        "en": "I have one younger brother.",
+        "correct": {
+            "kana": "おとうとがひとりいます",
+            "romaji": "otouto ga hitori imasu"
+        },
+        "wrong": [
+            {
+                "kana": "おとうとをひとりいます",
+                "why": "imasu takes ga."
+            },
+            {
+                "kana": "おとうとがいちにんいます",
+                "why": "one person is ひとり, never いちにん."
+            },
+            {
+                "kana": "おとうとがひとつあります",
+                "why": "a brother is a person: ひとり, and imasu."
+            }
+        ]
+    },
+    {
+        "id": "cnt-kitte-sanmai",
+        "covers": [
+            "counters:mai-dai-nin"
+        ],
+        "sheet": "counters",
+        "en": "There are three stamps.",
+        "correct": {
+            "kana": "きってがさんまいあります",
+            "romaji": "kitte ga sanmai arimasu"
+        },
+        "wrong": [
+            {
+                "kana": "きってがさんだいあります",
+                "why": "だい is for machines; a stamp is flat — まい."
+            },
+            {
+                "kana": "きってさんまいがあります",
+                "why": "the particle goes on the noun: きってが, then the count."
+            },
+            {
+                "kana": "きってがさんまいありました",
+                "why": "that is past — there were three."
+            }
+        ]
+    },
+    {
+        "id": "cnt-kuruma-nidai",
+        "covers": [
+            "counters:mai-dai-nin"
+        ],
+        "sheet": "counters",
+        "en": "There are two cars.",
+        "correct": {
+            "kana": "くるまがにだいあります",
+            "romaji": "kuruma ga nidai arimasu",
+            "kanji": "車がにだいあります"
+        },
+        "wrong": [
+            {
+                "kana": "くるまがにまいあります",
+                "why": "まい is for flat things; a car takes だい.",
+                "kanji": "車がにまいあります"
+            },
+            {
+                "kana": "くるまにだいがあります",
+                "why": "the particle goes on the noun: くるまが, then the count.",
+                "kanji": "車にだいがあります"
+            },
+            {
+                "kana": "くるまがにだいありました",
+                "why": "that is past — there were two.",
+                "kanji": "車がにだいありました"
+            }
+        ],
+        "kanjiNotes": [
+            {
+                "word": "車",
+                "kana": "くるま"
+            }
+        ]
+    },
+    {
+        "id": "cnt-nijikan",
+        "covers": [
+            "counters:kan-makes-a-span"
+        ],
+        "sheet": "counters",
+        "en": "I studied for two hours.",
+        "correct": {
+            "kana": "にじかんべんきょうしました",
+            "romaji": "nijikan benkyou shimashita"
+        },
+        "wrong": [
+            {
+                "kana": "にじべんきょうしました",
+                "why": "にじ is two o'clock; two hours long is にじかん."
+            },
+            {
+                "kana": "にじかんかんべんきょうしました",
+                "why": "じかん is already a span — there is no second かん."
+            },
+            {
+                "kana": "にじかんにべんきょうしました",
+                "why": "a span takes no に; ni marks a point in time."
+            }
+        ]
+    },
+    {
+        "id": "cnt-isshuukan",
+        "covers": [
+            "counters:kan-makes-a-span"
+        ],
+        "sheet": "counters",
+        "en": "I took a week off.",
+        "correct": {
+            "kana": "いっしゅうかんやすみました",
+            "romaji": "isshuukan yasumimashita"
+        },
+        "wrong": [
+            {
+                "kana": "いちしゅうかんやすみました",
+                "why": "one stops the sound: いっしゅうかん."
+            },
+            {
+                "kana": "いっしゅうやすみました",
+                "why": "a week as a span keeps its かん."
+            },
+            {
+                "kana": "いっしゅうかんやすみます",
+                "why": "that is the present — the prompt is past."
+            }
+        ]
+    },
+    {
+        "id": "cnt-sankai-shuu",
+        "covers": [
+            "counters:kai-frequency"
+        ],
+        "sheet": "counters",
+        "en": "three times a week",
+        "correct": {
+            "kana": "いっしゅうかんにさんかい",
+            "romaji": "isshuukan ni sankai"
+        },
+        "wrong": [
+            {
+                "kana": "いっしゅうかんさんかい",
+                "why": "the span takes に — isshuukan ni sankai."
+            },
+            {
+                "kana": "いっしゅうかんにさんがい",
+                "why": "さんがい is the third floor; three times is さんかい."
+            },
+            {
+                "kana": "いっしゅうかんにさんつ",
+                "why": "かい counts occurrences; つ counts things."
+            }
+        ]
+    },
+    {
+        "id": "cnt-ikkagetsu-ikkai",
+        "covers": [
+            "counters:kai-frequency"
+        ],
+        "sheet": "counters",
+        "en": "I go once a month.",
+        "correct": {
+            "kana": "いっかげつにいっかいいきます",
+            "romaji": "ikkagetsu ni ikkai ikimasu"
+        },
+        "wrong": [
+            {
+                "kana": "いっかげつにいちかいいきます",
+                "why": "once is いっかい — かい stops the sound after 1, 6, 8 and 10."
+            },
+            {
+                "kana": "いちかげつにいっかいいきます",
+                "why": "one month is いっかげつ, the same sound change."
+            },
+            {
+                "kana": "いっかげつにいっかいいきました",
+                "why": "that is past — the prompt is a habit."
+            }
+        ],
+        "adjNotes": [
+            {
+                "kana": "いい",
+                "family": "i"
+            }
+        ]
+    },
+    {
+        "id": "cnt-jikan-ga",
+        "covers": [
+            "counters:kakarimasu-ga"
+        ],
+        "sheet": "counters",
+        "en": "It takes time.",
+        "correct": {
+            "kana": "じかんがかかります",
+            "romaji": "jikan ga kakarimasu"
+        },
+        "wrong": [
+            {
+                "kana": "じかんをかかります",
+                "why": "what it takes is marked with ga, the same as arimasu."
+            },
+            {
+                "kana": "じかんがかかりです",
+                "why": "kakarimasu is the verb; there is no kakari desu."
+            },
+            {
+                "kana": "じかんがかかりました",
+                "why": "that is past — it took time."
+            }
+        ]
+    },
+    {
+        "id": "cnt-dono-kurai",
+        "covers": [
+            "counters:kakarimasu-ga"
+        ],
+        "sheet": "counters",
+        "en": "How long does it take from Tokyo to Osaka?",
+        "correct": {
+            "kana": "とうきょうからおおさかまでどのくらいかかりますか",
+            "romaji": "toukyou kara oosaka made dono kurai kakarimasu ka"
+        },
+        "wrong": [
+            {
+                "kana": "とうきょうまでおおさかからどのくらいかかりますか",
+                "why": "kara is where you start, made where you end."
+            },
+            {
+                "kana": "とうきょうからおおさかまでいくらかかりますか",
+                "why": "いくら asks a price; for time it is どのくらい."
+            },
+            {
+                "kana": "とうきょうからおおさかまでどのくらいかかりましたか",
+                "why": "that is past — the prompt asks in general."
+            }
+        ]
     }
 ]

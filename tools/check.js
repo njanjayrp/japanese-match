@@ -22,6 +22,33 @@ const kanji = JSON.parse(read("data/kanji.json"));
 const revision = JSON.parse(read("data/revision.json"));
 Romaji.init(kana.kana);
 
+/**
+ * Does this romaji override spell out that reading, allowing only spacing and
+ * the particles that are written one way and said another?
+ *
+ * Token by token, because a token is ambiguous on its own: "e" is the particle
+ * へ in "eki e ikimasu" and the word え, a picture, in "e wo nimai kakimashita".
+ * Nothing in the romaji says which, so each token may match either what it says
+ * or what it would be spelled as, and the reading decides.
+ *
+ * The ん apostrophe only marks a syllable boundary and a space marks it just as
+ * well, so it is dropped from both sides first.
+ */
+const SAID_AS = { wa: "ha", e: "he", o: "wo" };
+function spellsOut(romaji, reading) {
+    const bare = r => r.replace(/'/g, "");
+    const want = bare(reading);
+    let pos = 0;
+    for (const token of bare(romaji).split(" ")) {
+        if (!token) continue;
+        const alt = SAID_AS[token];
+        if (want.startsWith(token, pos)) pos += token.length;
+        else if (alt && want.startsWith(alt, pos)) pos += alt.length;
+        else return false;
+    }
+    return pos === want.length;
+}
+
 let failures = 0;
 const fail = msg => { console.log("  ✗ " + msg); failures++; };
 
@@ -163,13 +190,7 @@ for (const sheet of sheets) {
                 // The ん apostrophe (takusan'arimasu) only marks a syllable
                 // boundary, and a space marks it just as well, so an override may
                 // trade one for the other.
-                // A particle in a token of its own may also be written as it
-                // is said — wa for は, e for へ — which is undone token by token
-                // before the comparison, the same way the revision check does it.
-                const SAID_AS = { wa: "ha", e: "he", o: "wo" };
-                const bare = r => r.replace(/[ ']/g, "");
-                const spelled = (c.romaji || "").split(" ").map(t => SAID_AS[t] || t).join("");
-                if (c.romaji && bare(spelled) !== bare(Romaji.toRomaji(c.kana))) {
+                if (c.romaji && !spellsOut(c.romaji, Romaji.toRomaji(c.kana))) {
                     console.log(`  ! ${sheet.id}: "${c.kana}" override "${c.romaji}" ` +
                                 `isn't just spacing on "${Romaji.toRomaji(c.kana)}"`);
                 }
@@ -416,13 +437,7 @@ for (const item of revision) {
     // are written ha and he and said wa and e. Because the spacing convention
     // puts a particle in a token of its own, that substitution can be undone
     // token by token and checked exactly.
-    const SAID_AS = { wa: "ha", e: "he", o: "wo" };
-    const spelled = (item.correct.romaji || "")
-        .split(" ")
-        .map(t => SAID_AS[t] || t)
-        .join("");
-    const bare = r => r.replace(/'/g, "");
-    if (bare(spelled) !== bare(Romaji.toRomaji(item.correct.kana))) {
+    if (!spellsOut(item.correct.romaji || "", Romaji.toRomaji(item.correct.kana))) {
         fail(`${where}: romaji "${item.correct.romaji}" isn't just spacing on ` +
              `"${Romaji.toRomaji(item.correct.kana)}"`);
     }
