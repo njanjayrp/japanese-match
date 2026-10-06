@@ -344,5 +344,186 @@
         "wordKana": "べんきょうします",
         "wordEnglish": "to study",
         "note": "つよい is strong; きょう in 勉強 — studying as forcing yourself."
+    },
+    {
+        "char": "一",
+        "romaji": "ichi / hito",
+        "meaning": "one",
+        "word": "一",
+        "wordKana": "いち",
+        "wordEnglish": "one",
+        "note": "ひと in 一つ ひとつ and 一人 ひとり."
+    },
+    {
+        "char": "二",
+        "romaji": "ni / futa",
+        "meaning": "two",
+        "word": "二",
+        "wordKana": "に",
+        "wordEnglish": "two",
+        "note": "ふた in 二つ ふたつ and 二人 ふたり."
+    },
+    {
+        "char": "三",
+        "romaji": "san / mi",
+        "meaning": "three",
+        "word": "三",
+        "wordKana": "さん",
+        "wordEnglish": "three",
+        "note": "み in 三つ みっつ and 三日 みっか."
+    },
+    {
+        "char": "四",
+        "romaji": "shi / yon / yo",
+        "meaning": "four",
+        "word": "四",
+        "wordKana": "よん",
+        "wordEnglish": "four",
+        "note": "Three readings and the counter picks: 四時 よじ, 四日 よっか, 四月 しがつ."
+    },
+    {
+        "char": "五",
+        "romaji": "go / itsu",
+        "meaning": "five",
+        "word": "五",
+        "wordKana": "ご",
+        "wordEnglish": "five",
+        "note": "いつ in 五つ いつつ and 五日 いつか."
+    },
+    {
+        "char": "六",
+        "romaji": "roku / mu",
+        "meaning": "six",
+        "word": "六",
+        "wordKana": "ろく",
+        "wordEnglish": "six",
+        "note": "む in 六つ むっつ and 六日 むいか."
+    },
+    {
+        "char": "七",
+        "romaji": "shichi / nana",
+        "meaning": "seven",
+        "word": "七",
+        "wordKana": "なな",
+        "wordEnglish": "seven",
+        "note": "しち in 七時 しちじ; 七日 is なのか, which follows neither."
+    },
+    {
+        "char": "八",
+        "romaji": "hachi / ya",
+        "meaning": "eight",
+        "word": "八",
+        "wordKana": "はち",
+        "wordEnglish": "eight",
+        "note": "や in 八つ やっつ; 八日 is ようか, an outlier."
+    },
+    {
+        "char": "九",
+        "romaji": "kyuu / ku / kokono",
+        "meaning": "nine",
+        "word": "九",
+        "wordKana": "きゅう",
+        "wordEnglish": "nine",
+        "note": "く in 九時 くじ and 九月 くがつ; ここの in 九日 ここのか."
+    },
+    {
+        "char": "十",
+        "romaji": "juu / too",
+        "meaning": "ten",
+        "word": "十",
+        "wordKana": "じゅう",
+        "wordEnglish": "ten",
+        "note": "とお in 十 とお and 十日 とおか."
+    },
+    {
+        "char": "日",
+        "romaji": "hi / ka / nichi / jitsu",
+        "meaning": "day, sun",
+        "word": "今日",
+        "wordKana": "きょう",
+        "wordEnglish": "today",
+        "note": "今日 きょう is jukujikun — the compound has its own reading. Elsewhere: にち in 日曜日, か in 三日 みっか, び closing 曜日."
+    },
+    {
+        "char": "曜",
+        "romaji": "you",
+        "meaning": "day of the week",
+        "word": "月曜日",
+        "wordKana": "げつようび",
+        "wordEnglish": "Monday",
+        "note": "Appears only in the seven weekday names."
+    },
+    {
+        "char": "時",
+        "romaji": "toki / ji",
+        "meaning": "time, hour",
+        "word": "時間",
+        "wordKana": "じかん",
+        "wordEnglish": "time / hour",
+        "note": "じ is the o'clock counter — 四時 よじ. じかん is a span of hours."
+    },
+    {
+        "char": "週",
+        "romaji": "shuu",
+        "meaning": "week",
+        "word": "今週",
+        "wordKana": "こんしゅう",
+        "wordEnglish": "this week",
+        "note": "Always しゅう: 先週, 来週, 週末, 一週間."
+    },
+    {
+        "char": "年",
+        "romaji": "toshi / nen",
+        "meaning": "year",
+        "word": "去年",
+        "wordKana": "きょねん",
+        "wordEnglish": "last year",
+        "note": "とし in 今年 ことし and 毎年 まいとし; ねん in 一年 いちねん."
+    },
+    {
+        "char": "今",
+        "romaji": "ima / kon",
+        "meaning": "now",
+        "quiz": true,
+        "word": "今",
+        "wordKana": "いま",
+        "wordEnglish": "now",
+        "note": "こん in 今週 こんしゅう and 今晩 こんばん; 今日 and 今朝 go their own way."
+    },
+    {
+        "char": "何",
+        "romaji": "nani / nan",
+        "meaning": "what, how many",
+        "word": "何人",
+        "wordKana": "なんにん",
+        "wordEnglish": "how many people",
+        "note": "なん before a counter — 何人, 何時, 何枚. なに on its own."
+    },
+    {
+        "char": "先",
+        "romaji": "saki / sen",
+        "meaning": "ahead, previous",
+        "word": "先生",
+        "wordKana": "せんせい",
+        "wordEnglish": "teacher",
+        "note": "Ahead in space, earlier in time: 先週 last week, 先月 last month."
+    },
+    {
+        "char": "気",
+        "romaji": "ki / ke",
+        "meaning": "spirit, air",
+        "word": "天気",
+        "wordKana": "てんき",
+        "wordEnglish": "weather",
+        "note": "元気 げんき well, 気温 きおん air temperature, 病気 びょうき illness."
+    },
+    {
+        "char": "学",
+        "romaji": "gaku / mana",
+        "meaning": "study, learning",
+        "word": "学校",
+        "wordKana": "がっこう",
+        "wordEnglish": "school",
+        "note": "学生 がくせい a student, 大学 だいがく a university."
     }
 ]
