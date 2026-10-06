@@ -304,7 +304,7 @@
         "english": "(my) wife",
         "group": "People",
         "note": "someone else's: 奥さん",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "主人",
@@ -312,7 +312,7 @@
         "english": "(my) husband",
         "group": "People",
         "note": "someone else's: ご主人",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "奥さん",
@@ -320,7 +320,7 @@
         "english": "someone else's wife",
         "group": "People",
         "note": "your own wife is 妻 つま",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "ご主人",
@@ -328,7 +328,7 @@
         "english": "someone else's husband",
         "group": "People",
         "note": "your own husband is 主人 しゅじん",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "男の人",
@@ -732,7 +732,7 @@
         "kana": "にもつ",
         "english": "baggage / parcel",
         "group": "Everyday things",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "お金",
@@ -843,7 +843,7 @@
         "english": "small change",
         "group": "Everyday things",
         "note": "細かい = fine, small",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "",
@@ -865,14 +865,14 @@
         "kana": "でんち",
         "english": "battery",
         "group": "Everyday things",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "箱",
         "kana": "はこ",
         "english": "box",
         "group": "Everyday things",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "",
@@ -886,7 +886,7 @@
         "kana": "れいぞうこ",
         "english": "refrigerator",
         "group": "Everyday things",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "",
@@ -914,7 +914,7 @@
         "kana": "たな",
         "english": "shelf",
         "group": "Everyday things",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "窓",
@@ -1109,7 +1109,7 @@
         "kana": "やきゅう",
         "english": "baseball",
         "group": "Hobbies",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "",
@@ -1161,7 +1161,7 @@
         "english": "to eat",
         "group": "Verbs",
         "note": "ichidan (る-verb) — dictionary form 食べる (たべる)",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "飲みます",
@@ -1169,7 +1169,7 @@
         "english": "to drink",
         "group": "Verbs",
         "note": "godan (う-verb) — dictionary form 飲む (のむ)",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "見ます",
@@ -1201,7 +1201,7 @@
         "english": "to do",
         "group": "Verbs",
         "note": "irregular — dictionary form する",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "買います",
@@ -1209,7 +1209,7 @@
         "english": "to buy",
         "group": "Verbs",
         "note": "godan (う-verb) — dictionary form 買う (かう)",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "読みます",
@@ -1217,7 +1217,7 @@
         "english": "to read",
         "group": "Verbs",
         "note": "godan (う-verb) — dictionary form 読む (よむ)",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "書きます",
@@ -1233,7 +1233,7 @@
         "english": "to speak",
         "group": "Verbs",
         "note": "godan (う-verb) — dictionary form 話す (はなす)",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "聞きます",
@@ -1249,7 +1249,7 @@
         "english": "to understand",
         "group": "Verbs",
         "note": "godan — dictionary form 分かる (わかる); takes が, not を",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "起きます",
@@ -1265,7 +1265,7 @@
         "english": "to sleep / go to bed",
         "group": "Verbs",
         "note": "ichidan — dictionary form 寝る (ねる)",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "働きます",
@@ -1281,7 +1281,7 @@
         "english": "to rest / take a holiday",
         "group": "Verbs",
         "note": "godan — dictionary form 休む (やすむ)",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "勉強します",
@@ -1289,7 +1289,7 @@
         "english": "to study",
         "group": "Verbs",
         "note": "irregular する verb — dictionary form 勉強する (べんきょうする)",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "終わります",
@@ -1297,7 +1297,7 @@
         "english": "to finish / to end",
         "group": "Verbs",
         "note": "godan — dictionary form 終わる (おわる)",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "帰ります",
@@ -1305,7 +1305,7 @@
         "english": "to go home / to return",
         "group": "Verbs",
         "note": "godan — dictionary form 帰る (かえる)",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "",
@@ -1313,7 +1313,7 @@
         "english": "to make (a phone call)",
         "group": "Verbs",
         "note": "電話をかけます — the object is 電話",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "切ります",
@@ -1329,7 +1329,7 @@
         "english": "to send",
         "group": "Verbs",
         "note": "godan — 送る (おくる)",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "",
@@ -1337,7 +1337,7 @@
         "english": "to give",
         "group": "Verbs",
         "note": "the gift moves away from you",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "",
@@ -1345,7 +1345,7 @@
         "english": "to receive",
         "group": "Verbs",
         "note": "the gift moves toward you",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "貸します",
@@ -1353,7 +1353,7 @@
         "english": "to lend",
         "group": "Verbs",
         "note": "godan — 貸す (かす)",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "借ります",
@@ -1369,7 +1369,7 @@
         "english": "to teach",
         "group": "Verbs",
         "note": "教える — also 'to tell' someone a fact",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "習います",
@@ -1377,7 +1377,7 @@
         "english": "to learn",
         "group": "Verbs",
         "note": "godan — 習う (ならう); 勉強します is the wider 'study'",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "",
@@ -1385,7 +1385,7 @@
         "english": "to have / there is (things)",
         "group": "Verbs",
         "note": "godan — ある. For people and animals it's います",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "",
@@ -1393,7 +1393,7 @@
         "english": "to be / there is (living things)",
         "group": "Verbs",
         "note": "arimasu for things, imasu for anything alive",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "",
@@ -2601,7 +2601,7 @@
         "group": "Weather",
         "adj": "i",
         "note": "蒸す = to steam",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "涼しい",
@@ -2827,7 +2827,7 @@
         "english": "coffee shop",
         "group": "Places",
         "note": "the old-fashioned kind that serves coffee and toast, not a chain cafe",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "本屋",
@@ -2835,7 +2835,7 @@
         "english": "bookstore",
         "group": "Places",
         "note": "屋 turns a thing into the shop that sells it — 本屋, 花屋, 肉屋",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "乗り場",
@@ -2843,7 +2843,7 @@
         "english": "place to catch a taxi, train or bus",
         "group": "Places",
         "note": "乗ります + 場 — literally the riding place",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "電車",
@@ -3121,7 +3121,7 @@
         "english": "on, above",
         "group": "Where things are",
         "note": "the same 上 as 上手, but here it keeps its own reading うえ",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "下",
@@ -3172,7 +3172,7 @@
         "kana": "そと",
         "english": "outside",
         "group": "Where things are",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "隣",
