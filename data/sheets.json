@@ -3860,6 +3860,235 @@
                 ]
             },
             {
+                "title": "the four counters, 1 to 10",
+                "columns": [
+                    "mai",
+                    "dai",
+                    "nin",
+                    "kai"
+                ],
+                "rows": [
+                    {
+                        "label": "1",
+                        "cells": [
+                            {
+                                "kana": "いちまい",
+                                "en": "1 sheet"
+                            },
+                            {
+                                "kana": "いちだい",
+                                "en": "1 machine"
+                            },
+                            {
+                                "kana": "ひとり",
+                                "en": "1 person",
+                                "odd": true
+                            },
+                            {
+                                "kana": "いっかい",
+                                "en": "1 time",
+                                "odd": true
+                            }
+                        ]
+                    },
+                    {
+                        "label": "2",
+                        "cells": [
+                            {
+                                "kana": "にまい",
+                                "en": "2 sheets"
+                            },
+                            {
+                                "kana": "にだい",
+                                "en": "2 machines"
+                            },
+                            {
+                                "kana": "ふたり",
+                                "en": "2 people",
+                                "odd": true
+                            },
+                            {
+                                "kana": "にかい",
+                                "en": "2 times"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "3",
+                        "cells": [
+                            {
+                                "kana": "さんまい",
+                                "en": "3 sheets"
+                            },
+                            {
+                                "kana": "さんだい",
+                                "en": "3 machines"
+                            },
+                            {
+                                "kana": "さんにん",
+                                "en": "3 people"
+                            },
+                            {
+                                "kana": "さんかい",
+                                "en": "3 times"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "4",
+                        "cells": [
+                            {
+                                "kana": "よんまい",
+                                "en": "4 sheets"
+                            },
+                            {
+                                "kana": "よんだい",
+                                "en": "4 machines"
+                            },
+                            {
+                                "kana": "よにん",
+                                "en": "4 people",
+                                "odd": true
+                            },
+                            {
+                                "kana": "よんかい",
+                                "en": "4 times"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "5",
+                        "cells": [
+                            {
+                                "kana": "ごまい",
+                                "en": "5 sheets"
+                            },
+                            {
+                                "kana": "ごだい",
+                                "en": "5 machines"
+                            },
+                            {
+                                "kana": "ごにん",
+                                "en": "5 people"
+                            },
+                            {
+                                "kana": "ごかい",
+                                "en": "5 times"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "6",
+                        "cells": [
+                            {
+                                "kana": "ろくまい",
+                                "en": "6 sheets"
+                            },
+                            {
+                                "kana": "ろくだい",
+                                "en": "6 machines"
+                            },
+                            {
+                                "kana": "ろくにん",
+                                "en": "6 people"
+                            },
+                            {
+                                "kana": "ろっかい",
+                                "en": "6 times",
+                                "odd": true
+                            }
+                        ]
+                    },
+                    {
+                        "label": "7",
+                        "cells": [
+                            {
+                                "kana": "ななまい",
+                                "en": "7 sheets"
+                            },
+                            {
+                                "kana": "ななだい",
+                                "en": "7 machines"
+                            },
+                            {
+                                "kana": "しちにん",
+                                "en": "7 people",
+                                "odd": true
+                            },
+                            {
+                                "kana": "ななかい",
+                                "en": "7 times"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "8",
+                        "cells": [
+                            {
+                                "kana": "はちまい",
+                                "en": "8 sheets"
+                            },
+                            {
+                                "kana": "はちだい",
+                                "en": "8 machines"
+                            },
+                            {
+                                "kana": "はちにん",
+                                "en": "8 people"
+                            },
+                            {
+                                "kana": "はっかい",
+                                "en": "8 times",
+                                "odd": true
+                            }
+                        ]
+                    },
+                    {
+                        "label": "9",
+                        "cells": [
+                            {
+                                "kana": "きゅうまい",
+                                "en": "9 sheets"
+                            },
+                            {
+                                "kana": "きゅうだい",
+                                "en": "9 machines"
+                            },
+                            {
+                                "kana": "きゅうにん",
+                                "en": "9 people"
+                            },
+                            {
+                                "kana": "きゅうかい",
+                                "en": "9 times"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "10",
+                        "cells": [
+                            {
+                                "kana": "じゅうまい",
+                                "en": "10 sheets"
+                            },
+                            {
+                                "kana": "じゅうだい",
+                                "en": "10 machines"
+                            },
+                            {
+                                "kana": "じゅうにん",
+                                "en": "10 people"
+                            },
+                            {
+                                "kana": "じゅっかい",
+                                "en": "10 times",
+                                "odd": true
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
                 "title": "how long — minutes, hours, days",
                 "columns": [
                     "minutes",
@@ -4527,7 +4756,7 @@
             {
                 "id": "mai-dai-nin",
                 "title": "the shape picks the counter",
-                "body": "mai for anything flat and thin: paper, stamps, shirts, plates, tickets. dai for machines and vehicles: cars, TVs, bicycles, computers, fridges. nin for people. Both mai and dai are regular from one to ten, which makes them the easy two."
+                "body": "mai for anything flat and thin: paper, stamps, shirts, plates, tickets. dai for machines and vehicles: cars, TVs, bicycles, computers, fridges. nin for people. mai and dai are regular from one to ten, which makes them the easy two — the whole column is the number with the counter stuck on. nin breaks four times: hitori, futari, yonin, and shichinin, which you will also hear as nananin."
             },
             {
                 "id": "kan-makes-a-span",
@@ -4537,7 +4766,7 @@
             {
                 "id": "kai-frequency",
                 "title": "how often: span ni count kai",
-                "body": "isshuukan ni sankai — three times a week. The span takes ni and the count takes kai. kai stops the sound after 1, 6, 8 and 10: ikkai, rokkai, hakkai, jukkai. Watch sankai, three times, against sangai, the third floor — same kana, different word."
+                "body": "ichinichi ni ikkai, isshuukan ni sankai — the span takes ni, the count takes kai. kai stops the sound after 1, 6, 8 and 10: ikkai, rokkai, hakkai, jukkai, the same four as kagetsu and shuukan. Watch sankai, three times, against sangai, the third floor — same kanji 回 and 階 sound alike, and only three voices it."
             },
             {
                 "id": "kakarimasu-ga",
