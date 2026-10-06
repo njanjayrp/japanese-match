@@ -299,5 +299,50 @@
         "wordKana": "かいます",
         "wordEnglish": "to buy",
         "note": "Dictionary form 買う かう; 買い物 かいもの is shopping. The lid on top is 罒, a net — not 四."
+    },
+    {
+        "char": "旅",
+        "romaji": "tabi / ryo",
+        "meaning": "journey, travel",
+        "word": "旅行",
+        "wordKana": "りょこう",
+        "wordEnglish": "trip",
+        "note": "たび on its own is a journey; りょ in 旅行."
+    },
+    {
+        "char": "行",
+        "romaji": "i / kou / gyou",
+        "meaning": "go, line",
+        "word": "行きます",
+        "wordKana": "いきます",
+        "wordEnglish": "to go",
+        "note": "こう in compounds — 旅行 りょこう, 銀行 ぎんこう, 航空便 こうくうびん."
+    },
+    {
+        "char": "働",
+        "romaji": "hatara / dou",
+        "meaning": "work",
+        "word": "働きます",
+        "wordKana": "はたらきます",
+        "wordEnglish": "to work",
+        "note": "人 on the left, 動 (move) on the right — a person moving."
+    },
+    {
+        "char": "勉",
+        "romaji": "ben",
+        "meaning": "effort, diligence",
+        "word": "勉強します",
+        "wordKana": "べんきょうします",
+        "wordEnglish": "to study",
+        "note": "Turns up almost only in 勉強."
+    },
+    {
+        "char": "強",
+        "romaji": "tsuyo / kyou / gou",
+        "meaning": "strong",
+        "word": "勉強します",
+        "wordKana": "べんきょうします",
+        "wordEnglish": "to study",
+        "note": "つよい is strong; きょう in 勉強 — studying as forcing yourself."
     }
 ]
