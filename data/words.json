@@ -1161,7 +1161,7 @@
         "english": "to eat",
         "group": "Verbs",
         "note": "ichidan (る-verb) — dictionary form 食べる (たべる)",
-        "marked": false
+        "marked": true
     },
     {
         "kanji": "飲みます",
@@ -1169,7 +1169,7 @@
         "english": "to drink",
         "group": "Verbs",
         "note": "godan (う-verb) — dictionary form 飲む (のむ)",
-        "marked": false
+        "marked": true
     },
     {
         "kanji": "見ます",
@@ -1177,7 +1177,7 @@
         "english": "to see / to watch",
         "group": "Verbs",
         "note": "ichidan (る-verb) — dictionary form 見る (みる)",
-        "marked": false
+        "marked": true
     },
     {
         "kanji": "行きます",
@@ -1185,7 +1185,7 @@
         "english": "to go",
         "group": "Verbs",
         "note": "godan — dictionary form 行く (いく); irregular te-form 行って",
-        "marked": false
+        "marked": true
     },
     {
         "kanji": "来ます",
@@ -1193,7 +1193,7 @@
         "english": "to come",
         "group": "Verbs",
         "note": "irregular — dictionary form 来る (くる), but 来ます is read きます",
-        "marked": false
+        "marked": true
     },
     {
         "kanji": "",
@@ -1201,7 +1201,7 @@
         "english": "to do",
         "group": "Verbs",
         "note": "irregular — dictionary form する",
-        "marked": false
+        "marked": true
     },
     {
         "kanji": "買います",
@@ -1209,7 +1209,7 @@
         "english": "to buy",
         "group": "Verbs",
         "note": "godan (う-verb) — dictionary form 買う (かう)",
-        "marked": false
+        "marked": true
     },
     {
         "kanji": "読みます",
@@ -1217,7 +1217,7 @@
         "english": "to read",
         "group": "Verbs",
         "note": "godan (う-verb) — dictionary form 読む (よむ)",
-        "marked": false
+        "marked": true
     },
     {
         "kanji": "書きます",
@@ -1225,7 +1225,7 @@
         "english": "to write",
         "group": "Verbs",
         "note": "godan (う-verb) — dictionary form 書く (かく)",
-        "marked": false
+        "marked": true
     },
     {
         "kanji": "話します",
@@ -1233,7 +1233,7 @@
         "english": "to speak",
         "group": "Verbs",
         "note": "godan (う-verb) — dictionary form 話す (はなす)",
-        "marked": false
+        "marked": true
     },
     {
         "kanji": "聞きます",
@@ -1241,7 +1241,7 @@
         "english": "to listen / to ask",
         "group": "Verbs",
         "note": "godan (う-verb) — dictionary form 聞く (きく)",
-        "marked": false
+        "marked": true
     },
     {
         "kanji": "分かります",
@@ -1249,7 +1249,7 @@
         "english": "to understand",
         "group": "Verbs",
         "note": "godan — dictionary form 分かる (わかる); takes が, not を",
-        "marked": false
+        "marked": true
     },
     {
         "kanji": "起きます",
@@ -1257,7 +1257,7 @@
         "english": "to wake up / get up",
         "group": "Verbs",
         "note": "ichidan — dictionary form 起きる (おきる)",
-        "marked": false
+        "marked": true
     },
     {
         "kanji": "寝ます",
@@ -1265,7 +1265,7 @@
         "english": "to sleep / go to bed",
         "group": "Verbs",
         "note": "ichidan — dictionary form 寝る (ねる)",
-        "marked": false
+        "marked": true
     },
     {
         "kanji": "働きます",
@@ -1273,7 +1273,7 @@
         "english": "to work",
         "group": "Verbs",
         "note": "godan — dictionary form 働く (はたらく)",
-        "marked": false
+        "marked": true
     },
     {
         "kanji": "休みます",
@@ -1281,7 +1281,7 @@
         "english": "to rest / take a holiday",
         "group": "Verbs",
         "note": "godan — dictionary form 休む (やすむ)",
-        "marked": false
+        "marked": true
     },
     {
         "kanji": "勉強します",
@@ -1289,7 +1289,7 @@
         "english": "to study",
         "group": "Verbs",
         "note": "irregular する verb — dictionary form 勉強する (べんきょうする)",
-        "marked": false
+        "marked": true
     },
     {
         "kanji": "終わります",
@@ -1297,7 +1297,7 @@
         "english": "to finish / to end",
         "group": "Verbs",
         "note": "godan — dictionary form 終わる (おわる)",
-        "marked": false
+        "marked": true
     },
     {
         "kanji": "帰ります",
@@ -1305,7 +1305,7 @@
         "english": "to go home / to return",
         "group": "Verbs",
         "note": "godan — dictionary form 帰る (かえる)",
-        "marked": false
+        "marked": true
     },
     {
         "kanji": "",
@@ -1313,7 +1313,7 @@
         "english": "to make (a phone call)",
         "group": "Verbs",
         "note": "電話をかけます — the object is 電話",
-        "marked": false
+        "marked": true
     },
     {
         "kanji": "切ります",
@@ -1321,7 +1321,7 @@
         "english": "to cut / to slice",
         "group": "Verbs",
         "note": "godan — dictionary form 切る (きる)",
-        "marked": false
+        "marked": true
     },
     {
         "kanji": "送ります",
@@ -1329,7 +1329,7 @@
         "english": "to send",
         "group": "Verbs",
         "note": "godan — 送る (おくる)",
-        "marked": false
+        "marked": true
     },
     {
         "kanji": "",
@@ -1337,7 +1337,7 @@
         "english": "to give",
         "group": "Verbs",
         "note": "the gift moves away from you",
-        "marked": false
+        "marked": true
     },
     {
         "kanji": "",
@@ -1345,7 +1345,7 @@
         "english": "to receive",
         "group": "Verbs",
         "note": "the gift moves toward you",
-        "marked": false
+        "marked": true
     },
     {
         "kanji": "貸します",
@@ -1353,7 +1353,7 @@
         "english": "to lend",
         "group": "Verbs",
         "note": "godan — 貸す (かす)",
-        "marked": false
+        "marked": true
     },
     {
         "kanji": "借ります",
@@ -1361,7 +1361,7 @@
         "english": "to borrow",
         "group": "Verbs",
         "note": "borrow 借ります, lend 貸します — one pair, two directions",
-        "marked": false
+        "marked": true
     },
     {
         "kanji": "教えます",
@@ -1369,7 +1369,7 @@
         "english": "to teach",
         "group": "Verbs",
         "note": "教える — also 'to tell' someone a fact",
-        "marked": false
+        "marked": true
     },
     {
         "kanji": "習います",
@@ -1377,7 +1377,7 @@
         "english": "to learn",
         "group": "Verbs",
         "note": "godan — 習う (ならう); 勉強します is the wider 'study'",
-        "marked": false
+        "marked": true
     },
     {
         "kanji": "",
@@ -1385,7 +1385,7 @@
         "english": "to have / there is (things)",
         "group": "Verbs",
         "note": "godan — ある. For people and animals it's います",
-        "marked": false
+        "marked": true
     },
     {
         "kanji": "",
@@ -1393,7 +1393,7 @@
         "english": "to be / there is (living things)",
         "group": "Verbs",
         "note": "arimasu for things, imasu for anything alive",
-        "marked": false
+        "marked": true
     },
     {
         "kanji": "",
