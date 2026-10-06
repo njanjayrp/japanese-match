@@ -1068,24 +1068,10 @@
     },
     {
         "kanji": "",
-        "kana": "りんご",
-        "english": "apple",
-        "group": "Food & drink",
-        "marked": false
-    },
-    {
-        "kanji": "",
         "kana": "みかん",
         "english": "mandarin orange",
         "group": "Food & drink",
         "note": "the small peelable kind; a Western orange is オレンジ",
-        "marked": false
-    },
-    {
-        "kanji": "卵",
-        "kana": "たまご",
-        "english": "egg",
-        "group": "Food & drink",
         "marked": false
     },
     {
