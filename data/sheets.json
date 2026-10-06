@@ -3860,89 +3860,384 @@
                 ]
             },
             {
-                "title": "how long",
+                "title": "how long — minutes, hours, days",
                 "columns": [
-                    "example",
-                    "what changes"
+                    "minutes",
+                    "hours",
+                    "days"
                 ],
                 "rows": [
                     {
-                        "label": "minutes",
+                        "label": "1",
                         "cells": [
                             {
-                                "kana": "ごふんかん",
-                                "en": "for five minutes",
-                                "romaji": "gofun kan"
-                            },
-                            {
-                                "term": "fun / pun",
-                                "en": "1 3 4 6 8 10 take ぷん — the clock sheet has the table"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "hours",
-                        "cells": [
-                            {
-                                "kana": "にじかん",
-                                "en": "for two hours"
-                            },
-                            {
-                                "term": "jikan",
-                                "en": "4 is よじかん, 9 is くじかん. 時間 is already a span, so no かん on top"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "days",
-                        "cells": [
-                            {
-                                "kana": "みっか",
-                                "en": "for three days",
+                                "kana": "いっぷん",
+                                "en": "1 min",
                                 "odd": true
                             },
                             {
-                                "term": "ka / nichi",
-                                "en": "1 is いちにち; 2 to 10 reuse the date words ふつか みっか よっか"
+                                "kana": "いちじかん",
+                                "en": "1 hr"
+                            },
+                            {
+                                "kana": "いちにち",
+                                "en": "1 day"
                             }
                         ]
                     },
                     {
-                        "label": "weeks",
+                        "label": "2",
+                        "cells": [
+                            {
+                                "kana": "にふん",
+                                "en": "2 min"
+                            },
+                            {
+                                "kana": "にじかん",
+                                "en": "2 hr"
+                            },
+                            {
+                                "kana": "ふつか",
+                                "en": "2 days",
+                                "odd": true
+                            }
+                        ]
+                    },
+                    {
+                        "label": "3",
+                        "cells": [
+                            {
+                                "kana": "さんぷん",
+                                "en": "3 min",
+                                "odd": true
+                            },
+                            {
+                                "kana": "さんじかん",
+                                "en": "3 hr"
+                            },
+                            {
+                                "kana": "みっか",
+                                "en": "3 days",
+                                "odd": true
+                            }
+                        ]
+                    },
+                    {
+                        "label": "4",
+                        "cells": [
+                            {
+                                "kana": "よんぷん",
+                                "en": "4 min",
+                                "odd": true
+                            },
+                            {
+                                "kana": "よじかん",
+                                "en": "4 hr",
+                                "odd": true
+                            },
+                            {
+                                "kana": "よっか",
+                                "en": "4 days",
+                                "odd": true
+                            }
+                        ]
+                    },
+                    {
+                        "label": "5",
+                        "cells": [
+                            {
+                                "kana": "ごふん",
+                                "en": "5 min"
+                            },
+                            {
+                                "kana": "ごじかん",
+                                "en": "5 hr"
+                            },
+                            {
+                                "kana": "いつか",
+                                "en": "5 days",
+                                "odd": true
+                            }
+                        ]
+                    },
+                    {
+                        "label": "6",
+                        "cells": [
+                            {
+                                "kana": "ろっぷん",
+                                "en": "6 min",
+                                "odd": true
+                            },
+                            {
+                                "kana": "ろくじかん",
+                                "en": "6 hr"
+                            },
+                            {
+                                "kana": "むいか",
+                                "en": "6 days",
+                                "odd": true
+                            }
+                        ]
+                    },
+                    {
+                        "label": "7",
+                        "cells": [
+                            {
+                                "kana": "ななふん",
+                                "en": "7 min"
+                            },
+                            {
+                                "kana": "ななじかん",
+                                "en": "7 hr"
+                            },
+                            {
+                                "kana": "なのか",
+                                "en": "7 days",
+                                "odd": true
+                            }
+                        ]
+                    },
+                    {
+                        "label": "8",
+                        "cells": [
+                            {
+                                "kana": "はっぷん",
+                                "en": "8 min",
+                                "odd": true
+                            },
+                            {
+                                "kana": "はちじかん",
+                                "en": "8 hr"
+                            },
+                            {
+                                "kana": "ようか",
+                                "en": "8 days",
+                                "odd": true
+                            }
+                        ]
+                    },
+                    {
+                        "label": "9",
+                        "cells": [
+                            {
+                                "kana": "きゅうふん",
+                                "en": "9 min"
+                            },
+                            {
+                                "kana": "くじかん",
+                                "en": "9 hr",
+                                "odd": true
+                            },
+                            {
+                                "kana": "ここのか",
+                                "en": "9 days",
+                                "odd": true
+                            }
+                        ]
+                    },
+                    {
+                        "label": "10",
+                        "cells": [
+                            {
+                                "kana": "じゅっぷん",
+                                "en": "10 min",
+                                "odd": true
+                            },
+                            {
+                                "kana": "じゅうじかん",
+                                "en": "10 hr"
+                            },
+                            {
+                                "kana": "とおか",
+                                "en": "10 days",
+                                "odd": true
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "how long — weeks, months, years",
+                "columns": [
+                    "weeks",
+                    "months",
+                    "years"
+                ],
+                "rows": [
+                    {
+                        "label": "1",
                         "cells": [
                             {
                                 "kana": "いっしゅうかん",
-                                "en": "for one week"
+                                "en": "1 wk",
+                                "odd": true
                             },
-                            {
-                                "term": "1 8 10",
-                                "en": "いっしゅうかん, はっしゅうかん, じゅっしゅうかん"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "months",
-                        "cells": [
                             {
                                 "kana": "いっかげつ",
-                                "en": "for one month"
+                                "en": "1 mo",
+                                "odd": true
                             },
                             {
-                                "term": "1 6 8 10",
-                                "en": "いっかげつ, ろっかげつ, はっかげつ, じゅっかげつ"
+                                "kana": "いちねん",
+                                "en": "1 yr"
                             }
                         ]
                     },
                     {
-                        "label": "years",
+                        "label": "2",
                         "cells": [
                             {
-                                "kana": "いちねん",
-                                "en": "for one year"
+                                "kana": "にしゅうかん",
+                                "en": "2 wk"
                             },
                             {
-                                "term": "nen",
-                                "en": "4 is よねん; 7 is しちねん or ななねん"
+                                "kana": "にかげつ",
+                                "en": "2 mo"
+                            },
+                            {
+                                "kana": "にねん",
+                                "en": "2 yr"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "3",
+                        "cells": [
+                            {
+                                "kana": "さんしゅうかん",
+                                "en": "3 wk"
+                            },
+                            {
+                                "kana": "さんかげつ",
+                                "en": "3 mo"
+                            },
+                            {
+                                "kana": "さんねん",
+                                "en": "3 yr"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "4",
+                        "cells": [
+                            {
+                                "kana": "よんしゅうかん",
+                                "en": "4 wk"
+                            },
+                            {
+                                "kana": "よんかげつ",
+                                "en": "4 mo"
+                            },
+                            {
+                                "kana": "よねん",
+                                "en": "4 yr",
+                                "odd": true
+                            }
+                        ]
+                    },
+                    {
+                        "label": "5",
+                        "cells": [
+                            {
+                                "kana": "ごしゅうかん",
+                                "en": "5 wk"
+                            },
+                            {
+                                "kana": "ごかげつ",
+                                "en": "5 mo"
+                            },
+                            {
+                                "kana": "ごねん",
+                                "en": "5 yr"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "6",
+                        "cells": [
+                            {
+                                "kana": "ろくしゅうかん",
+                                "en": "6 wk"
+                            },
+                            {
+                                "kana": "ろっかげつ",
+                                "en": "6 mo",
+                                "odd": true
+                            },
+                            {
+                                "kana": "ろくねん",
+                                "en": "6 yr"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "7",
+                        "cells": [
+                            {
+                                "kana": "ななしゅうかん",
+                                "en": "7 wk"
+                            },
+                            {
+                                "kana": "ななかげつ",
+                                "en": "7 mo"
+                            },
+                            {
+                                "kana": "ななねん",
+                                "en": "7 yr"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "8",
+                        "cells": [
+                            {
+                                "kana": "はっしゅうかん",
+                                "en": "8 wk",
+                                "odd": true
+                            },
+                            {
+                                "kana": "はちかげつ",
+                                "en": "8 mo"
+                            },
+                            {
+                                "kana": "はちねん",
+                                "en": "8 yr"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "9",
+                        "cells": [
+                            {
+                                "kana": "きゅうしゅうかん",
+                                "en": "9 wk"
+                            },
+                            {
+                                "kana": "きゅうかげつ",
+                                "en": "9 mo"
+                            },
+                            {
+                                "kana": "きゅうねん",
+                                "en": "9 yr"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "10",
+                        "cells": [
+                            {
+                                "kana": "じゅっしゅうかん",
+                                "en": "10 wk",
+                                "odd": true
+                            },
+                            {
+                                "kana": "じゅっかげつ",
+                                "en": "10 mo",
+                                "odd": true
+                            },
+                            {
+                                "kana": "じゅうねん",
+                                "en": "10 yr"
                             }
                         ]
                     }
@@ -4236,8 +4531,8 @@
             },
             {
                 "id": "kan-makes-a-span",
-                "title": "kan turns a point into a span",
-                "body": "nen is a year, isshuukan is a week long. jikan is already a span, so nijikan is two hours and nijikankan is nothing. Days are the odd ones: ichinichi for one, then the date words — futsuka, mikka, yokka — which are spans as they stand."
+                "title": "spans: four of them are regular, days are not",
+                "body": "Weeks, months and years just take the number — nishuukan, sankagetsu, gonen. Only 1, 6, 8 and 10 change anything, and they change it the same way everywhere: the sound stops. ikkagetsu, rokkagetsu, hakkagetsu, jukkagetsu. Hours are regular except yojikan and kujikan, the same two the clock already breaks, and jikan is itself a span, so nijikan is two hours and nijikankan is nothing. Days are the column to actually learn: ichinichi for one, then the native date words — futsuka, mikka, yokka — which are spans exactly as they stand. Past ten everything follows the same shape as one and two: juuippun, juunifun."
             },
             {
                 "id": "kai-frequency",
