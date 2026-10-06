@@ -4473,6 +4473,128 @@
                 ]
             },
             {
+                "title": "saying how long you did it",
+                "columns": [
+                    "sentence",
+                    "what to notice"
+                ],
+                "rows": [
+                    {
+                        "label": "25 min",
+                        "cells": [
+                            {
+                                "kana": "にほんごをにじゅうごふんべんきょうしました",
+                                "en": "I studied Japanese for 25 minutes",
+                                "romaji": "nihongo wo nijuugofun benkyou shimashita"
+                            },
+                            {
+                                "term": "object, span, verb",
+                                "en": "the span sits exactly where a counter sits"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "1½ hr",
+                        "cells": [
+                            {
+                                "kana": "にほんごをいちじかんはんべんきょうしました",
+                                "en": "I studied Japanese for an hour and a half",
+                                "romaji": "nihongo wo ichijikan han benkyou shimashita"
+                            },
+                            {
+                                "term": "han",
+                                "en": "half — the natural way to say it"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "1 hr 30",
+                        "cells": [
+                            {
+                                "kana": "にほんごをいちじかんさんじゅっぷんべんきょうしました",
+                                "en": "I studied Japanese for one hour thirty",
+                                "romaji": "nihongo wo ichijikan sanjuppun benkyou shimashita"
+                            },
+                            {
+                                "term": "hour then minutes",
+                                "en": "nothing goes between them, same as the clock"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "4 years",
+                        "cells": [
+                            {
+                                "kana": "だいがくでにほんごをよねんべんきょうしました",
+                                "en": "I studied Japanese at university for four years",
+                                "romaji": "daigaku de nihongo wo yonen benkyou shimashita"
+                            },
+                            {
+                                "term": "where, then how long",
+                                "en": "de for the place, and 4 is よねん"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "30 min",
+                        "cells": [
+                            {
+                                "kana": "さんじゅっぷんはたらきました",
+                                "en": "I worked for 30 minutes",
+                                "romaji": "sanjuppun hatarakimashita"
+                            },
+                            {
+                                "term": "no object",
+                                "en": "then the span goes straight in front of the verb"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "3 days",
+                        "cells": [
+                            {
+                                "kana": "せんげつみっかりょこうしました",
+                                "en": "I travelled for three days last month",
+                                "romaji": "sengetsu mikka ryokou shimashita"
+                            },
+                            {
+                                "term": "when, then how long",
+                                "en": "senshuu and sengetsu take no ni either"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "2 weeks",
+                        "cells": [
+                            {
+                                "kana": "にしゅうかんやすみます",
+                                "en": "I'm taking two weeks off",
+                                "romaji": "nishuukan yasumimasu"
+                            },
+                            {
+                                "term": "no ni",
+                                "en": "a span is never marked — only a point in time is"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "a point",
+                        "cells": [
+                            {
+                                "kana": "くじにべんきょうしました",
+                                "en": "I studied at nine",
+                                "romaji": "kuji ni benkyou shimashita",
+                                "odd": true
+                            },
+                            {
+                                "term": "ni",
+                                "en": "this one is a clock time, so it does take ni — the contrast to watch"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
                 "title": "where the counter goes",
                 "columns": [
                     "sentence",
