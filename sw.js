@@ -12,7 +12,7 @@
 // a stale copy of it doesn't look like a cache problem, it looks like the kanji
 // were never added. It goes on the network-first list with the rest.
 
-const CACHE_NAME = 'japanese-match-v37';
+const CACHE_NAME = 'japanese-match-v38';
 
 const ASSETS = [
     './',

@@ -544,5 +544,45 @@
         "wordKana": "なんだい",
         "wordEnglish": "how many machines",
         "note": "The counter for machines and vehicles — 3台 さんだい. Regular from 1 to 10."
+    },
+    {
+        "char": "兄",
+        "romaji": "ani / nii / kei",
+        "meaning": "older brother",
+        "quiz": true,
+        "word": "兄",
+        "wordKana": "あに",
+        "wordEnglish": "(my) older brother",
+        "note": "にい in お兄さん おにいさん, someone else's older brother; けい in 兄弟 きょうだい."
+    },
+    {
+        "char": "姉",
+        "romaji": "ane / nee / shi",
+        "meaning": "older sister",
+        "quiz": true,
+        "word": "姉",
+        "wordKana": "あね",
+        "wordEnglish": "(my) older sister",
+        "note": "ねえ in お姉さん おねえさん."
+    },
+    {
+        "char": "弟",
+        "romaji": "otouto / dai / tei",
+        "meaning": "younger brother",
+        "quiz": true,
+        "word": "弟",
+        "wordKana": "おとうと",
+        "wordEnglish": "(my) younger brother",
+        "note": "だい in 兄弟 きょうだい, brothers and sisters."
+    },
+    {
+        "char": "妹",
+        "romaji": "imouto / mai",
+        "meaning": "younger sister",
+        "quiz": true,
+        "word": "妹",
+        "wordKana": "いもうと",
+        "wordEnglish": "(my) younger sister",
+        "note": "まい in 姉妹 しまい, sisters."
     }
 ]
