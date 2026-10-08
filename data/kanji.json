@@ -525,5 +525,24 @@
         "wordKana": "がっこう",
         "wordEnglish": "school",
         "note": "学生 がくせい a student, 大学 だいがく a university."
+    },
+    {
+        "char": "家",
+        "romaji": "ie / uchi / ka",
+        "meaning": "house, home",
+        "quiz": true,
+        "word": "家",
+        "wordKana": "いえ",
+        "wordEnglish": "house / home",
+        "note": "うち is the same kanji and means home as in my household; か in 作家 さっか, a writer."
+    },
+    {
+        "char": "台",
+        "romaji": "dai",
+        "meaning": "stand, counter for machines",
+        "word": "何台",
+        "wordKana": "なんだい",
+        "wordEnglish": "how many machines",
+        "note": "The counter for machines and vehicles — 3台 さんだい. Regular from 1 to 10."
     }
 ]
