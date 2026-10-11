@@ -316,22 +316,22 @@
             "ga:youji-yakusoku"
         ],
         "sheet": "ga",
-        "en": "I have things to do, so I'm going home at six.",
+        "en": "I have things to do tonight, so I'm going home at six.",
         "correct": {
-            "kana": "ようじがありますからろくじにかえります",
-            "romaji": "youji ga arimasu kara rokuji ni kaerimasu"
+            "kana": "こんばんようじがありますからろくじにかえります",
+            "romaji": "konban youji ga arimasu kara rokuji ni kaerimasu"
         },
         "wrong": [
             {
-                "kana": "ろくじにかえりますからようじがあります",
+                "kana": "こんばんろくじにかえりますからようじがあります",
                 "why": "reversed — that says you have plans because you are going home at six."
             },
             {
-                "kana": "ようじをありますからろくじにかえります",
+                "kana": "こんばんようじをありますからろくじにかえります",
                 "why": "arimasu takes ga."
             },
             {
-                "kana": "ようじがありましたからろくじにかえります",
+                "kana": "こんばんようじがありましたからろくじにかえります",
                 "why": "that is the past — I had things to do."
             }
         ]
@@ -343,22 +343,22 @@
             "going:time-ni-or-nothing"
         ],
         "sheet": "calendar",
-        "en": "I went last week.",
+        "en": "I went to the art museum last week.",
         "correct": {
-            "kana": "せんしゅういきました",
-            "romaji": "senshuu ikimashita"
+            "kana": "せんしゅうびじゅつかんへいきました",
+            "romaji": "senshuu bijutsukan e ikimashita"
         },
         "wrong": [
             {
-                "kana": "せんしゅうにいきました",
+                "kana": "せんしゅうにびじゅつかんへいきました",
                 "why": "relative time words take no ni. This is the most common slip of the lot."
             },
             {
-                "kana": "せんしゅういきます",
+                "kana": "せんしゅうびじゅつかんへいきます",
                 "why": "senshuu is last week, so the verb has to be past: ikimashita."
             },
             {
-                "kana": "らいしゅういきました",
+                "kana": "らいしゅうびじゅつかんへいきました",
                 "why": "raishuu is next week — you cannot have gone there yet."
             }
         ]
@@ -370,22 +370,22 @@
             "calendar:ni-or-nothing"
         ],
         "sheet": "calendar",
-        "en": "I'm going in April.",
+        "en": "I'm going to Australia in April.",
         "correct": {
-            "kana": "しがつにいきます",
-            "romaji": "shigatsu ni ikimasu"
+            "kana": "しがつにオーストラリアへいきます",
+            "romaji": "shigatsu ni oosutoraria e ikimasu"
         },
         "wrong": [
             {
-                "kana": "よんがつにいきます",
+                "kana": "よんがつにオーストラリアへいきます",
                 "why": "April is shigatsu. There is no yongatsu."
             },
             {
-                "kana": "しがついきます",
+                "kana": "しがつオーストラリアへいきます",
                 "why": "a calendar slot takes ni, unlike kyou or senshuu."
             },
             {
-                "kana": "しがつでいきます",
+                "kana": "しがつでオーストラリアへいきます",
                 "why": "de is not used for calendar slots."
             }
         ]
@@ -717,22 +717,22 @@
             "calendar:ni-or-nothing"
         ],
         "sheet": "calendar",
-        "en": "I went last month.",
+        "en": "I went to Tokyo last month.",
         "correct": {
-            "kana": "せんげついきました",
-            "romaji": "sengetsu ikimashita"
+            "kana": "せんげつとうきょうへいきました",
+            "romaji": "sengetsu toukyou e ikimashita"
         },
         "wrong": [
             {
-                "kana": "さきげついきました",
+                "kana": "さきげつとうきょうへいきました",
                 "why": "the prefix is sen-, the same one as senshuu: sengetsu."
             },
             {
-                "kana": "せんげつにいきました",
+                "kana": "せんげつにとうきょうへいきました",
                 "why": "relative time words take no ni."
             },
             {
-                "kana": "せんつきいきました",
+                "kana": "せんつきとうきょうへいきました",
                 "why": "the prefix goes with getsu, not tsuki."
             }
         ]
@@ -743,22 +743,22 @@
             "calendar:year-irregular"
         ],
         "sheet": "calendar",
-        "en": "I went last year.",
+        "en": "I went to Japan last year.",
         "correct": {
-            "kana": "きょねんいきました",
-            "romaji": "kyonen ikimashita"
+            "kana": "きょねんにほんへいきました",
+            "romaji": "kyonen nihon e ikimashita"
         },
         "wrong": [
             {
-                "kana": "せんねんいきました",
+                "kana": "せんねんにほんへいきました",
                 "why": "year ignores the sen- prefix — last year is kyonen."
             },
             {
-                "kana": "せんとしいきました",
+                "kana": "せんとしにほんへいきました",
                 "why": "neither half works: kyonen is a word of its own."
             },
             {
-                "kana": "らいねんいきました",
+                "kana": "らいねんにほんへいきました",
                 "why": "rainen is next year."
             }
         ]
@@ -769,22 +769,22 @@
             "calendar:morning-night-no"
         ],
         "sheet": "calendar",
-        "en": "I'm going tomorrow morning.",
+        "en": "I'm going to the bank tomorrow morning.",
         "correct": {
-            "kana": "あしたのあさいきます",
-            "romaji": "ashita no asa ikimasu"
+            "kana": "あしたのあさぎんこうへいきます",
+            "romaji": "ashita no asa ginkou e ikimasu"
         },
         "wrong": [
             {
-                "kana": "あしたあさいきます",
+                "kana": "あしたあさぎんこうへいきます",
                 "why": "day + no + asa. The no is not optional."
             },
             {
-                "kana": "あしたにあさいきます",
+                "kana": "あしたにあさぎんこうへいきます",
                 "why": "ni does not go between the day and the part of it."
             },
             {
-                "kana": "あさのあしたいきます",
+                "kana": "あさのあしたぎんこうへいきます",
                 "why": "the day comes first: ashita no asa."
             }
         ]
@@ -987,22 +987,22 @@
             "going:e-written-he"
         ],
         "sheet": "going",
-        "en": "I'm going to the station.",
+        "en": "I'm going to the station tomorrow.",
         "correct": {
-            "kana": "えきへいきます",
-            "romaji": "eki e ikimasu"
+            "kana": "あしたえきへいきます",
+            "romaji": "ashita eki e ikimasu"
         },
         "wrong": [
             {
-                "kana": "えきえいきます",
+                "kana": "あしたえきえいきます",
                 "why": "the particle is said e but written he — this is the one place he is not read he."
             },
             {
-                "kana": "えきへいきました",
-                "why": "that is past — the prompt is I'm going."
+                "kana": "あしたえきへいきました",
+                "why": "ashita is tomorrow, so the verb cannot be past: ikimasu."
             },
             {
-                "kana": "えきへきます",
+                "kana": "あしたえきへきます",
                 "why": "kimasu is come; going is ikimasu."
             }
         ]
@@ -1013,22 +1013,22 @@
             "going:de-means-to-company"
         ],
         "sheet": "going",
-        "en": "I went with a friend.",
+        "en": "I went with a friend yesterday.",
         "correct": {
-            "kana": "ともだちといきました",
-            "romaji": "tomodachi to ikimashita"
+            "kana": "きのうともだちといきました",
+            "romaji": "kinou tomodachi to ikimashita"
         },
         "wrong": [
             {
-                "kana": "ともだちでいきました",
+                "kana": "きのうともだちでいきました",
                 "why": "de is the means of travel; a person you go with takes to."
             },
             {
-                "kana": "ともだちといきます",
-                "why": "the prompt is past — ikimashita."
+                "kana": "きのうともだちといきます",
+                "why": "kinou is yesterday, so the verb has to be past: ikimashita."
             },
             {
-                "kana": "ともだちといきましたです",
+                "kana": "きのうともだちといきましたです",
                 "why": "ikimashita is already the polite past; nothing follows it."
             }
         ]
@@ -1039,22 +1039,22 @@
             "going:aruite"
         ],
         "sheet": "going",
-        "en": "I go on foot.",
+        "en": "I go on foot every day.",
         "correct": {
-            "kana": "あるいていきます",
-            "romaji": "aruite ikimasu"
+            "kana": "まいにちあるいていきます",
+            "romaji": "mainichi aruite ikimasu"
         },
         "wrong": [
             {
-                "kana": "あるいてでいきます",
+                "kana": "まいにちあるいてでいきます",
                 "why": "aruite is already a te-form verb, so de never follows it."
             },
             {
-                "kana": "あるきでいきます",
+                "kana": "まいにちあるきでいきます",
                 "why": "the form is aruite, not aruki."
             },
             {
-                "kana": "あるいてにいきます",
+                "kana": "まいにちあるいてにいきます",
                 "why": "nothing follows aruite at all."
             }
         ]
@@ -1066,22 +1066,22 @@
             "calendar:ni-or-nothing"
         ],
         "sheet": "going",
-        "en": "I'm going at nine.",
+        "en": "I'm going at nine tomorrow.",
         "correct": {
-            "kana": "くじにいきます",
-            "romaji": "kuji ni ikimasu"
+            "kana": "あしたくじにいきます",
+            "romaji": "ashita kuji ni ikimasu"
         },
         "wrong": [
             {
-                "kana": "くじいきます",
-                "why": "a clock time keeps its ni — only relative words like kyou drop it."
+                "kana": "あしたくじいきます",
+                "why": "a clock time keeps its ni. It is ashita that goes bare, not kuji."
             },
             {
-                "kana": "くじでいきます",
+                "kana": "あしたくじでいきます",
                 "why": "de is where or how, never when."
             },
             {
-                "kana": "きゅうじにいきます",
+                "kana": "あしたきゅうじにいきます",
                 "why": "nine o'clock is kuji, not kyuuji."
             }
         ]
@@ -1608,22 +1608,22 @@
             "ga:arimasu-imasu"
         ],
         "sheet": "ga",
-        "en": "I have no time at all.",
+        "en": "I have no time at all this week.",
         "correct": {
-            "kana": "じかんがぜんぜんありません",
-            "romaji": "jikan ga zenzen arimasen"
+            "kana": "こんしゅうはじかんがぜんぜんありません",
+            "romaji": "konshuu wa jikan ga zenzen arimasen"
         },
         "wrong": [
             {
-                "kana": "じかんがぜんぜんあります",
+                "kana": "こんしゅうはじかんがぜんぜんあります",
                 "why": "zenzen only pairs with a negative."
             },
             {
-                "kana": "じかんがあまりあります",
+                "kana": "こんしゅうはじかんがあまりあります",
                 "why": "amari needs a negative as well."
             },
             {
-                "kana": "じかんをぜんぜんありません",
+                "kana": "こんしゅうはじかんをぜんぜんありません",
                 "why": "arimasu takes ga."
             }
         ]
@@ -2023,22 +2023,22 @@
             "calendar:ni-or-nothing"
         ],
         "sheet": "calendar",
-        "en": "I'm going next month.",
+        "en": "I'm going to India next month.",
         "correct": {
-            "kana": "らいげついきます",
-            "romaji": "raigetsu ikimasu"
+            "kana": "らいげつインドへいきます",
+            "romaji": "raigetsu indo e ikimasu"
         },
         "wrong": [
             {
-                "kana": "らいげつにいきます",
+                "kana": "らいげつにインドへいきます",
                 "why": "relative time words take no ni."
             },
             {
-                "kana": "つぎげついきます",
+                "kana": "つぎげつインドへいきます",
                 "why": "the prefix is the one on the sheet: raigetsu."
             },
             {
-                "kana": "らいげつでいきます",
+                "kana": "らいげつでインドへいきます",
                 "why": "de marks how or where, not when."
             }
         ]
@@ -2050,22 +2050,22 @@
             "calendar:ni-or-nothing"
         ],
         "sheet": "calendar",
-        "en": "I'm going the week after next.",
+        "en": "I'm going to the university the week after next.",
         "correct": {
-            "kana": "さらいしゅういきます",
-            "romaji": "saraishuu ikimasu"
+            "kana": "さらいしゅうだいがくへいきます",
+            "romaji": "saraishuu daigaku e ikimasu"
         },
         "wrong": [
             {
-                "kana": "さらいじゅういきます",
+                "kana": "さらいじゅうだいがくへいきます",
                 "why": "sarai attaches to shuu unchanged — saraishuu, no voicing."
             },
             {
-                "kana": "さらいしゅうにいきます",
+                "kana": "さらいしゅうにだいがくへいきます",
                 "why": "relative time words take no ni."
             },
             {
-                "kana": "らいしゅういきます",
+                "kana": "らいしゅうだいがくへいきます",
                 "why": "raishuu is next week; the week after next adds sarai."
             }
         ]
@@ -2076,22 +2076,22 @@
             "calendar:year-irregular"
         ],
         "sheet": "calendar",
-        "en": "I'm going this year.",
+        "en": "I'm going to America this year.",
         "correct": {
-            "kana": "ことしいきます",
-            "romaji": "kotoshi ikimasu"
+            "kana": "ことしアメリカへいきます",
+            "romaji": "kotoshi amerika e ikimasu"
         },
         "wrong": [
             {
-                "kana": "こんねんいきます",
+                "kana": "こんねんアメリカへいきます",
                 "why": "year refuses kon-: this year is kotoshi."
             },
             {
-                "kana": "こんとしいきます",
+                "kana": "こんとしアメリカへいきます",
                 "why": "neither half works — kotoshi is its own word."
             },
             {
-                "kana": "ことしにいきます",
+                "kana": "ことしにアメリカへいきます",
                 "why": "relative time words take no ni."
             }
         ]
@@ -2103,22 +2103,22 @@
             "calendar:now-exceptions"
         ],
         "sheet": "calendar",
-        "en": "I went the year before last.",
+        "en": "I went to the UK the year before last.",
         "correct": {
-            "kana": "おととしいきました",
-            "romaji": "ototoshi ikimashita"
+            "kana": "おととしイギリスへいきました",
+            "romaji": "ototoshi igirisu e ikimashita"
         },
         "wrong": [
             {
-                "kana": "せんせんねんいきました",
+                "kana": "せんせんねんイギリスへいきました",
                 "why": "year ignores sensen-: it is ototoshi."
             },
             {
-                "kana": "おとといいきました",
+                "kana": "おとといイギリスへいきました",
                 "why": "ototoi is the day before yesterday."
             },
             {
-                "kana": "おととしにいきました",
+                "kana": "おととしにイギリスへいきました",
                 "why": "relative time words take no ni."
             }
         ]
@@ -2129,22 +2129,22 @@
             "calendar:morning-night-no"
         ],
         "sheet": "calendar",
-        "en": "I went last night.",
+        "en": "I went to a coffee shop last night.",
         "correct": {
-            "kana": "きのうのばんいきました",
-            "romaji": "kinou no ban ikimashita"
+            "kana": "きのうのばんきっさてんへいきました",
+            "romaji": "kinou no ban kissaten e ikimashita"
         },
         "wrong": [
             {
-                "kana": "きのうばんいきました",
+                "kana": "きのうばんきっさてんへいきました",
                 "why": "day + no + ban. The no is not optional."
             },
             {
-                "kana": "きのうにばんいきました",
+                "kana": "きのうにばんきっさてんへいきました",
                 "why": "ni does not join them."
             },
             {
-                "kana": "ばんのきのういきました",
+                "kana": "ばんのきのうきっさてんへいきました",
                 "why": "the day comes first."
             }
         ]
@@ -2156,22 +2156,22 @@
             "calendar:prefixes"
         ],
         "sheet": "calendar",
-        "en": "I study every morning.",
+        "en": "I study Japanese every morning.",
         "correct": {
-            "kana": "まいあさべんきょうします",
-            "romaji": "maiasa benkyou shimasu"
+            "kana": "まいあさにほんごをべんきょうします",
+            "romaji": "maiasa nihongo wo benkyou shimasu"
         },
         "wrong": [
             {
-                "kana": "まいにちのあさべんきょうします",
+                "kana": "まいにちのあさにほんごをべんきょうします",
                 "why": "the mai- row drops the no: maiasa, maiban."
             },
             {
-                "kana": "まいあさにべんきょうします",
+                "kana": "まいあさににほんごをべんきょうします",
                 "why": "mai- words take no ni."
             },
             {
-                "kana": "あさまいべんきょうします",
+                "kana": "あさまいにほんごをべんきょうします",
                 "why": "the prefix goes in front: maiasa."
             }
         ]
@@ -2182,22 +2182,22 @@
             "calendar:now-exceptions"
         ],
         "sheet": "calendar",
-        "en": "I'm going tonight.",
+        "en": "I'm going to karaoke tonight.",
         "correct": {
-            "kana": "こんばんいきます",
-            "romaji": "konban ikimasu"
+            "kana": "こんばんカラオケへいきます",
+            "romaji": "konban karaoke e ikimasu"
         },
         "wrong": [
             {
-                "kana": "きょうのばんいきます",
+                "kana": "きょうのばんカラオケへいきます",
                 "why": "tonight is konban — kyou no ban is the one that isn't said."
             },
             {
-                "kana": "こんばんにいきます",
+                "kana": "こんばんにカラオケへいきます",
                 "why": "relative time words take no ni."
             },
             {
-                "kana": "こんよるいきます",
+                "kana": "こんよるカラオケへいきます",
                 "why": "kon- goes with ban here, not yoru."
             }
         ]
@@ -2735,22 +2735,22 @@
             "going:sentence-shape"
         ],
         "sheet": "going",
-        "en": "I'm going to the department store by bus.",
+        "en": "I'm going to the department store by bus the day after tomorrow.",
         "correct": {
-            "kana": "バスでデパートへいきます",
-            "romaji": "basu de depaato e ikimasu"
+            "kana": "あさってバスでデパートへいきます",
+            "romaji": "asatte basu de depaato e ikimasu"
         },
         "wrong": [
             {
-                "kana": "バスとデパートへいきます",
+                "kana": "あさってバスとデパートへいきます",
                 "why": "to is for a person you go with; a vehicle takes de."
             },
             {
-                "kana": "バスでデパートへいきました",
-                "why": "that is past — the prompt is I'm going."
+                "kana": "あさってバスでデパートへいきました",
+                "why": "asatte is the day after tomorrow — the verb cannot be past."
             },
             {
-                "kana": "デパートへいきますバスで",
+                "kana": "あさってデパートへいきますバスで",
                 "why": "the verb ends the sentence — everything else comes before it."
             }
         ]
@@ -2761,22 +2761,22 @@
             "going:de-means-to-company"
         ],
         "sheet": "going",
-        "en": "I went with my family.",
+        "en": "I went with my family the day before yesterday.",
         "correct": {
-            "kana": "かぞくといきました",
-            "romaji": "kazoku to ikimashita"
+            "kana": "おとといかぞくといきました",
+            "romaji": "ototoi kazoku to ikimashita"
         },
         "wrong": [
             {
-                "kana": "かぞくでいきました",
+                "kana": "おとといかぞくでいきました",
                 "why": "de is the means of travel; people you go with take to."
             },
             {
-                "kana": "かぞくといきます",
-                "why": "the prompt is past — ikimashita."
+                "kana": "おとといかぞくといきます",
+                "why": "ototoi is the day before yesterday, so the verb has to be past."
             },
             {
-                "kana": "かぞくといきませんでした",
+                "kana": "おとといかぞくといきませんでした",
                 "why": "that says the opposite — I didn't go."
             }
         ]
@@ -2787,22 +2787,22 @@
             "going:de-means-to-company"
         ],
         "sheet": "going",
-        "en": "I went alone.",
+        "en": "I went alone last month.",
         "correct": {
-            "kana": "ひとりでいきました",
-            "romaji": "hitori de ikimashita"
+            "kana": "せんげつひとりでいきました",
+            "romaji": "sengetsu hitori de ikimashita"
         },
         "wrong": [
             {
-                "kana": "ひとりといきました",
+                "kana": "せんげつひとりといきました",
                 "why": "to is for a person you go with; alone is hitori de."
             },
             {
-                "kana": "ひとりでいきます",
-                "why": "the prompt is past — ikimashita."
+                "kana": "せんげつひとりでいきます",
+                "why": "sengetsu is last month, so the verb has to be past."
             },
             {
-                "kana": "ひとりできました",
+                "kana": "せんげつひとりできました",
                 "why": "kimashita is came; went is ikimashita."
             }
         ]
@@ -2813,22 +2813,22 @@
             "going:e-written-he"
         ],
         "sheet": "going",
-        "en": "I'm going to the hospital.",
+        "en": "I'm going to the hospital this month.",
         "correct": {
-            "kana": "びょういんへいきます",
-            "romaji": "byouin e ikimasu"
+            "kana": "こんげつびょういんへいきます",
+            "romaji": "kongetsu byouin e ikimasu"
         },
         "wrong": [
             {
-                "kana": "びょういんえいきます",
+                "kana": "こんげつびょういんえいきます",
                 "why": "the particle is said e but written he."
             },
             {
-                "kana": "びょういんへいきました",
+                "kana": "こんげつびょういんへいきました",
                 "why": "that is past — the prompt is I'm going."
             },
             {
-                "kana": "びょういんいきます",
+                "kana": "こんげつびょういんいきます",
                 "why": "a destination always keeps its particle; only time words drop it."
             }
         ]
@@ -2839,22 +2839,22 @@
             "going:aruite"
         ],
         "sheet": "going",
-        "en": "I walk to school.",
+        "en": "I walk to school every morning.",
         "correct": {
-            "kana": "がっこうへあるいていきます",
-            "romaji": "gakkou e aruite ikimasu"
+            "kana": "まいあさがっこうへあるいていきます",
+            "romaji": "maiasa gakkou e aruite ikimasu"
         },
         "wrong": [
             {
-                "kana": "がっこうへあるいてでいきます",
+                "kana": "まいあさがっこうへあるいてでいきます",
                 "why": "aruite is a te-form verb; de never follows it."
             },
             {
-                "kana": "がっこうへあるきでいきます",
+                "kana": "まいあさがっこうへあるきでいきます",
                 "why": "the form is aruite."
             },
             {
-                "kana": "がっこうをあるいていきます",
+                "kana": "まいあさがっこうをあるいていきます",
                 "why": "the destination does not take wo."
             }
         ]
@@ -2866,22 +2866,22 @@
             "clock:irregular-hours"
         ],
         "sheet": "going",
-        "en": "I'm going home at seven.",
+        "en": "I'm going home at seven tonight.",
         "correct": {
-            "kana": "しちじにかえります",
-            "romaji": "shichiji ni kaerimasu"
+            "kana": "こんばんしちじにかえります",
+            "romaji": "konban shichiji ni kaerimasu"
         },
         "wrong": [
             {
-                "kana": "しちじかえります",
-                "why": "a time with a number takes ni."
+                "kana": "こんばんしちじかえります",
+                "why": "a time with a number takes ni. Konban is the one that goes bare."
             },
             {
-                "kana": "ななじにかえります",
+                "kana": "こんばんななじにかえります",
                 "why": "seven o'clock is shichiji."
             },
             {
-                "kana": "しちじでかえります",
+                "kana": "こんばんしちじでかえります",
                 "why": "de is the means, not the time."
             }
         ]
@@ -3283,22 +3283,22 @@
             "adjectives:i-conjugates-na-doesnt"
         ],
         "sheet": "adjectives",
-        "en": "It was cold.",
+        "en": "It was cold yesterday.",
         "correct": {
-            "kana": "さむかったです",
-            "romaji": "samukatta desu"
+            "kana": "きのうはさむかったです",
+            "romaji": "kinou wa samukatta desu"
         },
         "wrong": [
             {
-                "kana": "さむいでした",
+                "kana": "きのうはさむいでした",
                 "why": "an i-adjective carries its own past; desu does not become deshita."
             },
             {
-                "kana": "さむいじゃなかったです",
+                "kana": "きのうはさむいじゃなかったです",
                 "why": "ja nakatta is the na pattern."
             },
             {
-                "kana": "さむくなかったです",
+                "kana": "きのうはさむくなかったです",
                 "why": "that is the past negative."
             }
         ],
@@ -3315,22 +3315,22 @@
             "adjectives:nai-is-i-adjective"
         ],
         "sheet": "adjectives",
-        "en": "It wasn't cold.",
+        "en": "It wasn't cold this morning.",
         "correct": {
-            "kana": "さむくなかったです",
-            "romaji": "samuku nakatta desu"
+            "kana": "けさはさむくなかったです",
+            "romaji": "kesa wa samuku nakatta desu"
         },
         "wrong": [
             {
-                "kana": "さむくないでした",
+                "kana": "けさはさむくないでした",
                 "why": "nai is itself an i-adjective, so its past is nakatta."
             },
             {
-                "kana": "さむいじゃなかったです",
+                "kana": "けさはさむいじゃなかったです",
                 "why": "ja nakatta is the na pattern."
             },
             {
-                "kana": "さむかったです",
+                "kana": "けさはさむかったです",
                 "why": "that is the past, without the negative."
             }
         ],
@@ -3347,22 +3347,22 @@
             "adjectives:i-conjugates-na-doesnt"
         ],
         "sheet": "adjectives",
-        "en": "It was expensive.",
+        "en": "It was expensive last year.",
         "correct": {
-            "kana": "たかかったです",
-            "romaji": "takakatta desu"
+            "kana": "きょねんはたかかったです",
+            "romaji": "kyonen wa takakatta desu"
         },
         "wrong": [
             {
-                "kana": "たかいでした",
+                "kana": "きょねんはたかいでした",
                 "why": "an i-adjective carries its own past; desu does not become deshita."
             },
             {
-                "kana": "たかいじゃなかったです",
+                "kana": "きょねんはたかいじゃなかったです",
                 "why": "ja nakatta is the na pattern."
             },
             {
-                "kana": "たかくなかったです",
+                "kana": "きょねんはたかくなかったです",
                 "why": "that is the past negative."
             }
         ],
@@ -3379,22 +3379,22 @@
             "adjectives:nai-is-i-adjective"
         ],
         "sheet": "adjectives",
-        "en": "It wasn't expensive.",
+        "en": "It wasn't expensive last month.",
         "correct": {
-            "kana": "たかくなかったです",
-            "romaji": "takaku nakatta desu"
+            "kana": "せんげつはたかくなかったです",
+            "romaji": "sengetsu wa takaku nakatta desu"
         },
         "wrong": [
             {
-                "kana": "たかくないでした",
+                "kana": "せんげつはたかくないでした",
                 "why": "nai is itself an i-adjective, so its past is nakatta."
             },
             {
-                "kana": "たかいじゃなかったです",
+                "kana": "せんげつはたかいじゃなかったです",
                 "why": "ja nakatta is the na pattern."
             },
             {
-                "kana": "たかかったです",
+                "kana": "せんげつはたかかったです",
                 "why": "that is the past, without the negative."
             }
         ],
@@ -3411,22 +3411,22 @@
             "adjectives:i-conjugates-na-doesnt"
         ],
         "sheet": "adjectives",
-        "en": "It was delicious.",
+        "en": "The meal the day before yesterday was delicious.",
         "correct": {
-            "kana": "おいしかったです",
-            "romaji": "oishikatta desu"
+            "kana": "おとといのごはんはおいしかったです",
+            "romaji": "ototoi no gohan wa oishikatta desu"
         },
         "wrong": [
             {
-                "kana": "おいしいでした",
+                "kana": "おとといのごはんはおいしいでした",
                 "why": "an i-adjective carries its own past; desu does not become deshita."
             },
             {
-                "kana": "おいしいじゃなかったです",
+                "kana": "おとといのごはんはおいしいじゃなかったです",
                 "why": "ja nakatta is the na pattern."
             },
             {
-                "kana": "おいしくなかったです",
+                "kana": "おとといのごはんはおいしくなかったです",
                 "why": "that is the past negative."
             }
         ],
@@ -3443,22 +3443,22 @@
             "adjectives:nai-is-i-adjective"
         ],
         "sheet": "adjectives",
-        "en": "It wasn't delicious.",
+        "en": "This morning's bread wasn't delicious.",
         "correct": {
-            "kana": "おいしくなかったです",
-            "romaji": "oishiku nakatta desu"
+            "kana": "けさのパンはおいしくなかったです",
+            "romaji": "kesa no pan wa oishiku nakatta desu"
         },
         "wrong": [
             {
-                "kana": "おいしくないでした",
+                "kana": "けさのパンはおいしくないでした",
                 "why": "nai is itself an i-adjective, so its past is nakatta."
             },
             {
-                "kana": "おいしいじゃなかったです",
+                "kana": "けさのパンはおいしいじゃなかったです",
                 "why": "ja nakatta is the na pattern."
             },
             {
-                "kana": "おいしかったです",
+                "kana": "けさのパンはおいしかったです",
                 "why": "that is the past, without the negative."
             }
         ],
@@ -3571,22 +3571,22 @@
             "adjectives:i-conjugates-na-doesnt"
         ],
         "sheet": "adjectives",
-        "en": "It was lively.",
+        "en": "It was lively the night before last.",
         "correct": {
-            "kana": "にぎやかでした",
-            "romaji": "nigiyaka deshita"
+            "kana": "おとといのばんはにぎやかでした",
+            "romaji": "ototoi no ban wa nigiyaka deshita"
         },
         "wrong": [
             {
-                "kana": "にぎやかかったです",
+                "kana": "おとといのばんはにぎやかかったです",
                 "why": "katta is the i-adjective past."
             },
             {
-                "kana": "にぎやかです",
+                "kana": "おとといのばんはにぎやかです",
                 "why": "that is the present."
             },
             {
-                "kana": "にぎやかじゃなかったです",
+                "kana": "おとといのばんはにぎやかじゃなかったです",
                 "why": "that is the past negative."
             }
         ],
@@ -4022,27 +4022,27 @@
             "adjectives:i-conjugates-na-doesnt"
         ],
         "sheet": "adjectives",
-        "en": "The moon was pretty.",
+        "en": "The moon was pretty last night.",
         "correct": {
-            "kana": "つきがきれいでした",
-            "romaji": "tsuki ga kirei deshita",
-            "kanji": "月がきれいでした"
+            "kana": "きのうのばんはつきがきれいでした",
+            "romaji": "kinou no ban wa tsuki ga kirei deshita",
+            "kanji": "きのうのばんは月がきれいでした"
         },
         "wrong": [
             {
-                "kana": "つきがきれいかったです",
+                "kana": "きのうのばんはつきがきれいかったです",
                 "why": "kirei ends in i but is a na-adjective — it takes deshita.",
-                "kanji": "月がきれいかったです"
+                "kanji": "きのうのばんは月がきれいかったです"
             },
             {
-                "kana": "つきがきれいなでした",
+                "kana": "きのうのばんはつきがきれいなでした",
                 "why": "na only goes in front of a noun.",
-                "kanji": "月がきれいなでした"
+                "kanji": "きのうのばんは月がきれいなでした"
             },
             {
-                "kana": "つきがきれいです",
+                "kana": "きのうのばんはつきがきれいです",
                 "why": "that is the present — the moon is pretty.",
-                "kanji": "月がきれいです"
+                "kanji": "きのうのばんは月がきれいです"
             }
         ],
         "kanjiNotes": [
@@ -4060,27 +4060,27 @@
             "going:sentence-shape"
         ],
         "sheet": "going",
-        "en": "I'm going to the mountain by car.",
+        "en": "I'm going to the mountain by car the week after next.",
         "correct": {
-            "kana": "くるまでやまへいきます",
-            "romaji": "kuruma de yama e ikimasu",
-            "kanji": "車で山へいきます"
+            "kana": "さらいしゅうくるまでやまへいきます",
+            "romaji": "saraishuu kuruma de yama e ikimasu",
+            "kanji": "さらいしゅう車で山へいきます"
         },
         "wrong": [
             {
-                "kana": "くるまとやまへいきます",
+                "kana": "さらいしゅうくるまとやまへいきます",
                 "why": "to is for a person you go with; a vehicle takes de.",
-                "kanji": "車と山へいきます"
+                "kanji": "さらいしゅう車と山へいきます"
             },
             {
-                "kana": "やまへいきますくるまで",
+                "kana": "さらいしゅうやまへいきますくるまで",
                 "why": "the verb ends the sentence — everything else comes before it.",
-                "kanji": "山へいきます車で"
+                "kanji": "さらいしゅう山へいきます車で"
             },
             {
-                "kana": "くるまでやまへいきました",
-                "why": "that is past — the prompt is I'm going.",
-                "kanji": "車で山へいきました"
+                "kana": "さらいしゅうくるまでやまへいきました",
+                "why": "saraishuu is the week after next — the verb cannot be past.",
+                "kanji": "さらいしゅう車で山へいきました"
             }
         ],
         "kanjiNotes": [
@@ -4185,27 +4185,27 @@
             "going:e-written-he"
         ],
         "sheet": "going",
-        "en": "I went to the river with my dog.",
+        "en": "I went to the river with my dog the week before last.",
         "correct": {
-            "kana": "いぬとかわへいきました",
-            "romaji": "inu to kawa e ikimashita",
-            "kanji": "犬と川へいきました"
+            "kana": "せんせんしゅういぬとかわへいきました",
+            "romaji": "sensenshuu inu to kawa e ikimashita",
+            "kanji": "せんせんしゅう犬と川へいきました"
         },
         "wrong": [
             {
-                "kana": "いぬでかわへいきました",
+                "kana": "せんせんしゅういぬでかわへいきました",
                 "why": "de is the means of travel; someone you go with takes to.",
-                "kanji": "犬で川へいきました"
+                "kanji": "せんせんしゅう犬で川へいきました"
             },
             {
-                "kana": "いぬとかわへいきます",
-                "why": "the prompt is past — ikimashita.",
-                "kanji": "犬と川へいきます"
+                "kana": "せんせんしゅういぬとかわへいきます",
+                "why": "sensenshuu is the week before last, so the verb has to be past.",
+                "kanji": "せんせんしゅう犬と川へいきます"
             },
             {
-                "kana": "いぬとかわへいきましたです",
+                "kana": "せんせんしゅういぬとかわへいきましたです",
                 "why": "ikimashita is already the polite past; nothing follows it.",
-                "kanji": "犬と川へいきましたです"
+                "kanji": "せんせんしゅう犬と川へいきましたです"
             }
         ],
         "kanjiNotes": [
@@ -4295,27 +4295,27 @@
             "where:imasu-arimasu"
         ],
         "sheet": "where",
-        "en": "There's a dog in the park.",
+        "en": "There was a dog in the park this morning.",
         "correct": {
-            "kana": "こうえんにいぬがいます",
-            "romaji": "kouen ni inu ga imasu",
-            "kanji": "こうえんに犬がいます"
+            "kana": "けさこうえんにいぬがいました",
+            "romaji": "kesa kouen ni inu ga imashita",
+            "kanji": "けさこうえんに犬がいました"
         },
         "wrong": [
             {
-                "kana": "こうえんでいぬがいます",
+                "kana": "けさこうえんでいぬがいました",
                 "why": "de marks where an action goes on, not where something is.",
-                "kanji": "こうえんで犬がいます"
+                "kanji": "けさこうえんで犬がいました"
             },
             {
-                "kana": "こうえんにいぬがあります",
-                "why": "a dog moves by itself, so imasu.",
-                "kanji": "こうえんに犬があります"
+                "kana": "けさこうえんにいぬがありました",
+                "why": "a dog moves by itself, so imasu — in the past, imashita.",
+                "kanji": "けさこうえんに犬がありました"
             },
             {
-                "kana": "こうえんにいぬがいました",
-                "why": "that is past — there was a dog.",
-                "kanji": "こうえんに犬がいました"
+                "kana": "けさこうえんにいぬがいます",
+                "why": "kesa is this morning, so the verb has to be past: imashita.",
+                "kanji": "けさこうえんに犬がいます"
             }
         ],
         "kanjiNotes": [
@@ -4766,23 +4766,23 @@
             "counters:tsu-set"
         ],
         "sheet": "counters",
-        "en": "I ate three apples.",
+        "en": "I ate three apples this morning.",
         "correct": {
-            "kana": "りんごをみっつたべました",
-            "romaji": "ringo wo mittsu tabemashita"
+            "kana": "けさりんごをみっつたべました",
+            "romaji": "kesa ringo wo mittsu tabemashita"
         },
         "wrong": [
             {
-                "kana": "りんごみっつをたべました",
+                "kana": "けさりんごみっつをたべました",
                 "why": "the particle stays on the noun: ringo wo, then the count."
             },
             {
-                "kana": "りんごをさんつたべました",
+                "kana": "けさりんごをさんつたべました",
                 "why": "three things is みっつ — the tsu set has its own words."
             },
             {
-                "kana": "りんごをみっつたべます",
-                "why": "that is the present — the prompt is past."
+                "kana": "けさりんごをみっつたべます",
+                "why": "kesa is this morning, so the verb has to be past."
             }
         ]
     },
@@ -4793,27 +4793,27 @@
             "counters:mai-dai-nin"
         ],
         "sheet": "counters",
-        "en": "I bought one car.",
+        "en": "I bought one car last year.",
         "correct": {
-            "kana": "くるまをいちだいかいました",
-            "romaji": "kuruma wo ichidai kaimashita",
-            "kanji": "車をいちだいかいました"
+            "kana": "きょねんくるまをいちだいかいました",
+            "romaji": "kyonen kuruma wo ichidai kaimashita",
+            "kanji": "きょねん車をいちだいかいました"
         },
         "wrong": [
             {
-                "kana": "くるまをいちまいかいました",
+                "kana": "きょねんくるまをいちまいかいました",
                 "why": "まい is for flat things; a car is a machine — だい.",
-                "kanji": "車をいちまいかいました"
+                "kanji": "きょねん車をいちまいかいました"
             },
             {
-                "kana": "くるまいちだいをかいました",
+                "kana": "きょねんくるまいちだいをかいました",
                 "why": "the particle stays on the noun, the count goes by the verb.",
-                "kanji": "車いちだいをかいました"
+                "kanji": "きょねん車いちだいをかいました"
             },
             {
-                "kana": "くるまをいちだいかいます",
-                "why": "that is the present — the prompt is past.",
-                "kanji": "車をいちだいかいます"
+                "kana": "きょねんくるまをいちだいかいます",
+                "why": "kyonen is last year, so the verb has to be past.",
+                "kanji": "きょねん車をいちだいかいます"
             }
         ],
         "kanjiNotes": [
@@ -5022,23 +5022,23 @@
             "counters:kan-makes-a-span"
         ],
         "sheet": "counters",
-        "en": "I took a week off.",
+        "en": "I took a week off the month before last.",
         "correct": {
-            "kana": "いっしゅうかんやすみました",
-            "romaji": "isshuukan yasumimashita"
+            "kana": "せんせんげついっしゅうかんやすみました",
+            "romaji": "sensengetsu isshuukan yasumimashita"
         },
         "wrong": [
             {
-                "kana": "いちしゅうかんやすみました",
+                "kana": "せんせんげついちしゅうかんやすみました",
                 "why": "one stops the sound: いっしゅうかん."
             },
             {
-                "kana": "いっしゅうやすみました",
+                "kana": "せんせんげついっしゅうやすみました",
                 "why": "a week as a span keeps its かん."
             },
             {
-                "kana": "いっしゅうかんやすみます",
-                "why": "that is the present — the prompt is past."
+                "kana": "せんせんげついっしゅうかんやすみます",
+                "why": "sensengetsu is the month before last, so the verb has to be past."
             }
         ]
     },
@@ -5091,12 +5091,6 @@
             {
                 "kana": "いっかげつにいっかいいきました",
                 "why": "that is past — the prompt is a habit."
-            }
-        ],
-        "adjNotes": [
-            {
-                "kana": "いい",
-                "family": "i"
             }
         ]
     },
@@ -5320,22 +5314,22 @@
             "ga:arimasu-imasu"
         ],
         "sheet": "ga",
-        "en": "I have a lot of time.",
+        "en": "I have a lot of time this month.",
         "correct": {
-            "kana": "じかんがたくさんあります",
-            "romaji": "jikan ga takusan arimasu"
+            "kana": "こんげつはじかんがたくさんあります",
+            "romaji": "kongetsu wa jikan ga takusan arimasu"
         },
         "wrong": [
             {
-                "kana": "じかんをたくさんあります",
+                "kana": "こんげつはじかんをたくさんあります",
                 "why": "arimasu takes ga."
             },
             {
-                "kana": "じかんがたくさんいます",
+                "kana": "こんげつはじかんがたくさんいます",
                 "why": "time is not alive — arimasu."
             },
             {
-                "kana": "じかんがあまりあります",
+                "kana": "こんげつはじかんがあまりあります",
                 "why": "amari needs a negative verb."
             }
         ]
@@ -5581,6 +5575,491 @@
             {
                 "kana": "おんがくがあまりきらいです",
                 "why": "amari kirai is not said — the soft no is amari suki ja nai desu."
+            }
+        ]
+    },
+    {
+        "id": "year-rainen",
+        "covers": [
+            "calendar:year-irregular",
+            "calendar:ni-or-nothing"
+        ],
+        "sheet": "calendar",
+        "en": "I'm going to Korea next year.",
+        "correct": {
+            "kana": "らいねんかんこくへいきます",
+            "romaji": "rainen kankoku e ikimasu"
+        },
+        "wrong": [
+            {
+                "kana": "らいとしかんこくへいきます",
+                "why": "rai- is one of the two prefixes year accepts, but it keeps nen: rainen."
+            },
+            {
+                "kana": "ことしかんこくへいきます",
+                "why": "kotoshi is this year."
+            },
+            {
+                "kana": "らいねんにかんこくへいきます",
+                "why": "relative time words take no ni."
+            }
+        ]
+    },
+    {
+        "id": "year-sarainen",
+        "covers": [
+            "calendar:year-irregular",
+            "calendar:prefixes"
+        ],
+        "sheet": "calendar",
+        "en": "I'm travelling the year after next.",
+        "correct": {
+            "kana": "さらいねんりょこうします",
+            "romaji": "sarainen ryokou shimasu"
+        },
+        "wrong": [
+            {
+                "kana": "さらいとしりょこうします",
+                "why": "sarai- attaches to nen, the same way rai- does: sarainen."
+            },
+            {
+                "kana": "らいねんりょこうします",
+                "why": "rainen is next year; the year after next adds sarai."
+            },
+            {
+                "kana": "さらいねんにりょこうします",
+                "why": "relative time words take no ni."
+            }
+        ]
+    },
+    {
+        "id": "year-maitoshi",
+        "covers": [
+            "calendar:year-irregular",
+            "calendar:prefixes"
+        ],
+        "sheet": "calendar",
+        "en": "I go to the mountain every year.",
+        "correct": {
+            "kana": "まいとしやまへいきます",
+            "romaji": "maitoshi yama e ikimasu"
+        },
+        "wrong": [
+            {
+                "kana": "まいとしにやまへいきます",
+                "why": "mai- words take no ni."
+            },
+            {
+                "kana": "まいとしやまへいきました",
+                "why": "mai- is a habit, so the verb stays non-past."
+            },
+            {
+                "kana": "まいとしやまへきます",
+                "why": "kimasu is come; going is ikimasu."
+            }
+        ]
+    },
+    {
+        "id": "week-maishuu",
+        "covers": [
+            "calendar:prefixes",
+            "calendar:ni-or-nothing"
+        ],
+        "sheet": "calendar",
+        "en": "I go to the library every week.",
+        "correct": {
+            "kana": "まいしゅうとしょかんへいきます",
+            "romaji": "maishuu toshokan e ikimasu"
+        },
+        "wrong": [
+            {
+                "kana": "まいしゅうにとしょかんへいきます",
+                "why": "mai- words take no ni, the same as the other relative words."
+            },
+            {
+                "kana": "こんしゅうとしょかんへいきます",
+                "why": "konshuu is this week — once. Every week is maishuu."
+            },
+            {
+                "kana": "まいしゅうとしょかんへいきました",
+                "why": "mai- is a habit, so the verb stays non-past."
+            }
+        ]
+    },
+    {
+        "id": "month-saraigetsu",
+        "covers": [
+            "calendar:prefixes",
+            "calendar:ni-or-nothing"
+        ],
+        "sheet": "calendar",
+        "en": "I'm coming back the month after next.",
+        "correct": {
+            "kana": "さらいげつかえります",
+            "romaji": "saraigetsu kaerimasu"
+        },
+        "wrong": [
+            {
+                "kana": "さらいつきかえります",
+                "why": "the prefixes go with getsu, not tsuki: saraigetsu."
+            },
+            {
+                "kana": "らいげつかえります",
+                "why": "raigetsu is next month; the month after next adds sarai."
+            },
+            {
+                "kana": "さらいげつにかえります",
+                "why": "relative time words take no ni."
+            }
+        ]
+    },
+    {
+        "id": "night-maiban",
+        "covers": [
+            "calendar:morning-night-no",
+            "calendar:prefixes"
+        ],
+        "sheet": "calendar",
+        "en": "I watch TV every night.",
+        "correct": {
+            "kana": "まいばんテレビをみます",
+            "romaji": "maiban terebi wo mimasu"
+        },
+        "wrong": [
+            {
+                "kana": "まいにちのばんテレビをみます",
+                "why": "the mai- row drops the no: maiasa, maiban."
+            },
+            {
+                "kana": "まいばんにテレビをみます",
+                "why": "mai- words take no ni."
+            },
+            {
+                "kana": "まいばんテレビをみました",
+                "why": "mai- is a habit, so the verb stays non-past."
+            }
+        ]
+    },
+    {
+        "id": "month-maitsuki",
+        "covers": [
+            "calendar:prefixes",
+            "calendar:ni-or-nothing"
+        ],
+        "sheet": "calendar",
+        "en": "I buy a magazine every month.",
+        "correct": {
+            "kana": "まいつきざっしをかいます",
+            "romaji": "maitsuki zasshi wo kaimasu"
+        },
+        "wrong": [
+            {
+                "kana": "まいつきにざっしをかいます",
+                "why": "mai- words take no ni."
+            },
+            {
+                "kana": "こんげつざっしをかいます",
+                "why": "kongetsu is this month — once. Every month is maitsuki."
+            },
+            {
+                "kana": "まいつきざっしをかいました",
+                "why": "mai- is a habit, so the verb stays non-past."
+            }
+        ]
+    },
+    {
+        "id": "clock-kesa-kuji",
+        "covers": [
+            "clock:irregular-hours",
+            "calendar:ni-or-nothing"
+        ],
+        "sheet": "clock",
+        "en": "I got up at nine this morning.",
+        "correct": {
+            "kana": "けさくじにおきました",
+            "romaji": "kesa kuji ni okimashita"
+        },
+        "wrong": [
+            {
+                "kana": "けさにくじにおきました",
+                "why": "kesa is a relative word and goes bare; it is the clock time that keeps ni."
+            },
+            {
+                "kana": "けさきゅうじにおきました",
+                "why": "nine o'clock is kuji, never kyuuji."
+            },
+            {
+                "kana": "けさくじにおきます",
+                "why": "kesa is this morning, so the verb has to be past."
+            }
+        ]
+    },
+    {
+        "id": "clock-konban-han",
+        "covers": [
+            "clock:han-gozen-gogo",
+            "calendar:ni-or-nothing"
+        ],
+        "sheet": "clock",
+        "en": "I'm going to bed at half past eleven tonight.",
+        "correct": {
+            "kana": "こんばんじゅういちじはんにねます",
+            "romaji": "konban juuichiji han ni nemasu"
+        },
+        "wrong": [
+            {
+                "kana": "こんばんはんじゅういちじにねます",
+                "why": "han follows the hour: juuichiji han."
+            },
+            {
+                "kana": "こんばんじゅういちじはんぷんにねます",
+                "why": "han is not a minute count, so no pun."
+            },
+            {
+                "kana": "こんばんにじゅういちじはんにねます",
+                "why": "konban goes bare — it is the clock time that takes ni."
+            }
+        ]
+    },
+    {
+        "id": "cnt-maiasa-futatsu",
+        "covers": [
+            "counters:tsu-set",
+            "counters:counter-is-adverb"
+        ],
+        "sheet": "counters",
+        "en": "I eat two eggs every morning.",
+        "correct": {
+            "kana": "まいあさたまごをふたつたべます",
+            "romaji": "maiasa tamago wo futatsu tabemasu"
+        },
+        "wrong": [
+            {
+                "kana": "まいあさたまごふたつをたべます",
+                "why": "the particle stays on the noun: tamago wo, then the count."
+            },
+            {
+                "kana": "まいあさたまごをにつたべます",
+                "why": "two things is ふたつ — the tsu set has its own words."
+            },
+            {
+                "kana": "まいあさたまごをふたつたべました",
+                "why": "maiasa is a habit, so the verb stays non-past."
+            }
+        ]
+    },
+    {
+        "id": "where-kinou-kouen-hito",
+        "covers": [
+            "where:ni-not-de",
+            "where:ga-marks-what-is-there"
+        ],
+        "sheet": "where",
+        "en": "There were a lot of people in the park yesterday.",
+        "correct": {
+            "kana": "きのうこうえんにひとがたくさんいました",
+            "romaji": "kinou kouen ni hito ga takusan imashita",
+            "kanji": "きのうこうえんに人がたくさんいました"
+        },
+        "wrong": [
+            {
+                "kana": "きのうこうえんでひとがたくさんいました",
+                "why": "de marks where an action goes on, not where something is.",
+                "kanji": "きのうこうえんで人がたくさんいました"
+            },
+            {
+                "kana": "きのうこうえんにひとがたくさんありました",
+                "why": "people take imasu — in the past, imashita.",
+                "kanji": "きのうこうえんに人がたくさんありました"
+            },
+            {
+                "kana": "きのうこうえんにひとがたくさんいます",
+                "why": "kinou is yesterday, so the verb has to be past: imashita.",
+                "kanji": "きのうこうえんに人がたくさんいます"
+            }
+        ],
+        "kanjiNotes": [
+            {
+                "word": "人",
+                "kana": "ひと"
+            }
+        ]
+    },
+    {
+        "id": "where-daremo-kinou",
+        "covers": [
+            "where:daremo-nanimo",
+            "where:imasu-arimasu"
+        ],
+        "sheet": "where",
+        "en": "Nobody was at home last night.",
+        "correct": {
+            "kana": "きのうのばんいえにだれもいませんでした",
+            "romaji": "kinou no ban ie ni dare mo imasen deshita",
+            "kanji": "きのうのばん家にだれもいませんでした"
+        },
+        "wrong": [
+            {
+                "kana": "きのうのばんいえにだれがいませんでした",
+                "why": "the question word takes mo here, not ga.",
+                "kanji": "きのうのばん家にだれがいませんでした"
+            },
+            {
+                "kana": "きのうのばんいえにだれもいました",
+                "why": "mo demands a negative verb.",
+                "kanji": "きのうのばん家にだれもいました"
+            },
+            {
+                "kana": "きのうのばんいえにだれもありませんでした",
+                "why": "people take imasu, however the sentence ends.",
+                "kanji": "きのうのばん家にだれもありませんでした"
+            }
+        ],
+        "kanjiNotes": [
+            {
+                "word": "家",
+                "kana": "いえ"
+            }
+        ]
+    },
+    {
+        "id": "ga-kyonen-zenzen",
+        "covers": [
+            "ga:amari-zenzen",
+            "ga:ga-not-wo"
+        ],
+        "sheet": "ga",
+        "en": "I didn't understand Japanese at all last year.",
+        "correct": {
+            "kana": "きょねんはにほんごがぜんぜんわかりませんでした",
+            "romaji": "kyonen wa nihongo ga zenzen wakarimasen deshita"
+        },
+        "wrong": [
+            {
+                "kana": "きょねんはにほんごがぜんぜんわかりました",
+                "why": "zenzen only pairs with a negative."
+            },
+            {
+                "kana": "きょねんはにほんごをぜんぜんわかりませんでした",
+                "why": "wakarimasu takes ga, never wo."
+            },
+            {
+                "kana": "きょねんはにほんごがぜんぜんわかりません",
+                "why": "kyonen is last year — the past of masen is masen deshita."
+            }
+        ]
+    },
+    {
+        "id": "ga-maishuu-shukudai",
+        "covers": [
+            "ga:scale",
+            "ga:arimasu-imasu"
+        ],
+        "sheet": "ga",
+        "en": "I have a lot of homework every week.",
+        "correct": {
+            "kana": "まいしゅうしゅくだいがたくさんあります",
+            "romaji": "maishuu shukudai ga takusan arimasu"
+        },
+        "wrong": [
+            {
+                "kana": "まいしゅうしゅくだいをたくさんあります",
+                "why": "arimasu takes ga."
+            },
+            {
+                "kana": "まいしゅうにしゅくだいがたくさんあります",
+                "why": "mai- words take no ni."
+            },
+            {
+                "kana": "まいしゅうしゅくだいがたくさんいます",
+                "why": "homework is not alive — arimasu."
+            }
+        ]
+    },
+    {
+        "id": "adj-senshuu-tenki",
+        "covers": [
+            "adjectives:ii-irregular",
+            "calendar:ni-or-nothing"
+        ],
+        "sheet": "adjectives",
+        "en": "The weather was good last week.",
+        "correct": {
+            "kana": "せんしゅうはてんきがよかったです",
+            "romaji": "senshuu wa tenki ga yokatta desu"
+        },
+        "wrong": [
+            {
+                "kana": "せんしゅうはてんきがいいでした",
+                "why": "an i-adjective carries its own past, and ii builds it from yoi: yokatta desu."
+            },
+            {
+                "kana": "せんしゅうにてんきがよかったです",
+                "why": "senshuu is a relative time word and takes no ni."
+            },
+            {
+                "kana": "せんしゅうはてんきがよくなかったです",
+                "why": "that is the negative — the weather wasn't good."
+            }
+        ],
+        "adjNotes": [
+            {
+                "kana": "いい",
+                "family": "i"
+            }
+        ]
+    },
+    {
+        "id": "money-ototoshi-kamera",
+        "covers": [
+            "money:count-in-fours",
+            "money:en-counter"
+        ],
+        "sheet": "money",
+        "en": "This camera was 30,000 yen the year before last.",
+        "correct": {
+            "kana": "おととしこのカメラはさんまんえんでした",
+            "romaji": "ototoshi kono kamera wa sanman en deshita"
+        },
+        "wrong": [
+            {
+                "kana": "おととしこのカメラはさんまんえんです",
+                "why": "ototoshi is the year before last, so the price was: deshita."
+            },
+            {
+                "kana": "おととしこのカメラはさんぜんまんえんでした",
+                "why": "that is 30 million — sanzenman."
+            },
+            {
+                "kana": "おととしにこのカメラはさんまんえんでした",
+                "why": "relative time words take no ni."
+            }
+        ]
+    },
+    {
+        "id": "cnt-raishuu-nikai",
+        "covers": [
+            "counters:counter-is-adverb",
+            "counters:kai-frequency"
+        ],
+        "sheet": "counters",
+        "en": "I'm going to the hospital twice next week.",
+        "correct": {
+            "kana": "らいしゅうびょういんへにかいいきます",
+            "romaji": "raishuu byouin e nikai ikimasu"
+        },
+        "wrong": [
+            {
+                "kana": "らいしゅうびょういんへにがいいきます",
+                "why": "にがい is the second floor; twice is にかい."
+            },
+            {
+                "kana": "らいしゅうびょういんへふたついきます",
+                "why": "つ counts things; occasions are counted with かい."
+            },
+            {
+                "kana": "らいしゅうにびょういんへにかいいきます",
+                "why": "raishuu is a relative time word and takes no ni."
             }
         ]
     }
