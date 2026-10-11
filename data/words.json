@@ -3248,5 +3248,74 @@
         "group": "Post and mail",
         "note": "ふね becomes ふな in compounds",
         "marked": true
+    },
+    {
+        "kanji": "",
+        "kana": "よく",
+        "english": "well, often",
+        "group": "How much",
+        "note": "also means often — よくいきます, I go a lot",
+        "marked": false
+    },
+    {
+        "kanji": "",
+        "kana": "だいたい",
+        "english": "mostly, roughly",
+        "group": "How much",
+        "marked": false
+    },
+    {
+        "kanji": "",
+        "kana": "すこし",
+        "english": "a little",
+        "group": "How much",
+        "note": "少し — the neutral one; ちょっと is its casual twin",
+        "marked": false
+    },
+    {
+        "kanji": "",
+        "kana": "ちょっと",
+        "english": "a little, casually",
+        "group": "How much",
+        "note": "also softens a refusal: ちょっと…",
+        "marked": false
+    },
+    {
+        "kanji": "",
+        "kana": "あまり",
+        "english": "not much",
+        "group": "How much",
+        "note": "only with a negative verb — あまりわかりません",
+        "marked": false
+    },
+    {
+        "kanji": "",
+        "kana": "ぜんぜん",
+        "english": "not at all",
+        "group": "How much",
+        "note": "only with a negative verb — ぜんぜんわかりません",
+        "marked": false
+    },
+    {
+        "kanji": "",
+        "kana": "とても",
+        "english": "very",
+        "group": "How much",
+        "marked": false
+    },
+    {
+        "kanji": "",
+        "kana": "たくさん",
+        "english": "a lot",
+        "group": "How much",
+        "marked": false
+    },
+    {
+        "kanji": "",
+        "kana": "まあまあ",
+        "english": "so-so",
+        "group": "How much",
+        "note": "the middle of the scale, said on its own",
+        "marked": false
     }
 ]

@@ -5151,5 +5151,86 @@
                 "why": "that is past — the prompt asks in general."
             }
         ]
+    },
+    {
+        "id": "scale-yoku-hiragana",
+        "covers": [
+            "ga:scale",
+            "ga:amari-zenzen",
+            "ga:ga-not-wo"
+        ],
+        "sheet": "ga",
+        "en": "I understand hiragana well.",
+        "correct": {
+            "kana": "ひらがながよくわかります",
+            "romaji": "hiragana ga yoku wakarimasu"
+        },
+        "wrong": [
+            {
+                "kana": "ひらがながあまりわかります",
+                "why": "amari only pairs with a negative."
+            },
+            {
+                "kana": "ひらがながぜんぜんわかります",
+                "why": "zenzen needs a negative too."
+            },
+            {
+                "kana": "ひらがなをよくわかります",
+                "why": "wakarimasu takes ga."
+            }
+        ]
+    },
+    {
+        "id": "scale-daitai-eigo",
+        "covers": [
+            "ga:scale",
+            "ga:ga-not-wo"
+        ],
+        "sheet": "ga",
+        "en": "I mostly understand English.",
+        "correct": {
+            "kana": "えいごがだいたいわかります",
+            "romaji": "eigo ga daitai wakarimasu"
+        },
+        "wrong": [
+            {
+                "kana": "えいごをだいたいわかります",
+                "why": "wakarimasu takes ga."
+            },
+            {
+                "kana": "えいごがだいたいわかりません",
+                "why": "that says the opposite."
+            },
+            {
+                "kana": "えいごがぜんぜんわかります",
+                "why": "zenzen needs a negative."
+            }
+        ]
+    },
+    {
+        "id": "scale-daitai-alone",
+        "covers": [
+            "ga:scale"
+        ],
+        "sheet": "ga",
+        "en": "I understand it more or less.",
+        "correct": {
+            "kana": "だいたいわかります",
+            "romaji": "daitai wakarimasu"
+        },
+        "wrong": [
+            {
+                "kana": "あまりわかります",
+                "why": "amari needs a negative verb."
+            },
+            {
+                "kana": "だいたいわかりません",
+                "why": "that says the opposite — I don't understand."
+            },
+            {
+                "kana": "だいたいわかりです",
+                "why": "wakarimasu is the verb; there is no wakari desu."
+            }
+        ]
     }
 ]
