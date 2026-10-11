@@ -5232,5 +5232,356 @@
                 "why": "wakarimasu is the verb; there is no wakari desu."
             }
         ]
+    },
+    {
+        "id": "scale-yoku-nihongo",
+        "covers": [
+            "ga:scale",
+            "ga:amari-zenzen"
+        ],
+        "sheet": "ga",
+        "en": "I understand Japanese well.",
+        "correct": {
+            "kana": "にほんごがよくわかります",
+            "romaji": "nihongo ga yoku wakarimasu"
+        },
+        "wrong": [
+            {
+                "kana": "にほんごがあまりわかります",
+                "why": "amari only pairs with a negative."
+            },
+            {
+                "kana": "にほんごをよくわかります",
+                "why": "wakarimasu takes ga."
+            },
+            {
+                "kana": "にほんごがよくわかりです",
+                "why": "wakarimasu is the verb; there is no wakari desu."
+            }
+        ]
+    },
+    {
+        "id": "scale-yoku-shinbun",
+        "covers": [
+            "ga:scale",
+            "ga:ga-not-wo"
+        ],
+        "sheet": "ga",
+        "en": "I understand the newspaper well.",
+        "correct": {
+            "kana": "しんぶんがよくわかります",
+            "romaji": "shinbun ga yoku wakarimasu"
+        },
+        "wrong": [
+            {
+                "kana": "しんぶんをよくわかります",
+                "why": "wakarimasu takes ga."
+            },
+            {
+                "kana": "しんぶんがよくわかりました",
+                "why": "that is past — I understood it."
+            },
+            {
+                "kana": "しんぶんがぜんぜんわかります",
+                "why": "zenzen needs a negative."
+            }
+        ]
+    },
+    {
+        "id": "scale-daitai-ongaku",
+        "covers": [
+            "ga:scale"
+        ],
+        "sheet": "ga",
+        "en": "I mostly understand the music.",
+        "correct": {
+            "kana": "おんがくがだいたいわかります",
+            "romaji": "ongaku ga daitai wakarimasu"
+        },
+        "wrong": [
+            {
+                "kana": "おんがくがだいたいわかりません",
+                "why": "that says the opposite."
+            },
+            {
+                "kana": "おんがくをだいたいわかります",
+                "why": "wakarimasu takes ga."
+            },
+            {
+                "kana": "おんがくがあまりわかります",
+                "why": "amari needs a negative verb."
+            }
+        ]
+    },
+    {
+        "id": "scale-takusan-jikan",
+        "covers": [
+            "ga:scale",
+            "ga:arimasu-imasu"
+        ],
+        "sheet": "ga",
+        "en": "I have a lot of time.",
+        "correct": {
+            "kana": "じかんがたくさんあります",
+            "romaji": "jikan ga takusan arimasu"
+        },
+        "wrong": [
+            {
+                "kana": "じかんをたくさんあります",
+                "why": "arimasu takes ga."
+            },
+            {
+                "kana": "じかんがたくさんいます",
+                "why": "time is not alive — arimasu."
+            },
+            {
+                "kana": "じかんがあまりあります",
+                "why": "amari needs a negative verb."
+            }
+        ]
+    },
+    {
+        "id": "scale-takusan-hon",
+        "covers": [
+            "ga:scale",
+            "ga:arimasu-imasu"
+        ],
+        "sheet": "ga",
+        "en": "There are a lot of books.",
+        "correct": {
+            "kana": "ほんがたくさんあります",
+            "romaji": "hon ga takusan arimasu"
+        },
+        "wrong": [
+            {
+                "kana": "ほんをたくさんあります",
+                "why": "arimasu takes ga."
+            },
+            {
+                "kana": "ほんがたくさんありません",
+                "why": "that says the opposite."
+            },
+            {
+                "kana": "ほんがぜんぜんあります",
+                "why": "zenzen needs a negative verb."
+            }
+        ]
+    },
+    {
+        "id": "scale-zenzen-shinbun",
+        "covers": [
+            "ga:amari-zenzen",
+            "ga:scale"
+        ],
+        "sheet": "ga",
+        "en": "I don't understand the newspaper at all.",
+        "correct": {
+            "kana": "しんぶんがぜんぜんわかりません",
+            "romaji": "shinbun ga zenzen wakarimasen"
+        },
+        "wrong": [
+            {
+                "kana": "しんぶんがぜんぜんわかります",
+                "why": "zenzen only works with a negative."
+            },
+            {
+                "kana": "しんぶんがよくわかりません",
+                "why": "that is yoku — it says you don't understand well, not at all."
+            },
+            {
+                "kana": "しんぶんをぜんぜんわかりません",
+                "why": "wakarimasu takes ga."
+            }
+        ]
+    },
+    {
+        "id": "scale-totemo-mise",
+        "covers": [
+            "ga:scale",
+            "ga:suki-kirai-jouzu-heta-na"
+        ],
+        "sheet": "ga",
+        "en": "I like this shop very much.",
+        "correct": {
+            "kana": "このみせがとてもすきです",
+            "romaji": "kono mise ga totemo suki desu"
+        },
+        "wrong": [
+            {
+                "kana": "このみせをとてもすきです",
+                "why": "suki takes ga."
+            },
+            {
+                "kana": "このみせがあまりすきです",
+                "why": "amari needs a negative — amari suki ja nai desu."
+            },
+            {
+                "kana": "このみせがとてもすきます",
+                "why": "suki is a na-adjective, not a verb."
+            }
+        ]
+    },
+    {
+        "id": "scale-sukoshi-jikan",
+        "covers": [
+            "ga:scale",
+            "ga:arimasu-imasu"
+        ],
+        "sheet": "ga",
+        "en": "I have a little time.",
+        "correct": {
+            "kana": "じかんがすこしあります",
+            "romaji": "jikan ga sukoshi arimasu"
+        },
+        "wrong": [
+            {
+                "kana": "じかんをすこしあります",
+                "why": "arimasu takes ga."
+            },
+            {
+                "kana": "じかんがすこしいます",
+                "why": "time is not alive — arimasu."
+            },
+            {
+                "kana": "じかんがすこしありません",
+                "why": "that says the opposite — I have almost none."
+            }
+        ]
+    },
+    {
+        "id": "scale-yoku-neg",
+        "covers": [
+            "ga:scale",
+            "ga:amari-zenzen"
+        ],
+        "sheet": "ga",
+        "en": "I don't really understand Japanese.",
+        "correct": {
+            "kana": "にほんごがよくわかりません",
+            "romaji": "nihongo ga yoku wakarimasen"
+        },
+        "wrong": [
+            {
+                "kana": "にほんごをよくわかりません",
+                "why": "wakarimasu takes ga."
+            },
+            {
+                "kana": "にほんごがぜんぜんわかります",
+                "why": "zenzen only works with a negative."
+            },
+            {
+                "kana": "にほんごがよくわかりませんでした",
+                "why": "that is past — I didn't understand."
+            }
+        ]
+    },
+    {
+        "id": "scale-amari-arimasen-kutsu",
+        "covers": [
+            "ga:amari-zenzen",
+            "ga:arimasu-imasu"
+        ],
+        "sheet": "ga",
+        "en": "I don't have many shoes.",
+        "correct": {
+            "kana": "くつがあまりありません",
+            "romaji": "kutsu ga amari arimasen"
+        },
+        "wrong": [
+            {
+                "kana": "くつがあまりあります",
+                "why": "amari only pairs with a negative."
+            },
+            {
+                "kana": "くつをあまりありません",
+                "why": "arimasu takes ga."
+            },
+            {
+                "kana": "くつがたくさんありません",
+                "why": "takusan is a lot; not many is amari."
+            }
+        ]
+    },
+    {
+        "id": "scale-zenzen-arimasen-hon",
+        "covers": [
+            "ga:amari-zenzen",
+            "ga:arimasu-imasu"
+        ],
+        "sheet": "ga",
+        "en": "There are no books at all.",
+        "correct": {
+            "kana": "ほんがぜんぜんありません",
+            "romaji": "hon ga zenzen arimasen"
+        },
+        "wrong": [
+            {
+                "kana": "ほんがぜんぜんあります",
+                "why": "zenzen only works with a negative."
+            },
+            {
+                "kana": "ほんをぜんぜんありません",
+                "why": "arimasu takes ga."
+            },
+            {
+                "kana": "ほんがあまりありません",
+                "why": "amari is not many; not at all is zenzen."
+            }
+        ]
+    },
+    {
+        "id": "scale-zenzen-suki-supootsu",
+        "covers": [
+            "ga:amari-zenzen",
+            "ga:scale",
+            "ga:suki-kirai-jouzu-heta-na"
+        ],
+        "sheet": "ga",
+        "en": "I don't like sports at all.",
+        "correct": {
+            "kana": "スポーツがぜんぜんすきじゃないです",
+            "romaji": "supootsu ga zenzen suki ja nai desu"
+        },
+        "wrong": [
+            {
+                "kana": "スポーツがぜんぜんすきです",
+                "why": "zenzen needs the negative — suki ja nai desu."
+            },
+            {
+                "kana": "スポーツをぜんぜんすきじゃないです",
+                "why": "suki takes ga."
+            },
+            {
+                "kana": "スポーツがぜんぜんすきくないです",
+                "why": "suki is a na-adjective — the negative is ja nai desu."
+            }
+        ]
+    },
+    {
+        "id": "scale-amari-suki-ongaku",
+        "covers": [
+            "ga:soft-refusal",
+            "ga:amari-zenzen"
+        ],
+        "sheet": "ga",
+        "en": "I don't really like music.",
+        "correct": {
+            "kana": "おんがくがあまりすきじゃないです",
+            "romaji": "ongaku ga amari suki ja nai desu"
+        },
+        "wrong": [
+            {
+                "kana": "おんがくがあまりすきです",
+                "why": "amari only pairs with a negative."
+            },
+            {
+                "kana": "おんがくをあまりすきじゃないです",
+                "why": "suki takes ga."
+            },
+            {
+                "kana": "おんがくがあまりきらいです",
+                "why": "amari kirai is not said — the soft no is amari suki ja nai desu."
+            }
+        ]
     }
 ]
