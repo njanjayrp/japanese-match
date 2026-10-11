@@ -4656,6 +4656,20 @@
                                 "en": "counting what something consists of"
                             }
                         ]
+                    },
+                    {
+                        "label": "how often",
+                        "cells": [
+                            {
+                                "kana": "いちにちいっかいにほんごのべんきょうをします",
+                                "en": "I study Japanese once a day",
+                                "romaji": "ichinichi ikkai nihongo no benkyou wo shimasu"
+                            },
+                            {
+                                "term": "how often, then the sentence",
+                                "en": "and either shape works: にほんごのべんきょうをします or にほんごをべんきょうします"
+                            }
+                        ]
                     }
                 ]
             },
@@ -4804,13 +4818,13 @@
                         "label": "a day",
                         "cells": [
                             {
-                                "kana": "いちにちにさんかい",
-                                "en": "three times a day",
-                                "romaji": "ichinichi ni sankai"
+                                "kana": "いちにちいっかい",
+                                "en": "once a day",
+                                "romaji": "ichinichi ikkai"
                             },
                             {
-                                "term": "span に count かい",
-                                "en": "the span takes に"
+                                "term": "に optional",
+                                "en": "ichinichi is the one span that goes bare — ichinichi ni ikkai is said too"
                             }
                         ]
                     },
@@ -4818,13 +4832,13 @@
                         "label": "a week",
                         "cells": [
                             {
-                                "kana": "いっしゅうかんにさんかい",
-                                "en": "three times a week",
-                                "romaji": "isshuukan ni sankai"
+                                "kana": "いっしゅうかんにいっかい",
+                                "en": "once a week",
+                                "romaji": "isshuukan ni ikkai"
                             },
                             {
-                                "term": "—",
-                                "en": ""
+                                "term": "span に count かい",
+                                "en": "every other span keeps the に"
                             }
                         ]
                     },
@@ -4853,6 +4867,20 @@
                             {
                                 "term": "—",
                                 "en": ""
+                            }
+                        ]
+                    },
+                    {
+                        "label": "more",
+                        "cells": [
+                            {
+                                "kana": "いっしゅうかんにさんかい",
+                                "en": "three times a week",
+                                "romaji": "isshuukan ni sankai"
+                            },
+                            {
+                                "term": "さんかい",
+                                "en": "not さんがい — that is the third floor"
                             }
                         ]
                     }
@@ -4888,7 +4916,7 @@
             {
                 "id": "kai-frequency",
                 "title": "how often: span ni count kai",
-                "body": "ichinichi ni ikkai, isshuukan ni sankai — the span takes ni, the count takes kai. kai stops the sound after 1, 6, 8 and 10: ikkai, rokkai, hakkai, jukkai, the same four as kagetsu and shuukan. Watch sankai, three times, against sangai, the third floor — same kanji 回 and 階 sound alike, and only three voices it."
+                "body": "ichinichi ikkai, isshuukan ni sankai — the count takes kai, and the span takes ni with one exception: ichinichi drops it as often as it keeps it, so 1日1回 and 1日に1回 are both said. Week, month and year always keep it. kai stops the sound after 1, 6, 8 and 10: ikkai, rokkai, hakkai, jukkai, the same four as kagetsu and shuukan. Watch sankai, three times, against sangai, the third floor — same kanji 回 and 階 sound alike, and only three voices it."
             },
             {
                 "id": "kakarimasu-ga",

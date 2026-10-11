@@ -5056,7 +5056,7 @@
         "wrong": [
             {
                 "kana": "いっしゅうかんさんかい",
-                "why": "the span takes に — isshuukan ni sankai."
+                "why": "the span takes に — isshuukan ni sankai. Only ichinichi is heard without it."
             },
             {
                 "kana": "いっしゅうかんにさんがい",
@@ -6060,6 +6060,59 @@
             {
                 "kana": "らいしゅうにびょういんへにかいいきます",
                 "why": "raishuu is a relative time word and takes no ni."
+            }
+        ]
+    },
+    {
+        "id": "cnt-ichinichi-ikkai",
+        "covers": [
+            "counters:kai-frequency",
+            "counters:counter-is-adverb"
+        ],
+        "sheet": "counters",
+        "en": "I study Japanese once a day.",
+        "correct": {
+            "kana": "いちにちいっかいにほんごのべんきょうをします",
+            "romaji": "ichinichi ikkai nihongo no benkyou wo shimasu"
+        },
+        "wrong": [
+            {
+                "kana": "いちにちひとつにほんごのべんきょうをします",
+                "why": "つ counts things. How often something happens is counted with かい: いっかい."
+            },
+            {
+                "kana": "いちにちいっかいにほんごをべんきょうをします",
+                "why": "one wo per sentence: either nihongo no benkyou wo shimasu or nihongo wo benkyou shimasu."
+            },
+            {
+                "kana": "いちにちいっかいにほんごのべんきょうをしました",
+                "why": "that is past — once a day is a habit, so the verb stays non-past."
+            }
+        ]
+    },
+    {
+        "id": "cnt-ichinen-ikkai",
+        "covers": [
+            "counters:kai-frequency"
+        ],
+        "sheet": "counters",
+        "en": "I go to Japan once a year.",
+        "correct": {
+            "kana": "いちねんにいっかいにほんへいきます",
+            "romaji": "ichinen ni ikkai nihon e ikimasu"
+        },
+        "wrong": [
+            {
+                "kana": "いちねんにいちかいにほんへいきます",
+                "why": "once is いっかい — the sound stops after 1, the same as いっかげつ."
+            },
+            {
+                "kana": "いちねんににかいにほんへいきます",
+                "why": "にかい is twice; once is いっかい."
+            },
+            {
+                "kana": "いちとしにいっかいにほんへいきます",
+                "why": "the span is いちねん — toshi is the word on its own, not the counter."
             }
         ]
     }
