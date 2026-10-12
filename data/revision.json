@@ -4993,7 +4993,8 @@
     {
         "id": "cnt-nijikan",
         "covers": [
-            "counters:kan-makes-a-span"
+            "counters:kan-makes-a-span",
+            "counters:kan-required-or-not"
         ],
         "sheet": "counters",
         "en": "I studied for two hours.",
@@ -5019,7 +5020,8 @@
     {
         "id": "cnt-isshuukan",
         "covers": [
-            "counters:kan-makes-a-span"
+            "counters:kan-makes-a-span",
+            "counters:kan-required-or-not"
         ],
         "sheet": "counters",
         "en": "I took a week off the month before last.",

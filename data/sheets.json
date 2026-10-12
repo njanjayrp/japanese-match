@@ -4473,6 +4473,109 @@
                 ]
             },
             {
+                "title": "does it take kan?",
+                "columns": [
+                    "bare",
+                    "with kan"
+                ],
+                "rows": [
+                    {
+                        "label": "minutes",
+                        "cells": [
+                            {
+                                "kana": "よんじゅっぷん",
+                                "en": "40 minutes"
+                            },
+                            {
+                                "kana": "よんじゅっぷんかん",
+                                "en": "40 minutes — optional, both are said"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "hours",
+                        "cells": [
+                            {
+                                "kana": "にじ",
+                                "en": "2 o'clock — not a span at all",
+                                "odd": true
+                            },
+                            {
+                                "kana": "にじかん",
+                                "en": "2 hours — kan is required"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "days",
+                        "cells": [
+                            {
+                                "kana": "みっか",
+                                "en": "3 days, or the 3rd of the month"
+                            },
+                            {
+                                "kana": "みっかかん",
+                                "en": "3 days — optional, and it rules out the date"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "1 day",
+                        "cells": [
+                            {
+                                "kana": "いちにち",
+                                "en": "1 day — left bare",
+                                "odd": true
+                            },
+                            {
+                                "term": "—",
+                                "en": "ichinichikan is not said"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "weeks",
+                        "cells": [
+                            {
+                                "kana": "いっしゅう",
+                                "en": "not a word on its own",
+                                "odd": true
+                            },
+                            {
+                                "kana": "いっしゅうかん",
+                                "en": "1 week — kan is required"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "months",
+                        "cells": [
+                            {
+                                "kana": "にかげつ",
+                                "en": "2 months"
+                            },
+                            {
+                                "kana": "にかげつかん",
+                                "en": "2 months — optional"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "years",
+                        "cells": [
+                            {
+                                "kana": "いちねん",
+                                "en": "1 year"
+                            },
+                            {
+                                "kana": "いちねんかん",
+                                "en": "1 year — optional"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
                 "title": "saying how long you did it",
                 "columns": [
                     "sentence",
@@ -4911,7 +5014,12 @@
             {
                 "id": "kan-makes-a-span",
                 "title": "spans: four of them are regular, days are not",
-                "body": "Weeks, months and years just take the number — nishuukan, sankagetsu, gonen. Only 1, 6, 8 and 10 change anything, and they change it the same way everywhere: the sound stops. ikkagetsu, rokkagetsu, hakkagetsu, jukkagetsu. Hours are regular except yojikan and kujikan, the same two the clock already breaks, and jikan is itself a span, so nijikan is two hours and nijikankan is nothing. Days are the column to actually learn: ichinichi for one, then the native date words — futsuka, mikka, yokka — which are spans exactly as they stand. Past ten everything follows the same shape as one and two: juuippun, juunifun."
+                "body": "Weeks, months and years are regular — the number goes straight on: nishuukan, sankagetsu, gonen. Only 1, 6, 8 and 10 change anything, and they change it the same way everywhere: the sound stops. ikkagetsu, rokkagetsu, hakkagetsu, jukkagetsu. Hours are regular except yojikan and kujikan, the same two the clock already breaks, and jikan is itself a span, so nijikan is two hours and nijikankan is nothing. Days are the column to actually learn: ichinichi for one, then the native date words — futsuka, mikka, yokka — which are spans exactly as they stand. Past ten everything follows the same shape as one and two: juuippun, juunifun."
+            },
+            {
+                "id": "kan-required-or-not",
+                "title": "kan is only compulsory twice",
+                "body": "kan is 間, an interval, and the slides put it on everything — but only hours and weeks are built out of it. Drop it there and nijikan becomes two o'clock and isshuukan becomes nothing at all. Minutes, days, months and years are already spans without it, so the kan is optional and adds nothing but emphasis: yonjuppun and yonjuppunkan, mikka and mikkakan, nikagetsu and nikagetsukan, ichinen and ichinenkan are each the same length of time. On days it does earn its keep — mikka on its own is also the 3rd of the month, while mikkakan can only be three days long. One word goes the other way: ichinichi is left bare."
             },
             {
                 "id": "kai-frequency",
