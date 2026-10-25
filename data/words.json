@@ -939,6 +939,21 @@
         "marked": true
     },
     {
+        "kanji": "海",
+        "kana": "うみ",
+        "english": "sea / ocean",
+        "group": "Everyday things",
+        "marked": true
+    },
+    {
+        "kanji": "紅葉",
+        "kana": "もみじ",
+        "english": "maple / red autumn leaves",
+        "group": "Everyday things",
+        "note": "also read こうよう — the autumn colours rather than the tree",
+        "marked": true
+    },
+    {
         "kanji": "食べ物",
         "kana": "たべもの",
         "english": "food",
@@ -1097,6 +1112,35 @@
         "marked": true
     },
     {
+        "kanji": "寿司",
+        "kana": "すし",
+        "english": "sushi",
+        "group": "Food & drink",
+        "note": "お寿司 in polite use",
+        "marked": true
+    },
+    {
+        "kanji": "天ぷら",
+        "kana": "てんぷら",
+        "english": "tempura",
+        "group": "Food & drink",
+        "marked": true
+    },
+    {
+        "kanji": "すき焼き",
+        "kana": "すきやき",
+        "english": "sukiyaki",
+        "group": "Food & drink",
+        "marked": true
+    },
+    {
+        "kanji": "刺身",
+        "kana": "さしみ",
+        "english": "sashimi",
+        "group": "Food & drink",
+        "marked": true
+    },
+    {
         "kanji": "",
         "kana": "スポーツ",
         "english": "sport",
@@ -1154,6 +1198,22 @@
         "english": "cooking / cooked food",
         "group": "Hobbies",
         "marked": false
+    },
+    {
+        "kanji": "",
+        "kana": "パーティー",
+        "english": "party",
+        "group": "Hobbies",
+        "note": "loanword — katakana",
+        "marked": true
+    },
+    {
+        "kanji": "祭り",
+        "kana": "まつり",
+        "english": "festival",
+        "group": "Hobbies",
+        "note": "お祭り in polite use",
+        "marked": true
     },
     {
         "kanji": "食べます",
@@ -1734,6 +1794,114 @@
         "note": "na-adjective: 色々な人, 色々です",
         "adj": "na",
         "marked": false
+    },
+    {
+        "kanji": "少ない",
+        "kana": "すくない",
+        "english": "few / not much",
+        "group": "Adjectives",
+        "note": "i-adjective — the opposite of 多い; すこし is the adverb 'a little'",
+        "adj": "i",
+        "marked": true
+    },
+    {
+        "kanji": "多い",
+        "kana": "おおい",
+        "english": "many / much",
+        "group": "Adjectives",
+        "note": "i-adjective — the opposite of 少ない; 大きい is size, not number",
+        "adj": "i",
+        "marked": true
+    },
+    {
+        "kanji": "甘い",
+        "kana": "あまい",
+        "english": "sweet",
+        "group": "Adjectives",
+        "note": "i-adjective",
+        "adj": "i",
+        "marked": true
+    },
+    {
+        "kanji": "辛い",
+        "kana": "からい",
+        "english": "spicy",
+        "group": "Adjectives",
+        "note": "i-adjective — the same kanji read つらい means painful",
+        "adj": "i",
+        "marked": true
+    },
+    {
+        "kanji": "重い",
+        "kana": "おもい",
+        "english": "heavy",
+        "group": "Adjectives",
+        "note": "i-adjective — the opposite of 軽い",
+        "adj": "i",
+        "marked": true
+    },
+    {
+        "kanji": "軽い",
+        "kana": "かるい",
+        "english": "light (in weight)",
+        "group": "Adjectives",
+        "note": "i-adjective — the opposite of 重い",
+        "adj": "i",
+        "marked": true
+    },
+    {
+        "kanji": "近い",
+        "kana": "ちかい",
+        "english": "near",
+        "group": "Adjectives",
+        "note": "i-adjective — 近く is the place: 近くの店",
+        "adj": "i",
+        "marked": true
+    },
+    {
+        "kanji": "遠い",
+        "kana": "とおい",
+        "english": "far",
+        "group": "Adjectives",
+        "note": "i-adjective — とお, not とう",
+        "adj": "i",
+        "marked": true
+    },
+    {
+        "kanji": "早い",
+        "kana": "はやい",
+        "english": "early",
+        "group": "Adjectives",
+        "note": "i-adjective — 速い is the same reading, for speed",
+        "adj": "i",
+        "marked": true
+    },
+    {
+        "kanji": "速い",
+        "kana": "はやい",
+        "english": "fast",
+        "group": "Adjectives",
+        "note": "i-adjective — 早い is the same reading, for time",
+        "adj": "i",
+        "marked": true
+    },
+    {
+        "kanji": "遅い",
+        "kana": "おそい",
+        "english": "late / slow",
+        "group": "Adjectives",
+        "note": "i-adjective — one word for both: the opposite of 早い and of 速い",
+        "adj": "i",
+        "marked": true
+    },
+    {
+        "kanji": "簡単",
+        "kana": "かんたん",
+        "english": "simple / easy",
+        "group": "Adjectives",
+        "note": "na-adjective — 簡単な問題; 易しい is easy too",
+        "adj": "na",
+        "marked": true
     },
     {
         "kanji": "一",
@@ -2405,7 +2573,7 @@
         "kana": "てんき",
         "english": "weather",
         "group": "Weather",
-        "marked": false
+        "marked": true
     },
     {
         "kanji": "天気予報",
@@ -2420,14 +2588,14 @@
         "kana": "あめ",
         "english": "rain",
         "group": "Weather",
-        "marked": false
+        "marked": true
     },
     {
         "kanji": "雪",
         "kana": "ゆき",
         "english": "snow",
         "group": "Weather",
-        "marked": false
+        "marked": true
     },
     {
         "kanji": "風",
@@ -2449,7 +2617,7 @@
         "kana": "くもり",
         "english": "cloudy weather",
         "group": "Weather",
-        "marked": false
+        "marked": true
     },
     {
         "kanji": "雲",
@@ -2609,7 +2777,7 @@
         "english": "pleasantly cool",
         "group": "Weather",
         "adj": "i",
-        "marked": false
+        "marked": true
     },
     {
         "kanji": "暖かい",
@@ -2617,7 +2785,42 @@
         "english": "warm",
         "group": "Weather",
         "adj": "i",
-        "marked": false
+        "marked": true
+    },
+    {
+        "kanji": "春",
+        "kana": "はる",
+        "english": "spring",
+        "group": "Weather",
+        "marked": true
+    },
+    {
+        "kanji": "夏",
+        "kana": "なつ",
+        "english": "summer",
+        "group": "Weather",
+        "marked": true
+    },
+    {
+        "kanji": "秋",
+        "kana": "あき",
+        "english": "autumn / fall",
+        "group": "Weather",
+        "marked": true
+    },
+    {
+        "kanji": "冬",
+        "kana": "ふゆ",
+        "english": "winter",
+        "group": "Weather",
+        "marked": true
+    },
+    {
+        "kanji": "季節",
+        "kana": "きせつ",
+        "english": "season",
+        "group": "Weather",
+        "marked": true
     },
     {
         "kanji": "学校",
@@ -2844,6 +3047,21 @@
         "group": "Places",
         "note": "乗ります + 場 — literally the riding place",
         "marked": false
+    },
+    {
+        "kanji": "",
+        "kana": "ホテル",
+        "english": "hotel",
+        "group": "Places",
+        "note": "loanword — katakana",
+        "marked": true
+    },
+    {
+        "kanji": "空港",
+        "kana": "くうこう",
+        "english": "airport",
+        "group": "Places",
+        "marked": true
     },
     {
         "kanji": "電車",
@@ -3114,6 +3332,14 @@
         "english": "I don't understand",
         "group": "Classroom",
         "marked": false
+    },
+    {
+        "kanji": "試験",
+        "kana": "しけん",
+        "english": "exam",
+        "group": "Classroom",
+        "note": "テスト is the everyday word",
+        "marked": true
     },
     {
         "kanji": "上",
