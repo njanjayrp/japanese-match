@@ -593,5 +593,323 @@
         "wordKana": "みます",
         "wordEnglish": "to see / to watch",
         "note": "An eye 目 on legs. けん in 意見 いけん, an opinion."
+    },
+    {
+        "char": "少",
+        "romaji": "suku / suko / shou",
+        "meaning": "few, a little",
+        "word": "少ない",
+        "wordKana": "すくない",
+        "wordEnglish": "few / not much",
+        "note": "すこ in 少し すこし, a little — the adverb, where 少ない is the adjective."
+    },
+    {
+        "char": "多",
+        "romaji": "oo / ta",
+        "meaning": "many, much",
+        "word": "多い",
+        "wordKana": "おおい",
+        "wordEnglish": "many / much",
+        "note": "た in 多分 たぶん, probably."
+    },
+    {
+        "char": "甘",
+        "romaji": "ama / kan",
+        "meaning": "sweet",
+        "word": "甘い",
+        "wordKana": "あまい",
+        "wordEnglish": "sweet"
+    },
+    {
+        "char": "辛",
+        "romaji": "kara / tsura / shin",
+        "meaning": "spicy, bitter",
+        "word": "辛い",
+        "wordKana": "からい",
+        "wordEnglish": "spicy",
+        "note": "The same 辛い read つらい means painful, hard to bear — context picks."
+    },
+    {
+        "char": "重",
+        "romaji": "omo / juu",
+        "meaning": "heavy",
+        "word": "重い",
+        "wordKana": "おもい",
+        "wordEnglish": "heavy",
+        "note": "じゅう in 体重 たいじゅう, body weight."
+    },
+    {
+        "char": "軽",
+        "romaji": "karu / kei",
+        "meaning": "light (in weight)",
+        "word": "軽い",
+        "wordKana": "かるい",
+        "wordEnglish": "light (in weight)",
+        "note": "車 on the left — けい in 軽自動車 けいじどうしゃ, a small kei car."
+    },
+    {
+        "char": "遠",
+        "romaji": "too / en",
+        "meaning": "far, distant",
+        "word": "遠い",
+        "wordKana": "とおい",
+        "wordEnglish": "far",
+        "note": "えん in 遠足 えんそく, a school outing."
+    },
+    {
+        "char": "早",
+        "romaji": "haya / sou",
+        "meaning": "early",
+        "word": "早い",
+        "wordKana": "はやい",
+        "wordEnglish": "early",
+        "note": "Early in time. Fast in speed is 速い — the same はやい, a different kanji."
+    },
+    {
+        "char": "速",
+        "romaji": "haya / soku",
+        "meaning": "fast, quick",
+        "word": "速い",
+        "wordKana": "はやい",
+        "wordEnglish": "fast",
+        "note": "Speed, not time. そく in 速達 そくたつ, special delivery."
+    },
+    {
+        "char": "遅",
+        "romaji": "oso / chi",
+        "meaning": "late, slow",
+        "word": "遅い",
+        "wordKana": "おそい",
+        "wordEnglish": "late / slow",
+        "note": "One kanji for both: late is the opposite of 早い, slow of 速い. ち in 遅刻 ちこく, being late."
+    },
+    {
+        "char": "簡",
+        "romaji": "kan",
+        "meaning": "simple, brief",
+        "word": "簡単",
+        "wordKana": "かんたん",
+        "wordEnglish": "simple / easy",
+        "note": "⺮, bamboo, on top. Turns up almost only in 簡単."
+    },
+    {
+        "char": "単",
+        "romaji": "tan",
+        "meaning": "single, simple",
+        "word": "簡単",
+        "wordKana": "かんたん",
+        "wordEnglish": "simple / easy",
+        "note": "たん in 単語 たんご, a word of vocabulary."
+    },
+    {
+        "char": "春",
+        "romaji": "haru / shun",
+        "meaning": "spring",
+        "quiz": true,
+        "word": "春",
+        "wordKana": "はる",
+        "wordEnglish": "spring",
+        "note": "春休み はるやすみ, the spring holidays."
+    },
+    {
+        "char": "夏",
+        "romaji": "natsu / ka",
+        "meaning": "summer",
+        "quiz": true,
+        "word": "夏",
+        "wordKana": "なつ",
+        "wordEnglish": "summer",
+        "note": "夏休み なつやすみ, the summer holidays."
+    },
+    {
+        "char": "秋",
+        "romaji": "aki / shuu",
+        "meaning": "autumn",
+        "quiz": true,
+        "word": "秋",
+        "wordKana": "あき",
+        "wordEnglish": "autumn / fall"
+    },
+    {
+        "char": "冬",
+        "romaji": "fuyu / tou",
+        "meaning": "winter",
+        "quiz": true,
+        "word": "冬",
+        "wordKana": "ふゆ",
+        "wordEnglish": "winter"
+    },
+    {
+        "char": "季",
+        "romaji": "ki",
+        "meaning": "season",
+        "word": "季節",
+        "wordKana": "きせつ",
+        "wordEnglish": "season",
+        "note": "四季 しき, the four seasons."
+    },
+    {
+        "char": "節",
+        "romaji": "setsu / fushi",
+        "meaning": "period, joint",
+        "word": "季節",
+        "wordKana": "きせつ",
+        "wordEnglish": "season",
+        "note": "⺮, bamboo, on top — a joint in the stalk, hence a division of the year."
+    },
+    {
+        "char": "港",
+        "romaji": "minato / kou",
+        "meaning": "harbour, port",
+        "word": "空港",
+        "wordKana": "くうこう",
+        "wordEnglish": "airport",
+        "note": "An airport is a sky harbour: 空 + 港. みなと on its own is a harbour."
+    },
+    {
+        "char": "海",
+        "romaji": "umi / kai",
+        "meaning": "sea",
+        "quiz": true,
+        "word": "海",
+        "wordKana": "うみ",
+        "wordEnglish": "sea / ocean",
+        "note": "かい in 海外 かいがい, overseas."
+    },
+    {
+        "char": "紅",
+        "romaji": "beni / kou",
+        "meaning": "crimson",
+        "word": "紅葉",
+        "wordKana": "もみじ",
+        "wordEnglish": "maple / red autumn leaves",
+        "note": "紅葉 もみじ is jukujikun — the compound carries its own reading. Read こうよう it is the leaves turning. こう in 紅茶 こうちゃ, black tea."
+    },
+    {
+        "char": "葉",
+        "romaji": "ha / you",
+        "meaning": "leaf",
+        "word": "紅葉",
+        "wordKana": "もみじ",
+        "wordEnglish": "maple / red autumn leaves",
+        "note": "Alone it is は, a leaf; よう in 紅葉 read こうよう. Inside もみじ it has no reading of its own."
+    },
+    {
+        "char": "寿",
+        "romaji": "su / ju",
+        "meaning": "long life",
+        "word": "寿司",
+        "wordKana": "すし",
+        "wordEnglish": "sushi",
+        "note": "寿司 is ateji — kanji chosen for their sound, す + し, and for luck: 寿 means long life."
+    },
+    {
+        "char": "司",
+        "romaji": "shi",
+        "meaning": "administer",
+        "word": "寿司",
+        "wordKana": "すし",
+        "wordEnglish": "sushi",
+        "note": "し is a real reading here, as in 司会 しかい, an MC."
+    },
+    {
+        "char": "天",
+        "romaji": "ten / ama",
+        "meaning": "heaven, sky",
+        "word": "天気",
+        "wordKana": "てんき",
+        "wordEnglish": "weather",
+        "note": "The same てん in 天ぷら てんぷら."
+    },
+    {
+        "char": "焼",
+        "romaji": "ya / shou",
+        "meaning": "grill, bake",
+        "word": "すき焼き",
+        "wordKana": "すきやき",
+        "wordEnglish": "sukiyaki",
+        "note": "焼き鳥 やきとり, grilled chicken on skewers."
+    },
+    {
+        "char": "刺",
+        "romaji": "sa / shi",
+        "meaning": "pierce, stab",
+        "word": "刺身",
+        "wordKana": "さしみ",
+        "wordEnglish": "sashimi",
+        "note": "し in 名刺 めいし, a business card."
+    },
+    {
+        "char": "身",
+        "romaji": "mi / shin",
+        "meaning": "body, flesh",
+        "word": "刺身",
+        "wordKana": "さしみ",
+        "wordEnglish": "sashimi",
+        "note": "み is the flesh — 刺身 is pierced flesh. しん in 身長 しんちょう, height."
+    },
+    {
+        "char": "祭",
+        "romaji": "matsu / sai",
+        "meaning": "festival",
+        "word": "祭り",
+        "wordKana": "まつり",
+        "wordEnglish": "festival",
+        "note": "さい in 文化祭 ぶんかさい, a school festival."
+    },
+    {
+        "char": "試",
+        "romaji": "shi / tame",
+        "meaning": "test, try",
+        "word": "試験",
+        "wordKana": "しけん",
+        "wordEnglish": "exam",
+        "note": "ため in 試します ためします, to try something out."
+    },
+    {
+        "char": "験",
+        "romaji": "ken",
+        "meaning": "test, verify",
+        "word": "試験",
+        "wordKana": "しけん",
+        "wordEnglish": "exam",
+        "note": "馬, horse, on the left. けん in 経験 けいけん, experience."
+    },
+    {
+        "char": "雪",
+        "romaji": "yuki / setsu",
+        "meaning": "snow",
+        "quiz": true,
+        "word": "雪",
+        "wordKana": "ゆき",
+        "wordEnglish": "snow",
+        "note": "雨 on top — the weather kanji wear the rain radical: 雪, 雲, 電."
+    },
+    {
+        "char": "曇",
+        "romaji": "kumo / don",
+        "meaning": "cloudy",
+        "word": "曇り",
+        "wordKana": "くもり",
+        "wordEnglish": "cloudy weather",
+        "note": "日 over 雲 — the sun behind a cloud."
+    },
+    {
+        "char": "暖",
+        "romaji": "atata / dan",
+        "meaning": "warm",
+        "word": "暖かい",
+        "wordKana": "あたたかい",
+        "wordEnglish": "warm",
+        "note": "Warm air and weather. 温かい, the same reading, is warm to the touch — food, a bath."
+    },
+    {
+        "char": "涼",
+        "romaji": "suzu / ryou",
+        "meaning": "cool, refreshing",
+        "word": "涼しい",
+        "wordKana": "すずしい",
+        "wordEnglish": "pleasantly cool",
+        "note": "Cool air only — a cool drink is 冷たい."
     }
 ]
