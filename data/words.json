@@ -373,7 +373,7 @@
         "english": "brothers and sisters",
         "group": "People",
         "note": "covers both, like siblings",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "兄",
@@ -381,42 +381,42 @@
         "english": "(my) older brother",
         "group": "People",
         "note": "talking about your own family drops the さん",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "姉",
         "kana": "あね",
         "english": "(my) older sister",
         "group": "People",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "弟",
         "kana": "おとうと",
         "english": "(my) younger brother",
         "group": "People",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "妹",
         "kana": "いもうと",
         "english": "(my) younger sister",
         "group": "People",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "お兄さん",
         "kana": "おにいさん",
         "english": "someone else's older brother",
         "group": "People",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "お姉さん",
         "kana": "おねえさん",
         "english": "someone else's older sister",
         "group": "People",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "弟さん",
@@ -424,14 +424,14 @@
         "english": "someone else's younger brother",
         "group": "People",
         "note": "no お on this one, only さん",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "妹さん",
         "kana": "いもうとさん",
         "english": "someone else's younger sister",
         "group": "People",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "本",
@@ -936,14 +936,14 @@
         "kana": "しゃしん",
         "english": "photograph",
         "group": "Everyday things",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "海",
         "kana": "うみ",
         "english": "sea / ocean",
         "group": "Everyday things",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "紅葉",
@@ -1094,7 +1094,7 @@
         "english": "mandarin orange",
         "group": "Food & drink",
         "note": "the small peelable kind; a Western orange is オレンジ",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "卵",
@@ -1109,7 +1109,7 @@
         "english": "curry and rice",
         "group": "Food & drink",
         "note": "often shortened to just カレー",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "寿司",
@@ -1117,28 +1117,28 @@
         "english": "sushi",
         "group": "Food & drink",
         "note": "お寿司 in polite use",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "天ぷら",
         "kana": "てんぷら",
         "english": "tempura",
         "group": "Food & drink",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "すき焼き",
         "kana": "すきやき",
         "english": "sukiyaki",
         "group": "Food & drink",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "刺身",
         "kana": "さしみ",
         "english": "sashimi",
         "group": "Food & drink",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "",
@@ -1205,7 +1205,7 @@
         "english": "party",
         "group": "Hobbies",
         "note": "loanword — katakana",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "祭り",
@@ -1213,7 +1213,7 @@
         "english": "festival",
         "group": "Hobbies",
         "note": "お祭り in polite use",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "食べます",
@@ -1469,7 +1469,7 @@
         "english": "to take a photo",
         "group": "Verbs",
         "note": "godan — 撮る (とる). しゃしんをとります",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "大きい",
@@ -1820,7 +1820,7 @@
         "group": "Adjectives",
         "note": "i-adjective",
         "adj": "i",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "辛い",
@@ -1883,7 +1883,7 @@
         "group": "Adjectives",
         "note": "i-adjective — 早い is the same reading, for time",
         "adj": "i",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "遅い",
@@ -2367,14 +2367,14 @@
         "kana": "ひとつ",
         "english": "one thing",
         "group": "Numbers & time",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "二つ",
         "kana": "ふたつ",
         "english": "two things",
         "group": "Numbers & time",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "三つ",
@@ -2432,14 +2432,14 @@
         "english": "one person",
         "group": "Numbers & time",
         "note": "irregular, like ふたり — から さんにん it is regular",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "二人",
         "kana": "ふたり",
         "english": "two people",
         "group": "Numbers & time",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "",
@@ -2454,7 +2454,7 @@
         "kana": "なんにん",
         "english": "how many people",
         "group": "Numbers & time",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "何枚",
@@ -2462,7 +2462,7 @@
         "english": "how many flat things",
         "group": "Numbers & time",
         "note": "枚 まい — paper, stamps, shirts, plates",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "何台",
@@ -2470,7 +2470,7 @@
         "english": "how many machines",
         "group": "Numbers & time",
         "note": "台 だい — cars, TVs, bicycles, computers",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "何回",
@@ -2478,7 +2478,7 @@
         "english": "how many times",
         "group": "Numbers & time",
         "note": "3回 さんかい, but 3階 さんがい — same kana, different word",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "",
@@ -2573,7 +2573,7 @@
         "kana": "てんき",
         "english": "weather",
         "group": "Weather",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "天気予報",
@@ -2588,14 +2588,14 @@
         "kana": "あめ",
         "english": "rain",
         "group": "Weather",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "雪",
         "kana": "ゆき",
         "english": "snow",
         "group": "Weather",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "風",
@@ -2617,7 +2617,7 @@
         "kana": "くもり",
         "english": "cloudy weather",
         "group": "Weather",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "雲",
@@ -2777,7 +2777,7 @@
         "english": "pleasantly cool",
         "group": "Weather",
         "adj": "i",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "暖かい",
@@ -2792,35 +2792,35 @@
         "kana": "はる",
         "english": "spring",
         "group": "Weather",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "夏",
         "kana": "なつ",
         "english": "summer",
         "group": "Weather",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "秋",
         "kana": "あき",
         "english": "autumn / fall",
         "group": "Weather",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "冬",
         "kana": "ふゆ",
         "english": "winter",
         "group": "Weather",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "季節",
         "kana": "きせつ",
         "english": "season",
         "group": "Weather",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "学校",
@@ -3054,7 +3054,7 @@
         "english": "hotel",
         "group": "Places",
         "note": "loanword — katakana",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "空港",
@@ -3473,7 +3473,7 @@
         "english": "sea mail",
         "group": "Post and mail",
         "note": "ふね becomes ふな in compounds",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "",
