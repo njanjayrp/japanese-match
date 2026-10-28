@@ -1141,6 +1141,22 @@
         "marked": false
     },
     {
+        "kanji": "牛肉",
+        "kana": "ぎゅうにく",
+        "english": "beef",
+        "group": "Food & drink",
+        "note": "牛 うし is the cow; ぎゅう in compounds",
+        "marked": true
+    },
+    {
+        "kanji": "鶏肉",
+        "kana": "とりにく",
+        "english": "chicken (meat)",
+        "group": "Food & drink",
+        "note": "also written 鳥肉",
+        "marked": true
+    },
+    {
         "kanji": "",
         "kana": "スポーツ",
         "english": "sport",
