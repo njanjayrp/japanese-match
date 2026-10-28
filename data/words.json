@@ -3285,6 +3285,30 @@
         "marked": false
     },
     {
+        "kanji": "",
+        "kana": "どちら",
+        "english": "which (of two)",
+        "group": "Questions & pointing",
+        "note": "casual: どっち. For three or more, なに / だれ / どこ / いつ + いちばん",
+        "marked": false
+    },
+    {
+        "kanji": "",
+        "kana": "どう",
+        "english": "how",
+        "group": "Questions & pointing",
+        "note": "どうでしたか — how was it?",
+        "marked": false
+    },
+    {
+        "kanji": "両方",
+        "kana": "りょうほう",
+        "english": "both",
+        "group": "Questions & pointing",
+        "note": "りょうほうすきです means the same as どちらもすきです",
+        "marked": false
+    },
+    {
         "kanji": "日本語",
         "kana": "にほんご",
         "english": "Japanese (language)",
@@ -3558,6 +3582,14 @@
         "english": "so-so",
         "group": "How much",
         "note": "the middle of the scale, said on its own",
+        "marked": false
+    },
+    {
+        "kanji": "一番",
+        "kana": "いちばん",
+        "english": "most / number one",
+        "group": "How much",
+        "note": "goes right before the adjective: ラーメンがいちばんすきです",
         "marked": false
     }
 ]

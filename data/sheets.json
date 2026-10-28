@@ -2315,6 +2315,127 @@
                         ]
                     }
                 ]
+            },
+            {
+                "title": "asking how it was — dou deshita ka",
+                "columns": [
+                    "the sentence",
+                    "the pattern"
+                ],
+                "rows": [
+                    {
+                        "label": "ask",
+                        "cells": [
+                            {
+                                "kana": "しけんはどうでしたか",
+                                "romaji": "shiken wa dou deshita ka",
+                                "en": "how was the exam?"
+                            },
+                            {
+                                "term": "N は どうでしたか"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "i",
+                        "cells": [
+                            {
+                                "kana": "むずかしかったです",
+                                "romaji": "muzukashikatta desu",
+                                "en": "it was difficult"
+                            },
+                            {
+                                "term": "i: −い + かったです"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "i, not",
+                        "cells": [
+                            {
+                                "kana": "むずかしくなかったです",
+                                "romaji": "muzukashiku nakatta desu",
+                                "en": "it wasn't difficult"
+                            },
+                            {
+                                "term": "i: −い + くなかったです"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "na",
+                        "cells": [
+                            {
+                                "kana": "かんたんでした",
+                                "romaji": "kantan deshita",
+                                "en": "it was easy"
+                            },
+                            {
+                                "term": "na: + でした"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "ii",
+                        "cells": [
+                            {
+                                "kana": "よかったです",
+                                "romaji": "yokatta desu",
+                                "en": "it was good",
+                                "odd": true
+                            },
+                            {
+                                "term": "ii goes through よい"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "a topic and what it's like — wa … ga",
+                "columns": [
+                    "the sentence",
+                    "what each part does"
+                ],
+                "rows": [
+                    {
+                        "label": "place",
+                        "cells": [
+                            {
+                                "kana": "とうきょうはひとがおおいです",
+                                "romaji": "toukyou wa hito ga ooi desu",
+                                "en": "Tokyo has a lot of people"
+                            },
+                            {
+                                "term": "は the topic, が what is described"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "time",
+                        "cells": [
+                            {
+                                "kana": "きのうのばんはつきがきれいでした",
+                                "romaji": "kinou no ban wa tsuki ga kirei deshita",
+                                "en": "the moon was pretty last night"
+                            },
+                            {
+                                "term": "a time word can be the topic"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "event",
+                        "cells": [
+                            {
+                                "kana": "きのうのまつりはひとがおおくなかったです",
+                                "romaji": "kinou no matsuri wa hito ga ooku nakatta desu",
+                                "en": "there weren't many people at yesterday's festival"
+                            },
+                            {}
+                        ]
+                    }
+                ]
             }
         ],
         "rules": [
@@ -2347,6 +2468,344 @@
                 "id": "ja-arimasen",
                 "title": "Your textbook will say ja arimasen",
                 "body": "shizuka ja arimasen and shizuka ja arimasen deshita mean exactly the same as the forms above and are what Minna no Nihongo drills, so recognise them. ja nai desu is the everyday spoken version and keeps the negative identical to the i-adjectives, which is one pattern to hold instead of two. de wa arimasen is the same thing again, formal and mostly written — ja is just the contraction of de wa."
+            },
+            {
+                "id": "dou-deshita",
+                "title": "dou deshita ka asks how it was",
+                "body": "dou desu ka is how is it; dou deshita ka is how was it. dou is a question word, not an adjective, so the past goes on desu — there is no doukatta. The answer carries its own past, following the adjective's family as always: muzukashikatta desu, kantan deshita."
+            },
+            {
+                "id": "wa-ga-adjective",
+                "title": "wa sets the scene, ga marks what is described",
+                "body": "toukyou wa hito ga ooi desu — as for Tokyo, the people are many. wa names the place, time or event you are talking about; ga marks the part of it the adjective describes. An adjective has no object, so that part is never wo. A time word can be the topic — kinou no ban wa tsuki ga kirei deshita — even though it never takes ni."
+            }
+        ]
+    },
+    {
+        "id": "compare",
+        "title": "Comparing — yori, dochira, ichiban",
+        "blurb": "Japanese has no -er and no -est: takai is expensive, more expensive and most expensive alike, and the words around it do the comparing. Three shapes cover everything — A wa B yori for one against another, dochira and no hou ga for picking one of two, and de … ichiban for the top of a group.",
+        "legend": [
+            {
+                "term": "yori",
+                "gloss": "than — after the one that loses"
+            },
+            {
+                "term": "dochira",
+                "gloss": "which, of two"
+            },
+            {
+                "term": "no hou ga",
+                "gloss": "the … one — picks the winner"
+            },
+            {
+                "term": "dochira mo / ryouhou",
+                "gloss": "both"
+            },
+            {
+                "term": "ichiban",
+                "gloss": "most, number one"
+            },
+            {
+                "term": "de",
+                "gloss": "the group the winner comes from"
+            }
+        ],
+        "grids": [
+            {
+                "title": "more than — yori",
+                "columns": [
+                    "the sentence",
+                    "the pattern"
+                ],
+                "rows": [
+                    {
+                        "label": "price",
+                        "cells": [
+                            {
+                                "kana": "ぎゅうにくはとりにくよりたかいです",
+                                "romaji": "gyuuniku wa toriniku yori takai desu",
+                                "en": "beef is more expensive than chicken"
+                            },
+                            {
+                                "term": "A は B より Adj です",
+                                "en": "yori sits on the cheaper one"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "size",
+                        "cells": [
+                            {
+                                "kana": "タイはちゅうごくよりちいさいです",
+                                "romaji": "tai wa chuugoku yori chiisai desu",
+                                "en": "Thailand is smaller than China"
+                            },
+                            {
+                                "term": "the adjective stays as it is",
+                                "en": "chiisai — no 'more'"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "busy",
+                        "cells": [
+                            {
+                                "kana": "こんげつはせんげつよりいそがしいです",
+                                "romaji": "kongetsu wa sengetsu yori isogashii desu",
+                                "en": "this month is busier than last month"
+                            },
+                            {}
+                        ]
+                    },
+                    {
+                        "label": "hard",
+                        "cells": [
+                            {
+                                "kana": "かんじはひらがなよりむずかしいです",
+                                "romaji": "kanji wa hiragana yori muzukashii desu",
+                                "en": "kanji is harder than hiragana"
+                            },
+                            {}
+                        ]
+                    },
+                    {
+                        "label": "past",
+                        "cells": [
+                            {
+                                "kana": "きのうはきょうよりさむかったです",
+                                "romaji": "kinou wa kyou yori samukatta desu",
+                                "en": "yesterday was colder than today"
+                            },
+                            {
+                                "term": "past as usual",
+                                "en": "samukatta — nothing extra for comparing"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "which of two — dochira",
+                "columns": [
+                    "the sentence",
+                    "the pattern"
+                ],
+                "rows": [
+                    {
+                        "label": "ask",
+                        "cells": [
+                            {
+                                "kana": "いぬとねこどちらがすきですか",
+                                "romaji": "inu to neko dochira ga suki desu ka",
+                                "en": "which do you like, dogs or cats?"
+                            },
+                            {
+                                "term": "A と B どちらが Adj ですか",
+                                "en": "a second と after B is fine too"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "one",
+                        "cells": [
+                            {
+                                "kana": "いぬのほうがすきです",
+                                "romaji": "inu no hou ga suki desu",
+                                "en": "I prefer dogs"
+                            },
+                            {
+                                "term": "A の ほうが Adj です",
+                                "en": "hou is side — the dog side"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "both",
+                        "cells": [
+                            {
+                                "kana": "どちらもすきです",
+                                "romaji": "dochira mo suki desu",
+                                "en": "I like both"
+                            },
+                            {
+                                "term": "どちらも",
+                                "en": "mo takes the place of ga"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "both",
+                        "cells": [
+                            {
+                                "kana": "りょうほうすきです",
+                                "romaji": "ryouhou suki desu",
+                                "en": "I like both of them"
+                            },
+                            {
+                                "term": "りょうほう",
+                                "en": "both sides — the same answer"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "neither",
+                        "cells": [
+                            {
+                                "kana": "どちらもすきじゃないです",
+                                "romaji": "dochira mo suki ja nai desu",
+                                "en": "I like neither"
+                            },
+                            {
+                                "term": "どちらも + negative",
+                                "en": "neither"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "the most — ichiban",
+                "columns": [
+                    "the sentence",
+                    "the pattern"
+                ],
+                "rows": [
+                    {
+                        "label": "say",
+                        "cells": [
+                            {
+                                "kana": "にほんのごはんでラーメンがいちばんすきです",
+                                "romaji": "nihon no gohan de raamen ga ichiban suki desu",
+                                "en": "of Japanese food, I like ramen best"
+                            },
+                            {
+                                "term": "group で N が いちばん Adj です"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "with wa",
+                        "cells": [
+                            {
+                                "kana": "わたしはスポーツでやきゅうがいちばんすきです",
+                                "romaji": "watashi wa supootsu de yakyuu ga ichiban suki desu",
+                                "en": "of all sports, I like baseball best"
+                            },
+                            {
+                                "term": "(X は) in front",
+                                "en": "who is talking — usually dropped"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "a thing",
+                        "cells": [
+                            {
+                                "kana": "どうぶつでなにがいちばんすきですか",
+                                "romaji": "doubutsu de nani ga ichiban suki desu ka",
+                                "en": "which animal do you like best?"
+                            },
+                            {
+                                "term": "なに",
+                                "en": "for things"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "a time",
+                        "cells": [
+                            {
+                                "kana": "きせつでいつがいちばんすきですか",
+                                "romaji": "kisetsu de itsu ga ichiban suki desu ka",
+                                "en": "which season do you like best?"
+                            },
+                            {
+                                "term": "いつ",
+                                "en": "a season is a time — いつ, not なに"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "a person",
+                        "cells": [
+                            {
+                                "kana": "かぞくでだれがいちばんいそがしいですか",
+                                "romaji": "kazoku de dare ga ichiban isogashii desu ka",
+                                "en": "who is the busiest in your family?"
+                            },
+                            {
+                                "term": "だれ",
+                                "en": "for people"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "a place",
+                        "cells": [
+                            {
+                                "kana": "にほんでどこがいちばんきれいですか",
+                                "romaji": "nihon de doko ga ichiban kirei desu ka",
+                                "en": "where in Japan is the most beautiful?"
+                            },
+                            {
+                                "term": "どこ",
+                                "en": "for places"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "answer",
+                        "cells": [
+                            {
+                                "kana": "ふゆがいちばんすきです",
+                                "romaji": "fuyu ga ichiban suki desu",
+                                "en": "I like winter best"
+                            },
+                            {
+                                "term": "N が いちばん Adj です",
+                                "en": "the answer keeps the ga"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "rules": [
+            {
+                "id": "yori",
+                "title": "yori sits on the one that loses",
+                "body": "A wa B yori takai desu — B yori is 'than B'. A is the topic and the winner; B is what it is measured against. Swap the two nouns and the sentence says the opposite, so which noun carries yori is the one thing to get right. kara is never 'than' — it is from, or because."
+            },
+            {
+                "id": "no-er",
+                "title": "The adjective never changes",
+                "body": "There is no -er and no -est. takai is expensive, more expensive and the most expensive; yori, no hou ga and ichiban do the comparing. The adjective keeps whatever form the sentence needs anyway, past included: kinou wa kyou yori samukatta desu."
+            },
+            {
+                "id": "dochira-for-two",
+                "title": "dochira for two, the right question word for more",
+                "body": "dochira asks which of two — inu to neko dochira. Once the group is bigger the question becomes de … ichiban, with the word for what you want back: nani for a thing, dare for a person, doko for a place, itsu for a time. A season is a time, so it is itsu. docchi is the casual dochira."
+            },
+            {
+                "id": "question-word-ga",
+                "title": "The question word takes ga",
+                "body": "dochira ga, nani ga, dare ga, itsu ga — never wa. A question word is the unknown, and wa marks what is already known, so the two cannot go together. The answer keeps the same ga: inu no hou ga suki desu, fuyu ga ichiban suki desu."
+            },
+            {
+                "id": "no-hou-ga",
+                "title": "no hou ga picks one of two",
+                "body": "inu no hou ga suki desu — literally, the dog side is liked. hou is a noun, side, so it is glued on with no, and it takes the same ga that suki always takes. It answers a dochira question; for the top of a bigger group you want ichiban. inu yori suki desu is not the answer — it says you like it more than dogs."
+            },
+            {
+                "id": "mo-replaces-ga",
+                "title": "Both: dochira mo, or ryouhou",
+                "body": "dochira mo suki desu — mo takes the place of ga and never stacks on it: dochira mo ga is wrong. With a negative it turns into neither: dochira mo suki ja nai desu. ryouhou means both sides and gives the same answer: ryouhou suki desu."
+            },
+            {
+                "id": "de-group",
+                "title": "de draws the group, ichiban sits before the adjective",
+                "body": "nihon no gohan de — de marks the circle the winner is picked from; ni and yori don't work there. ichiban goes right in front of the adjective, where totemo would go, and the winner takes ga: raamen ga ichiban suki desu. A topic can sit in front of the whole frame — watashi wa supootsu de yakyuu ga ichiban suki desu."
             }
         ]
     },

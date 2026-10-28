@@ -6012,6 +6012,219 @@
         ]
     },
     {
+        "id": "dou-deshita-shiken",
+        "covers": [
+            "adjectives:dou-deshita"
+        ],
+        "sheet": "adjectives",
+        "en": "How was the exam?",
+        "correct": {
+            "kana": "しけんはどうでしたか",
+            "romaji": "shiken wa dou deshita ka",
+            "kanji": "試験はどうでしたか"
+        },
+        "wrong": [
+            {
+                "kana": "しけんはどうかったですか",
+                "why": "dou is a question word, not an adjective — there is no doukatta. The past goes on desu.",
+                "kanji": "試験はどうかったですか"
+            },
+            {
+                "kana": "しけんはどうですか",
+                "why": "that is the present — how is the exam.",
+                "kanji": "試験はどうですか"
+            },
+            {
+                "kana": "しけんをどうでしたか",
+                "why": "the thing you ask about is the topic: wa, not wo.",
+                "kanji": "試験をどうでしたか"
+            }
+        ],
+        "kanjiNotes": [
+            {
+                "word": "試験",
+                "kana": "しけん"
+            }
+        ]
+    },
+    {
+        "id": "shiken-kantan",
+        "covers": [
+            "adjectives:i-conjugates-na-doesnt"
+        ],
+        "sheet": "adjectives",
+        "en": "The exam was easy.",
+        "correct": {
+            "kana": "しけんはかんたんでした",
+            "romaji": "shiken wa kantan deshita",
+            "kanji": "試験は簡単でした"
+        },
+        "wrong": [
+            {
+                "kana": "しけんはかんたんかったです",
+                "why": "katta is the i-adjective past; kantan is na, so it is kantan deshita.",
+                "kanji": "試験は簡単かったです"
+            },
+            {
+                "kana": "しけんはかんたんなでした",
+                "why": "na only goes in front of a noun.",
+                "kanji": "試験は簡単なでした"
+            },
+            {
+                "kana": "しけんはかんたんです",
+                "why": "that is the present — the exam is easy.",
+                "kanji": "試験は簡単です"
+            }
+        ],
+        "kanjiNotes": [
+            {
+                "word": "試験",
+                "kana": "しけん"
+            },
+            {
+                "word": "簡単",
+                "kana": "かんたん"
+            }
+        ],
+        "adjNotes": [
+            {
+                "kana": "かんたん",
+                "family": "na"
+            }
+        ]
+    },
+    {
+        "id": "shiken-muzukashiku-nakatta",
+        "covers": [
+            "adjectives:nai-is-i-adjective"
+        ],
+        "sheet": "adjectives",
+        "en": "The exam wasn't difficult.",
+        "correct": {
+            "kana": "しけんはむずかしくなかったです",
+            "romaji": "shiken wa muzukashiku nakatta desu",
+            "kanji": "試験はむずかしくなかったです"
+        },
+        "wrong": [
+            {
+                "kana": "しけんはむずかしいじゃなかったです",
+                "why": "ja nakatta is the na pattern; muzukashii is an i-adjective.",
+                "kanji": "試験はむずかしいじゃなかったです"
+            },
+            {
+                "kana": "しけんはむずかしくないでした",
+                "why": "the past sits in nakatta. desu never becomes deshita after an i-adjective.",
+                "kanji": "試験はむずかしくないでした"
+            },
+            {
+                "kana": "しけんはむずかしかったです",
+                "why": "that says it was difficult.",
+                "kanji": "試験はむずかしかったです"
+            }
+        ],
+        "kanjiNotes": [
+            {
+                "word": "試験",
+                "kana": "しけん"
+            }
+        ],
+        "adjNotes": [
+            {
+                "kana": "むずかしい",
+                "family": "i"
+            }
+        ]
+    },
+    {
+        "id": "toukyou-hito-ooi",
+        "covers": [
+            "adjectives:wa-ga-adjective"
+        ],
+        "sheet": "adjectives",
+        "en": "Tokyo has a lot of people.",
+        "correct": {
+            "kana": "とうきょうはひとがおおいです",
+            "romaji": "toukyou wa hito ga ooi desu",
+            "kanji": "とうきょうは人がおおいです"
+        },
+        "wrong": [
+            {
+                "kana": "とうきょうがひとはおおいです",
+                "why": "the particles have swapped: Tokyo is the topic and takes wa, the people are what is many and take ga.",
+                "kanji": "とうきょうが人はおおいです"
+            },
+            {
+                "kana": "とうきょうはひとをおおいです",
+                "why": "an adjective has no object — what is many takes ga, never wo.",
+                "kanji": "とうきょうは人をおおいです"
+            },
+            {
+                "kana": "とうきょうはひとがおおきいです",
+                "why": "ookii is big in size. Many is ooi.",
+                "kanji": "とうきょうは人がおおきいです"
+            }
+        ],
+        "kanjiNotes": [
+            {
+                "word": "人",
+                "kana": "ひと"
+            }
+        ],
+        "adjNotes": [
+            {
+                "kana": "おおい",
+                "family": "i"
+            }
+        ]
+    },
+    {
+        "id": "matsuri-hito-ooku-nakatta",
+        "covers": [
+            "adjectives:wa-ga-adjective",
+            "adjectives:nai-is-i-adjective"
+        ],
+        "sheet": "adjectives",
+        "en": "There weren't many people at yesterday's festival.",
+        "correct": {
+            "kana": "きのうのまつりはひとがおおくなかったです",
+            "romaji": "kinou no matsuri wa hito ga ooku nakatta desu",
+            "kanji": "きのうの祭りは人がおおくなかったです"
+        },
+        "wrong": [
+            {
+                "kana": "きのうのまつりはひとがおおいじゃなかったです",
+                "why": "ja nakatta is the na pattern; ooi is an i-adjective.",
+                "kanji": "きのうの祭りは人がおおいじゃなかったです"
+            },
+            {
+                "kana": "きのうのまつりはひとがおおきくなかったです",
+                "why": "ookiku nakatta says it wasn't big. Many is ooi.",
+                "kanji": "きのうの祭りは人がおおきくなかったです"
+            },
+            {
+                "kana": "きのうのまつりはひとをおおくなかったです",
+                "why": "what is many takes ga, never wo.",
+                "kanji": "きのうの祭りは人をおおくなかったです"
+            }
+        ],
+        "kanjiNotes": [
+            {
+                "word": "祭り",
+                "kana": "まつり"
+            },
+            {
+                "word": "人",
+                "kana": "ひと"
+            }
+        ],
+        "adjNotes": [
+            {
+                "kana": "おおい",
+                "family": "i"
+            }
+        ]
+    },
+    {
         "id": "money-ototoshi-kamera",
         "covers": [
             "money:count-in-fours",
@@ -6115,6 +6328,408 @@
             {
                 "kana": "いちとしにいっかいにほんへいきます",
                 "why": "the span is いちねん — toshi is the word on its own, not the counter."
+            }
+        ]
+    },
+    {
+        "id": "yori-gyuuniku",
+        "covers": [
+            "compare:yori"
+        ],
+        "sheet": "compare",
+        "en": "Beef is more expensive than chicken.",
+        "correct": {
+            "kana": "ぎゅうにくはとりにくよりたかいです",
+            "romaji": "gyuuniku wa toriniku yori takai desu"
+        },
+        "wrong": [
+            {
+                "kana": "とりにくはぎゅうにくよりたかいです",
+                "why": "the nouns have swapped — that says chicken costs more. yori sits on the cheaper one."
+            },
+            {
+                "kana": "ぎゅうにくはとりにくからたかいです",
+                "why": "kara is from or because. Than is yori."
+            },
+            {
+                "kana": "ぎゅうにくはとりにくよりたかくないです",
+                "why": "that is the negative — beef isn't more expensive than chicken."
+            }
+        ],
+        "adjNotes": [
+            {
+                "kana": "たかい",
+                "family": "i"
+            }
+        ]
+    },
+    {
+        "id": "yori-kongetsu",
+        "covers": [
+            "compare:yori",
+            "compare:no-er"
+        ],
+        "sheet": "compare",
+        "en": "This month is busier than last month.",
+        "correct": {
+            "kana": "こんげつはせんげつよりいそがしいです",
+            "romaji": "kongetsu wa sengetsu yori isogashii desu"
+        },
+        "wrong": [
+            {
+                "kana": "せんげつはこんげつよりいそがしいです",
+                "why": "swapped — that says last month is the busier one."
+            },
+            {
+                "kana": "こんげつはせんげつにいそがしいです",
+                "why": "ni doesn't compare. Than is yori."
+            },
+            {
+                "kana": "こんげつはせんげつよりいそがしいでした",
+                "why": "desu never becomes deshita after an i-adjective — and this month is now."
+            }
+        ],
+        "adjNotes": [
+            {
+                "kana": "いそがしい",
+                "family": "i"
+            }
+        ]
+    },
+    {
+        "id": "yori-samukatta",
+        "covers": [
+            "compare:no-er"
+        ],
+        "sheet": "compare",
+        "en": "Yesterday was colder than today.",
+        "correct": {
+            "kana": "きのうはきょうよりさむかったです",
+            "romaji": "kinou wa kyou yori samukatta desu"
+        },
+        "wrong": [
+            {
+                "kana": "きのうはきょうよりさむいでした",
+                "why": "the past sits in katta: samukatta desu. desu never becomes deshita after an i-adjective."
+            },
+            {
+                "kana": "きのうはきょうよりさむいです",
+                "why": "yesterday is over — a comparison takes the past like any other sentence."
+            },
+            {
+                "kana": "きょうはきのうよりさむかったです",
+                "why": "swapped — that says today was the colder one."
+            }
+        ],
+        "adjNotes": [
+            {
+                "kana": "さむい",
+                "family": "i"
+            }
+        ]
+    },
+    {
+        "id": "dochira-inu-neko",
+        "covers": [
+            "compare:dochira-for-two",
+            "compare:question-word-ga"
+        ],
+        "sheet": "compare",
+        "en": "Which do you like, dogs or cats?",
+        "correct": {
+            "kana": "いぬとねこどちらがすきですか",
+            "romaji": "inu to neko dochira ga suki desu ka",
+            "kanji": "犬とねこどちらが好きですか"
+        },
+        "wrong": [
+            {
+                "kana": "いぬとねこどちらはすきですか",
+                "why": "a question word can't be the topic: dochira ga, never dochira wa.",
+                "kanji": "犬とねこどちらは好きですか"
+            },
+            {
+                "kana": "いぬとねこなにがすきですか",
+                "why": "nani asks what, out of anything. For one of two named things it is dochira.",
+                "kanji": "犬とねこなにが好きですか"
+            },
+            {
+                "kana": "いぬとねこのほうがすきですか",
+                "why": "no hou ga is for the answer. The question asks with dochira.",
+                "kanji": "犬とねこのほうが好きですか"
+            }
+        ],
+        "kanjiNotes": [
+            {
+                "word": "犬",
+                "kana": "いぬ"
+            },
+            {
+                "word": "好き",
+                "kana": "すき"
+            }
+        ],
+        "adjNotes": [
+            {
+                "kana": "すき",
+                "family": "na"
+            }
+        ]
+    },
+    {
+        "id": "no-hou-ga-inu",
+        "covers": [
+            "compare:no-hou-ga"
+        ],
+        "sheet": "compare",
+        "en": "I prefer dogs.",
+        "correct": {
+            "kana": "いぬのほうがすきです",
+            "romaji": "inu no hou ga suki desu",
+            "kanji": "犬のほうが好きです"
+        },
+        "wrong": [
+            {
+                "kana": "いぬほうがすきです",
+                "why": "hou is a noun, side, and needs no to attach: inu no hou.",
+                "kanji": "犬ほうが好きです"
+            },
+            {
+                "kana": "いぬのほうをすきです",
+                "why": "suki takes ga, never wo — no hou ga keeps it.",
+                "kanji": "犬のほうを好きです"
+            },
+            {
+                "kana": "いぬよりすきです",
+                "why": "inu yori is 'than dogs' — that says you like it more than dogs.",
+                "kanji": "犬より好きです"
+            }
+        ],
+        "kanjiNotes": [
+            {
+                "word": "犬",
+                "kana": "いぬ"
+            },
+            {
+                "word": "好き",
+                "kana": "すき"
+            }
+        ],
+        "adjNotes": [
+            {
+                "kana": "すき",
+                "family": "na"
+            }
+        ]
+    },
+    {
+        "id": "dochira-mo",
+        "covers": [
+            "compare:mo-replaces-ga"
+        ],
+        "sheet": "compare",
+        "en": "I like both.",
+        "correct": {
+            "kana": "どちらもすきです",
+            "romaji": "dochira mo suki desu",
+            "kanji": "どちらも好きです"
+        },
+        "wrong": [
+            {
+                "kana": "どちらもがすきです",
+                "why": "mo takes the place of ga — it never stacks on it.",
+                "kanji": "どちらもが好きです"
+            },
+            {
+                "kana": "どちらがすきです",
+                "why": "dochira ga is the question, which one. Both is dochira mo.",
+                "kanji": "どちらが好きです"
+            },
+            {
+                "kana": "どちらもすきじゃないです",
+                "why": "mo with a negative is neither — I like neither.",
+                "kanji": "どちらも好きじゃないです"
+            }
+        ],
+        "kanjiNotes": [
+            {
+                "word": "好き",
+                "kana": "すき"
+            }
+        ],
+        "adjNotes": [
+            {
+                "kana": "すき",
+                "family": "na"
+            }
+        ]
+    },
+    {
+        "id": "ichiban-raamen",
+        "covers": [
+            "compare:de-group"
+        ],
+        "sheet": "compare",
+        "en": "Of Japanese food, I like ramen best.",
+        "correct": {
+            "kana": "にほんのごはんでラーメンがいちばんすきです",
+            "romaji": "nihon no gohan de raamen ga ichiban suki desu",
+            "kanji": "にほんのごはんでラーメンがいちばん好きです"
+        },
+        "wrong": [
+            {
+                "kana": "にほんのごはんにラーメンがいちばんすきです",
+                "why": "the group takes de. ni is where something is, or when.",
+                "kanji": "にほんのごはんにラーメンがいちばん好きです"
+            },
+            {
+                "kana": "にほんのごはんでラーメンがいちばんすきなです",
+                "why": "na only goes in front of a noun.",
+                "kanji": "にほんのごはんでラーメンがいちばん好きなです"
+            },
+            {
+                "kana": "にほんのごはんよりラーメンがすきです",
+                "why": "yori compares two things — that says you like ramen more than Japanese food.",
+                "kanji": "にほんのごはんよりラーメンが好きです"
+            }
+        ],
+        "kanjiNotes": [
+            {
+                "word": "好き",
+                "kana": "すき"
+            }
+        ],
+        "adjNotes": [
+            {
+                "kana": "すき",
+                "family": "na"
+            }
+        ]
+    },
+    {
+        "id": "ichiban-kisetsu",
+        "covers": [
+            "compare:dochira-for-two",
+            "compare:question-word-ga",
+            "compare:de-group"
+        ],
+        "sheet": "compare",
+        "en": "Which season do you like best?",
+        "correct": {
+            "kana": "きせつでいつがいちばんすきですか",
+            "romaji": "kisetsu de itsu ga ichiban suki desu ka",
+            "kanji": "季節でいつがいちばん好きですか"
+        },
+        "wrong": [
+            {
+                "kana": "きせつでどちらがいちばんすきですか",
+                "why": "dochira is for a choice of two. There are four seasons, and a season is a time: itsu.",
+                "kanji": "季節でどちらがいちばん好きですか"
+            },
+            {
+                "kana": "きせつでいつはいちばんすきですか",
+                "why": "a question word can't be the topic: itsu ga, never itsu wa.",
+                "kanji": "季節でいつはいちばん好きですか"
+            },
+            {
+                "kana": "きせつでいつがすきですか",
+                "why": "without ichiban nothing asks for the best one.",
+                "kanji": "季節でいつが好きですか"
+            }
+        ],
+        "kanjiNotes": [
+            {
+                "word": "季節",
+                "kana": "きせつ"
+            },
+            {
+                "word": "好き",
+                "kana": "すき"
+            }
+        ],
+        "adjNotes": [
+            {
+                "kana": "すき",
+                "family": "na"
+            }
+        ]
+    },
+    {
+        "id": "ichiban-fuyu",
+        "covers": [
+            "compare:no-hou-ga",
+            "compare:question-word-ga"
+        ],
+        "sheet": "compare",
+        "en": "I like winter best.",
+        "correct": {
+            "kana": "ふゆがいちばんすきです",
+            "romaji": "fuyu ga ichiban suki desu",
+            "kanji": "冬がいちばん好きです"
+        },
+        "wrong": [
+            {
+                "kana": "ふゆをいちばんすきです",
+                "why": "suki takes ga, never wo.",
+                "kanji": "冬をいちばん好きです"
+            },
+            {
+                "kana": "ふゆのほうがすきです",
+                "why": "no hou ga picks one of two. Out of four seasons it is ichiban.",
+                "kanji": "冬のほうが好きです"
+            },
+            {
+                "kana": "ふゆがいちばんすきなです",
+                "why": "na only goes in front of a noun.",
+                "kanji": "冬がいちばん好きなです"
+            }
+        ],
+        "kanjiNotes": [
+            {
+                "word": "冬",
+                "kana": "ふゆ"
+            },
+            {
+                "word": "好き",
+                "kana": "すき"
+            }
+        ],
+        "adjNotes": [
+            {
+                "kana": "すき",
+                "family": "na"
+            }
+        ]
+    },
+    {
+        "id": "ichiban-kazoku",
+        "covers": [
+            "compare:dochira-for-two",
+            "compare:question-word-ga"
+        ],
+        "sheet": "compare",
+        "en": "Who is the busiest in your family?",
+        "correct": {
+            "kana": "かぞくでだれがいちばんいそがしいですか",
+            "romaji": "kazoku de dare ga ichiban isogashii desu ka"
+        },
+        "wrong": [
+            {
+                "kana": "かぞくでなにがいちばんいそがしいですか",
+                "why": "nani is for things. For a person ask dare."
+            },
+            {
+                "kana": "かぞくでだれはいちばんいそがしいですか",
+                "why": "a question word can't be the topic: dare ga, never dare wa."
+            },
+            {
+                "kana": "かぞくでどちらがいちばんいそがしいですか",
+                "why": "dochira is for a choice of two. A question about people takes dare."
+            }
+        ],
+        "adjNotes": [
+            {
+                "kana": "いそがしい",
+                "family": "i"
             }
         ]
     }
