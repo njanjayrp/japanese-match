@@ -267,7 +267,8 @@ for (const k of kanji) {
     // Without stroke data the character silently vanishes from the picker.
     if (!strokes.strokes[k.char]) fail(`${k.char}: no stroke data — rerun tools/gen_strokes.py`);
     // note is optional — it exists for irregular readings, not every entry.
-    for (const field of ["romaji", "meaning", "word", "wordKana", "wordEnglish"]) {
+    // origin is not: every kanji says how its parts make the meaning.
+    for (const field of ["romaji", "meaning", "origin", "word", "wordKana", "wordEnglish"]) {
         if (!k[field]) fail(`${k.char}: missing ${field}`);
     }
     if (k.wordKana && ![...k.wordKana].every(c => Romaji.isKana(c))) {

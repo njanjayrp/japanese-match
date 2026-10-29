@@ -69,7 +69,9 @@ options would make this trivial.
 time. Writing kana by hand is the fastest way to stop confusing them. The script
 picker also has a small hand-picked kanji set ([`data/kanji.json`](data/kanji.json)),
 shown with the word each character was taken from — 上 alone has no one reading,
-so it is labelled and spoken as 上手 じょうず.
+so it is labelled and spoken as 上手 じょうず. Each kanji also carries an
+`origin`: how its parts make the meaning, and which part only gives the sound.
+`check.js` fails on a kanji without one.
 
 **Words → Browse** — the whole library in one list. Mostly a proofreading tool: after
 adding words, check here that the furigana lines up and the derived romaji looks

@@ -547,6 +547,12 @@ rt {
 .write-char { font-family: var(--jp); font-size: 40px; line-height: 1.1; }
 .write-romaji { font-size: 16px; color: var(--accent); font-weight: 600; }
 .write-count { font-size: 13px; color: var(--muted); margin: 4px 0 10px; }
+.write-origin {
+    font-size: 13px;
+    line-height: 1.45;
+    margin: -4px 0 10px;
+    max-width: 34em;
+}
 .write-note {
     font-size: 12px;
     color: var(--muted);

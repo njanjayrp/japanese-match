@@ -28,7 +28,7 @@ const StrokeMode = (() => {
         strokes = strokeData.strokes || {};
 
         for (const id of ["write-script", "write-set", "stroke-paths", "write-char",
-                          "write-romaji", "write-count", "write-note", "write-replay",
+                          "write-romaji", "write-count", "write-origin", "write-note", "write-replay",
                           "write-picker", "write-speak"]) {
             el[id] = document.getElementById(id);
         }
@@ -113,6 +113,9 @@ const StrokeMode = (() => {
         // Several of these words are jukujikun: the compound has a reading of
         // its own, and splitting it across the characters teaches a reading
         // that doesn't exist. The note is where that gets said.
+        // How the character is built from its parts. Kana have none.
+        el["write-origin"].textContent = k.origin || "";
+        el["write-origin"].hidden = !k.origin;
         el["write-note"].textContent = k.note || "";
         el["write-note"].hidden = !k.note;
         play(k);
