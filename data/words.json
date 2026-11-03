@@ -1210,7 +1210,7 @@
         "english": "ramen",
         "group": "Food & drink",
         "note": "loanword — katakana",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "",
@@ -2179,7 +2179,7 @@
         "group": "Adjectives",
         "note": "i-adjective — かわいい犬",
         "adj": "i",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "一",
@@ -3379,7 +3379,7 @@
         "english": "cafe",
         "group": "Places",
         "note": "loanword — 喫茶店 is the old-fashioned kind",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "",
@@ -3387,14 +3387,14 @@
         "english": "restaurant",
         "group": "Places",
         "note": "loanword — katakana",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "大阪",
         "kana": "おおさか",
         "english": "Osaka",
         "group": "Places",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "北海道",
@@ -3402,7 +3402,7 @@
         "english": "Hokkaido",
         "group": "Places",
         "note": "the big northern island",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "沖縄",
@@ -3410,7 +3410,7 @@
         "english": "Okinawa",
         "group": "Places",
         "note": "the southern islands",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "新宿",
@@ -3418,7 +3418,7 @@
         "english": "Shinjuku",
         "group": "Places",
         "note": "a district of Tokyo, with the busiest station in the world",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "電車",
