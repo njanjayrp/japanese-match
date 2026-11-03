@@ -1,7 +1,872 @@
 [
     {
+        "id": "money",
+        "title": "Big numbers and money",
+        "lessons": [
+            3
+        ],
+        "blurb": "English groups digits in threes and Japanese groups them in fours, so the whole difficulty of big numbers is where you put the break. Once 10,000 is one word — man — a price reads straight off the page.",
+        "legend": [
+            {
+                "term": "-en",
+                "gloss": "yen — the counter for money"
+            },
+            {
+                "term": "man",
+                "gloss": "10,000"
+            },
+            {
+                "term": "oku",
+                "gloss": "100,000,000"
+            },
+            {
+                "term": "ikura",
+                "gloss": "how much"
+            }
+        ],
+        "grids": [
+            {
+                "title": "the scales",
+                "columns": [
+                    "reading",
+                    "the catch"
+                ],
+                "rows": [
+                    {
+                        "label": "10",
+                        "cells": [
+                            {
+                                "kana": "じゅう",
+                                "en": "ten"
+                            },
+                            {}
+                        ]
+                    },
+                    {
+                        "label": "100",
+                        "cells": [
+                            {
+                                "kana": "ひゃく",
+                                "en": "a hundred"
+                            },
+                            {
+                                "term": "hyaku",
+                                "en": "never ichihyaku"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "1,000",
+                        "cells": [
+                            {
+                                "kana": "せん",
+                                "en": "a thousand"
+                            },
+                            {
+                                "term": "sen",
+                                "en": "never issen"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "10,000",
+                        "cells": [
+                            {
+                                "kana": "いちまん",
+                                "en": "ten thousand",
+                                "odd": true
+                            },
+                            {
+                                "term": "ichiman",
+                                "en": "here the ichi comes back, always"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "100,000",
+                        "cells": [
+                            {
+                                "kana": "じゅうまん",
+                                "en": "a hundred thousand"
+                            },
+                            {
+                                "term": "10 man",
+                                "en": "you count man, not thousands"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "1,000,000",
+                        "cells": [
+                            {
+                                "kana": "ひゃくまん",
+                                "en": "a million"
+                            },
+                            {
+                                "term": "100 man"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "10,000,000",
+                        "cells": [
+                            {
+                                "kana": "せんまん",
+                                "en": "ten million"
+                            },
+                            {
+                                "term": "1,000 man"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "100,000,000",
+                        "cells": [
+                            {
+                                "kana": "いちおく",
+                                "en": "a hundred million",
+                                "odd": true
+                            },
+                            {
+                                "term": "oku",
+                                "en": "the next scale up — 10,000 man"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "the sounds that move",
+                "columns": [
+                    "reading",
+                    "what changed"
+                ],
+                "rows": [
+                    {
+                        "label": "300",
+                        "cells": [
+                            {
+                                "kana": "さんびゃく",
+                                "en": "three hundred"
+                            },
+                            {
+                                "term": "h → b"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "600",
+                        "cells": [
+                            {
+                                "kana": "ろっぴゃく",
+                                "en": "six hundred",
+                                "odd": true
+                            },
+                            {
+                                "term": "roku → rop, h → p"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "800",
+                        "cells": [
+                            {
+                                "kana": "はっぴゃく",
+                                "en": "eight hundred",
+                                "odd": true
+                            },
+                            {
+                                "term": "hachi → hap, h → p"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "3,000",
+                        "cells": [
+                            {
+                                "kana": "さんぜん",
+                                "en": "three thousand"
+                            },
+                            {
+                                "term": "s → z"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "8,000",
+                        "cells": [
+                            {
+                                "kana": "はっせん",
+                                "en": "eight thousand",
+                                "odd": true
+                            },
+                            {
+                                "term": "hachi → has"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "prices",
+                "columns": [
+                    "how you say it",
+                    "how it is built"
+                ],
+                "rows": [
+                    {
+                        "label": "¥100",
+                        "cells": [
+                            {
+                                "kana": "ひゃくえん",
+                                "romaji": "hyaku en",
+                                "en": "a hundred yen"
+                            },
+                            {}
+                        ]
+                    },
+                    {
+                        "label": "¥500",
+                        "cells": [
+                            {
+                                "kana": "ごひゃくえん",
+                                "romaji": "gohyaku en",
+                                "en": "five hundred yen"
+                            },
+                            {}
+                        ]
+                    },
+                    {
+                        "label": "¥1,000",
+                        "cells": [
+                            {
+                                "kana": "せんえん",
+                                "en": "a thousand yen"
+                            },
+                            {
+                                "term": "sen + en"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "¥1,200",
+                        "cells": [
+                            {
+                                "kana": "せんにひゃくえん",
+                                "romaji": "sen nihyaku en",
+                                "en": "1,200 yen"
+                            },
+                            {
+                                "term": "sen + nihyaku"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "¥3,000",
+                        "cells": [
+                            {
+                                "kana": "さんぜんえん",
+                                "en": "3,000 yen"
+                            },
+                            {
+                                "term": "sanzen",
+                                "en": "not sansen"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "¥10,000",
+                        "cells": [
+                            {
+                                "kana": "いちまんえん",
+                                "en": "10,000 yen",
+                                "odd": true
+                            },
+                            {
+                                "term": "ichiman",
+                                "en": "there is no juusen"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "¥25,000",
+                        "cells": [
+                            {
+                                "kana": "にまんごせんえん",
+                                "romaji": "niman gosen'en",
+                                "en": "25,000 yen"
+                            },
+                            {
+                                "term": "2 man, then 5 sen",
+                                "en": "the man block is read first"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "at the till",
+                "columns": [
+                    "what you say",
+                    "when"
+                ],
+                "rows": [
+                    {
+                        "label": "asking",
+                        "cells": [
+                            {
+                                "kana": "いくらですか",
+                                "romaji": "ikura desu ka",
+                                "en": "how much is it?"
+                            },
+                            {
+                                "term": "kore wa ikura desu ka",
+                                "en": "when you are pointing at it"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "answering",
+                        "cells": [
+                            {
+                                "kana": "さんぜんえんです",
+                                "romaji": "sanzen'en desu",
+                                "en": "it is 3,000 yen"
+                            },
+                            {}
+                        ]
+                    },
+                    {
+                        "label": "reacting",
+                        "cells": [
+                            {
+                                "kana": "たかいですね",
+                                "romaji": "takai desu ne",
+                                "en": "that is pricey, isn't it"
+                            },
+                            {
+                                "term": "yasui desu ne",
+                                "en": "the other way round"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "rules": [
+            {
+                "id": "count-in-fours",
+                "title": "Break the digits into fours, not threes",
+                "body": "The comma English writes every three digits is the wrong cut here. Split 250,000 as 25|0000 and it reads off directly: nijuugo man. Reading it the English way — two hundred and fifty thousand — forces a conversion every single time, and that is the whole reason big numbers feel hard."
+            },
+            {
+                "id": "drop-the-ichi",
+                "title": "hyaku and sen drop the ichi, man never does",
+                "body": "A hundred is hyaku and a thousand is sen, with nothing in front. Ten thousand is always ichiman — never juusen, and never bare man."
+            },
+            {
+                "id": "sound-changes",
+                "title": "Three numbers move the sound: 3, 6, 8",
+                "body": "sanbyaku, roppyaku, happyaku; sanzen, hassen. These are much easier to hear than to work out, so say them out loud rather than deriving them mid-sentence."
+            },
+            {
+                "id": "yon-nana-kyuu",
+                "title": "Big numbers use yon, nana and kyuu",
+                "body": "yonhyaku, nanasen, kyuuman. The shi, shichi and ku readings belong to the clock and the calendar — yoji, shichigatsu, kugatsu — and stay out of counting."
+            },
+            {
+                "id": "en-counter",
+                "title": "en is a counter like any other",
+                "body": "The number then en, with no particle between them: gohyaku en, ichiman'en. Ask with ikura desu ka, or kore wa ikura desu ka when you are pointing."
+            }
+        ]
+    },
+    {
+        "id": "clock",
+        "title": "Reading the clock",
+        "lessons": [
+            4
+        ],
+        "blurb": "Two suffixes and numbers you already know. Hour then minute, no word for 'past' or 'to' — but three hours lie about their own number, and the minute suffix flips between fun and pun.",
+        "legend": [
+            {
+                "term": "ji",
+                "gloss": "o'clock"
+            },
+            {
+                "term": "fun / pun",
+                "gloss": "minutes"
+            },
+            {
+                "term": "han",
+                "gloss": "half past"
+            },
+            {
+                "term": "gozen",
+                "gloss": "a.m."
+            },
+            {
+                "term": "gogo",
+                "gloss": "p.m."
+            }
+        ],
+        "grids": [
+            {
+                "title": "hours — ji",
+                "columns": [
+                    "o'clock",
+                    "the trap"
+                ],
+                "rows": [
+                    {
+                        "label": "1",
+                        "cells": [
+                            {
+                                "kana": "いちじ",
+                                "en": "1:00"
+                            },
+                            {}
+                        ]
+                    },
+                    {
+                        "label": "2",
+                        "cells": [
+                            {
+                                "kana": "にじ",
+                                "en": "2:00"
+                            },
+                            {}
+                        ]
+                    },
+                    {
+                        "label": "3",
+                        "cells": [
+                            {
+                                "kana": "さんじ",
+                                "en": "3:00"
+                            },
+                            {}
+                        ]
+                    },
+                    {
+                        "label": "4",
+                        "cells": [
+                            {
+                                "kana": "よじ",
+                                "en": "4:00",
+                                "odd": true
+                            },
+                            {
+                                "term": "四",
+                                "en": "yo, never yonji or shiji"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "5",
+                        "cells": [
+                            {
+                                "kana": "ごじ",
+                                "en": "5:00"
+                            },
+                            {}
+                        ]
+                    },
+                    {
+                        "label": "6",
+                        "cells": [
+                            {
+                                "kana": "ろくじ",
+                                "en": "6:00"
+                            },
+                            {}
+                        ]
+                    },
+                    {
+                        "label": "7",
+                        "cells": [
+                            {
+                                "kana": "しちじ",
+                                "en": "7:00",
+                                "odd": true
+                            },
+                            {
+                                "term": "七",
+                                "en": "shichi, not nanaji"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "8",
+                        "cells": [
+                            {
+                                "kana": "はちじ",
+                                "en": "8:00"
+                            },
+                            {}
+                        ]
+                    },
+                    {
+                        "label": "9",
+                        "cells": [
+                            {
+                                "kana": "くじ",
+                                "en": "9:00",
+                                "odd": true
+                            },
+                            {
+                                "term": "九",
+                                "en": "ku, not kyuuji"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "10",
+                        "cells": [
+                            {
+                                "kana": "じゅうじ",
+                                "en": "10:00"
+                            },
+                            {}
+                        ]
+                    },
+                    {
+                        "label": "11",
+                        "cells": [
+                            {
+                                "kana": "じゅういちじ",
+                                "en": "11:00"
+                            },
+                            {}
+                        ]
+                    },
+                    {
+                        "label": "12",
+                        "cells": [
+                            {
+                                "kana": "じゅうにじ",
+                                "en": "12:00"
+                            },
+                            {}
+                        ]
+                    },
+                    {
+                        "label": "?",
+                        "cells": [
+                            {
+                                "kana": "なんじ",
+                                "en": "what time?"
+                            },
+                            {
+                                "term": "何",
+                                "en": "nanji desu ka"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "minutes — fun / pun",
+                "columns": [
+                    "minutes",
+                    "suffix"
+                ],
+                "rows": [
+                    {
+                        "label": "1",
+                        "cells": [
+                            {
+                                "kana": "いっぷん",
+                                "en": "1 minute"
+                            },
+                            {
+                                "term": "ぷん",
+                                "en": "small tsu"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "2",
+                        "cells": [
+                            {
+                                "kana": "にふん",
+                                "en": "2 minutes"
+                            },
+                            {
+                                "term": "ふん",
+                                "en": "plain"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "3",
+                        "cells": [
+                            {
+                                "kana": "さんぷん",
+                                "en": "3 minutes"
+                            },
+                            {
+                                "term": "ぷん",
+                                "en": "after n"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "4",
+                        "cells": [
+                            {
+                                "kana": "よんぷん",
+                                "en": "4 minutes"
+                            },
+                            {
+                                "term": "ぷん",
+                                "en": "after n"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "5",
+                        "cells": [
+                            {
+                                "kana": "ごふん",
+                                "en": "5 minutes"
+                            },
+                            {
+                                "term": "ふん",
+                                "en": "plain"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "6",
+                        "cells": [
+                            {
+                                "kana": "ろっぷん",
+                                "en": "6 minutes"
+                            },
+                            {
+                                "term": "ぷん",
+                                "en": "small tsu"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "7",
+                        "cells": [
+                            {
+                                "kana": "ななふん",
+                                "en": "7 minutes"
+                            },
+                            {
+                                "term": "ふん",
+                                "en": "plain"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "8",
+                        "cells": [
+                            {
+                                "kana": "はっぷん",
+                                "en": "8 minutes"
+                            },
+                            {
+                                "term": "ぷん",
+                                "en": "small tsu"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "9",
+                        "cells": [
+                            {
+                                "kana": "きゅうふん",
+                                "en": "9 minutes"
+                            },
+                            {
+                                "term": "ふん",
+                                "en": "plain"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "10",
+                        "cells": [
+                            {
+                                "kana": "じゅっぷん",
+                                "en": "10 minutes"
+                            },
+                            {
+                                "term": "ぷん",
+                                "en": "small tsu"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "15",
+                        "cells": [
+                            {
+                                "kana": "じゅうごふん",
+                                "en": "15 minutes"
+                            },
+                            {
+                                "term": "ふん",
+                                "en": "ends in 5"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "30",
+                        "cells": [
+                            {
+                                "kana": "さんじゅっぷん",
+                                "en": "30 minutes"
+                            },
+                            {
+                                "term": "はん",
+                                "en": "or just han"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "?",
+                        "cells": [
+                            {
+                                "kana": "なんぷん",
+                                "en": "how many minutes?"
+                            },
+                            {
+                                "term": "ぷん",
+                                "en": "after n"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "putting it together",
+                "columns": [
+                    "said out loud"
+                ],
+                "rows": [
+                    {
+                        "label": "a.m.",
+                        "cells": [
+                            {
+                                "kana": "ごぜんくじ",
+                                "romaji": "gozen kuji",
+                                "en": "9 a.m. — gozen goes first, unlike English"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "p.m.",
+                        "cells": [
+                            {
+                                "kana": "ごごさんじ",
+                                "romaji": "gogo sanji",
+                                "en": "3 p.m."
+                            }
+                        ]
+                    },
+                    {
+                        "label": "half",
+                        "cells": [
+                            {
+                                "kana": "さんじはん",
+                                "romaji": "sanji han",
+                                "en": "half past three"
+                            }
+                        ]
+                    },
+                    {
+                        "label": ":15",
+                        "cells": [
+                            {
+                                "kana": "しちじじゅうごふん",
+                                "romaji": "shichiji juugofun",
+                                "en": "7:15"
+                            }
+                        ]
+                    },
+                    {
+                        "label": ":45",
+                        "cells": [
+                            {
+                                "kana": "よじよんじゅうごふん",
+                                "romaji": "yoji yonjuugofun",
+                                "en": "4:45"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "to",
+                        "cells": [
+                            {
+                                "kana": "はちじごふんまえ",
+                                "romaji": "hachiji gofun mae",
+                                "en": "five to eight — mae means before"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "span",
+                        "cells": [
+                            {
+                                "kana": "くじからごじまで",
+                                "romaji": "kuji kara goji made",
+                                "en": "from nine to five"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "asking",
+                        "cells": [
+                            {
+                                "kana": "いまなんじですか",
+                                "romaji": "ima nanji desu ka",
+                                "en": "what time is it now?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "rules": [
+            {
+                "id": "hour-then-minute",
+                "title": "Hour then minute, nothing in between",
+                "body": "sanji juugofun is 3:15. Japanese has no word doing the work of 'past' or 'to' — you say the hour, then the minutes, and stop."
+            },
+            {
+                "id": "irregular-hours",
+                "title": "Three hours lie about their number",
+                "body": "4 is yoji, not yonji. 7 is shichiji, not nanaji. 9 is kuji, not kyuuji. The other nine hours are just the number plus ji, so these three are the whole memorisation cost."
+            },
+            {
+                "id": "pun-fun",
+                "title": "pun after a stopped sound",
+                "body": "1, 3, 4, 6, 8 and 10 end in an n or a small tsu, and the f hardens to p: ippun, sanpun, yonpun, roppun, happun, juppun. 2, 5, 7 and 9 stay soft: nifun, gofun, nanafun, kyuufun. Same rule for compounds — 15 is juugofun, 30 is sanjuppun."
+            },
+            {
+                "id": "four-seven-nine-switch",
+                "title": "4, 7 and 9 switch sides",
+                "body": "The traps invert between the columns: yoji but yonpun, shichiji but nanafun, kuji but kyuufun. If you learn one column and guess the other, these three are where you'll be wrong."
+            },
+            {
+                "id": "han-gozen-gogo",
+                "title": "han saves you a mouthful",
+                "body": "sanji han — half past three. Nobody counts out sanji sanjuppun when talking. And gozen / gogo go in front of the hour, not after it: gozen kuji, gogo sanji."
+            }
+        ]
+    },
+    {
         "id": "calendar",
         "title": "Days, dates and when",
+        "lessons": [
+            4,
+            5
+        ],
         "blurb": "Everything about when. Relative words — yesterday, next week — are built from six prefixes, weekdays from one suffix, months from the number plus gatsu; the marked cells are the handful that break their pattern. The one real split is ni: a calendar slot takes it, a relative word never does.",
         "legend": [
             {
@@ -801,484 +1666,12 @@
         ]
     },
     {
-        "id": "clock",
-        "title": "Reading the clock",
-        "blurb": "Two suffixes and numbers you already know. Hour then minute, no word for 'past' or 'to' — but three hours lie about their own number, and the minute suffix flips between fun and pun.",
-        "legend": [
-            {
-                "term": "ji",
-                "gloss": "o'clock"
-            },
-            {
-                "term": "fun / pun",
-                "gloss": "minutes"
-            },
-            {
-                "term": "han",
-                "gloss": "half past"
-            },
-            {
-                "term": "gozen",
-                "gloss": "a.m."
-            },
-            {
-                "term": "gogo",
-                "gloss": "p.m."
-            }
-        ],
-        "grids": [
-            {
-                "title": "hours — ji",
-                "columns": [
-                    "o'clock",
-                    "the trap"
-                ],
-                "rows": [
-                    {
-                        "label": "1",
-                        "cells": [
-                            {
-                                "kana": "いちじ",
-                                "en": "1:00"
-                            },
-                            {}
-                        ]
-                    },
-                    {
-                        "label": "2",
-                        "cells": [
-                            {
-                                "kana": "にじ",
-                                "en": "2:00"
-                            },
-                            {}
-                        ]
-                    },
-                    {
-                        "label": "3",
-                        "cells": [
-                            {
-                                "kana": "さんじ",
-                                "en": "3:00"
-                            },
-                            {}
-                        ]
-                    },
-                    {
-                        "label": "4",
-                        "cells": [
-                            {
-                                "kana": "よじ",
-                                "en": "4:00",
-                                "odd": true
-                            },
-                            {
-                                "term": "四",
-                                "en": "yo, never yonji or shiji"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "5",
-                        "cells": [
-                            {
-                                "kana": "ごじ",
-                                "en": "5:00"
-                            },
-                            {}
-                        ]
-                    },
-                    {
-                        "label": "6",
-                        "cells": [
-                            {
-                                "kana": "ろくじ",
-                                "en": "6:00"
-                            },
-                            {}
-                        ]
-                    },
-                    {
-                        "label": "7",
-                        "cells": [
-                            {
-                                "kana": "しちじ",
-                                "en": "7:00",
-                                "odd": true
-                            },
-                            {
-                                "term": "七",
-                                "en": "shichi, not nanaji"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "8",
-                        "cells": [
-                            {
-                                "kana": "はちじ",
-                                "en": "8:00"
-                            },
-                            {}
-                        ]
-                    },
-                    {
-                        "label": "9",
-                        "cells": [
-                            {
-                                "kana": "くじ",
-                                "en": "9:00",
-                                "odd": true
-                            },
-                            {
-                                "term": "九",
-                                "en": "ku, not kyuuji"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "10",
-                        "cells": [
-                            {
-                                "kana": "じゅうじ",
-                                "en": "10:00"
-                            },
-                            {}
-                        ]
-                    },
-                    {
-                        "label": "11",
-                        "cells": [
-                            {
-                                "kana": "じゅういちじ",
-                                "en": "11:00"
-                            },
-                            {}
-                        ]
-                    },
-                    {
-                        "label": "12",
-                        "cells": [
-                            {
-                                "kana": "じゅうにじ",
-                                "en": "12:00"
-                            },
-                            {}
-                        ]
-                    },
-                    {
-                        "label": "?",
-                        "cells": [
-                            {
-                                "kana": "なんじ",
-                                "en": "what time?"
-                            },
-                            {
-                                "term": "何",
-                                "en": "nanji desu ka"
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                "title": "minutes — fun / pun",
-                "columns": [
-                    "minutes",
-                    "suffix"
-                ],
-                "rows": [
-                    {
-                        "label": "1",
-                        "cells": [
-                            {
-                                "kana": "いっぷん",
-                                "en": "1 minute"
-                            },
-                            {
-                                "term": "ぷん",
-                                "en": "small tsu"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "2",
-                        "cells": [
-                            {
-                                "kana": "にふん",
-                                "en": "2 minutes"
-                            },
-                            {
-                                "term": "ふん",
-                                "en": "plain"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "3",
-                        "cells": [
-                            {
-                                "kana": "さんぷん",
-                                "en": "3 minutes"
-                            },
-                            {
-                                "term": "ぷん",
-                                "en": "after n"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "4",
-                        "cells": [
-                            {
-                                "kana": "よんぷん",
-                                "en": "4 minutes"
-                            },
-                            {
-                                "term": "ぷん",
-                                "en": "after n"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "5",
-                        "cells": [
-                            {
-                                "kana": "ごふん",
-                                "en": "5 minutes"
-                            },
-                            {
-                                "term": "ふん",
-                                "en": "plain"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "6",
-                        "cells": [
-                            {
-                                "kana": "ろっぷん",
-                                "en": "6 minutes"
-                            },
-                            {
-                                "term": "ぷん",
-                                "en": "small tsu"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "7",
-                        "cells": [
-                            {
-                                "kana": "ななふん",
-                                "en": "7 minutes"
-                            },
-                            {
-                                "term": "ふん",
-                                "en": "plain"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "8",
-                        "cells": [
-                            {
-                                "kana": "はっぷん",
-                                "en": "8 minutes"
-                            },
-                            {
-                                "term": "ぷん",
-                                "en": "small tsu"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "9",
-                        "cells": [
-                            {
-                                "kana": "きゅうふん",
-                                "en": "9 minutes"
-                            },
-                            {
-                                "term": "ふん",
-                                "en": "plain"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "10",
-                        "cells": [
-                            {
-                                "kana": "じゅっぷん",
-                                "en": "10 minutes"
-                            },
-                            {
-                                "term": "ぷん",
-                                "en": "small tsu"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "15",
-                        "cells": [
-                            {
-                                "kana": "じゅうごふん",
-                                "en": "15 minutes"
-                            },
-                            {
-                                "term": "ふん",
-                                "en": "ends in 5"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "30",
-                        "cells": [
-                            {
-                                "kana": "さんじゅっぷん",
-                                "en": "30 minutes"
-                            },
-                            {
-                                "term": "はん",
-                                "en": "or just han"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "?",
-                        "cells": [
-                            {
-                                "kana": "なんぷん",
-                                "en": "how many minutes?"
-                            },
-                            {
-                                "term": "ぷん",
-                                "en": "after n"
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                "title": "putting it together",
-                "columns": [
-                    "said out loud"
-                ],
-                "rows": [
-                    {
-                        "label": "a.m.",
-                        "cells": [
-                            {
-                                "kana": "ごぜんくじ",
-                                "romaji": "gozen kuji",
-                                "en": "9 a.m. — gozen goes first, unlike English"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "p.m.",
-                        "cells": [
-                            {
-                                "kana": "ごごさんじ",
-                                "romaji": "gogo sanji",
-                                "en": "3 p.m."
-                            }
-                        ]
-                    },
-                    {
-                        "label": "half",
-                        "cells": [
-                            {
-                                "kana": "さんじはん",
-                                "romaji": "sanji han",
-                                "en": "half past three"
-                            }
-                        ]
-                    },
-                    {
-                        "label": ":15",
-                        "cells": [
-                            {
-                                "kana": "しちじじゅうごふん",
-                                "romaji": "shichiji juugofun",
-                                "en": "7:15"
-                            }
-                        ]
-                    },
-                    {
-                        "label": ":45",
-                        "cells": [
-                            {
-                                "kana": "よじよんじゅうごふん",
-                                "romaji": "yoji yonjuugofun",
-                                "en": "4:45"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "to",
-                        "cells": [
-                            {
-                                "kana": "はちじごふんまえ",
-                                "romaji": "hachiji gofun mae",
-                                "en": "five to eight — mae means before"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "span",
-                        "cells": [
-                            {
-                                "kana": "くじからごじまで",
-                                "romaji": "kuji kara goji made",
-                                "en": "from nine to five"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "asking",
-                        "cells": [
-                            {
-                                "kana": "いまなんじですか",
-                                "romaji": "ima nanji desu ka",
-                                "en": "what time is it now?"
-                            }
-                        ]
-                    }
-                ]
-            }
-        ],
-        "rules": [
-            {
-                "id": "hour-then-minute",
-                "title": "Hour then minute, nothing in between",
-                "body": "sanji juugofun is 3:15. Japanese has no word doing the work of 'past' or 'to' — you say the hour, then the minutes, and stop."
-            },
-            {
-                "id": "irregular-hours",
-                "title": "Three hours lie about their number",
-                "body": "4 is yoji, not yonji. 7 is shichiji, not nanaji. 9 is kuji, not kyuuji. The other nine hours are just the number plus ji, so these three are the whole memorisation cost."
-            },
-            {
-                "id": "pun-fun",
-                "title": "pun after a stopped sound",
-                "body": "1, 3, 4, 6, 8 and 10 end in an n or a small tsu, and the f hardens to p: ippun, sanpun, yonpun, roppun, happun, juppun. 2, 5, 7 and 9 stay soft: nifun, gofun, nanafun, kyuufun. Same rule for compounds — 15 is juugofun, 30 is sanjuppun."
-            },
-            {
-                "id": "four-seven-nine-switch",
-                "title": "4, 7 and 9 switch sides",
-                "body": "The traps invert between the columns: yoji but yonpun, shichiji but nanafun, kuji but kyuufun. If you learn one column and guess the other, these three are where you'll be wrong."
-            },
-            {
-                "id": "han-gozen-gogo",
-                "title": "han saves you a mouthful",
-                "body": "sanji han — half past three. Nobody counts out sanji sanjuppun when talking. And gozen / gogo go in front of the hour, not after it: gozen kuji, gogo sanji."
-            }
-        ]
-    },
-    {
         "id": "going",
         "title": "Going somewhere",
+        "lessons": [
+            5,
+            13
+        ],
         "blurb": "One shape carries most travel sentences: when + how + where + verb. The slots are easy; the particles are what goes wrong, so this sheet is mostly them.",
         "legend": [
             {
@@ -1804,387 +2197,12 @@
         ]
     },
     {
-        "id": "money",
-        "title": "Big numbers and money",
-        "blurb": "English groups digits in threes and Japanese groups them in fours, so the whole difficulty of big numbers is where you put the break. Once 10,000 is one word — man — a price reads straight off the page.",
-        "legend": [
-            {
-                "term": "-en",
-                "gloss": "yen — the counter for money"
-            },
-            {
-                "term": "man",
-                "gloss": "10,000"
-            },
-            {
-                "term": "oku",
-                "gloss": "100,000,000"
-            },
-            {
-                "term": "ikura",
-                "gloss": "how much"
-            }
-        ],
-        "grids": [
-            {
-                "title": "the scales",
-                "columns": [
-                    "reading",
-                    "the catch"
-                ],
-                "rows": [
-                    {
-                        "label": "10",
-                        "cells": [
-                            {
-                                "kana": "じゅう",
-                                "en": "ten"
-                            },
-                            {}
-                        ]
-                    },
-                    {
-                        "label": "100",
-                        "cells": [
-                            {
-                                "kana": "ひゃく",
-                                "en": "a hundred"
-                            },
-                            {
-                                "term": "hyaku",
-                                "en": "never ichihyaku"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "1,000",
-                        "cells": [
-                            {
-                                "kana": "せん",
-                                "en": "a thousand"
-                            },
-                            {
-                                "term": "sen",
-                                "en": "never issen"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "10,000",
-                        "cells": [
-                            {
-                                "kana": "いちまん",
-                                "en": "ten thousand",
-                                "odd": true
-                            },
-                            {
-                                "term": "ichiman",
-                                "en": "here the ichi comes back, always"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "100,000",
-                        "cells": [
-                            {
-                                "kana": "じゅうまん",
-                                "en": "a hundred thousand"
-                            },
-                            {
-                                "term": "10 man",
-                                "en": "you count man, not thousands"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "1,000,000",
-                        "cells": [
-                            {
-                                "kana": "ひゃくまん",
-                                "en": "a million"
-                            },
-                            {
-                                "term": "100 man"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "10,000,000",
-                        "cells": [
-                            {
-                                "kana": "せんまん",
-                                "en": "ten million"
-                            },
-                            {
-                                "term": "1,000 man"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "100,000,000",
-                        "cells": [
-                            {
-                                "kana": "いちおく",
-                                "en": "a hundred million",
-                                "odd": true
-                            },
-                            {
-                                "term": "oku",
-                                "en": "the next scale up — 10,000 man"
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                "title": "the sounds that move",
-                "columns": [
-                    "reading",
-                    "what changed"
-                ],
-                "rows": [
-                    {
-                        "label": "300",
-                        "cells": [
-                            {
-                                "kana": "さんびゃく",
-                                "en": "three hundred"
-                            },
-                            {
-                                "term": "h → b"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "600",
-                        "cells": [
-                            {
-                                "kana": "ろっぴゃく",
-                                "en": "six hundred",
-                                "odd": true
-                            },
-                            {
-                                "term": "roku → rop, h → p"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "800",
-                        "cells": [
-                            {
-                                "kana": "はっぴゃく",
-                                "en": "eight hundred",
-                                "odd": true
-                            },
-                            {
-                                "term": "hachi → hap, h → p"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "3,000",
-                        "cells": [
-                            {
-                                "kana": "さんぜん",
-                                "en": "three thousand"
-                            },
-                            {
-                                "term": "s → z"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "8,000",
-                        "cells": [
-                            {
-                                "kana": "はっせん",
-                                "en": "eight thousand",
-                                "odd": true
-                            },
-                            {
-                                "term": "hachi → has"
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                "title": "prices",
-                "columns": [
-                    "how you say it",
-                    "how it is built"
-                ],
-                "rows": [
-                    {
-                        "label": "¥100",
-                        "cells": [
-                            {
-                                "kana": "ひゃくえん",
-                                "romaji": "hyaku en",
-                                "en": "a hundred yen"
-                            },
-                            {}
-                        ]
-                    },
-                    {
-                        "label": "¥500",
-                        "cells": [
-                            {
-                                "kana": "ごひゃくえん",
-                                "romaji": "gohyaku en",
-                                "en": "five hundred yen"
-                            },
-                            {}
-                        ]
-                    },
-                    {
-                        "label": "¥1,000",
-                        "cells": [
-                            {
-                                "kana": "せんえん",
-                                "en": "a thousand yen"
-                            },
-                            {
-                                "term": "sen + en"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "¥1,200",
-                        "cells": [
-                            {
-                                "kana": "せんにひゃくえん",
-                                "romaji": "sen nihyaku en",
-                                "en": "1,200 yen"
-                            },
-                            {
-                                "term": "sen + nihyaku"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "¥3,000",
-                        "cells": [
-                            {
-                                "kana": "さんぜんえん",
-                                "en": "3,000 yen"
-                            },
-                            {
-                                "term": "sanzen",
-                                "en": "not sansen"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "¥10,000",
-                        "cells": [
-                            {
-                                "kana": "いちまんえん",
-                                "en": "10,000 yen",
-                                "odd": true
-                            },
-                            {
-                                "term": "ichiman",
-                                "en": "there is no juusen"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "¥25,000",
-                        "cells": [
-                            {
-                                "kana": "にまんごせんえん",
-                                "romaji": "niman gosen'en",
-                                "en": "25,000 yen"
-                            },
-                            {
-                                "term": "2 man, then 5 sen",
-                                "en": "the man block is read first"
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                "title": "at the till",
-                "columns": [
-                    "what you say",
-                    "when"
-                ],
-                "rows": [
-                    {
-                        "label": "asking",
-                        "cells": [
-                            {
-                                "kana": "いくらですか",
-                                "romaji": "ikura desu ka",
-                                "en": "how much is it?"
-                            },
-                            {
-                                "term": "kore wa ikura desu ka",
-                                "en": "when you are pointing at it"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "answering",
-                        "cells": [
-                            {
-                                "kana": "さんぜんえんです",
-                                "romaji": "sanzen'en desu",
-                                "en": "it is 3,000 yen"
-                            },
-                            {}
-                        ]
-                    },
-                    {
-                        "label": "reacting",
-                        "cells": [
-                            {
-                                "kana": "たかいですね",
-                                "romaji": "takai desu ne",
-                                "en": "that is pricey, isn't it"
-                            },
-                            {
-                                "term": "yasui desu ne",
-                                "en": "the other way round"
-                            }
-                        ]
-                    }
-                ]
-            }
-        ],
-        "rules": [
-            {
-                "id": "count-in-fours",
-                "title": "Break the digits into fours, not threes",
-                "body": "The comma English writes every three digits is the wrong cut here. Split 250,000 as 25|0000 and it reads off directly: nijuugo man. Reading it the English way — two hundred and fifty thousand — forces a conversion every single time, and that is the whole reason big numbers feel hard."
-            },
-            {
-                "id": "drop-the-ichi",
-                "title": "hyaku and sen drop the ichi, man never does",
-                "body": "A hundred is hyaku and a thousand is sen, with nothing in front. Ten thousand is always ichiman — never juusen, and never bare man."
-            },
-            {
-                "id": "sound-changes",
-                "title": "Three numbers move the sound: 3, 6, 8",
-                "body": "sanbyaku, roppyaku, happyaku; sanzen, hassen. These are much easier to hear than to work out, so say them out loud rather than deriving them mid-sentence."
-            },
-            {
-                "id": "yon-nana-kyuu",
-                "title": "Big numbers use yon, nana and kyuu",
-                "body": "yonhyaku, nanasen, kyuuman. The shi, shichi and ku readings belong to the clock and the calendar — yoji, shichigatsu, kugatsu — and stay out of counting."
-            },
-            {
-                "id": "en-counter",
-                "title": "en is a counter like any other",
-                "body": "The number then en, with no particle between them: gohyaku en, ichiman'en. Ask with ikura desu ka, or kore wa ikura desu ka when you are pointing."
-            }
-        ]
-    },
-    {
         "id": "adjectives",
         "title": "i and na adjectives",
+        "lessons": [
+            8,
+            12
+        ],
         "blurb": "Two families, and only one of them conjugates. An i-adjective carries tense and negation in its own ending; a na-adjective never changes shape at all — desu does the work, exactly as it does after a noun.",
         "legend": [
             {
@@ -2718,730 +2736,11 @@
         ]
     },
     {
-        "id": "compare",
-        "title": "Comparing — yori, dochira, ichiban",
-        "blurb": "Japanese has no -er and no -est: takai is expensive, more expensive and most expensive alike, and the words around it do the comparing. Three shapes cover everything — A wa B yori for one against another, dochira and no hou ga for picking one of two, and de … ichiban for the top of a group.",
-        "legend": [
-            {
-                "term": "yori",
-                "gloss": "than — after the one that loses"
-            },
-            {
-                "term": "dochira",
-                "gloss": "which, of two"
-            },
-            {
-                "term": "no hou ga",
-                "gloss": "the … one — picks the winner"
-            },
-            {
-                "term": "dochira mo / ryouhou",
-                "gloss": "both"
-            },
-            {
-                "term": "ichiban",
-                "gloss": "most, number one"
-            },
-            {
-                "term": "de",
-                "gloss": "the group the winner comes from"
-            }
-        ],
-        "grids": [
-            {
-                "title": "more than — yori",
-                "columns": [
-                    "the sentence",
-                    "the pattern"
-                ],
-                "rows": [
-                    {
-                        "label": "price",
-                        "cells": [
-                            {
-                                "kana": "ぎゅうにくはとりにくよりたかいです",
-                                "romaji": "gyuuniku wa toriniku yori takai desu",
-                                "en": "beef is more expensive than chicken"
-                            },
-                            {
-                                "term": "A は B より Adj です",
-                                "en": "yori sits on the cheaper one"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "size",
-                        "cells": [
-                            {
-                                "kana": "タイはちゅうごくよりちいさいです",
-                                "romaji": "tai wa chuugoku yori chiisai desu",
-                                "en": "Thailand is smaller than China"
-                            },
-                            {
-                                "term": "the adjective stays as it is",
-                                "en": "chiisai — no 'more'"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "busy",
-                        "cells": [
-                            {
-                                "kana": "こんげつはせんげつよりいそがしいです",
-                                "romaji": "kongetsu wa sengetsu yori isogashii desu",
-                                "en": "this month is busier than last month"
-                            },
-                            {}
-                        ]
-                    },
-                    {
-                        "label": "hard",
-                        "cells": [
-                            {
-                                "kana": "かんじはひらがなよりむずかしいです",
-                                "romaji": "kanji wa hiragana yori muzukashii desu",
-                                "en": "kanji is harder than hiragana"
-                            },
-                            {}
-                        ]
-                    },
-                    {
-                        "label": "past",
-                        "cells": [
-                            {
-                                "kana": "きのうはきょうよりさむかったです",
-                                "romaji": "kinou wa kyou yori samukatta desu",
-                                "en": "yesterday was colder than today"
-                            },
-                            {
-                                "term": "past as usual",
-                                "en": "samukatta — nothing extra for comparing"
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                "title": "which of two — dochira",
-                "columns": [
-                    "the sentence",
-                    "the pattern"
-                ],
-                "rows": [
-                    {
-                        "label": "ask",
-                        "cells": [
-                            {
-                                "kana": "いぬとねこどちらがすきですか",
-                                "romaji": "inu to neko dochira ga suki desu ka",
-                                "en": "which do you like, dogs or cats?"
-                            },
-                            {
-                                "term": "A と B どちらが Adj ですか",
-                                "en": "a second と after B is fine too"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "one",
-                        "cells": [
-                            {
-                                "kana": "いぬのほうがすきです",
-                                "romaji": "inu no hou ga suki desu",
-                                "en": "I prefer dogs"
-                            },
-                            {
-                                "term": "A の ほうが Adj です",
-                                "en": "hou is side — the dog side"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "both",
-                        "cells": [
-                            {
-                                "kana": "どちらもすきです",
-                                "romaji": "dochira mo suki desu",
-                                "en": "I like both"
-                            },
-                            {
-                                "term": "どちらも",
-                                "en": "mo takes the place of ga"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "both",
-                        "cells": [
-                            {
-                                "kana": "りょうほうすきです",
-                                "romaji": "ryouhou suki desu",
-                                "en": "I like both of them"
-                            },
-                            {
-                                "term": "りょうほう",
-                                "en": "both sides — the same answer"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "neither",
-                        "cells": [
-                            {
-                                "kana": "どちらもすきじゃないです",
-                                "romaji": "dochira mo suki ja nai desu",
-                                "en": "I like neither"
-                            },
-                            {
-                                "term": "どちらも + negative",
-                                "en": "neither"
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                "title": "the most — ichiban",
-                "columns": [
-                    "the sentence",
-                    "the pattern"
-                ],
-                "rows": [
-                    {
-                        "label": "say",
-                        "cells": [
-                            {
-                                "kana": "にほんのごはんでラーメンがいちばんすきです",
-                                "romaji": "nihon no gohan de raamen ga ichiban suki desu",
-                                "en": "of Japanese food, I like ramen best"
-                            },
-                            {
-                                "term": "group で N が いちばん Adj です"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "with wa",
-                        "cells": [
-                            {
-                                "kana": "わたしはスポーツでやきゅうがいちばんすきです",
-                                "romaji": "watashi wa supootsu de yakyuu ga ichiban suki desu",
-                                "en": "of all sports, I like baseball best"
-                            },
-                            {
-                                "term": "(X は) in front",
-                                "en": "who is talking — usually dropped"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "a thing",
-                        "cells": [
-                            {
-                                "kana": "どうぶつでなにがいちばんすきですか",
-                                "romaji": "doubutsu de nani ga ichiban suki desu ka",
-                                "en": "which animal do you like best?"
-                            },
-                            {
-                                "term": "なに",
-                                "en": "for things"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "a time",
-                        "cells": [
-                            {
-                                "kana": "きせつでいつがいちばんすきですか",
-                                "romaji": "kisetsu de itsu ga ichiban suki desu ka",
-                                "en": "which season do you like best?"
-                            },
-                            {
-                                "term": "いつ",
-                                "en": "a season is a time — いつ, not なに"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "a person",
-                        "cells": [
-                            {
-                                "kana": "かぞくでだれがいちばんいそがしいですか",
-                                "romaji": "kazoku de dare ga ichiban isogashii desu ka",
-                                "en": "who is the busiest in your family?"
-                            },
-                            {
-                                "term": "だれ",
-                                "en": "for people"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "a place",
-                        "cells": [
-                            {
-                                "kana": "にほんでどこがいちばんきれいですか",
-                                "romaji": "nihon de doko ga ichiban kirei desu ka",
-                                "en": "where in Japan is the most beautiful?"
-                            },
-                            {
-                                "term": "どこ",
-                                "en": "for places"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "answer",
-                        "cells": [
-                            {
-                                "kana": "ふゆがいちばんすきです",
-                                "romaji": "fuyu ga ichiban suki desu",
-                                "en": "I like winter best"
-                            },
-                            {
-                                "term": "N が いちばん Adj です",
-                                "en": "the answer keeps the ga"
-                            }
-                        ]
-                    }
-                ]
-            }
-        ],
-        "rules": [
-            {
-                "id": "yori",
-                "title": "yori sits on the one that loses",
-                "body": "A wa B yori takai desu — B yori is 'than B'. A is the topic and the winner; B is what it is measured against. Swap the two nouns and the sentence says the opposite, so which noun carries yori is the one thing to get right. kara is never 'than' — it is from, or because."
-            },
-            {
-                "id": "no-er",
-                "title": "The adjective never changes",
-                "body": "There is no -er and no -est. takai is expensive, more expensive and the most expensive; yori, no hou ga and ichiban do the comparing. The adjective keeps whatever form the sentence needs anyway, past included: kinou wa kyou yori samukatta desu."
-            },
-            {
-                "id": "dochira-for-two",
-                "title": "dochira for two, the right question word for more",
-                "body": "dochira asks which of two — inu to neko dochira. Once the group is bigger the question becomes de … ichiban, with the word for what you want back: nani for a thing, dare for a person, doko for a place, itsu for a time. A season is a time, so it is itsu. docchi is the casual dochira."
-            },
-            {
-                "id": "question-word-ga",
-                "title": "The question word takes ga",
-                "body": "dochira ga, nani ga, dare ga, itsu ga — never wa. A question word is the unknown, and wa marks what is already known, so the two cannot go together. The answer keeps the same ga: inu no hou ga suki desu, fuyu ga ichiban suki desu."
-            },
-            {
-                "id": "no-hou-ga",
-                "title": "no hou ga picks one of two",
-                "body": "inu no hou ga suki desu — literally, the dog side is liked. hou is a noun, side, so it is glued on with no, and it takes the same ga that suki always takes. It answers a dochira question; for the top of a bigger group you want ichiban. inu yori suki desu is not the answer — it says you like it more than dogs."
-            },
-            {
-                "id": "mo-replaces-ga",
-                "title": "Both: dochira mo, or ryouhou",
-                "body": "dochira mo suki desu — mo takes the place of ga and never stacks on it: dochira mo ga is wrong. With a negative it turns into neither: dochira mo suki ja nai desu. ryouhou means both sides and gives the same answer: ryouhou suki desu."
-            },
-            {
-                "id": "de-group",
-                "title": "de draws the group, ichiban sits before the adjective",
-                "body": "nihon no gohan de — de marks the circle the winner is picked from; ni and yori don't work there. ichiban goes right in front of the adjective, where totemo would go, and the winner takes ga: raamen ga ichiban suki desu. A topic can sit in front of the whole frame — watashi wa supootsu de yakyuu ga ichiban suki desu."
-            }
-        ]
-    },
-    {
-        "id": "want",
-        "title": "Wanting — hoshii and -tai",
-        "blurb": "Two ways to want. hoshii wants a thing; -tai, stuck onto a verb, wants to do something. Both are i-adjectives in disguise, so everything you know about takai — kunai, katta, kunakatta — works on them unchanged.",
-        "legend": [
-            {
-                "term": "hoshii",
-                "gloss": "want (a thing) — an i-adjective"
-            },
-            {
-                "term": "-tai",
-                "gloss": "want to — goes on the masu stem"
-            },
-            {
-                "term": "-takunai",
-                "gloss": "don't want to"
-            },
-            {
-                "term": "ga / wo",
-                "gloss": "the thing wanted — ga always with hoshii, either with -tai"
-            }
-        ],
-        "grids": [
-            {
-                "title": "wanting a thing — hoshii",
-                "columns": [
-                    "the sentence",
-                    "the pattern"
-                ],
-                "rows": [
-                    {
-                        "label": "want",
-                        "cells": [
-                            {
-                                "kana": "おかねがほしいです",
-                                "romaji": "okane ga hoshii desu",
-                                "en": "I want money"
-                            },
-                            {
-                                "term": "N が ほしいです",
-                                "en": "the thing takes ga"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "not",
-                        "cells": [
-                            {
-                                "kana": "くるまがほしくないです",
-                                "romaji": "kuruma ga hoshiku nai desu",
-                                "en": "I don't want a car"
-                            },
-                            {
-                                "term": "ほしい is an i-adjective",
-                                "en": "ほしくないです, ほしかったです"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "ask",
-                        "cells": [
-                            {
-                                "kana": "なにがほしいですか",
-                                "romaji": "nani ga hoshii desu ka",
-                                "en": "what do you want?"
-                            },
-                            {
-                                "term": "なにが"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "kind",
-                        "cells": [
-                            {
-                                "kana": "どんないえがほしいですか",
-                                "romaji": "donna ie ga hoshii desu ka",
-                                "en": "what kind of house do you want?"
-                            },
-                            {
-                                "term": "どんな N が"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "answer",
-                        "cells": [
-                            {
-                                "kana": "おおきいいえがほしいです",
-                                "romaji": "ookii ie ga hoshii desu",
-                                "en": "I want a big house"
-                            },
-                            {}
-                        ]
-                    }
-                ]
-            },
-            {
-                "title": "wanting to do — drop masu, add tai",
-                "columns": [
-                    "the verb",
-                    "want to"
-                ],
-                "rows": [
-                    {
-                        "label": "drink",
-                        "cells": [
-                            {
-                                "kana": "のみます",
-                                "romaji": "nomimasu",
-                                "en": "drink"
-                            },
-                            {
-                                "kana": "のみたいです",
-                                "romaji": "nomitai desu",
-                                "en": "I want to drink"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "see",
-                        "cells": [
-                            {
-                                "kana": "みます",
-                                "romaji": "mimasu",
-                                "en": "see"
-                            },
-                            {
-                                "kana": "みたいです",
-                                "romaji": "mitai desu",
-                                "en": "I want to see"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "go",
-                        "cells": [
-                            {
-                                "kana": "いきます",
-                                "romaji": "ikimasu",
-                                "en": "go"
-                            },
-                            {
-                                "kana": "いきたいです",
-                                "romaji": "ikitai desu",
-                                "en": "I want to go"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "swim",
-                        "cells": [
-                            {
-                                "kana": "およぎます",
-                                "romaji": "oyogimasu",
-                                "en": "swim"
-                            },
-                            {
-                                "kana": "およぎたいです",
-                                "romaji": "oyogitai desu",
-                                "en": "I want to swim"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "come",
-                        "cells": [
-                            {
-                                "kana": "きます",
-                                "romaji": "kimasu",
-                                "en": "come"
-                            },
-                            {
-                                "kana": "きたいです",
-                                "romaji": "kitai desu",
-                                "en": "I want to come"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "shop",
-                        "cells": [
-                            {
-                                "kana": "かいものします",
-                                "romaji": "kaimono shimasu",
-                                "en": "go shopping"
-                            },
-                            {
-                                "kana": "かいものしたいです",
-                                "romaji": "kaimono shitai desu",
-                                "en": "I want to go shopping"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "marry",
-                        "cells": [
-                            {
-                                "kana": "けっこんします",
-                                "romaji": "kekkon shimasu",
-                                "en": "get married"
-                            },
-                            {
-                                "kana": "けっこんしたいです",
-                                "romaji": "kekkon shitai desu",
-                                "en": "I want to get married"
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                "title": "-tai is an i-adjective — tabetai",
-                "columns": [
-                    "the form",
-                    "the pattern"
-                ],
-                "rows": [
-                    {
-                        "label": "now",
-                        "cells": [
-                            {
-                                "kana": "たべたいです",
-                                "romaji": "tabetai desu",
-                                "en": "I want to eat"
-                            },
-                            {
-                                "term": "stem + たいです"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "not now",
-                        "cells": [
-                            {
-                                "kana": "たべたくないです",
-                                "romaji": "tabetaku nai desu",
-                                "en": "I don't want to eat"
-                            },
-                            {
-                                "term": "stem + たくないです"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "was",
-                        "cells": [
-                            {
-                                "kana": "たべたかったです",
-                                "romaji": "tabetakatta desu",
-                                "en": "I wanted to eat"
-                            },
-                            {
-                                "term": "stem + たかったです"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "wasn't",
-                        "cells": [
-                            {
-                                "kana": "たべたくなかったです",
-                                "romaji": "tabetaku nakatta desu",
-                                "en": "I didn't want to eat"
-                            },
-                            {
-                                "term": "stem + たくなかったです"
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                "title": "in a sentence",
-                "columns": [
-                    "the sentence",
-                    "what to notice"
-                ],
-                "rows": [
-                    {
-                        "label": "ga",
-                        "cells": [
-                            {
-                                "kana": "すしがたべたいです",
-                                "romaji": "sushi ga tabetai desu",
-                                "en": "I want to eat sushi"
-                            },
-                            {
-                                "term": "が",
-                                "en": "the object may switch to ga"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "wo",
-                        "cells": [
-                            {
-                                "kana": "すしをたべたいです",
-                                "romaji": "sushi wo tabetai desu",
-                                "en": "I'd like to eat sushi"
-                            },
-                            {
-                                "term": "を",
-                                "en": "or keep its wo — both are right"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "what",
-                        "cells": [
-                            {
-                                "kana": "なにをたべたいですか",
-                                "romaji": "nani wo tabetai desu ka",
-                                "en": "what do you want to eat?"
-                            },
-                            {}
-                        ]
-                    },
-                    {
-                        "label": "where",
-                        "cells": [
-                            {
-                                "kana": "どこへいきたいですか",
-                                "romaji": "doko e ikitai desu ka",
-                                "en": "where do you want to go?"
-                            },
-                            {
-                                "term": "へ stays へ",
-                                "en": "only the object can turn into ga"
-                            }
-                        ]
-                    },
-                    {
-                        "label": "when",
-                        "cells": [
-                            {
-                                "kana": "いついきたいですか",
-                                "romaji": "itsu ikitai desu ka",
-                                "en": "when do you want to go?"
-                            },
-                            {}
-                        ]
-                    },
-                    {
-                        "label": "who with",
-                        "cells": [
-                            {
-                                "kana": "だれといきたいですか",
-                                "romaji": "dare to ikitai desu ka",
-                                "en": "who do you want to go with?"
-                            },
-                            {}
-                        ]
-                    },
-                    {
-                        "label": "because",
-                        "cells": [
-                            {
-                                "kana": "おなかがすきましたからごはんをたべたいです",
-                                "romaji": "onaka ga sukimashita kara gohan wo tabetai desu",
-                                "en": "I'm hungry, so I want to eat"
-                            },
-                            {
-                                "term": "reason から want",
-                                "en": "the reason comes first"
-                            }
-                        ]
-                    }
-                ]
-            }
-        ],
-        "rules": [
-            {
-                "id": "hoshii-ga",
-                "title": "hoshii is an adjective, so the thing takes ga",
-                "body": "okane ga hoshii desu works exactly like okane ga suki desu: hoshii describes how you feel about the thing, it doesn't act on it, so the thing takes ga and never wo. It conjugates as an i-adjective — hoshiku nai desu, hoshikatta desu — and is never hoshii masu."
-            },
-            {
-                "id": "tai-stem",
-                "title": "-tai goes on the masu stem",
-                "body": "Take the masu form, drop masu, add tai desu: nomimasu → nomitai desu, mimasu → mitai desu. It works the same for every verb, the irregular ones included: kimasu → kitai, kaimono shimasu → kaimono shitai. Keeping masu (nomimasu tai) or starting from the dictionary form (nomu tai) are both wrong."
-            },
-            {
-                "id": "tai-is-i-adjective",
-                "title": "-tai conjugates as an i-adjective",
-                "body": "tabetai ends in i and behaves like takai: tabetaku nai desu, tabetakatta desu, tabetaku nakatta desu. The negative and the past go on tai, never on the verb, and never on desu — tabetai ja nai, tabetai deshita and tabenai tai are all wrong."
-            },
-            {
-                "id": "tai-ga-or-wo",
-                "title": "The object may take ga or wo — nothing else changes",
-                "body": "With -tai the thing you want to eat or buy can keep its wo or switch to ga: sushi wo tabetai desu, sushi ga tabetai desu. The slide writes ga (wo). Only the object has that choice. Where you go keeps e, who with keeps to: doko e ikitai desu ka, dare to ikitai desu ka."
-            }
-        ]
-    },
-    {
         "id": "ga",
         "title": "Likes, skills, having, kara",
+        "lessons": [
+            9
+        ],
         "blurb": "Liking, being good at something, understanding it and having it look like four topics, but they are one sentence: the person takes wa, the thing takes ga, and a state word closes it. kara then joins any of them to what follows — the reason first, the result after.",
         "legend": [
             {
@@ -4127,6 +3426,9 @@
     {
         "id": "where",
         "title": "Where things are",
+        "lessons": [
+            10
+        ],
         "blurb": "One pattern carries all of it: the place, the thing that is there, and a verb chosen by whether that thing is alive. The slots are easy — the particles and the verb choice are what go wrong.",
         "legend": [
             {
@@ -4695,6 +3997,9 @@
     {
         "id": "counters",
         "title": "Counting things",
+        "lessons": [
+            11
+        ],
         "blurb": "A number on its own counts nothing — it needs a word attached, and which word depends on the shape of the thing. The counter then sits next to the verb, not next to the noun, which is the part that catches everyone.",
         "legend": [
             {
@@ -6119,6 +5424,734 @@
                 "id": "kakarimasu-ga",
                 "title": "what it takes is marked with ga",
                 "body": "jikan ga kakarimasu, okane ga kakarimasu — the time or the money takes ga, the same way arimasu does. Ask with dono kurai for either, or ikura when it is only money. kurai means about and follows the amount: nijikan kurai, rokuman en kurai."
+            }
+        ]
+    },
+    {
+        "id": "compare",
+        "title": "Comparing — yori, dochira, ichiban",
+        "lessons": [
+            12
+        ],
+        "blurb": "Japanese has no -er and no -est: takai is expensive, more expensive and most expensive alike, and the words around it do the comparing. Three shapes cover everything — A wa B yori for one against another, dochira and no hou ga for picking one of two, and de … ichiban for the top of a group.",
+        "legend": [
+            {
+                "term": "yori",
+                "gloss": "than — after the one that loses"
+            },
+            {
+                "term": "dochira",
+                "gloss": "which, of two"
+            },
+            {
+                "term": "no hou ga",
+                "gloss": "the … one — picks the winner"
+            },
+            {
+                "term": "dochira mo / ryouhou",
+                "gloss": "both"
+            },
+            {
+                "term": "ichiban",
+                "gloss": "most, number one"
+            },
+            {
+                "term": "de",
+                "gloss": "the group the winner comes from"
+            }
+        ],
+        "grids": [
+            {
+                "title": "more than — yori",
+                "columns": [
+                    "the sentence",
+                    "the pattern"
+                ],
+                "rows": [
+                    {
+                        "label": "price",
+                        "cells": [
+                            {
+                                "kana": "ぎゅうにくはとりにくよりたかいです",
+                                "romaji": "gyuuniku wa toriniku yori takai desu",
+                                "en": "beef is more expensive than chicken"
+                            },
+                            {
+                                "term": "A は B より Adj です",
+                                "en": "yori sits on the cheaper one"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "size",
+                        "cells": [
+                            {
+                                "kana": "タイはちゅうごくよりちいさいです",
+                                "romaji": "tai wa chuugoku yori chiisai desu",
+                                "en": "Thailand is smaller than China"
+                            },
+                            {
+                                "term": "the adjective stays as it is",
+                                "en": "chiisai — no 'more'"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "busy",
+                        "cells": [
+                            {
+                                "kana": "こんげつはせんげつよりいそがしいです",
+                                "romaji": "kongetsu wa sengetsu yori isogashii desu",
+                                "en": "this month is busier than last month"
+                            },
+                            {}
+                        ]
+                    },
+                    {
+                        "label": "hard",
+                        "cells": [
+                            {
+                                "kana": "かんじはひらがなよりむずかしいです",
+                                "romaji": "kanji wa hiragana yori muzukashii desu",
+                                "en": "kanji is harder than hiragana"
+                            },
+                            {}
+                        ]
+                    },
+                    {
+                        "label": "past",
+                        "cells": [
+                            {
+                                "kana": "きのうはきょうよりさむかったです",
+                                "romaji": "kinou wa kyou yori samukatta desu",
+                                "en": "yesterday was colder than today"
+                            },
+                            {
+                                "term": "past as usual",
+                                "en": "samukatta — nothing extra for comparing"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "which of two — dochira",
+                "columns": [
+                    "the sentence",
+                    "the pattern"
+                ],
+                "rows": [
+                    {
+                        "label": "ask",
+                        "cells": [
+                            {
+                                "kana": "いぬとねこどちらがすきですか",
+                                "romaji": "inu to neko dochira ga suki desu ka",
+                                "en": "which do you like, dogs or cats?"
+                            },
+                            {
+                                "term": "A と B どちらが Adj ですか",
+                                "en": "a second と after B is fine too"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "one",
+                        "cells": [
+                            {
+                                "kana": "いぬのほうがすきです",
+                                "romaji": "inu no hou ga suki desu",
+                                "en": "I prefer dogs"
+                            },
+                            {
+                                "term": "A の ほうが Adj です",
+                                "en": "hou is side — the dog side"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "both",
+                        "cells": [
+                            {
+                                "kana": "どちらもすきです",
+                                "romaji": "dochira mo suki desu",
+                                "en": "I like both"
+                            },
+                            {
+                                "term": "どちらも",
+                                "en": "mo takes the place of ga"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "both",
+                        "cells": [
+                            {
+                                "kana": "りょうほうすきです",
+                                "romaji": "ryouhou suki desu",
+                                "en": "I like both of them"
+                            },
+                            {
+                                "term": "りょうほう",
+                                "en": "both sides — the same answer"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "neither",
+                        "cells": [
+                            {
+                                "kana": "どちらもすきじゃないです",
+                                "romaji": "dochira mo suki ja nai desu",
+                                "en": "I like neither"
+                            },
+                            {
+                                "term": "どちらも + negative",
+                                "en": "neither"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "the most — ichiban",
+                "columns": [
+                    "the sentence",
+                    "the pattern"
+                ],
+                "rows": [
+                    {
+                        "label": "say",
+                        "cells": [
+                            {
+                                "kana": "にほんのごはんでラーメンがいちばんすきです",
+                                "romaji": "nihon no gohan de raamen ga ichiban suki desu",
+                                "en": "of Japanese food, I like ramen best"
+                            },
+                            {
+                                "term": "group で N が いちばん Adj です"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "with wa",
+                        "cells": [
+                            {
+                                "kana": "わたしはスポーツでやきゅうがいちばんすきです",
+                                "romaji": "watashi wa supootsu de yakyuu ga ichiban suki desu",
+                                "en": "of all sports, I like baseball best"
+                            },
+                            {
+                                "term": "(X は) in front",
+                                "en": "who is talking — usually dropped"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "a thing",
+                        "cells": [
+                            {
+                                "kana": "どうぶつでなにがいちばんすきですか",
+                                "romaji": "doubutsu de nani ga ichiban suki desu ka",
+                                "en": "which animal do you like best?"
+                            },
+                            {
+                                "term": "なに",
+                                "en": "for things"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "a time",
+                        "cells": [
+                            {
+                                "kana": "きせつでいつがいちばんすきですか",
+                                "romaji": "kisetsu de itsu ga ichiban suki desu ka",
+                                "en": "which season do you like best?"
+                            },
+                            {
+                                "term": "いつ",
+                                "en": "a season is a time — いつ, not なに"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "a person",
+                        "cells": [
+                            {
+                                "kana": "かぞくでだれがいちばんいそがしいですか",
+                                "romaji": "kazoku de dare ga ichiban isogashii desu ka",
+                                "en": "who is the busiest in your family?"
+                            },
+                            {
+                                "term": "だれ",
+                                "en": "for people"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "a place",
+                        "cells": [
+                            {
+                                "kana": "にほんでどこがいちばんきれいですか",
+                                "romaji": "nihon de doko ga ichiban kirei desu ka",
+                                "en": "where in Japan is the most beautiful?"
+                            },
+                            {
+                                "term": "どこ",
+                                "en": "for places"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "answer",
+                        "cells": [
+                            {
+                                "kana": "ふゆがいちばんすきです",
+                                "romaji": "fuyu ga ichiban suki desu",
+                                "en": "I like winter best"
+                            },
+                            {
+                                "term": "N が いちばん Adj です",
+                                "en": "the answer keeps the ga"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "rules": [
+            {
+                "id": "yori",
+                "title": "yori sits on the one that loses",
+                "body": "A wa B yori takai desu — B yori is 'than B'. A is the topic and the winner; B is what it is measured against. Swap the two nouns and the sentence says the opposite, so which noun carries yori is the one thing to get right. kara is never 'than' — it is from, or because."
+            },
+            {
+                "id": "no-er",
+                "title": "The adjective never changes",
+                "body": "There is no -er and no -est. takai is expensive, more expensive and the most expensive; yori, no hou ga and ichiban do the comparing. The adjective keeps whatever form the sentence needs anyway, past included: kinou wa kyou yori samukatta desu."
+            },
+            {
+                "id": "dochira-for-two",
+                "title": "dochira for two, the right question word for more",
+                "body": "dochira asks which of two — inu to neko dochira. Once the group is bigger the question becomes de … ichiban, with the word for what you want back: nani for a thing, dare for a person, doko for a place, itsu for a time. A season is a time, so it is itsu. docchi is the casual dochira."
+            },
+            {
+                "id": "question-word-ga",
+                "title": "The question word takes ga",
+                "body": "dochira ga, nani ga, dare ga, itsu ga — never wa. A question word is the unknown, and wa marks what is already known, so the two cannot go together. The answer keeps the same ga: inu no hou ga suki desu, fuyu ga ichiban suki desu."
+            },
+            {
+                "id": "no-hou-ga",
+                "title": "no hou ga picks one of two",
+                "body": "inu no hou ga suki desu — literally, the dog side is liked. hou is a noun, side, so it is glued on with no, and it takes the same ga that suki always takes. It answers a dochira question; for the top of a bigger group you want ichiban. inu yori suki desu is not the answer — it says you like it more than dogs."
+            },
+            {
+                "id": "mo-replaces-ga",
+                "title": "Both: dochira mo, or ryouhou",
+                "body": "dochira mo suki desu — mo takes the place of ga and never stacks on it: dochira mo ga is wrong. With a negative it turns into neither: dochira mo suki ja nai desu. ryouhou means both sides and gives the same answer: ryouhou suki desu."
+            },
+            {
+                "id": "de-group",
+                "title": "de draws the group, ichiban sits before the adjective",
+                "body": "nihon no gohan de — de marks the circle the winner is picked from; ni and yori don't work there. ichiban goes right in front of the adjective, where totemo would go, and the winner takes ga: raamen ga ichiban suki desu. A topic can sit in front of the whole frame — watashi wa supootsu de yakyuu ga ichiban suki desu."
+            }
+        ]
+    },
+    {
+        "id": "want",
+        "title": "Wanting — hoshii and -tai",
+        "lessons": [
+            13
+        ],
+        "blurb": "Two ways to want. hoshii wants a thing; -tai, stuck onto a verb, wants to do something. Both are i-adjectives in disguise, so everything you know about takai — kunai, katta, kunakatta — works on them unchanged.",
+        "legend": [
+            {
+                "term": "hoshii",
+                "gloss": "want (a thing) — an i-adjective"
+            },
+            {
+                "term": "-tai",
+                "gloss": "want to — goes on the masu stem"
+            },
+            {
+                "term": "-takunai",
+                "gloss": "don't want to"
+            },
+            {
+                "term": "ga / wo",
+                "gloss": "the thing wanted — ga always with hoshii, either with -tai"
+            }
+        ],
+        "grids": [
+            {
+                "title": "wanting a thing — hoshii",
+                "columns": [
+                    "the sentence",
+                    "the pattern"
+                ],
+                "rows": [
+                    {
+                        "label": "want",
+                        "cells": [
+                            {
+                                "kana": "おかねがほしいです",
+                                "romaji": "okane ga hoshii desu",
+                                "en": "I want money"
+                            },
+                            {
+                                "term": "N が ほしいです",
+                                "en": "the thing takes ga"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "not",
+                        "cells": [
+                            {
+                                "kana": "くるまがほしくないです",
+                                "romaji": "kuruma ga hoshiku nai desu",
+                                "en": "I don't want a car"
+                            },
+                            {
+                                "term": "ほしい is an i-adjective",
+                                "en": "ほしくないです, ほしかったです"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "ask",
+                        "cells": [
+                            {
+                                "kana": "なにがほしいですか",
+                                "romaji": "nani ga hoshii desu ka",
+                                "en": "what do you want?"
+                            },
+                            {
+                                "term": "なにが"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "kind",
+                        "cells": [
+                            {
+                                "kana": "どんないえがほしいですか",
+                                "romaji": "donna ie ga hoshii desu ka",
+                                "en": "what kind of house do you want?"
+                            },
+                            {
+                                "term": "どんな N が"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "answer",
+                        "cells": [
+                            {
+                                "kana": "おおきいいえがほしいです",
+                                "romaji": "ookii ie ga hoshii desu",
+                                "en": "I want a big house"
+                            },
+                            {}
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "wanting to do — drop masu, add tai",
+                "columns": [
+                    "the verb",
+                    "want to"
+                ],
+                "rows": [
+                    {
+                        "label": "drink",
+                        "cells": [
+                            {
+                                "kana": "のみます",
+                                "romaji": "nomimasu",
+                                "en": "drink"
+                            },
+                            {
+                                "kana": "のみたいです",
+                                "romaji": "nomitai desu",
+                                "en": "I want to drink"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "see",
+                        "cells": [
+                            {
+                                "kana": "みます",
+                                "romaji": "mimasu",
+                                "en": "see"
+                            },
+                            {
+                                "kana": "みたいです",
+                                "romaji": "mitai desu",
+                                "en": "I want to see"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "go",
+                        "cells": [
+                            {
+                                "kana": "いきます",
+                                "romaji": "ikimasu",
+                                "en": "go"
+                            },
+                            {
+                                "kana": "いきたいです",
+                                "romaji": "ikitai desu",
+                                "en": "I want to go"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "swim",
+                        "cells": [
+                            {
+                                "kana": "およぎます",
+                                "romaji": "oyogimasu",
+                                "en": "swim"
+                            },
+                            {
+                                "kana": "およぎたいです",
+                                "romaji": "oyogitai desu",
+                                "en": "I want to swim"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "come",
+                        "cells": [
+                            {
+                                "kana": "きます",
+                                "romaji": "kimasu",
+                                "en": "come"
+                            },
+                            {
+                                "kana": "きたいです",
+                                "romaji": "kitai desu",
+                                "en": "I want to come"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "shop",
+                        "cells": [
+                            {
+                                "kana": "かいものします",
+                                "romaji": "kaimono shimasu",
+                                "en": "go shopping"
+                            },
+                            {
+                                "kana": "かいものしたいです",
+                                "romaji": "kaimono shitai desu",
+                                "en": "I want to go shopping"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "marry",
+                        "cells": [
+                            {
+                                "kana": "けっこんします",
+                                "romaji": "kekkon shimasu",
+                                "en": "get married"
+                            },
+                            {
+                                "kana": "けっこんしたいです",
+                                "romaji": "kekkon shitai desu",
+                                "en": "I want to get married"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "-tai is an i-adjective — tabetai",
+                "columns": [
+                    "the form",
+                    "the pattern"
+                ],
+                "rows": [
+                    {
+                        "label": "now",
+                        "cells": [
+                            {
+                                "kana": "たべたいです",
+                                "romaji": "tabetai desu",
+                                "en": "I want to eat"
+                            },
+                            {
+                                "term": "stem + たいです"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "not now",
+                        "cells": [
+                            {
+                                "kana": "たべたくないです",
+                                "romaji": "tabetaku nai desu",
+                                "en": "I don't want to eat"
+                            },
+                            {
+                                "term": "stem + たくないです"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "was",
+                        "cells": [
+                            {
+                                "kana": "たべたかったです",
+                                "romaji": "tabetakatta desu",
+                                "en": "I wanted to eat"
+                            },
+                            {
+                                "term": "stem + たかったです"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "wasn't",
+                        "cells": [
+                            {
+                                "kana": "たべたくなかったです",
+                                "romaji": "tabetaku nakatta desu",
+                                "en": "I didn't want to eat"
+                            },
+                            {
+                                "term": "stem + たくなかったです"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "in a sentence",
+                "columns": [
+                    "the sentence",
+                    "what to notice"
+                ],
+                "rows": [
+                    {
+                        "label": "ga",
+                        "cells": [
+                            {
+                                "kana": "すしがたべたいです",
+                                "romaji": "sushi ga tabetai desu",
+                                "en": "I want to eat sushi"
+                            },
+                            {
+                                "term": "が",
+                                "en": "the object may switch to ga"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "wo",
+                        "cells": [
+                            {
+                                "kana": "すしをたべたいです",
+                                "romaji": "sushi wo tabetai desu",
+                                "en": "I'd like to eat sushi"
+                            },
+                            {
+                                "term": "を",
+                                "en": "or keep its wo — both are right"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "what",
+                        "cells": [
+                            {
+                                "kana": "なにをたべたいですか",
+                                "romaji": "nani wo tabetai desu ka",
+                                "en": "what do you want to eat?"
+                            },
+                            {}
+                        ]
+                    },
+                    {
+                        "label": "where",
+                        "cells": [
+                            {
+                                "kana": "どこへいきたいですか",
+                                "romaji": "doko e ikitai desu ka",
+                                "en": "where do you want to go?"
+                            },
+                            {
+                                "term": "へ stays へ",
+                                "en": "only the object can turn into ga"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "when",
+                        "cells": [
+                            {
+                                "kana": "いついきたいですか",
+                                "romaji": "itsu ikitai desu ka",
+                                "en": "when do you want to go?"
+                            },
+                            {}
+                        ]
+                    },
+                    {
+                        "label": "who with",
+                        "cells": [
+                            {
+                                "kana": "だれといきたいですか",
+                                "romaji": "dare to ikitai desu ka",
+                                "en": "who do you want to go with?"
+                            },
+                            {}
+                        ]
+                    },
+                    {
+                        "label": "because",
+                        "cells": [
+                            {
+                                "kana": "おなかがすきましたからごはんをたべたいです",
+                                "romaji": "onaka ga sukimashita kara gohan wo tabetai desu",
+                                "en": "I'm hungry, so I want to eat"
+                            },
+                            {
+                                "term": "reason から want",
+                                "en": "the reason comes first"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "rules": [
+            {
+                "id": "hoshii-ga",
+                "title": "hoshii is an adjective, so the thing takes ga",
+                "body": "okane ga hoshii desu works exactly like okane ga suki desu: hoshii describes how you feel about the thing, it doesn't act on it, so the thing takes ga and never wo. It conjugates as an i-adjective — hoshiku nai desu, hoshikatta desu — and is never hoshii masu."
+            },
+            {
+                "id": "tai-stem",
+                "title": "-tai goes on the masu stem",
+                "body": "Take the masu form, drop masu, add tai desu: nomimasu → nomitai desu, mimasu → mitai desu. It works the same for every verb, the irregular ones included: kimasu → kitai, kaimono shimasu → kaimono shitai. Keeping masu (nomimasu tai) or starting from the dictionary form (nomu tai) are both wrong."
+            },
+            {
+                "id": "tai-is-i-adjective",
+                "title": "-tai conjugates as an i-adjective",
+                "body": "tabetai ends in i and behaves like takai: tabetaku nai desu, tabetakatta desu, tabetaku nakatta desu. The negative and the past go on tai, never on the verb, and never on desu — tabetai ja nai, tabetai deshita and tabenai tai are all wrong."
+            },
+            {
+                "id": "tai-ga-or-wo",
+                "title": "The object may take ga or wo — nothing else changes",
+                "body": "With -tai the thing you want to eat or buy can keep its wo or switch to ga: sushi wo tabetai desu, sushi ga tabetai desu. The slide writes ga (wo). Only the object has that choice. Where you go keeps e, who with keeps to: doko e ikitai desu ka, dare to ikitai desu ka."
             }
         ]
     }

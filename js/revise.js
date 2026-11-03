@@ -71,7 +71,7 @@ const ReviseMode = (() => {
         sel.innerHTML = "";
         add(sel, "__all__", "Everything");
         for (const s of sheets) {
-            if (items.some(i => i.sheet === s.id)) add(sel, s.id, s.title);
+            if (items.some(i => i.sheet === s.id)) add(sel, s.id, CheatMode.label(s));
         }
     }
 

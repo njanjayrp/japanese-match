@@ -168,9 +168,21 @@ console.log(`  ${Object.keys(strokes.strokes).length} signs with stroke data, ${
 // through the converter unchanged and print Japanese where romaji belongs.
 console.log("cheat sheets");
 let cells = 0;
+// Every sheet names the class lesson(s) it came from, and the file runs in
+// lesson order — the pickers list sheets as the file has them.
+let prevLessons = [0];
 for (const sheet of sheets) {
     if (!sheet.id) fail("a sheet has no id");
     if (!sheet.title) fail(`sheet ${sheet.id}: missing title`);
+    const ls = sheet.lessons;
+    if (!Array.isArray(ls) || !ls.length || !ls.every(n => Number.isInteger(n) && n > 0)) {
+        fail(`sheet ${sheet.id}: needs "lessons", e.g. [13]`);
+    } else {
+        if (ls[0] < prevLessons[0] || (ls[0] === prevLessons[0] && ls[ls.length - 1] < prevLessons[prevLessons.length - 1])) {
+            fail(`sheet ${sheet.id}: out of lesson order — sheets.json runs by lesson`);
+        }
+        prevLessons = ls;
+    }
     for (const grid of sheet.grids || []) {
         for (const row of grid.rows || []) {
             if (row.cells.length !== grid.columns.length) {

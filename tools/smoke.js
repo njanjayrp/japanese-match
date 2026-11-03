@@ -366,32 +366,42 @@ ok(`${list.children.length} rows, e.g. ${list.children[0].textContent.trim().rep
 // ── Cheat sheets ────────────────────────────────────────────────────────────
 
 console.log("cheat sheets");
+// Open on the calendar, wherever it sorts: it carries both the derived romaji
+// and the weekdays' ん apostrophe.
+const calIdx = sheets.findIndex(s => s.id === "calendar");
+const cal = sheets[calIdx];
+Store.setPref("cheatSheet", "calendar");
 CheatMode.init(sheets);
 CheatMode.onShow();
 const cheatBody = doc.getElementById("cheat-body");
 const cheatHtml = cheatBody.innerHTML;
-const expectedCells = sheets[0].grids
+const expectedCells = cal.grids
     .flatMap(g => g.rows).flatMap(r => r.cells).filter(c => c.kana).length;
 const renderedCells = cheatHtml.split("data-kana=").length - 1;
 if (renderedCells !== expectedCells) {
-    fail(`first sheet rendered ${renderedCells} word cells, expected ${expectedCells}`);
+    fail(`calendar rendered ${renderedCells} word cells, expected ${expectedCells}`);
 }
 if (!cheatHtml.includes("ototoi")) fail("derived romaji missing from the sheet");
-// The calendar sheet carries the weekdays too, so the ん apostrophe lives here.
 if (!cheatHtml.includes("kin'youbi")) fail("weekday romaji missing the ん apostrophe");
 if (!cheatHtml.includes("rule-body")) fail("rules did not render");
 if (doc.getElementById("cheat-sheet").closest(".controls").hidden) {
     fail("two sheets loaded but the picker is hidden");
 }
-ok(`sheet "${sheets[0].title}" rendered ${renderedCells} cells and ${sheets[0].rules.length} rules`);
+ok(`sheet "${cal.title}" rendered ${renderedCells} cells and ${cal.rules.length} rules`);
+
+// The picker names each sheet by its lesson.
+const picker = doc.getElementById("cheat-sheet");
+const pickNames = [...picker.children].map(o => o.textContent);
+if (!pickNames.every(n => /^Lessons? \d/.test(n))) fail(`picker entries without a lesson: ${pickNames}`);
+ok(`picker opens with "${pickNames[0]}"`);
 
 // Switching sheets must rebuild the body, not append to it.
-const picker = doc.getElementById("cheat-sheet");
-picker.value = "1";
+const other = calIdx === 0 ? 1 : 0;
+picker.value = String(other);
 fire(picker, "change");
-if (!cheatBody.innerHTML.includes(sheets[1].title)) fail("switching sheets did not re-render");
-if (cheatBody.innerHTML.includes(sheets[0].blurb)) fail("old sheet left behind after switching");
-ok(`switched to "${sheets[1].title}"`);
+if (!cheatBody.innerHTML.includes(sheets[other].title)) fail("switching sheets did not re-render");
+if (cheatBody.innerHTML.includes(cal.blurb)) fail("old sheet left behind after switching");
+ok(`switched to "${sheets[other].title}"`);
 
 // ── Revision ────────────────────────────────────────────────────────────────
 

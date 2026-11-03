@@ -28,7 +28,7 @@ const CheatMode = (() => {
         sheets.forEach((s, i) => {
             const o = document.createElement("option");
             o.value = String(i);
-            o.textContent = s.title;
+            o.textContent = label(s);
             sel.appendChild(o);
         });
         // One sheet needs no picker; the heading already says which it is.
@@ -129,5 +129,16 @@ const CheatMode = (() => {
         if (!el["cheat-body"].innerHTML) render();
     }
 
-    return { init, onShow };
+    // The picker name: the class lesson the sheet came from, then its title —
+    // "Lesson 13 — Wanting", "Lessons 4–5 — Days, dates and when".
+    function label(sheet) {
+        const ls = sheet.lessons || [];
+        if (!ls.length) return sheet.title;
+        const which = ls.length === 1 ? `Lesson ${ls[0]}`
+            : ls.length === 2 && ls[1] === ls[0] + 1 ? `Lessons ${ls[0]}–${ls[1]}`
+            : `Lessons ${ls.slice(0, -1).join(", ")} & ${ls[ls.length - 1]}`;
+        return `${which} — ${sheet.title}`;
+    }
+
+    return { init, onShow, label };
 })();

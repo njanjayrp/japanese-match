@@ -185,6 +185,7 @@ legend, one or more grids, and the rules that explain them:
 {
     "id": "weekdays",
     "title": "Days of the week",
+    "lessons": [4],
     "blurb": "One suffix and seven prefixes.",
     "legend": [{ "term": "-youbi", "gloss": "day of the week" }],
     "grids": [{
@@ -205,6 +206,11 @@ rules *don't* cover, since the whole point of a sheet is separating the pattern
 from the handful of things you have to memorise flat. A cell with `term`/`en`
 instead is a plain gloss, for the column that explains why the word is what it
 is. Cells left out or written as `{}` render blank.
+
+`lessons` is the class lesson the sheet comes from — several when a later
+lesson adds to it, `[5, 13]`. Both pickers name the sheet by it ("Lesson 13 —
+Wanting — …"), and they list sheets in file order, so keep `sheets.json` sorted
+by lesson; `check.js` fails on a sheet without `lessons` or out of order.
 
 `romaji` is available here as an override too, but on a sheet it's almost always
 about spacing: あしたのあさ derives as `ashitanoasa`, which is correct and
