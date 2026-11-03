@@ -1296,6 +1296,10 @@
             {
                 "term": "to",
                 "gloss": "together with"
+            },
+            {
+                "term": "N / stem + ni",
+                "gloss": "going to do it"
             }
         ],
         "grids": [
@@ -1537,6 +1541,233 @@
                         ]
                     }
                 ]
+            },
+            {
+                "title": "going to do something — ni ikimasu",
+                "columns": [
+                    "the sentence",
+                    "the pattern"
+                ],
+                "rows": [
+                    {
+                        "label": "noun",
+                        "cells": [
+                            {
+                                "kana": "デパートへかいものにいきます",
+                                "romaji": "depaato e kaimono ni ikimasu",
+                                "en": "I go to the department store to shop"
+                            },
+                            {
+                                "term": "place へ N に いきます",
+                                "en": "N: a する noun, bare"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "noun",
+                        "cells": [
+                            {
+                                "kana": "カフェへしょくじにいきます",
+                                "romaji": "kafe e shokuji ni ikimasu",
+                                "en": "I go to a cafe for a meal"
+                            },
+                            {}
+                        ]
+                    },
+                    {
+                        "label": "noun",
+                        "cells": [
+                            {
+                                "kana": "こうえんへさんぽにいきます",
+                                "romaji": "kouen e sanpo ni ikimasu",
+                                "en": "I go to the park for a walk"
+                            },
+                            {}
+                        ]
+                    },
+                    {
+                        "label": "verb",
+                        "cells": [
+                            {
+                                "kana": "カフェへコーヒーをのみにいきます",
+                                "romaji": "kafe e koohii wo nomi ni ikimasu",
+                                "en": "I go to a cafe to drink coffee"
+                            },
+                            {
+                                "term": "place へ N を stem に いきます",
+                                "en": "のみます → のみに"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "verb",
+                        "cells": [
+                            {
+                                "kana": "レストランへばんごはんをたべにいきました",
+                                "romaji": "resutoran e bangohan wo tabe ni ikimashita",
+                                "en": "I went to a restaurant to have dinner"
+                            },
+                            {
+                                "term": "past",
+                                "en": "only ikimasu changes"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "who with",
+                        "cells": [
+                            {
+                                "kana": "だれとかいものにいきますか",
+                                "romaji": "dare to kaimono ni ikimasu ka",
+                                "en": "who are you going shopping with?"
+                            },
+                            {
+                                "term": "the other slots stay",
+                                "en": "doko e, dare to, itsu, nani de"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "how",
+                        "cells": [
+                            {
+                                "kana": "なにでかいものにいきますか",
+                                "romaji": "nani de kaimono ni ikimasu ka",
+                                "en": "how are you getting there to shop?"
+                            },
+                            {}
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "nouns that go in bare",
+                "columns": [
+                    "go to do it",
+                    "do it"
+                ],
+                "rows": [
+                    {
+                        "label": "shopping",
+                        "cells": [
+                            {
+                                "kana": "かいものにいきます",
+                                "romaji": "kaimono ni ikimasu",
+                                "en": "go shopping"
+                            },
+                            {
+                                "kana": "かいものをします",
+                                "romaji": "kaimono wo shimasu",
+                                "en": "do the shopping"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "meal",
+                        "cells": [
+                            {
+                                "kana": "しょくじにいきます",
+                                "romaji": "shokuji ni ikimasu",
+                                "en": "go for a meal"
+                            },
+                            {
+                                "kana": "しょくじをします",
+                                "romaji": "shokuji wo shimasu",
+                                "en": "have a meal"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "walk",
+                        "cells": [
+                            {
+                                "kana": "さんぽにいきます",
+                                "romaji": "sanpo ni ikimasu",
+                                "en": "go for a walk"
+                            },
+                            {
+                                "kana": "さんぽをします",
+                                "romaji": "sanpo wo shimasu",
+                                "en": "take a walk"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "karaoke",
+                        "cells": [
+                            {
+                                "kana": "カラオケにいきます",
+                                "romaji": "karaoke ni ikimasu",
+                                "en": "go to karaoke"
+                            },
+                            {
+                                "kana": "カラオケをします",
+                                "romaji": "karaoke wo shimasu",
+                                "en": "do karaoke"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "skiing",
+                        "cells": [
+                            {
+                                "kana": "スキーにいきます",
+                                "romaji": "sukii ni ikimasu",
+                                "en": "go skiing"
+                            },
+                            {
+                                "kana": "スキーをします",
+                                "romaji": "sukii wo shimasu",
+                                "en": "ski"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "fishing",
+                        "cells": [
+                            {
+                                "kana": "つりにいきます",
+                                "romaji": "tsuri ni ikimasu",
+                                "en": "go fishing"
+                            },
+                            {
+                                "kana": "つりをします",
+                                "romaji": "tsuri wo shimasu",
+                                "en": "fish"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "blossoms",
+                        "cells": [
+                            {
+                                "kana": "はなみにいきます",
+                                "romaji": "hanami ni ikimasu",
+                                "en": "go blossom-viewing"
+                            },
+                            {
+                                "kana": "はなみをします",
+                                "romaji": "hanami wo shimasu",
+                                "en": "view the blossoms"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "trip",
+                        "cells": [
+                            {
+                                "kana": "りょこうにいきます",
+                                "romaji": "ryokou ni ikimasu",
+                                "en": "go on a trip"
+                            },
+                            {
+                                "kana": "りょこうをします",
+                                "romaji": "ryokou wo shimasu",
+                                "en": "travel"
+                            }
+                        ]
+                    }
+                ]
             }
         ],
         "rules": [
@@ -1564,6 +1795,11 @@
                 "id": "time-ni-or-nothing",
                 "title": "Time words: ni or nothing",
                 "body": "kyou, ashita, senshuu, raigetsu, mainichi attach bare. Time with a number or a calendar slot takes ni: kuji ni, shichigatsu ni, tanjoubi ni. Weekdays go either way — getsuyoubi ni ikimasu or getsuyoubi, ikimasu."
+            },
+            {
+                "id": "purpose-ni",
+                "title": "What you go there to do takes ni",
+                "body": "depaato e kaimono ni ikimasu — the place takes e, the purpose takes ni, and ikimasu closes it. A する noun goes in bare: kaimono ni, shokuji ni, sanpo ni, tsuri ni. Any other verb drops masu: nomimasu → nomi ni, tabemasu → tabe ni. What you will eat or drink keeps its wo — koohii wo nomi ni ikimasu — and the other slots don't move: dare to, nani de, itsu. kimasu and kaerimasu take a purpose the same way."
             }
         ]
     },
@@ -2806,6 +3042,400 @@
                 "id": "de-group",
                 "title": "de draws the group, ichiban sits before the adjective",
                 "body": "nihon no gohan de — de marks the circle the winner is picked from; ni and yori don't work there. ichiban goes right in front of the adjective, where totemo would go, and the winner takes ga: raamen ga ichiban suki desu. A topic can sit in front of the whole frame — watashi wa supootsu de yakyuu ga ichiban suki desu."
+            }
+        ]
+    },
+    {
+        "id": "want",
+        "title": "Wanting — hoshii and -tai",
+        "blurb": "Two ways to want. hoshii wants a thing; -tai, stuck onto a verb, wants to do something. Both are i-adjectives in disguise, so everything you know about takai — kunai, katta, kunakatta — works on them unchanged.",
+        "legend": [
+            {
+                "term": "hoshii",
+                "gloss": "want (a thing) — an i-adjective"
+            },
+            {
+                "term": "-tai",
+                "gloss": "want to — goes on the masu stem"
+            },
+            {
+                "term": "-takunai",
+                "gloss": "don't want to"
+            },
+            {
+                "term": "ga / wo",
+                "gloss": "the thing wanted — ga always with hoshii, either with -tai"
+            }
+        ],
+        "grids": [
+            {
+                "title": "wanting a thing — hoshii",
+                "columns": [
+                    "the sentence",
+                    "the pattern"
+                ],
+                "rows": [
+                    {
+                        "label": "want",
+                        "cells": [
+                            {
+                                "kana": "おかねがほしいです",
+                                "romaji": "okane ga hoshii desu",
+                                "en": "I want money"
+                            },
+                            {
+                                "term": "N が ほしいです",
+                                "en": "the thing takes ga"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "not",
+                        "cells": [
+                            {
+                                "kana": "くるまがほしくないです",
+                                "romaji": "kuruma ga hoshiku nai desu",
+                                "en": "I don't want a car"
+                            },
+                            {
+                                "term": "ほしい is an i-adjective",
+                                "en": "ほしくないです, ほしかったです"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "ask",
+                        "cells": [
+                            {
+                                "kana": "なにがほしいですか",
+                                "romaji": "nani ga hoshii desu ka",
+                                "en": "what do you want?"
+                            },
+                            {
+                                "term": "なにが"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "kind",
+                        "cells": [
+                            {
+                                "kana": "どんないえがほしいですか",
+                                "romaji": "donna ie ga hoshii desu ka",
+                                "en": "what kind of house do you want?"
+                            },
+                            {
+                                "term": "どんな N が"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "answer",
+                        "cells": [
+                            {
+                                "kana": "おおきいいえがほしいです",
+                                "romaji": "ookii ie ga hoshii desu",
+                                "en": "I want a big house"
+                            },
+                            {}
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "wanting to do — drop masu, add tai",
+                "columns": [
+                    "the verb",
+                    "want to"
+                ],
+                "rows": [
+                    {
+                        "label": "drink",
+                        "cells": [
+                            {
+                                "kana": "のみます",
+                                "romaji": "nomimasu",
+                                "en": "drink"
+                            },
+                            {
+                                "kana": "のみたいです",
+                                "romaji": "nomitai desu",
+                                "en": "I want to drink"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "see",
+                        "cells": [
+                            {
+                                "kana": "みます",
+                                "romaji": "mimasu",
+                                "en": "see"
+                            },
+                            {
+                                "kana": "みたいです",
+                                "romaji": "mitai desu",
+                                "en": "I want to see"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "go",
+                        "cells": [
+                            {
+                                "kana": "いきます",
+                                "romaji": "ikimasu",
+                                "en": "go"
+                            },
+                            {
+                                "kana": "いきたいです",
+                                "romaji": "ikitai desu",
+                                "en": "I want to go"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "swim",
+                        "cells": [
+                            {
+                                "kana": "およぎます",
+                                "romaji": "oyogimasu",
+                                "en": "swim"
+                            },
+                            {
+                                "kana": "およぎたいです",
+                                "romaji": "oyogitai desu",
+                                "en": "I want to swim"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "come",
+                        "cells": [
+                            {
+                                "kana": "きます",
+                                "romaji": "kimasu",
+                                "en": "come"
+                            },
+                            {
+                                "kana": "きたいです",
+                                "romaji": "kitai desu",
+                                "en": "I want to come"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "shop",
+                        "cells": [
+                            {
+                                "kana": "かいものします",
+                                "romaji": "kaimono shimasu",
+                                "en": "go shopping"
+                            },
+                            {
+                                "kana": "かいものしたいです",
+                                "romaji": "kaimono shitai desu",
+                                "en": "I want to go shopping"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "marry",
+                        "cells": [
+                            {
+                                "kana": "けっこんします",
+                                "romaji": "kekkon shimasu",
+                                "en": "get married"
+                            },
+                            {
+                                "kana": "けっこんしたいです",
+                                "romaji": "kekkon shitai desu",
+                                "en": "I want to get married"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "-tai is an i-adjective — tabetai",
+                "columns": [
+                    "the form",
+                    "the pattern"
+                ],
+                "rows": [
+                    {
+                        "label": "now",
+                        "cells": [
+                            {
+                                "kana": "たべたいです",
+                                "romaji": "tabetai desu",
+                                "en": "I want to eat"
+                            },
+                            {
+                                "term": "stem + たいです"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "not now",
+                        "cells": [
+                            {
+                                "kana": "たべたくないです",
+                                "romaji": "tabetaku nai desu",
+                                "en": "I don't want to eat"
+                            },
+                            {
+                                "term": "stem + たくないです"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "was",
+                        "cells": [
+                            {
+                                "kana": "たべたかったです",
+                                "romaji": "tabetakatta desu",
+                                "en": "I wanted to eat"
+                            },
+                            {
+                                "term": "stem + たかったです"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "wasn't",
+                        "cells": [
+                            {
+                                "kana": "たべたくなかったです",
+                                "romaji": "tabetaku nakatta desu",
+                                "en": "I didn't want to eat"
+                            },
+                            {
+                                "term": "stem + たくなかったです"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "in a sentence",
+                "columns": [
+                    "the sentence",
+                    "what to notice"
+                ],
+                "rows": [
+                    {
+                        "label": "ga",
+                        "cells": [
+                            {
+                                "kana": "すしがたべたいです",
+                                "romaji": "sushi ga tabetai desu",
+                                "en": "I want to eat sushi"
+                            },
+                            {
+                                "term": "が",
+                                "en": "the object may switch to ga"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "wo",
+                        "cells": [
+                            {
+                                "kana": "すしをたべたいです",
+                                "romaji": "sushi wo tabetai desu",
+                                "en": "I'd like to eat sushi"
+                            },
+                            {
+                                "term": "を",
+                                "en": "or keep its wo — both are right"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "what",
+                        "cells": [
+                            {
+                                "kana": "なにをたべたいですか",
+                                "romaji": "nani wo tabetai desu ka",
+                                "en": "what do you want to eat?"
+                            },
+                            {}
+                        ]
+                    },
+                    {
+                        "label": "where",
+                        "cells": [
+                            {
+                                "kana": "どこへいきたいですか",
+                                "romaji": "doko e ikitai desu ka",
+                                "en": "where do you want to go?"
+                            },
+                            {
+                                "term": "へ stays へ",
+                                "en": "only the object can turn into ga"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "when",
+                        "cells": [
+                            {
+                                "kana": "いついきたいですか",
+                                "romaji": "itsu ikitai desu ka",
+                                "en": "when do you want to go?"
+                            },
+                            {}
+                        ]
+                    },
+                    {
+                        "label": "who with",
+                        "cells": [
+                            {
+                                "kana": "だれといきたいですか",
+                                "romaji": "dare to ikitai desu ka",
+                                "en": "who do you want to go with?"
+                            },
+                            {}
+                        ]
+                    },
+                    {
+                        "label": "because",
+                        "cells": [
+                            {
+                                "kana": "おなかがすきましたからごはんをたべたいです",
+                                "romaji": "onaka ga sukimashita kara gohan wo tabetai desu",
+                                "en": "I'm hungry, so I want to eat"
+                            },
+                            {
+                                "term": "reason から want",
+                                "en": "the reason comes first"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "rules": [
+            {
+                "id": "hoshii-ga",
+                "title": "hoshii is an adjective, so the thing takes ga",
+                "body": "okane ga hoshii desu works exactly like okane ga suki desu: hoshii describes how you feel about the thing, it doesn't act on it, so the thing takes ga and never wo. It conjugates as an i-adjective — hoshiku nai desu, hoshikatta desu — and is never hoshii masu."
+            },
+            {
+                "id": "tai-stem",
+                "title": "-tai goes on the masu stem",
+                "body": "Take the masu form, drop masu, add tai desu: nomimasu → nomitai desu, mimasu → mitai desu. It works the same for every verb, the irregular ones included: kimasu → kitai, kaimono shimasu → kaimono shitai. Keeping masu (nomimasu tai) or starting from the dictionary form (nomu tai) are both wrong."
+            },
+            {
+                "id": "tai-is-i-adjective",
+                "title": "-tai conjugates as an i-adjective",
+                "body": "tabetai ends in i and behaves like takai: tabetaku nai desu, tabetakatta desu, tabetaku nakatta desu. The negative and the past go on tai, never on the verb, and never on desu — tabetai ja nai, tabetai deshita and tabenai tai are all wrong."
+            },
+            {
+                "id": "tai-ga-or-wo",
+                "title": "The object may take ga or wo — nothing else changes",
+                "body": "With -tai the thing you want to eat or buy can keep its wo or switch to ga: sushi wo tabetai desu, sushi ga tabetai desu. The slide writes ga (wo). Only the object has that choice. Where you go keeps e, who with keeps to: doko e ikitai desu ka, dare to ikitai desu ka."
             }
         ]
     },

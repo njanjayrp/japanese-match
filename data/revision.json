@@ -4220,6 +4220,112 @@
         ]
     },
     {
+        "id": "ni-kaimono",
+        "covers": [
+            "going:purpose-ni"
+        ],
+        "sheet": "going",
+        "en": "I go to the department store to shop.",
+        "correct": {
+            "kana": "デパートへかいものにいきます",
+            "romaji": "depaato e kaimono ni ikimasu"
+        },
+        "wrong": [
+            {
+                "kana": "デパートへかいものをいきます",
+                "why": "what you go there to do takes ni: kaimono ni ikimasu."
+            },
+            {
+                "kana": "デパートへかいものしますにいきます",
+                "why": "a する noun goes in bare: kaimono ni, not kaimono shimasu ni."
+            },
+            {
+                "kana": "デパートへかいものにきます",
+                "why": "kimasu is come. Go is ikimasu."
+            }
+        ]
+    },
+    {
+        "id": "ni-nomi",
+        "covers": [
+            "going:purpose-ni"
+        ],
+        "sheet": "going",
+        "en": "I go to a cafe to drink coffee.",
+        "correct": {
+            "kana": "カフェへコーヒーをのみにいきます",
+            "romaji": "kafe e koohii wo nomi ni ikimasu"
+        },
+        "wrong": [
+            {
+                "kana": "カフェへコーヒーをのみますにいきます",
+                "why": "drop masu before ni: nomi ni."
+            },
+            {
+                "kana": "カフェへコーヒーにのみにいきます",
+                "why": "the coffee is what you drink, so it keeps wo. Only the purpose takes ni."
+            },
+            {
+                "kana": "カフェへコーヒーをのみたいにいきます",
+                "why": "the bare stem goes before ni — tai has no place here."
+            }
+        ]
+    },
+    {
+        "id": "ni-sanpo-senshuu",
+        "covers": [
+            "going:purpose-ni",
+            "calendar:ni-or-nothing"
+        ],
+        "sheet": "going",
+        "en": "I went to the park for a walk last week.",
+        "correct": {
+            "kana": "せんしゅうこうえんへさんぽにいきました",
+            "romaji": "senshuu kouen e sanpo ni ikimashita"
+        },
+        "wrong": [
+            {
+                "kana": "せんしゅうこうえんへさんぽにいきます",
+                "why": "senshuu is last week, so the verb has to be past: ikimashita."
+            },
+            {
+                "kana": "せんしゅうにこうえんへさんぽにいきました",
+                "why": "relative time words take no ni."
+            },
+            {
+                "kana": "せんしゅうこうえんへさんぽをいきました",
+                "why": "what you go there to do takes ni: sanpo ni."
+            }
+        ]
+    },
+    {
+        "id": "ni-dare-to",
+        "covers": [
+            "going:de-means-to-company",
+            "going:purpose-ni"
+        ],
+        "sheet": "going",
+        "en": "Who are you going shopping with?",
+        "correct": {
+            "kana": "だれとかいものにいきますか",
+            "romaji": "dare to kaimono ni ikimasu ka"
+        },
+        "wrong": [
+            {
+                "kana": "だれでかいものにいきますか",
+                "why": "de is the means. Who you go with takes to."
+            },
+            {
+                "kana": "なにでかいものにいきますか",
+                "why": "nani de asks how you get there. Who with is dare to."
+            },
+            {
+                "kana": "だれとかいものしますにいきますか",
+                "why": "a する noun goes in bare: kaimono ni."
+            }
+        ]
+    },
+    {
         "id": "hana-akakunai",
         "covers": [
             "adjectives:nai-is-i-adjective"
@@ -6730,6 +6836,257 @@
             {
                 "kana": "いそがしい",
                 "family": "i"
+            }
+        ]
+    },
+    {
+        "id": "hoshii-okane",
+        "covers": [
+            "want:hoshii-ga"
+        ],
+        "sheet": "want",
+        "en": "I want money.",
+        "correct": {
+            "kana": "おかねがほしいです",
+            "romaji": "okane ga hoshii desu"
+        },
+        "wrong": [
+            {
+                "kana": "おかねをほしいです",
+                "why": "hoshii is an adjective — the thing you want takes ga, never wo."
+            },
+            {
+                "kana": "おかねがほしいます",
+                "why": "hoshii is an i-adjective, not a verb: hoshii desu."
+            },
+            {
+                "kana": "おかねがほしです",
+                "why": "the i belongs to hoshii and stays: hoshii desu."
+            }
+        ],
+        "adjNotes": [
+            {
+                "kana": "ほしい",
+                "family": "i"
+            }
+        ]
+    },
+    {
+        "id": "hoshii-kuruma-nai",
+        "covers": [
+            "want:hoshii-ga",
+            "adjectives:nai-is-i-adjective"
+        ],
+        "sheet": "want",
+        "en": "I don't want a car.",
+        "correct": {
+            "kana": "くるまがほしくないです",
+            "romaji": "kuruma ga hoshiku nai desu",
+            "kanji": "車がほしくないです"
+        },
+        "wrong": [
+            {
+                "kana": "くるまがほしいじゃないです",
+                "why": "ja nai is the na negative; hoshii is an i-adjective — hoshiku nai.",
+                "kanji": "車がほしいじゃないです"
+            },
+            {
+                "kana": "くるまがほしいくないです",
+                "why": "drop the i before kunai: hoshiku nai.",
+                "kanji": "車がほしいくないです"
+            },
+            {
+                "kana": "くるまをほしくないです",
+                "why": "the thing you want takes ga, never wo — in the negative too.",
+                "kanji": "車をほしくないです"
+            }
+        ],
+        "kanjiNotes": [
+            {
+                "word": "車",
+                "kana": "くるま"
+            }
+        ],
+        "adjNotes": [
+            {
+                "kana": "ほしい",
+                "family": "i"
+            }
+        ]
+    },
+    {
+        "id": "hoshii-donna-ie",
+        "covers": [
+            "want:hoshii-ga",
+            "ga:donna"
+        ],
+        "sheet": "want",
+        "en": "What kind of house do you want?",
+        "correct": {
+            "kana": "どんないえがほしいですか",
+            "romaji": "donna ie ga hoshii desu ka",
+            "kanji": "どんな家がほしいですか"
+        },
+        "wrong": [
+            {
+                "kana": "どんないえをほしいですか",
+                "why": "the thing you want takes ga, never wo.",
+                "kanji": "どんな家をほしいですか"
+            },
+            {
+                "kana": "なにいえがほしいですか",
+                "why": "nani asks what thing. To ask what kind, put donna straight onto the noun.",
+                "kanji": "なに家がほしいですか"
+            },
+            {
+                "kana": "どんなのいえがほしいですか",
+                "why": "donna goes straight onto the noun — no no in between.",
+                "kanji": "どんなの家がほしいですか"
+            }
+        ],
+        "kanjiNotes": [
+            {
+                "word": "家",
+                "kana": "いえ"
+            }
+        ],
+        "adjNotes": [
+            {
+                "kana": "ほしい",
+                "family": "i"
+            }
+        ]
+    },
+    {
+        "id": "tai-koohii",
+        "covers": [
+            "want:tai-stem"
+        ],
+        "sheet": "want",
+        "en": "I want to drink coffee.",
+        "correct": {
+            "kana": "コーヒーをのみたいです",
+            "romaji": "koohii wo nomitai desu"
+        },
+        "wrong": [
+            {
+                "kana": "コーヒーをのみますたいです",
+                "why": "drop masu first: nomi + tai."
+            },
+            {
+                "kana": "コーヒーをのむたいです",
+                "why": "tai goes on the masu stem, nomi — not on the dictionary form."
+            },
+            {
+                "kana": "コーヒーをのみたいでした",
+                "why": "desu never becomes deshita after an i-adjective, and -tai is one. Wanted would be nomitakatta desu."
+            }
+        ]
+    },
+    {
+        "id": "takunai-terebi",
+        "covers": [
+            "want:tai-is-i-adjective"
+        ],
+        "sheet": "want",
+        "en": "I don't want to watch TV.",
+        "correct": {
+            "kana": "テレビをみたくないです",
+            "romaji": "terebi wo mitaku nai desu"
+        },
+        "wrong": [
+            {
+                "kana": "テレビをみたいじゃないです",
+                "why": "-tai is an i-adjective: its negative is takunai, not tai ja nai."
+            },
+            {
+                "kana": "テレビをみないたいです",
+                "why": "the negative goes on tai, not on the verb: mitaku nai."
+            },
+            {
+                "kana": "テレビをみたいです",
+                "why": "that says you do want to watch it."
+            }
+        ]
+    },
+    {
+        "id": "takatta-nihon",
+        "covers": [
+            "want:tai-is-i-adjective",
+            "want:tai-ga-or-wo"
+        ],
+        "sheet": "want",
+        "en": "I wanted to go to Japan.",
+        "correct": {
+            "kana": "にほんへいきたかったです",
+            "romaji": "nihon e ikitakatta desu"
+        },
+        "wrong": [
+            {
+                "kana": "にほんへいきたいでした",
+                "why": "-tai is an i-adjective: the past is takatta desu, never tai deshita."
+            },
+            {
+                "kana": "にほんへいきたかったでした",
+                "why": "the past is already in katta — desu stays desu."
+            },
+            {
+                "kana": "にほんをいきたかったです",
+                "why": "a destination keeps e. Only the object of the verb can change its particle."
+            }
+        ]
+    },
+    {
+        "id": "tai-doko",
+        "covers": [
+            "want:tai-ga-or-wo",
+            "want:tai-stem"
+        ],
+        "sheet": "want",
+        "en": "Where do you want to go?",
+        "correct": {
+            "kana": "どこへいきたいですか",
+            "romaji": "doko e ikitai desu ka"
+        },
+        "wrong": [
+            {
+                "kana": "どこがいきたいですか",
+                "why": "only the object can swap wo for ga. A destination keeps e."
+            },
+            {
+                "kana": "どこへいきますたいですか",
+                "why": "drop masu first: iki + tai."
+            },
+            {
+                "kana": "だれといきたいですか",
+                "why": "dare to asks who with. Where is doko e."
+            }
+        ]
+    },
+    {
+        "id": "tai-onaka",
+        "covers": [
+            "want:tai-is-i-adjective",
+            "ga:kara-order"
+        ],
+        "sheet": "want",
+        "en": "I'm hungry, so I want to eat.",
+        "correct": {
+            "kana": "おなかがすきましたからごはんをたべたいです",
+            "romaji": "onaka ga sukimashita kara gohan wo tabetai desu"
+        },
+        "wrong": [
+            {
+                "kana": "ごはんをたべたいですからおなかがすきました",
+                "why": "kara comes after the reason. The hunger is the reason, so it goes first."
+            },
+            {
+                "kana": "おなかがすきましたからごはんをたべたいでした",
+                "why": "desu never becomes deshita after -tai. Wanted would be tabetakatta desu."
+            },
+            {
+                "kana": "おなかがいっぱいですからごはんをたべたいです",
+                "why": "onaka ga ippai desu is I'm full — the opposite of hungry."
             }
         ]
     }
