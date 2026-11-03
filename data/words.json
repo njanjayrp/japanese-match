@@ -572,7 +572,7 @@
         "english": "camera",
         "group": "Everyday things",
         "note": "loanword — katakana",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "",
@@ -835,7 +835,7 @@
         "english": "personal computer",
         "group": "Everyday things",
         "note": "clipped from パーソナルコンピューター",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "細かいお金",
@@ -1024,7 +1024,7 @@
         "english": "coffee",
         "group": "Food & drink",
         "note": "loanword — katakana",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "",
@@ -1255,7 +1255,7 @@
         "english": "karaoke",
         "group": "Hobbies",
         "note": "kara (empty) + oke (orchestra)",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "絵",
@@ -1309,7 +1309,7 @@
         "english": "skiing",
         "group": "Hobbies",
         "note": "loanword — スキーをします",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "",
@@ -1317,7 +1317,7 @@
         "english": "tennis",
         "group": "Hobbies",
         "note": "loanword — テニスをします",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "映画",
@@ -1792,7 +1792,7 @@
         "group": "Adjectives",
         "adj": "na",
         "note": "na-adjective — loanword, katakana",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "",
@@ -3260,7 +3260,7 @@
         "english": "department store",
         "group": "Places",
         "note": "loanword — katakana",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "銀行",
@@ -3310,7 +3310,7 @@
         "english": "supermarket",
         "group": "Places",
         "note": "loanword — katakana",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "",
@@ -3371,7 +3371,7 @@
         "english": "swimming pool",
         "group": "Places",
         "note": "loanword — katakana",
-        "marked": true
+        "marked": false
     },
     {
         "kanji": "",
