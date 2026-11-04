@@ -5662,16 +5662,30 @@
                         ]
                     },
                     {
-                        "label": "a time",
+                        "label": "a season",
                         "cells": [
                             {
-                                "kana": "きせつでいつがいちばんすきですか",
-                                "romaji": "kisetsu de itsu ga ichiban suki desu ka",
+                                "kana": "きせつでなにがいちばんすきですか",
+                                "romaji": "kisetsu de nani ga ichiban suki desu ka",
                                 "en": "which season do you like best?"
                             },
                             {
+                                "term": "なに",
+                                "en": "the class asks seasons with なに"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "a time",
+                        "cells": [
+                            {
+                                "kana": "いちねんでいつがいちばんさむいですか",
+                                "romaji": "ichinen de itsu ga ichiban samui desu ka",
+                                "en": "when is it coldest in the year?"
+                            },
+                            {
                                 "term": "いつ",
-                                "en": "a season is a time — いつ, not なに"
+                                "en": "for a month or a time"
                             }
                         ]
                     },
@@ -5734,7 +5748,7 @@
             {
                 "id": "dochira-for-two",
                 "title": "dochira for two, the right question word for more",
-                "body": "dochira asks which of two — inu to neko dochira. Once the group is bigger the question becomes de … ichiban, with the word for what you want back: nani for a thing, dare for a person, doko for a place, itsu for a time. A season is a time, so it is itsu. docchi is the casual dochira."
+                "body": "dochira asks which of two — inu to neko dochira. Once the group is bigger the question becomes de … ichiban, with the word for what you want back: nani for a thing, dare for a person, doko for a place, itsu for a time. The class files seasons under nani — kisetsu de nani ga — and keeps itsu for months: ichinen de itsu ga. docchi is the casual dochira."
             },
             {
                 "id": "question-word-ga",

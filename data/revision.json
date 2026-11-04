@@ -6721,25 +6721,25 @@
         "sheet": "compare",
         "en": "Which season do you like best?",
         "correct": {
-            "kana": "きせつでいつがいちばんすきですか",
-            "romaji": "kisetsu de itsu ga ichiban suki desu ka",
-            "kanji": "季節でいつがいちばん好きですか"
+            "kana": "きせつでなにがいちばんすきですか",
+            "romaji": "kisetsu de nani ga ichiban suki desu ka",
+            "kanji": "季節でなにがいちばん好きですか"
         },
         "wrong": [
             {
                 "kana": "きせつでどちらがいちばんすきですか",
-                "why": "dochira is for a choice of two. There are four seasons, and a season is a time: itsu.",
+                "why": "dochira is for a choice of two, and there are four seasons.",
                 "kanji": "季節でどちらがいちばん好きですか"
             },
             {
-                "kana": "きせつでいつはいちばんすきですか",
-                "why": "a question word can't be the topic: itsu ga, never itsu wa.",
-                "kanji": "季節でいつはいちばん好きですか"
+                "kana": "きせつでなにはいちばんすきですか",
+                "why": "a question word can't be the topic: nani ga, never nani wa.",
+                "kanji": "季節でなにはいちばん好きですか"
             },
             {
-                "kana": "きせつでいつがすきですか",
+                "kana": "きせつでなにがすきですか",
                 "why": "without ichiban nothing asks for the best one.",
-                "kanji": "季節でいつが好きですか"
+                "kanji": "季節でなにが好きですか"
             }
         ],
         "kanjiNotes": [
